@@ -1,0 +1,65 @@
+/* 
+   _______     __                            _______                              
+  |       |.--|  |.---.-.--------.---.-.    |    ___|.----.---.-.-----.----.-----.
+  |   -   ||  _  ||  _  |        |  _  |    |    ___||   _|  _  |     |  __|  -__|
+  |_______||_____||___._|__|__|__|___._|    |___|    |__| |___._|__|__|____|_____|
+  Version 1.1.0 - By @skyx_id_fr      "Odama, you like it ! ✨"
+*/
+
+/* 📌 Link Google Font Links : 📌 */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: normal;
+    font-family: 'Lato', sans-serif;
+    background-color: #050c22;
+    color: white;
+}
+
+/* 📃 NavBar's style : 📃 */
+#navbar {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #010616;
+}
+
+#navbar .odama_app_logo {
+    width: 55px;
+    background-color: transparent;
+}
+
+#navbar .menu_list {
+    list-style: none;
+    float: right;
+    margin-top: 2px;
+    margin-right: 20px;
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #050c22;
+}
+
+#navbar .menu_list li {
+    float: left;
+    width: 100px;
+    margin-right: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 25px;    
+    transition: width 2s;
+}
+
+#navbar .menu_list li:hover {
+    background-color: white;
+    color: black;
+    width: 120px;
+    -webkit-transition: background-color 0.4s linear;
+    -ms-transition: background-color  0.4s linear;
+    transition: background-color  0.4s linear;
+}
+/* 📃 End of NavBar's style 📃 */

@@ -7,16 +7,10 @@
 */
 
 
-import { Html, Head, Main, NextScript } from 'next/document'
-
-export default function Document() {
+export default function DiscoverPage() {
   return (
-    <Html lang="fr">
-      <Head />
-      <body>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
+    <>
+      <p>Discover</p>
+    </>
   )
 }
