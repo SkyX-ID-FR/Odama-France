@@ -15,15 +15,52 @@
     font-weight: normal;
     font-size: normal;
     font-family: 'Lato', sans-serif;
-    background-color: #050c22;
-    color: white;
+    background-color: #142e60;
+}
+
+html { height: 200vh; }
+::-webkit-scrollbar { width: 7px; }
+::-webkit-scrollbar-track { background: transparent; }
+  
+::-webkit-scrollbar-thumb {
+   background: white;
+   border-radius: 15px;
 }
 
 /* 📃 NavBar's style : 📃 */
 #navbar {
     padding: 20px;
+    background-color: #040a22;
+    z-index: 100;
     margin-bottom: 20px;
-    background-color: #010616;
+    position: fixed;
+    margin-top: 25px!important;
+
+    /* Test somethings 😉 : */
+    width: calc(100% - 120px);
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-left: 40px!important;
+    box-shadow: 0px 0px 100px #071241;
+    margin: 8px;
+}
+
+#navbar:hover {
+    cursor: pointer;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: scale(1.025);
+    transform: scale(1.025);
+}
+
+#navbar:hover ~ html {
+    background-color: red;
+}
+
+#responsive_menu_side_bar {
+    display: none;
 }
 
 #navbar .odama_app_logo {
@@ -34,32 +71,78 @@
 #navbar .menu_list {
     list-style: none;
     float: right;
-    margin-top: 2px;
-    margin-right: 20px;
     border-radius: 25px;
+    margin-top: -3px;
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #050c22;
+    background-color: #060e30;
+}
+
+#navbar .menu_white_icon {
+    display: none;
 }
 
 #navbar .menu_list li {
     float: left;
-    width: 100px;
-    margin-right: 10px;
-    padding: 10px;
     text-align: center;
     cursor: pointer;
-    border-radius: 25px;    
     transition: width 2s;
+    padding: 10px;
+    width: 110px;
+    font-weight: 400;
+    background-color: transparent;
+    color: white;
 }
 
 #navbar .menu_list li:hover {
     background-color: white;
+    margin-right: 10px;
+    border-radius: 20px;
     color: black;
-    width: 120px;
+    width: 125px;
     -webkit-transition: background-color 0.4s linear;
     -ms-transition: background-color  0.4s linear;
     transition: background-color  0.4s linear;
 }
 /* 📃 End of NavBar's style 📃 */
+
+/* 📦 Content Page's style : 📦 */
+.content_page:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.content_page * { background-color: transparent; }
+
+.content_page {
+    background-color: transparent;
+    color: white;
+    margin-top: 165px;
+    position: absolute;
+    margin-left: 25px;
+}
+
+.content_page .hero_section {
+    width: 95%;
+    text-align: center;
+    margin-left: 3%;
+    margin-top: 50px;
+}
+
+.content_page .hero_section h1 {
+    font-weight: 900;
+    font-size: 80px;
+}
+
+.content_page .hero_section p {
+    font-weight: 300;
+    font-size: 17px;
+    width: 55%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+/* 📦 End of Content Page's style 📦 */

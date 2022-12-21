@@ -6,8 +6,8 @@
   Version 1.1.0 - By @skyx_id_fr      "Odama, you like it ! ✨"
 */
 
-
-import '../css/index.css'
+import '../css/index.css';
+import '../css/responsive.css';
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />

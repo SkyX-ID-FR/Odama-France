@@ -1,0 +1,73 @@
+/* 
+   _______     __                            _______                              
+  |       |.--|  |.---.-.--------.---.-.    |    ___|.----.---.-.-----.----.-----.
+  |   -   ||  _  ||  _  |        |  _  |    |    ___||   _|  _  |     |  __|  -__|
+  |_______||_____||___._|__|__|__|___._|    |___|    |__| |___._|__|__|____|_____|
+  Version 1.1.0 - By @skyx_id_fr      "Odama, you like it ! ✨"
+*/
+
+@media only screen and (max-width: 1100px) {
+    .content_page .hero_section {
+        margin: 0px;
+    }
+
+    .content_page .hero_section h1 {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-size: 70px;
+    }
+
+    .content_page .hero_section p {
+        font-size: 17px;
+        margin-left: 30px;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    #navbar {
+        margin: 5px!important;
+        margin-top: 10px!important;
+        width: calc(100% - 60px);
+        height: 35px;
+        margin-left: 10px!important;
+
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+
+    #navbar .odama_app_logo {
+        margin-top: -13px;
+        margin-left: -10px;
+    }
+
+    #navbar .menu_list {
+        display: none;
+    }
+
+    #navbar .menu_white_icon {
+        display: block;
+        width: 30px;
+        margin-top: 2px;
+        margin-right: 5px;
+        float: right;
+        background-color: transparent;
+    }
+
+    .content_page {
+        margin-top: 110px!important;
+        margin-left: 0px;
+        padding: 0px!important;
+    }
+
+    .content_page .hero_section h1 {
+        font-size: 45px;
+    }
+
+    .content_page .hero_section p {
+        font-size: 17px;
+    }
+}
