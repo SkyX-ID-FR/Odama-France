@@ -13,11 +13,11 @@ export default function LeftNavBar() {
   function open_side_bar_menu() {
     $(".content_page").hide();
     $("#navbar").hide();
-    $("#responsive_menu_side_bar").fadeIn(1500);
+    $("#responsive_menu_side_bar").fadeIn(1000);
   }
 
   function close_side_bar_menu() {
-    $(".content_page").fadeIn(1500);
+    $(".content_page").fadeIn(1000);
     $("#navbar").show();
     $("#responsive_menu_side_bar").hide();
   }
@@ -25,7 +25,8 @@ export default function LeftNavBar() {
   return (
     <>
       <div id="responsive_menu_side_bar">
-          <button onClick={close_side_bar_menu}>close</button>
+          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' className='close_white_icon' onClick={close_side_bar_menu}/>
+          
           <ul>
             <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/" id="home-link">🏠 · Accueil</Link></li>
             <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/discover" id="discover-link">✨ · Découvrir</Link></li>
@@ -33,6 +34,10 @@ export default function LeftNavBar() {
             <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/series" id="series-link">🎥 · Séries</Link></li>
             <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/contact" id="contact-link">✉ · Contact</Link></li>
           </ul>
+
+          <footer className='responsive_menu_footer'>
+            <p>Made with <font color="red">❤</font> by @skyx_id_fr</p>
+          </footer>
       </div>
       
       <section id="navbar">
