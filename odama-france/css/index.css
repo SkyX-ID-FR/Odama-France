@@ -26,6 +26,45 @@
    border-radius: 15px;
 }
 
+a { color: green; }
+/* 📊 Complétementaire style : 📊 */
+.github_link {
+    margin-top: 20px;
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: #040a22!important;
+    padding-bottom: 0px;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 17px;
+    width: 250px;
+    margin-left: -9%;
+}
+
+.github_link:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+}
+
+.github_link img {
+    float: left;
+    margin-left: 50px;
+}
+
+.github_link p {
+    float: left;
+    width: 100px!important;
+    margin-left: 8px!important;
+    margin-top: 7px!important;
+}
+
+.github_link .github_button_logo {
+    width: 35px;
+}
+/* 📊 End of Complétementaire style 📊 */
+
 /* 📃 NavBar's style : 📃 */
 #navbar {
     padding: 20px;
@@ -45,7 +84,6 @@
 }
 
 #navbar:hover {
-    cursor: pointer;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-property: transform;
