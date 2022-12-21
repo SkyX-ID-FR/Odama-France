@@ -1,0 +1,24 @@
+{
+  "premiere_movies": [
+      {
+          "id": 1,
+          "title": "James Bond",
+          "description": "This is the full content of post 1"
+      },
+      {
+          "id": 2,
+          "title": "Harry Potter",
+          "description": "This is the full content of post 2"
+      },
+      {
+          "id": 3,
+          "title": "Movies 3",
+          "description": "This is the full content of post 3"
+      },
+      {
+          "id": 4,
+          "title": "Movies 4",
+          "description": "This is the full content of post 4"
+      }
+  ]
+}

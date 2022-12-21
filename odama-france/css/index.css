@@ -41,6 +41,8 @@ a { color: green; }
     padding-right: 17px;
     width: 250px;
     margin-left: -9%;
+    margin-bottom: 1000px!important;
+    content: "";
 }
 
 .github_link:hover {
@@ -183,3 +185,19 @@ a { color: green; }
     text-align: justify;
 }
 /* 📦 End of Content Page's style 📦 */
+
+/* 🎥 Movies section's style : 🎥 */
+.content_page .movies_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content_page .movies_section .movies_item {
+    background-color: red;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+/* 🎥 End of Movies section's style 🎥 */

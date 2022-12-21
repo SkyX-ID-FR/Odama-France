@@ -10,14 +10,6 @@ import Link from 'next/link';
 import $ from 'jquery';
 
 export default function LeftNavBar() {
-  function syncDelay(milliseconds){
-    var start = new Date().getTime();
-    var end=0;
-    while( (end-start) < milliseconds){
-        end = new Date().getTime();
-    }
-  }
-
   function open_side_bar_menu() {
     $(".content_page").hide();
     $("#navbar").hide();
@@ -36,7 +28,7 @@ export default function LeftNavBar() {
           <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' className='close_white_icon' onClick={close_side_bar_menu}/>
           
           <ul>
-            <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/" id="home-link">🏠 Accueil</Link></li>
+            <li><Link  style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/" id="home-link">🏠 Accueil</Link></li>
             <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/discover" id="discover-link">✨ Découvrir</Link></li>
             <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies" id="movies-link">🎞 Films</Link></li>
             <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/series" id="series-link">🎥 Séries</Link></li>

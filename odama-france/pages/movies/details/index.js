@@ -6,14 +6,18 @@
   Version 1.1.0 - By @skyx_id_fr      "Odama, you like it ! ✨"
 */
 
-import LeftNavBar from '../../components/LeftNavBar.js';
+import LeftNavBar from '../../../components/LeftNavBar.js';
+import { useRouter } from 'next/router';
 
-export default function SeriesPage() {
+export default function DetailsMoviesPage() {
+    const router = useRouter()
+    console.log(router.query);
+
   return (
     <>
       <LeftNavBar/>
       <section className="content_page">        
-        <p>série</p>
+        <p>movies details</p>
       </section>
     </>
   )

@@ -6,11 +6,15 @@
   Version 1.1.0 - By @skyx_id_fr      "Odama, you like it ! ✨"
 */
 
+import LeftNavBar from '../../components/LeftNavBar.js';
 
 export default function ContactPage() {
   return (
     <>
-      <p>Contact</p>
+      <LeftNavBar/>
+      <section className="content_page">        
+        <p>contact</p>
+      </section>
     </>
   )
 }
