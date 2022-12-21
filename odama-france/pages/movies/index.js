@@ -27,7 +27,7 @@ export default function MoviesPage(props) {
   const file_data = props.premiere_movies;
   var i;
   let show_premiere_movies_data = [];
-
+  
   const RedirectToMoviesDetails = event => {
     var id_element = event.currentTarget.id;
     router.push({pathname: '/movies/details', query: id_element});
@@ -36,7 +36,11 @@ export default function MoviesPage(props) {
   for (let i = 0; i < file_data.length; i++){
     show_premiere_movies_data.push(
       <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[i].id}>
-        <p>{file_data[i].title}</p>
+        <img src={file_data[i].poster} className='movie_poster' alt='movie-poster'/>
+
+        <div className='movies_infos_poster'>
+          <span className='movies_tags'>{file_data[i].tags}</span>
+        </div>
       </div>
     )
   }

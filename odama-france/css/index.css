@@ -113,6 +113,7 @@ a { color: green; }
     border-radius: 25px;
     margin-top: -3px;
     padding-left: 10px;
+    padding-right: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #060e30;
@@ -126,12 +127,12 @@ a { color: green; }
     float: left;
     text-align: center;
     cursor: pointer;
-    transition: width 2s;
+    transition: width 1s;
     padding: 10px;
-    width: 110px;
     font-weight: 400;
     background-color: transparent;
     color: white;
+    width: 100px;
 }
 
 #navbar .menu_list li:hover {
@@ -190,14 +191,41 @@ a { color: green; }
 .content_page .movies_section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    margin-left: 18px;
 }
 
 .content_page .movies_section .movies_item {
-    background-color: red;
-    margin-right: 20px;
-    padding: 20px;
-    border-radius: 15px;
+    margin-right: 25px;
+    border-radius: 8px;
     cursor: pointer;
+}
+
+.content_page .movies_section .movies_item:hover {
+    transition: all 0.8s;
+    transform: scale(1.03);
+}
+
+.content_page .movies_section .movies_item .movie_poster {
+    width: 320px;
+    border-radius: 10px;
+    height: 460px;
+    margin-bottom: 40px;
+}
+
+.content_page .movies_section .movies_item .movies_infos_poster {
+    background-image: linear-gradient(to bottom, #00000000, #000000dc, #000000);
+    margin-top: -240px;
+    position: absolute;
+    width: 320px;
+    height: 200px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.content_page .movies_section .movies_item .movies_infos_poster .movies_tags {
+    margin-left: 20px;
+    margin-top: 130px;
+    position: absolute;
+    background-color: #142e60;   
 }
 /* 🎥 End of Movies section's style 🎥 */
