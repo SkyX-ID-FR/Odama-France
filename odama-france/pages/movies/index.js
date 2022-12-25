@@ -13,26 +13,23 @@ import path from 'path'
 import { useRouter } from 'next/router'
 
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), 'pages/movies/premiere_movies.json');
+  const filePath = path.join(process.cwd(), 'pages/movies/details/premiere_movies.json');
   const jsonData = await fsPromises.readFile(filePath);
   const objectData = JSON.parse(jsonData);
-
-  return {
-    props: objectData
-  }
+  return { props: objectData }
 }
 
 export default function MoviesPage(props) {
   const router = useRouter();
-  const file_data = props.premiere_movies; var i;
+  const file_data = props.premiere_movies; 
   let show_premiere_movies_data = [];
   
   const RedirectToMoviesDetails = event => {
     var id_element = event.currentTarget.id;
-    router.push({pathname: '/movies/details', query: id_element});
+    router.push({pathname: '/movies/details', query: "id=" + id_element});
   };
 
-  for (let i = 0; i < file_data.length; i++) {
+  for (let i = 1; i < file_data.length; i++) {
     show_premiere_movies_data.push (
       <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[i].id}>
         <img src={file_data[i].poster} className='movie_poster' alt='movie-poster'/>  

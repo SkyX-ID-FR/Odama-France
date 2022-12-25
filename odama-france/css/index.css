@@ -223,10 +223,19 @@ a { color: green; }
 }
 /* 🎥 End of Movies section's style 🎥 */
 
+/* 🎫 Movies details page style : 🎫 */
+.movies_details_section * {
+    background-color: red;
+    height: 100vh;
+}
+/* 🎫 End of Movies details page style 🎫 */
+
+/* 🚧 404 Page Error style : 🚧 */
 .not_found_message {
     color: white;
     font-weight: 700;
     text-align: center;
-    margin-top: 5%;
-    font-size: 22px;
+    margin-top: 8%;
+    font-size: 21px;
 }
+/* 🚧 End of 404 Page Error style 🚧 */

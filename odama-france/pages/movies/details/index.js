@@ -7,13 +7,23 @@
 */
 
 import { useRouter } from 'next/router';
+import Head from 'next/head';
+
 export default function DetailsMoviesPage() {
-    const router = useRouter()
-    console.log(router.query);
+  const router = useRouter();
+  console.log(router.query.id); 
+  /* https://63a8857cf4962215b5840adb.mockapi.io/premiere_movies */
 
   return (
     <>
-      <section>        
+      <Head>
+        <title>Odama France - Movies Details 🔥</title>
+        <meta name="description" content="Odama est la seule plateforme de streaming 100% cloud, sécurisée et open-source en France ! 🇫🇷"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="icon" href="https://zupimages.net/up/22/28/k6tc.png"/>
+      </Head>
+
+      <section className='movies_details_section'>        
         <p>movies details</p>
       </section>
     </>
