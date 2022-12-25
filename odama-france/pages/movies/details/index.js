@@ -27,20 +27,31 @@ export default function DetailsMoviesPage(props) {
     /* For the app debug mode : console.log(general_movie_data.title); */
 
     /* ✨ Then, we complete the different variables in the page : ✨ */
-    document.getElementById("title").innerHTML = general_movie_data.title;
+    document.getElementById("movie_title").innerHTML = general_movie_data.title;
+    document.getElementById("movies_details_section").style.backgroundImage = `url(${general_movie_data.background})`;
+    document.getElementById("short_infos").innerHTML = `
+      ${general_movie_data.duration} &nbsp; · &nbsp; ${general_movie_data.tags}
+    `;
   },[]);
 
   return (
     <>
       <Head>
-        <title>Odama France - Movies Details 🔥</title>
+        <title>Odama France - Détails 🔥</title>
         <meta name="description" content="Odama est la seule plateforme de streaming 100% cloud, sécurisée et open-source en France ! 🇫🇷"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="https://zupimages.net/up/22/28/k6tc.png"/>
       </Head>
 
-      <section className='movies_details_section'>        
-        <p id="title"></p>
+      <section id='movies_details_section'>  
+        <h1 id="movie_title"></h1>
+        <p id="short_infos"></p>
+
+        <div className='movies_infos'>
+          <div className='content'>
+            coucou
+          </div>
+        </div>
       </section>
     </>
   )

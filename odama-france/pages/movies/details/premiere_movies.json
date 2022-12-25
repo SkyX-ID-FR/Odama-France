@@ -5,16 +5,18 @@
             "id": 1,
             "title": "Bac Nord",
             "poster":  "https://fr.web.img3.acsta.net/pictures/21/06/07/13/11/2832970.jpg",
+            "background": "https://www.ecranlarge.com/uploads/image/001/359/bac-nord-photo-1359309.jpg",
             "description": "This is the full content of post 1",
             "tags": "Comédie, Marseille, Action",
             "duration": "1h45min"
       },
       {
             "id": 2,
-            "title": "Pey",
+            "title": "Prey",
             "poster": "https://upload.wikimedia.org/wikipedia/en/f/f4/Prey_2022_poster.png",
+            "background": "https://images6.alphacoders.com/126/1261247.jpg",
             "description": "This is the full content of post 3",
-            "tags": "Indiens, Alien, Suspens",
+            "tags": "Indiens, Alien, Thriller",
             "duration": "1h40min"
       }
   ]
