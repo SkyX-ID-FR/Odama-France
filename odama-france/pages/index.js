@@ -7,7 +7,7 @@
 */
 
 import Head from 'next/head';
-import LeftNavBar from '../components/LeftNavBar.js'
+import Header from '../components/Header.js'
 
 export default function Home() {
   /* 
@@ -214,7 +214,7 @@ export default function Home() {
         <link rel="icon" href="https://zupimages.net/up/22/28/k6tc.png"/>
       </Head>
 
-      <LeftNavBar/>
+      <Header/>
       <main className='content_page' id="content_page">
         <div className='hero_section'>
           <h1>Odama is back ! 🎉</h1>

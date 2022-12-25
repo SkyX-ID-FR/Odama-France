@@ -1,29 +1,12 @@
 {
   "premiere_movies": [
       {
-          "id": 1,
-          "title": "Bac Nord",
-          "poster":  "https://fr.web.img3.acsta.net/pictures/21/06/07/13/11/2832970.jpg",
-          "tags": ["Action", "Comédie", "Marseille"],
-          "description": "This is the full content of post 1"
-      },
-      {
-          "id": 2,
-          "title": "Athena",
-          "poster": "https://upload.wikimedia.org/wikipedia/en/c/ca/Athena_%282022_film%29.png",
-          "description": "This is the full content of post 2"
-      },
-      {
-          "id": 3,
-          "title": "Pey",
-          "poster": "https://upload.wikimedia.org/wikipedia/en/f/f4/Prey_2022_poster.png",
-          "description": "This is the full content of post 3"
-      },
-      {
-          "id": 4,
-          "title": "Les Segpas",
-          "poster": "https://fr.web.img5.acsta.net/pictures/22/02/04/17/58/3314454.jpg",
-          "description": "This is the full content of post 4"
+            "id": 1,
+            "title": "Bac Nord",
+            "poster":  "https://fr.web.img3.acsta.net/pictures/21/06/07/13/11/2832970.jpg",
+            "description": "This is the full content of post 1",
+            "tags": "Comédie, Marseille, Action",
+            "duration": "1h45min"
       }
   ]
 }

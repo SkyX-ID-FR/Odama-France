@@ -9,6 +9,6 @@
 
 export default function not_found() {
     return <>
-      <h1>404 Perso Page LOL</h1>
+      <h1 className="not_found_message">Désolé mais cette page est introuvable et/ou en cours de dev ! 🚧<br/><font size="3">Repassez plus tard.. 😊</font></h1>
     </>
   }

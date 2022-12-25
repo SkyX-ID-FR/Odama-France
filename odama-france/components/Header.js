@@ -32,11 +32,11 @@ export default function LeftNavBar() {
             <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/discover" id="discover-link">✨ Découvrir</Link></li>
             <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies" id="movies-link">🎞 Films</Link></li>
             <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/series" id="series-link">🎥 Séries</Link></li>
-            <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/contact" id="contact-link">✉ Contact</Link></li>
+            <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/contact" id="contact-link">📬 Contact</Link></li>
           </ul>
 
           <footer className='responsive_menu_footer'>
-            <p>Made with <font color="red">❤</font> by @skyx_id_fr</p>
+            <p>Made with <font color="red">❤</font> by @skyx_id_fr <br/> Version Officiel BETA</p>
           </footer>
       </div>
       
@@ -45,11 +45,11 @@ export default function LeftNavBar() {
         <img onClick={open_side_bar_menu} src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png' className='menu_white_icon' alt='menu_icon'/>
 
         <ul className="menu_list">
-          <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/" id="home-link">🏠 Accueil</Link></li>
-          <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/discover" id="discover-link">✨ Découvrir</Link></li>
-          <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies" id="movies-link">🎞 Films</Link></li>
-          <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/series" id="series-link">🎥 Séries</Link></li>
-          <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/contact" id="contact-link">✉ Contact</Link></li>
+          <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/" id="home-link">Accueil</Link></li>
+          <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/discover" id="discover-link">Découvrir</Link></li>
+          <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies" id="movies-link">Films</Link></li>
+          <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/series" id="series-link">Séries</Link></li>
+          <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/contact" id="contact-link">Contact</Link></li>
         </ul>
       </section>
     </>
