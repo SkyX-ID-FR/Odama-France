@@ -8,6 +8,14 @@
             "description": "This is the full content of post 1",
             "tags": "Comédie, Marseille, Action",
             "duration": "1h45min"
+      },
+      {
+            "id": 2,
+            "title": "Pey",
+            "poster": "https://upload.wikimedia.org/wikipedia/en/f/f4/Prey_2022_poster.png",
+            "description": "This is the full content of post 3",
+            "tags": "Indiens, Alien, Suspens",
+            "duration": "1h40min"
       }
   ]
 }

@@ -6,13 +6,29 @@
   Version 1.1.0 - By @skyx_id_fr      "Odama, you like it ! ✨"
 */
 
-import { useRouter } from 'next/router';
 import Head from 'next/head';
+import { useEffect } from 'react' 
+import fsPromises from 'fs/promises';
+import path from 'path'
 
-export default function DetailsMoviesPage() {
-  const router = useRouter();
-  console.log(router.query.id); 
-  /* https://63a8857cf4962215b5840adb.mockapi.io/premiere_movies */
+export async function getStaticProps() {
+  const filePath = path.join(process.cwd(), 'pages/movies/details/premiere_movies.json');
+  const jsonData = await fsPromises.readFile(filePath);
+  const objectData = JSON.parse(jsonData);
+  return { props: objectData }
+}
+
+export default function DetailsMoviesPage(props) {
+  const movies_data = props.premiere_movies; 
+
+  useEffect(function() {
+    const movie_id = localStorage.getItem('item_id');
+    const general_movie_data = movies_data[movie_id];
+    /* For the app debug mode : console.log(general_movie_data.title); */
+
+    /* ✨ Then, we complete the different variables in the page : ✨ */
+    document.getElementById("title").innerHTML = general_movie_data.title;
+  },[]);
 
   return (
     <>
@@ -24,7 +40,7 @@ export default function DetailsMoviesPage() {
       </Head>
 
       <section className='movies_details_section'>        
-        <p>movies details</p>
+        <p id="title"></p>
       </section>
     </>
   )
