@@ -18,6 +18,17 @@
     background-color: #142e60;
 }
 
+/* 
+✨ There is somethings to test with this : ✨
+html {
+    background: url('https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fnetflixlife.com%2Ffiles%2F2022%2F03%2FTheUmbrellaAcademy_Season3_Episode1_00_07_52_17R.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} 
+*/
+
 ::-webkit-scrollbar { width: 7px; }
 ::-webkit-scrollbar-track { background: transparent; }
   
@@ -27,7 +38,7 @@
 }
 
 a { color: green; }
-/* 📊 Complétementaire style : 📊 */
+/* 📊 Completementary style : 📊 */
 .github_link {
     margin-top: 20px;
     position: absolute;
@@ -65,7 +76,7 @@ a { color: green; }
 .github_link .github_button_logo {
     width: 35px;
 }
-/* 📊 End of Complétementaire style 📊 */
+/* 📊 End of Completementary style 📊 */
 
 /* 📃 NavBar's style : 📃 */
 #navbar {
@@ -134,11 +145,12 @@ a { color: green; }
 /* 📦 Content Page's style : 📦 */
 .content_page * { background-color: transparent; }
 .content_page {
-    background-color: transparent;
+    backdrop-filter: blur(10px);
+    height: 100%;
+    width: 100%;
     color: white;
-    margin-top: 165px;
+    padding-top: 165px;
     position: absolute;
-    margin-left: 25px;
 }
 
 .content_page .hero_section {
@@ -174,8 +186,8 @@ a { color: green; }
 }
 
 .movies_section {
-    margin-top: -8px;
-    margin-left: 16px;
+    margin-top: -5px;
+    margin-left: 40px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -392,11 +404,17 @@ a { color: green; }
 /* 🎫 End of Movies details page style 🎫 */
 
 /* 🚧 404 Page Error style : 🚧 */
-.not_found_message {
+.error_page_container {
+    background-color: #040a22;
+    padding-top: 8%;
+    height: 100vh;
+    width: 100%;
+}
+
+.error_page_container .not_found_message {
     color: white;
     font-weight: 700;
     text-align: center;
-    margin-top: 8%;
     font-size: 21px;
 }
 /* 🚧 End of 404 Page Error style 🚧 */

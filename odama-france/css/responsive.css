@@ -163,6 +163,26 @@
 }
 
 @media only screen and (max-width: 503px) {
+    .movies_section { margin-left: 15px; }
+    .movies_section .movies_item { margin-right: 15px; }
+
+    .movies_section .movies_item .movie_poster {
+        width: 170px;
+        height: 240px;
+    }
+
+    .movies_section .movies_item .movies_infos_poster { width: 170px; }
+    .movies_section .movies_item .movies_infos_poster .movies_tags {
+        margin-top: 93px;
+        margin-left: 10px;
+    }
+
+    .movies_section .movies_item .movies_infos_poster #love_icon svg {
+        margin: 0;
+        margin-left: 80%;
+        margin-top: -120px;
+    }
+
     #movies_details_section, #movies_details_section .movies_infos { height: 130vh; }
     #movies_details_section #movie_title { 
         font-size: 80px; 
@@ -216,6 +236,7 @@
 
     #movies_details_section .back_link p { margin-top: 23px; }
     #movies_details_section #love_icon { margin-top: 22px; }
+    #movies_details_section #productors #name { margin-top: 3px; }
 }
 
 @media only screen and (max-width: 465px) {

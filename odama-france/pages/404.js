@@ -16,6 +16,8 @@ export default function not_found() {
         <link rel="icon" href="https://zupimages.net/up/22/28/k6tc.png"/>
       </Head>
 
-      <h1 className="not_found_message">🚧 Désolé mais cette page est introuvable et/ou en cours de dev ! 🚧<br/><font size="3">Revenez plus tard.. 😊</font></h1>
+      <div className='error_page_container'>
+        <h1 className="not_found_message">🚧 Désolé mais cette page est introuvable et/ou en cours de dev ! 🚧<br/><font size="3">Revenez plus tard.. 😊</font></h1>
+      </div>
     </>
   }
