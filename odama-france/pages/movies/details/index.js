@@ -11,6 +11,7 @@ import { useEffect } from 'react';
 import fsPromises from 'fs/promises';
 import path from 'path';
 import Link from 'next/link';
+import $ from 'jquery';
 
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), 'pages/movies/details/premiere_movies.json');
@@ -25,6 +26,7 @@ export default function DetailsMoviesPage(props) {
   useEffect(function() {
     const movie_id = localStorage.getItem('item_id');
     const general_movie_data = movies_data[movie_id];
+    /* document.getElementById("movie_watch_popup").style.display = "none"; */
 
     /* ✨ Then, we complete the different variables in the page : ✨ */
     document.getElementById("movie_title").innerHTML = general_movie_data.title;
@@ -36,6 +38,9 @@ export default function DetailsMoviesPage(props) {
     document.getElementById("name").innerHTML = general_movie_data.productors[0].name;
     document.getElementById("synopsis_description").innerHTML = general_movie_data.synopsis;
   }, []);
+
+  function open_movie_popup() { $("#movie_watch_popup").fadeIn(400); }
+  function close_movie_popup() { $("#movie_watch_popup").fadeOut(400); }
 
   return (
     <>
@@ -53,7 +58,12 @@ export default function DetailsMoviesPage(props) {
         <p id="short_infos"></p>
         <div id='productors'><img id="profile_pic" src=''/><p id="name"></p></div>
 
-        <div id='button_container'><button id="watch_button"><img src="https://zupimages.net/up/22/28/exo5.png" alt="app_logo"/><p>Voir ce film avec Odama !</p></button></div>
+        <div id='button_container'><button onClick={open_movie_popup} id="watch_button"><img src="https://zupimages.net/up/22/28/exo5.png" alt="app_logo"/><p>Voir ce film avec Odama !</p></button></div>
+
+        <div id='movie_watch_popup'>
+          <img onClick={close_movie_popup} id="popup_close_icon" src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' alt="close_icon"/>
+          <iframe id="iframe_popup" frameborder="0" src="https://mega.nz/embed/XChAmSZZ#kCmYgOrEt-6-8X1sd0dFGHFxMXSIriU8FK9bfu3BCrA" allowfullscreen="true"></iframe>
+        </div>
 
         <div className='movies_infos'>
           <div className='content'>

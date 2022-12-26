@@ -401,6 +401,30 @@ a { color: green; }
     font-weight: 300;
     position: absolute;
 }
+
+#movies_details_section #movie_watch_popup {
+    backdrop-filter: blur(10px);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    display: none;
+    text-align: center;
+}
+
+#movies_details_section #movie_watch_popup #popup_close_icon {
+    width: 30px;
+    margin: 10px;
+    float: right;
+    cursor: pointer;
+}
+
+#movies_details_section #movie_watch_popup #iframe_popup {
+    width: 80%;
+    height: 60%;
+    margin-top: 5%;
+    border-radius: 10px!important;
+}
 /* 🎫 End of Movies details page style 🎫 */
 
 /* 🚧 404 Page Error style : 🚧 */

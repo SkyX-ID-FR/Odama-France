@@ -156,6 +156,11 @@
     }
 
     #movies_details_section #productors { margin-left: 34%; }
+    #movies_details_section #movie_watch_popup #iframe_popup {
+        height: 90%;
+        margin: 0;
+        width: 95%;
+    }
 }
 
 @media only screen and (max-width: 582px) {
