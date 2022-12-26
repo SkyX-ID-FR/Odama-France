@@ -62,7 +62,8 @@ export default function DetailsMoviesPage(props) {
 
         <div id='movie_watch_popup'>
           <img onClick={close_movie_popup} id="popup_close_icon" src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' alt="close_icon"/>
-          <iframe id="iframe_popup" frameborder="0" src="https://mega.nz/embed/XChAmSZZ#kCmYgOrEt-6-8X1sd0dFGHFxMXSIriU8FK9bfu3BCrA" allowfullscreen="true"></iframe>
+          {/* id="iframe_popup" */}
+          <iframe id="iframe_popup" src="https://streamable.com/e/f1v6b0?controls=0&autoplay=1&loop=0" frameborder="0" allowFullScreen allow="autoplay"></iframe>
         </div>
 
         <div className='movies_infos'>
