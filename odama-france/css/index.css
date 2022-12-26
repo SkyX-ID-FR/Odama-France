@@ -323,7 +323,7 @@ a { color: green; }
 #movies_details_section #button_container #watch_button {
     background-color: #071241;
     border-color: transparent;
-    border-radius: 25px;
+    border-radius: 20px;
     color: white;
     z-index: 30;
     width: 280px;
@@ -333,6 +333,8 @@ a { color: green; }
     box-shadow: 0px 0px 30px rgb(113, 113, 113);
     transition: all 0.3s;
     margin-top: 450px;
+    padding-top: 5px;
+    padding-bottom: 4px;
 }
 
 #movies_details_section #button_container #watch_button:hover { transform: scale(1.1); }
@@ -345,7 +347,7 @@ a { color: green; }
 #movies_details_section #button_container #watch_button p {
     float: left;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 11px;
     margin-left: 10px;
 }
 
