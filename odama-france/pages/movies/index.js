@@ -54,7 +54,7 @@ export default function MoviesPage(props) {
 
       <Header/>
       <section className="content_page">
-        <h1 id="text_supp">Tout les films (en cours de dev) 👋 : </h1>        
+        {/* <h1 id="text_supp">Tout les films (en cours de dev) 👋 : </h1>  */}       
         <div className='movies_section'>
           {show_premiere_movies_data}
         </div>

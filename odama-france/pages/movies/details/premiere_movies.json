@@ -8,7 +8,12 @@
             "background": "https://www.ecranlarge.com/uploads/image/001/359/bac-nord-photo-1359309.jpg",
             "description": "This is the full content of post 1",
             "tags": "Comédie, Marseille, Action",
-            "duration": "1h45min"
+            "duration": "1h45min",
+            "year": "2022",
+            "synopsis": "2012. Les quartiers Nord de Marseille détiennent un triste record : la zone au taux de criminalité le plus élevé de France. Poussée par sa hiérarchie, la BAC Nord, brigade de terrain, cherche sans cesse à améliorer ses résultats. Dans un secteur à haut risque, les flics adaptent leurs méthodes, franchissant parfois la ligne jaune. Jusqu'au jour où le système judiciaire se retourne contre eux…",
+            "productors" : [
+                  { "name": "Cédric Jimenez <br/> Français 🇫🇷", "profile_pic": "https://pbs.twimg.com/card_img/1605012415048863745/NfReCc3-?format=jpg&name=medium" }
+            ]
       },
       {
             "id": 2,
@@ -17,7 +22,12 @@
             "background": "https://images6.alphacoders.com/126/1261247.jpg",
             "description": "This is the full content of post 3",
             "tags": "Indiens, Alien, Thriller",
-            "duration": "1h40min"
+            "duration": "1h40min",
+            "year": "2022",
+            "synopsis": "Il y a trois siècles sur le territoire des Comanches, Naru, une farouche et brillante guerrière, se fait désormais un devoir de protéger sa tribu dès qu’un danger la menace. Elle découvre que la proie qu’elle traque en ce moment n’est autre qu’un prédateur extraterrestre particulièrement évolué doté d’un arsenal de pointe des plus sophistiqués. Une confrontation aussi perverse que terrifiante s’engage bientôt entre les deux adversaires...",
+            "productors" : [
+                  { "name": "Dan Trachtenberg <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img2.acsta.net/c_310_420/pictures/16/03/08/09/14/260581.jpg" }
+            ]
       }
   ]
 }
