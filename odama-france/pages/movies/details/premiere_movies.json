@@ -18,15 +18,6 @@
             "description": "This is the full content of post 3",
             "tags": "Indiens, Alien, Thriller",
             "duration": "1h40min"
-      },
-      {
-            "id": 3,
-            "title": "Le chant du Loup",
-            "poster": "https://www.picclickimg.com/2LIAAOSwr~JcK7P0/Le-Chant-du-loup-Affiche-cinema-40X60.webp",
-            "background": "https://www.ecranlarge.com/media/cache/1600x1200/uploads/image/001/051/le-chant-du-loup-photo-francois-civil-mathieu-kassovitz-omar-sy-1051647.jpg",
-            "description": "This is the full content of post 3",
-            "tags": "Guerre, Sous-marin, Thriller",
-            "duration": "2h10min"
       }
   ]
 }
