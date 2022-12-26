@@ -1,0 +1,20 @@
+{
+  "all_movies": [
+      {},
+      {
+            "id": 1,
+            "title": "Bac Nord",
+            "poster":  "https://fr.web.img3.acsta.net/pictures/21/06/07/13/11/2832970.jpg",
+            "background": "https://www.ecranlarge.com/uploads/image/001/359/bac-nord-photo-1359309.jpg",
+            "description": "This is the full content of post 1",
+            "tags": "Comédie, Marseille, Action",
+            "duration": "1h45min",
+            "year": "2020",
+            "trailer": "https://www.youtube.com/watch?v=iyVLnChTs8w&ab_channel=STUDIOCANALFrance",
+            "synopsis": "2012. Les quartiers Nord de Marseille détiennent un triste record : la zone au taux de criminalité le plus élevé de France. Poussée par sa hiérarchie, la BAC Nord, brigade de terrain, cherche sans cesse à améliorer ses résultats. Dans un secteur à haut risque, les flics adaptent leurs méthodes, franchissant parfois la ligne jaune. Jusqu'au jour où le système judiciaire se retourne contre eux…",
+            "productors" : [
+                  { "name": "Cédric Jimenez <br/> Français 🇫🇷", "profile_pic": "https://pbs.twimg.com/card_img/1605012415048863745/NfReCc3-?format=jpg&name=medium" }
+            ]
+      }
+  ]
+}

@@ -37,7 +37,11 @@ html {
    border-radius: 15px;
 }
 
-a { color: green; }
+a { 
+    color: rgb(158, 158, 158); 
+    text-decoration: none; 
+}
+
 /* 📊 Completementary style : 📊 */
 .github_link {
     margin-top: 20px;
@@ -178,13 +182,6 @@ a { color: green; }
 /* 📦 End of Content Page's style 📦 */
 
 /* 🎥 Movies section's style : 🎥 */
-.content_page #text_supp {
-    margin-left: 20px;
-    font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
 .movies_section {
     margin-top: -5px;
     margin-left: 40px;
@@ -192,9 +189,17 @@ a { color: green; }
     flex-wrap: wrap;
 }
 
+.content_page #ind_text {
+    margin-left: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
 .movies_section .movies_item {
     margin-right: 25px;
     border-radius: 8px;
+    float: left;
     cursor: pointer;
 }
 
@@ -422,6 +427,7 @@ a { color: green; }
 #movies_details_section #movie_watch_popup #popup_player {
     margin-top: 5%;
     border-radius: 15px;
+    width: 40%;
 }
 /* 🎫 End of Movies details page style 🎫 */
 
@@ -431,6 +437,10 @@ a { color: green; }
     padding-top: 8%;
     height: 100vh;
     width: 100%;
+}
+
+.error_page_container * {
+    background-color: #040a22;
 }
 
 .error_page_container .not_found_message {

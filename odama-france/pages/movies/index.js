@@ -13,7 +13,7 @@ import path from 'path'
 import { useRouter } from 'next/router'
 
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), 'pages/movies/details/premiere_movies.json');
+  const filePath = path.join(process.cwd(), 'pages/movies/details/movies.json');
   const jsonData = await fsPromises.readFile(filePath);
   const objectData = JSON.parse(jsonData);
   return { props: objectData }
@@ -21,8 +21,8 @@ export async function getStaticProps() {
 
 export default function MoviesPage(props) {
   const router = useRouter();
-  const file_data = props.premiere_movies; 
-  let show_premiere_movies_data = [];
+  const file_data = props.all_movies; 
+  let show_all_movies = [];
   
   const RedirectToMoviesDetails = event => {
     var id_element = event.currentTarget.id;
@@ -31,7 +31,7 @@ export default function MoviesPage(props) {
   };
 
   for (let i = 1; i < file_data.length; i++) {
-    show_premiere_movies_data.push (
+    show_all_movies.push (
       <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[i].id}>
         <img src={file_data[i].poster} className='movie_poster' alt='movie-poster'/>  
         
@@ -54,9 +54,14 @@ export default function MoviesPage(props) {
 
       <Header/>
       <section className="content_page">
-        {/* <h1 id="text_supp">Tout les films (en cours de dev) 👋 : </h1>  */}       
+        <h1 id="ind_text">Box office du moment (en cours de dev) 🎁 : </h1>  
         <div className='movies_section'>
-          {show_premiere_movies_data}
+          {show_all_movies}
+        </div><br/><br/>
+
+        <h1 id="ind_text">Tout les films de la plateforme (en cours de dev) 👋 : </h1>  
+        <div className='movies_section'>
+          {show_all_movies}
         </div>
       </section>
     </>

@@ -15,14 +15,14 @@ import $ from 'jquery';
 import ReactPlayer from 'react-player';
 
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), 'pages/movies/details/premiere_movies.json');
+  const filePath = path.join(process.cwd(), 'pages/movies/details/movies.json');
   const jsonData = await fsPromises.readFile(filePath);
   const objectData = JSON.parse(jsonData);
   return { props: objectData }
 }
 
 export default function DetailsMoviesPage(props) {
-  const movies_data = props.premiere_movies; 
+  const movies_data = props.all_movies; 
 
   useEffect(function() {
     const movie_id = localStorage.getItem('item_id');
@@ -37,7 +37,7 @@ export default function DetailsMoviesPage(props) {
     `;
     document.getElementById("profile_pic").src = general_movie_data.productors[0].profile_pic;
     document.getElementById("name").innerHTML = general_movie_data.productors[0].name;
-    document.getElementById("synopsis_description").innerHTML = general_movie_data.synopsis;
+    document.getElementById("synopsis_description").innerHTML = `${general_movie_data.synopsis} <br/><br/><br/><a target="_blank" href="${general_movie_data.trailer}">🎬 Voir la bande-annonce de ce film ! 🎬</a>`;
   }, []);
 
   function open_movie_popup() { $("#movie_watch_popup").fadeIn(400); }
@@ -63,7 +63,8 @@ export default function DetailsMoviesPage(props) {
 
         <div id='movie_watch_popup'>
           <img onClick={close_movie_popup} id="popup_close_icon" src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' alt="close_icon"/>
-          {/* id="popup_player" */}
+        
+          {/* 🔊 Movie Player Component (iframe) : 🔊 */}
           <video id="popup_player" controls="1"><source src="https://edef1.pcloud.com/cBZ9sDYg4ZrfVIvfZXEw5ZZUHE6c7ZQ5ZZBf0ZkZ7tA09ZaVZxVZvXZL0ZkXZh0Z37Zn0ZlVZDXZekZ10ZyXZtVZtFcYZazbp8KPmijkxMBzqlH2mayDfJNl7/Odama%20-%20Bac%20Nord%202020.mp4" type="video/mp4"/></video>
         </div>
 
@@ -74,8 +75,7 @@ export default function DetailsMoviesPage(props) {
             <p id="synopsis_description"></p>
           </div>
         </div>
-
-        <footer id="movies_details_footer">Made with <font color="red">❤</font> by @skyx_id_fr <br/>Version BETA</footer>
+        {/* <footer id="movies_details_footer">Made with <font color="red">❤</font> by @skyx_id_fr <br/>Version BETA</footer> */}
       </section>
     </>
   )
