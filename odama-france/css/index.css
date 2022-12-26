@@ -238,7 +238,7 @@ a { color: green; }
 }
 
 #movies_details_section #movie_title {
-    font-weight: 900;
+    font-weight: 750;
     font-size: 110px; 
     z-index: 20;
     margin-top: 150px;
