@@ -419,7 +419,7 @@ a { color: green; }
     cursor: pointer;
 }
 
-#movies_details_section #movie_watch_popup #iframe_popup {
+#movies_details_section #movie_watch_popup #popup_player {
     width: 80%;
     height: 60%;
     margin-top: 5%;

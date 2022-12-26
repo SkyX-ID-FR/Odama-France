@@ -162,9 +162,10 @@
         position: fixed;
     }
 
-    #movies_details_section #movie_watch_popup #iframe_popup {
+    #movies_details_section #movie_watch_popup #popup_player {
         height: 55%;
         margin: 0;
+        margin-top: -230px;
         width: 93%;
     }
 }

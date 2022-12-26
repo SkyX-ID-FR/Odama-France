@@ -12,6 +12,7 @@ import fsPromises from 'fs/promises';
 import path from 'path';
 import Link from 'next/link';
 import $ from 'jquery';
+import ReactPlayer from 'react-player';
 
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), 'pages/movies/details/premiere_movies.json');
@@ -62,8 +63,8 @@ export default function DetailsMoviesPage(props) {
 
         <div id='movie_watch_popup'>
           <img onClick={close_movie_popup} id="popup_close_icon" src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' alt="close_icon"/>
-          {/* id="iframe_popup" */}
-          <iframe id="iframe_popup" src="https://streamable.com/e/f1v6b0?controls=0&autoplay=1&loop=0" frameborder="0" allowFullScreen allow="autoplay"></iframe>
+          {/* id="popup_player" */}
+          <video id="popup_player" controls="1"><source src="https://edef1.pcloud.com/cBZ9sDYg4ZrfVIvfZXEw5ZZUHE6c7ZQ5ZZBf0ZkZ7tA09ZaVZxVZvXZL0ZkXZh0Z37Zn0ZlVZDXZekZ10ZyXZtVZtFcYZazbp8KPmijkxMBzqlH2mayDfJNl7/Odama%20-%20Bac%20Nord%202020.mp4" type="video/mp4"/></video>
         </div>
 
         <div className='movies_infos'>
