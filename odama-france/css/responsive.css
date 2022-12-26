@@ -159,6 +159,7 @@
 
     #movies_details_section #movie_watch_popup {
         height: 150vh;
+        position: fixed;
     }
 
     #movies_details_section #movie_watch_popup #iframe_popup {
