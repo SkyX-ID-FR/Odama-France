@@ -193,36 +193,72 @@
         margin-top: -120px;
     }
 
+    #movies_details_section .movies_infos {
+        margin-top: -350px;
+        height: 170vh!important;
+    }
+
+    #movies_details_section #love_icon svg { 
+        margin-top: -50px;
+        position: absolute;
+    }
+
+    #movies_details_section .back_link {
+        margin-top: -50px;
+        width: 100%;
+        position: absolute;
+    }
+
+    #movies_details_section {
+        position: relative;
+        padding-top: 50px;
+    }
+
     #movies_details_section, #movies_details_section .movies_infos { height: 130vh; }
     #movies_details_section #movie_title { 
         font-size: 80px; 
-        margin-top: 130px;
         font-weight: 750;
+        position: inherit;
+        margin-top: 100px;
     }
     
     #movies_details_section #short_infos { 
         font-size: 14px; 
-        margin-top: 220px; 
+        margin-top: 10px;
+        position: relative;
+    }
+
+    #movies_details_section .movies_infos {
+        margin-top: -600px;
+        padding-top: 235px;
     }
 
     #movies_details_section .movies_infos .content {
-        margin-top: 385px;
+        margin-top: 0px;
         margin-left: 25px;
+        position: relative;
     }
 
     #movies_details_section #productors { 
         margin-left: 30%; 
-        margin-top: 280px;
+        margin-top: 440px;
     }
 
     #movies_details_section .movies_infos .content { 
         text-align: left;
         margin-left: 25px;
+        position: relative;
     }
 
     #movies_details_section .movies_infos .content #synopsis_title { 
         font-size: 47px; 
-        margin-top: 545px;
+        margin-top: 480px;
+        position: relative;
+    }
+
+    #movies_details_section #productors {
+        position: relative;
+        margin-top: 45px;
     }
     
     #movies_details_section .movies_infos .content #warning_message { 
@@ -253,6 +289,12 @@
         margin-left: 20px;
         width: 90%;
         font-size: 17px;
+    }
+
+    #movies_details_section #button_container #watch_button {
+        margin-top: 70px;
+        margin-left: 10px;
+        position: relative;
     }
 }
 
