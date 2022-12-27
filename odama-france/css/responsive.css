@@ -181,6 +181,20 @@
         height: 240px;
     }
 
+    #movies_details_section #movie_watch_popup {
+        padding-top: 10px;
+    }
+
+    #movies_details_section #movie_watch_popup {
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+
+    #movies_details_section #movie_watch_popup #popup_close_icon {
+        margin-top: 0px;
+    }
+
     .movies_section .movies_item .movies_infos_poster { width: 170px; }
     .movies_section .movies_item .movies_infos_poster .movies_tags {
         margin-top: 93px;
@@ -224,7 +238,7 @@
     
     #movies_details_section #short_infos { 
         font-size: 14px; 
-        margin-top: 10px;
+        margin-top: 5px;
         position: relative;
     }
 
