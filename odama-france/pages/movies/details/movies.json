@@ -6,7 +6,6 @@
             "title": "Bac Nord",
             "poster":  "https://fr.web.img3.acsta.net/pictures/21/06/07/13/11/2832970.jpg",
             "background": "https://www.ecranlarge.com/uploads/image/001/359/bac-nord-photo-1359309.jpg",
-            "description": "This is the full content of post 1",
             "tags": "Comédie, Marseille, Action",
             "duration": "1h45min",
             "year": "2020",
@@ -15,6 +14,21 @@
             "synopsis": "2012. Les quartiers Nord de Marseille détiennent un triste record : la zone au taux de criminalité le plus élevé de France. Poussée par sa hiérarchie, la BAC Nord, brigade de terrain, cherche sans cesse à améliorer ses résultats. Dans un secteur à haut risque, les flics adaptent leurs méthodes, franchissant parfois la ligne jaune. Jusqu'au jour où le système judiciaire se retourne contre eux…",
             "productors" : [
                   { "name": "Cédric Jimenez <br/> Français 🇫🇷", "profile_pic": "https://pbs.twimg.com/card_img/1605012415048863745/NfReCc3-?format=jpg&name=medium" }
+            ]
+      },
+      {
+            "id": 2,
+            "title": "Violent Night",
+            "poster":  "https://fr.web.img6.acsta.net/pictures/22/10/19/17/48/3044641.jpg",
+            "background": "https://dx35vtwkllhj9.cloudfront.net/universalstudios/violent-night/images/bg.jpg",
+            "tags": "Comédie, Noêl, Action",
+            "duration": "1h52min",
+            "year": "2022",
+            "source": "https://edef1.pcloud.com/cBZ9sDYg4ZrfVIvfZZZHBr6c7ZQ5ZZBf0ZkZ7tA09ZaVZxVZvXZL0ZkXZh0Z37Zn0ZlVZDXZekZ10ZyXZtVZtFcYZyCTPPGteOnRqQP0i2W9eDyPAn8i7/Odama%20-%20Bac%20Nord%202020.mp4",
+            "trailer": "https://www.youtube.com/watch?v=a53e4HHnx_s",
+            "synopsis": "Une équipe d'élite de mercenaires fait irruption dans un complexe familial la veille de Noël, prenant tout le monde en otage à l'intérieur. Cependant, ils ne sont pas préparés à un combattant surprise: le Père Noël est sur le terrain et il est sur le point de montrer pourquoi ce Nick n'est pas un saint.",
+            "productors" : [
+                  { "name": "Tommy Wirkola <br/> Norvégien 🇳🇴", "profile_pic": "https://fr.web.img3.acsta.net/c_310_420/pictures/17/06/02/10/32/439089.jpg" }
             ]
       }
   ]
