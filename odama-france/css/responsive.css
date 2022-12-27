@@ -197,6 +197,7 @@
     #movies_details_section #movie_title { 
         font-size: 80px; 
         margin-top: 130px;
+        font-weight: 750;
     }
     
     #movies_details_section #short_infos { 
