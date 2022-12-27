@@ -38,6 +38,7 @@ export default function DetailsMoviesPage(props) {
     document.getElementById("profile_pic").src = general_movie_data.productors[0].profile_pic;
     document.getElementById("name").innerHTML = general_movie_data.productors[0].name;
     document.getElementById("synopsis_description").innerHTML = `${general_movie_data.synopsis} <br/><br/><br/><a target="_blank" href="${general_movie_data.trailer}">🎬 Voir la bande-annonce de ce film ! 🎬</a>`;
+    document.getElementById("movie_component").innerHTML = `<video id="popup_player" controls="1"><source id="movie_source" src="${general_movie_data.source}" type="video/mp4"/>Your browser don't support HTML video tag :/</video>`
   }, []);
 
   function open_movie_popup() { $("#movie_watch_popup").fadeIn(400); }
@@ -63,9 +64,8 @@ export default function DetailsMoviesPage(props) {
 
         <div id='movie_watch_popup'>
           <img onClick={close_movie_popup} id="popup_close_icon" src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' alt="close_icon"/>
-        
           {/* 🔊 Movie Player Component (iframe) : 🔊 */}
-          <video id="popup_player" controls="1"><source src="https://edef1.pcloud.com/cBZ9sDYg4ZrfVIvfZXEw5ZZUHE6c7ZQ5ZZBf0ZkZ7tA09ZaVZxVZvXZL0ZkXZh0Z37Zn0ZlVZDXZekZ10ZyXZtVZtFcYZazbp8KPmijkxMBzqlH2mayDfJNl7/Odama%20-%20Bac%20Nord%202020.mp4" type="video/mp4"/></video>
+          <div id='movie_component'></div>
         </div>
 
         <div className='movies_infos'>

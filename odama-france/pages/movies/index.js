@@ -27,7 +27,7 @@ export default function MoviesPage(props) {
   const RedirectToMoviesDetails = event => {
     var id_element = event.currentTarget.id;
     localStorage.setItem('item_id', id_element);
-    router.push({pathname: '/movies/details'/* , query: "id=" + id_element */});
+    router.push({pathname: '/movies/details'});
   };
 
   for (let i = 1; i < file_data.length; i++) {
