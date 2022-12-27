@@ -30,6 +30,20 @@
             "productors" : [
                   { "name": "Tommy Wirkola <br/> Norvégien 🇳🇴", "profile_pic": "https://fr.web.img3.acsta.net/c_310_420/pictures/17/06/02/10/32/439089.jpg" }
             ]
+      },
+      {
+            "id": 3,
+            "title": "Troll",
+            "poster": "https://www.themoviedb.org/t/p/original/ulgKdif3ubMACDltr8VZy6fyVjW.jpg",
+            "background": "https://bloody-disgusting.com/wp-content/uploads/2022/11/Troll_00_35_52_20_Jallo_Faber-scaled.jpg",
+            "tags": "Monstre, Action",
+            "year": "2022",
+            "source": "#",
+            "trailer": "https://www.youtube.com/watch?v=AiohkY_XQYQ",
+            "synopsis": "Lorsqu'une explosion dans une montagne en Norvège réveille un ancien troll, les autorités font appel à une paléontologue intrépide pour l'empêcher de semer le chaos.",
+            "productors": [
+                  { "name": "Roar Uthaug <br/> Norvégien 🇳🇴", "profile_pic": "https://fr.web.img3.acsta.net/c_310_420/pictures/15/08/26/14/05/482876.jpg"}
+            ]
       }
   ]
 }
