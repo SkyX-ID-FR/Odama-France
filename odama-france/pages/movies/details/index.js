@@ -38,7 +38,7 @@ export default function DetailsMoviesPage(props) {
     document.getElementById("profile_pic").src = general_movie_data.productors[0].profile_pic;
     document.getElementById("name").innerHTML = general_movie_data.productors[0].name;
     document.getElementById("synopsis_description").innerHTML = `${general_movie_data.synopsis} <br/><br/><br/><a target="_blank" href="${general_movie_data.trailer}">🎬 Voir la bande-annonce de ce film ! 🎬</a>`;
-    document.getElementById("movie_component").innerHTML = ``
+    document.getElementById("movie_component").innerHTML = `<iframe src="//player.vimple.ru/iframe/575102818140479fbc91920b52195ed1" id="popup_player" frameborder="0" style="z-index:2147483647;" allowfullscreen></iframe>`;
   }, []);
 
   function open_movie_popup() { $("#movie_watch_popup").fadeIn(400); }
@@ -66,7 +66,6 @@ export default function DetailsMoviesPage(props) {
           <img onClick={close_movie_popup} id="popup_close_icon" src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' alt="close_icon"/>
           {/* 🔊 Movie Player Component (iframe) : 🔊 */}
           <div id='movie_component'></div>
-          <script src="https://fast.wistia.com/embed/medias/cnp2p11ll3.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div id="popup_player" class="wistia_responsive_padding"><div class="wistia_responsive_wrapper"><span class="wistia_embed wistia_async_cnp2p11ll3 videoFoam=true">&nbsp;</span></div></div>
         </div>
 
         <div className='movies_infos'>
