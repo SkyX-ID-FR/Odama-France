@@ -65,14 +65,6 @@ export default function MoviesPage(props) {
           <span className='movies_tags'>{file_data[5].tags}</span>
         </div>
       </div>
-
-      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[6].id}>
-        <img src={file_data[6].poster} className='movie_poster' alt='movie-poster'/>  
-        <div className='movies_infos_poster'>
-          <div id="love_icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
-          <span className='movies_tags'>{file_data[6].tags}</span>
-        </div>
-      </div>
     </>
   )
 
@@ -101,12 +93,14 @@ export default function MoviesPage(props) {
 
       <Header/>
       <section className="content_page">
-        <h1 id="ind_text">Box office de la semaine (en cours de dev) 🎁 : </h1>  
+        <h1 id="ind_text">Box office de la semaine 🎁 : </h1>  
+        <p id="ind_description">Retrouvez ici tout les meilleurs films et émissions de la semaine afin de ne laisser passer aucun programme qui vaut la peine d'être vu !</p>
         <div className='movies_section'>
           {show_box_office_movie}
         </div><br/><br/>
 
-        <h1 id="ind_text">Tout les films de la plateforme (en cours de dev) 👋 : </h1>  
+        <h1 id="ind_text">Tout les films de la plateforme 👋 : </h1>  
+        <p id="ind_description">Retrouvez ici tout les films de la plateforme dans un long slider interminable...</p>
         <div className='movies_section'>
           {show_all_movies}
         </div>

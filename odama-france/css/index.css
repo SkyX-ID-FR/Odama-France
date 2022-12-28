@@ -202,8 +202,15 @@ a {
 
 .content_page #ind_text {
     margin-left: 55px;
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.content_page #ind_description {
+    margin-left: 55px;
+    font-size: 16px;
+    margin-top: -22px;
     margin-bottom: 25px;
 }
 
@@ -437,10 +444,9 @@ a {
 }
 
 #movies_details_section #movie_watch_popup #popup_player {
-    margin-top: 5%;
+    margin-top: 10%;
     border-radius: 15px;
     width: 40%;
-    height: 400px;
 }
 /* 🎫 End of Movies details page style 🎫 */
 

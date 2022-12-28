@@ -302,7 +302,14 @@
     .content_page #ind_text {
         margin-left: 20px;
         width: 90%;
-        font-size: 21px;
+        font-size: 25px;
+    }
+
+    .content_page #ind_description {
+        margin-left: 20px;
+        width: 90%;
+        font-size: 13px;
+        font-weight: 400;
     }
 
     #movies_details_section #button_container #watch_button {
