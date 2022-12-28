@@ -126,8 +126,14 @@ a {
     list-style: none;
     float: right;
     margin-top: 21px;
-    margin-right: 20px;
+    margin-right: -10px;
     background-color: transparent;
+}
+
+#navbar .menu_list #profile-link svg {
+    background-color: transparent;
+    margin-top: -3px;
+    margin-left: 20px;
 }
 
 #navbar .menu_white_icon {
@@ -433,6 +439,7 @@ a {
     margin-top: 5%;
     border-radius: 15px;
     width: 40%;
+    margin-left: 10px;
 }
 /* 🎫 End of Movies details page style 🎫 */
 
@@ -455,3 +462,13 @@ a {
     font-size: 21px;
 }
 /* 🚧 End of 404 Page Error style 🚧 */
+
+/* 🙎‍♂️ My profile page style : 🙎‍♀️ */
+#my_profile_section {
+    margin-top: 140px;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    position: absolute;
+}
+/* 🙎‍♂️ End of My profile page style 🙎‍♀️ */
