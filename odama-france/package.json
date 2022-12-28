@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "13.0.7",
+    "framer-motion": "^8.0.2",
     "fs": "^0.0.1-security",
     "jquery": "^3.6.3",
     "jsdom": "^20.0.3",
