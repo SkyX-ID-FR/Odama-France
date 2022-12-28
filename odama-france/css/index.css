@@ -444,7 +444,7 @@ a {
 }
 
 #movies_details_section #movie_watch_popup #popup_player {
-    margin-top: 10%;
+    margin-top: 70px;
     border-radius: 15px;
     width: 40%;
 }
