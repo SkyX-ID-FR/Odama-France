@@ -9,7 +9,7 @@
             "tags": "Comédie, Marseille, Action",
             "duration": "1h45min",
             "year": "2020",
-            "source": "https://edef1.pcloud.com/cBZ9sDYg4ZrfVIvfZZZcc5Ec7ZQ5ZZIFRZkZ7tA09ZaVZxVZvXZL0ZkXZh0Z37Zn0ZlVZDXZekZ10ZyXZtVZtFcYZnn3Ga5Ll2JmYBm1hzJBtVhE9lgGk/Odama%20-%20Bac%20Nord%202020.mp4",
+            "source": "https://upstream.to/embed-v4ziwylzt5e5.html",
             "trailer": "https://www.youtube.com/watch?v=iyVLnChTs8w&ab_channel=STUDIOCANALFrance",
             "synopsis": "2012. Les quartiers Nord de Marseille détiennent un triste record : la zone au taux de criminalité le plus élevé de France. Poussée par sa hiérarchie, la BAC Nord, brigade de terrain, cherche sans cesse à améliorer ses résultats. Dans un secteur à haut risque, les flics adaptent leurs méthodes, franchissant parfois la ligne jaune. Jusqu'au jour où le système judiciaire se retourne contre eux…",
             "productors" : [
@@ -44,6 +44,51 @@
             "synopsis": "Après avoir été l’un des meilleurs pilotes de chasse de la Marine américaine pendant plus de trente ans, Pete Maverick Mitchell continue à repousser ses limites en tant que pilote d'essai. Il refuse de monter en grade, car cela l’obligerait à renoncer à voler. Il est chargé de former un détachement de jeunes diplômés de l’école Top Gun pour une mission spéciale qu’aucun pilote n'aurait jamais imaginée. Lors de cette mission, Maverick rencontre le lieutenant Bradley “Rooster” Bradshaw, le fils de son défunt ami, le navigateur Nick “Goose” Bradshaw. Face à un avenir incertain, hanté par ses fantômes, Maverick va devoir affronter ses pires cauchemars au cours d’une mission qui exigera les plus grands des sacrifices.",
             "productors": [
                   { "name": "Joseph Kosinski <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img3.acsta.net/c_310_420/medias/nmedia/18/77/18/49/19581336.jpg"}
+            ]
+      },
+      {
+            "id": 4,
+            "title": "Jurrasic Wordl 3",
+            "poster": "https://fr.web.img2.acsta.net/pictures/22/04/14/18/30/0040092.jpg",
+            "background": "https://cdn.sortiraparis.com/images/80/77381/724674-jurassic-world-3-le-monde-d-apres-la-bande-annonce.jpg",
+            "tags": "Dinosaures, Action",
+            "duration": "2h05min",
+            "year": "2022",
+            "source": "#",
+            "trailer": "https://www.youtube.com/watch?v=4R87S4YCtI8",
+            "synopsis": "Quatre ans après la destruction de Isla Nublar. Les dinosaures font désormais partie du quotidien de l’humanité entière. Un équilibre fragile qui va remettre en question la domination de l’espèce humaine maintenant qu’elle doit partager son espace avec les créatures les plus féroces que l’histoire ait jamais connues.",
+            "productors": [
+                  { "name": "Colin Trevorrow <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img2.acsta.net/c_310_420/pictures/21/03/17/16/07/1930760.jpg"}
+            ]
+      },
+      {
+            "id": 5,
+            "title": "Black Adam",
+            "poster": "https://fr.web.img6.acsta.net/pictures/22/10/04/14/00/5857542.jpg",
+            "background": "https://www.comicsuniverse.it/wp-content/uploads/2022/04/warner-bros-shifts-dates-for-black-adam-the-flash-aquaman-2_drmk.1200.jpg",
+            "tags": "Aventure, Action",
+            "duration": "2h10min",
+            "year": "2022",
+            "source": "#",
+            "trailer": "https://m.youtube.com/watch?v=qNqJkymV2Jk",
+            "synopsis": "Dans l’antique Kahndaq, l’esclave Teth Adam avait reçu les super-pouvoirs des dieux. Mais il en a fait usage pour se venger et a fini en prison. Cinq millénaires plus tard, alors qu’il a été libéré, il fait régner sa conception très sombre de la justice dans le monde. Refusant de se rendre, Teth Adam doit affronter une bande de héros d’aujourd’hui qui composent la Justice Society – Hawkman, le Dr Fate, Atom Smasher et Cyclone – qui comptent bien le renvoyer en prison pour l’éternité.",
+            "productors": [
+                  { "name": "Jaume Collet-Serra <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img3.acsta.net/c_310_420/pictures/15/07/27/14/54/374731.jpg"}
+            ]
+      },
+      {
+            "id": 6,
+            "title": "Avatar 2",
+            "poster": "https://fr.web.img4.acsta.net/pictures/22/11/02/14/49/4565071.jpg",
+            "background": "https://media.sudouest.fr/13359520/1200x-1/avatar-2-la-voie-de-l-eau-photo-disney-4.jpg",
+            "tags": "Aventure, Comédie",
+            "duration": "3h12min",
+            "year": "2022",
+            "source": "#",
+            "trailer": "https://www.youtube.com/watch?v=598NnroP42s",
+            "synopsis": "Se déroulant plus d’une décennie après les événements relatés dans le premier film, AVATAR : LA VOIE DE L’EAU raconte l'histoire des membres de la famille Sully (Jake, Neytiri et leurs enfants), les épreuves auxquelles ils sont confrontés, les chemins qu’ils doivent emprunter pour se protéger les uns les autres, les batailles qu’ils doivent mener pour rester en vie et les tragédies qu'ils endurent.",
+            "productors": [
+                  { "name": "James Cameron <br/> Canadien 🇨🇦", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/pictures/22/12/07/15/19/3602099.jpg"}
             ]
       }
   ]

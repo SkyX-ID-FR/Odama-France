@@ -38,7 +38,7 @@ export default function DetailsMoviesPage(props) {
     document.getElementById("profile_pic").src = general_movie_data.productors[0].profile_pic;
     document.getElementById("name").innerHTML = general_movie_data.productors[0].name;
     document.getElementById("synopsis_description").innerHTML = `${general_movie_data.synopsis} <br/><br/><br/><a target="_blank" href="${general_movie_data.trailer}">🎬 Voir la bande-annonce de ce film ! 🎬</a>`;
-    document.getElementById("movie_component").innerHTML = `<video id="popup_player" controls="1"><source id="movie_source" src="${general_movie_data.source}" type="video/mp4"/>Your browser don't support HTML video tag :/</video>`
+    document.getElementById("movie_component").innerHTML = `<iframe id="popup_player" src="${general_movie_data.source}" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO allowfullscreen/>`
   }, []);
 
   function open_movie_popup() { $("#movie_watch_popup").fadeIn(400); }

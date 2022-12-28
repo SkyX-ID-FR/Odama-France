@@ -32,7 +32,7 @@ html {
 ::-webkit-scrollbar { 
     width: 7px; 
     height: 4px;
-    margin-top: -20px;
+    display: none;
 }
 
 ::-webkit-scrollbar-track { background: transparent; }  
@@ -188,14 +188,13 @@ a {
 /* 🎥 Movies section's style : 🎥 */
 .movies_section {
     margin-top: -5px;
-    margin-left: 40px;
+    margin-left: 50px;
     display: flex;
     overflow-x: auto;
-    width: 100%;
 }
 
 .content_page #ind_text {
-    margin-left: 40px;
+    margin-left: 55px;
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 25px;
@@ -204,6 +203,7 @@ a {
 .movies_section .movies_item {
     margin-right: 25px;
     border-radius: 8px;
+    margin-top: 10px;
     float: left;
     cursor: pointer;
 }
