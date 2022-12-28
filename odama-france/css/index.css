@@ -29,9 +29,13 @@ html {
 } 
 */
 
-::-webkit-scrollbar { width: 7px; }
-::-webkit-scrollbar-track { background: transparent; }
-  
+::-webkit-scrollbar { 
+    width: 7px; 
+    height: 4px;
+    margin-top: -20px;
+}
+
+::-webkit-scrollbar-track { background: transparent; }  
 ::-webkit-scrollbar-thumb {
    background: white;
    border-radius: 15px;
@@ -186,7 +190,8 @@ a {
     margin-top: -5px;
     margin-left: 40px;
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    width: 100%;
 }
 
 .content_page #ind_text {
@@ -219,7 +224,8 @@ a {
     background-image: linear-gradient(to bottom, #00000000, #000000dc, #000000);
     margin-top: -140px;
     height: 120px;
-    position: absolute;
+    margin-bottom: 20px;
+    position: relative;
     width: 250px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;

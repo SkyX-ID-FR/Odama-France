@@ -71,7 +71,7 @@ export default function DetailsMoviesPage(props) {
         <div className='movies_infos'>
           <div className='content'>
             <h1 id="synopsis_title">Synopsis :</h1>
-            <h2 id="warning_message">⛔ Avertissement : des scènes, des propos ou des images peuvent heurter la sensibilité des spectateurs ! ⛔</h2>
+            <h2 id="warning_message">⛔ Avertissement : certaines scènes, propos ou images peuvent heurter la sensibilité des jeunes spectateurs ! ⛔</h2>
             <p id="synopsis_description"></p>
           </div>
         </div>

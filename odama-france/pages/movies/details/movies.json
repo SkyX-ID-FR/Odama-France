@@ -33,16 +33,17 @@
       },
       {
             "id": 3,
-            "title": "Troll",
-            "poster": "https://www.themoviedb.org/t/p/original/ulgKdif3ubMACDltr8VZy6fyVjW.jpg",
-            "background": "https://bloody-disgusting.com/wp-content/uploads/2022/11/Troll_00_35_52_20_Jallo_Faber-scaled.jpg",
-            "tags": "Monstre, Action",
+            "title": "Top Gun : Maverick",
+            "poster": "https://fr.web.img3.acsta.net/pictures/22/03/29/15/12/0827894.jpg",
+            "background": "https://www.paramountpictures.fr/content/uploads/2021/03/TGM-FF-F-001R_1920x1155_v2.jpg",
+            "tags": "Guerre, Action",
+            "duration": "2h11min",
             "year": "2022",
             "source": "#",
-            "trailer": "https://www.youtube.com/watch?v=AiohkY_XQYQ",
-            "synopsis": "Lorsqu'une explosion dans une montagne en Norvège réveille un ancien troll, les autorités font appel à une paléontologue intrépide pour l'empêcher de semer le chaos.",
+            "trailer": "https://www.youtube.com/watch?v=V4gQdk1nAn0",
+            "synopsis": "Après avoir été l’un des meilleurs pilotes de chasse de la Marine américaine pendant plus de trente ans, Pete Maverick Mitchell continue à repousser ses limites en tant que pilote d'essai. Il refuse de monter en grade, car cela l’obligerait à renoncer à voler. Il est chargé de former un détachement de jeunes diplômés de l’école Top Gun pour une mission spéciale qu’aucun pilote n'aurait jamais imaginée. Lors de cette mission, Maverick rencontre le lieutenant Bradley “Rooster” Bradshaw, le fils de son défunt ami, le navigateur Nick “Goose” Bradshaw. Face à un avenir incertain, hanté par ses fantômes, Maverick va devoir affronter ses pires cauchemars au cours d’une mission qui exigera les plus grands des sacrifices.",
             "productors": [
-                  { "name": "Roar Uthaug <br/> Norvégien 🇳🇴", "profile_pic": "https://fr.web.img3.acsta.net/c_310_420/pictures/15/08/26/14/05/482876.jpg"}
+                  { "name": "Joseph Kosinski <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img3.acsta.net/c_310_420/medias/nmedia/18/77/18/49/19581336.jpg"}
             ]
       }
   ]
