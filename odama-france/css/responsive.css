@@ -149,12 +149,6 @@
         margin-top: 23px;
     }
 
-    #movies_details_section #love_icon { 
-        margin-left: 88%; 
-        margin-top: 23px;
-        width: 30px;
-    }
-
     #movies_details_section #productors { margin-left: 34%; }
 
     #movies_details_section #movie_watch_popup {
@@ -164,6 +158,10 @@
 
     #movies_details_section #movie_watch_popup #popup_player {
         width: 92%;
+    }
+
+    #movies_details_section #love_icon { 
+        margin-left: 87%; 
     }
 }
 
@@ -175,6 +173,12 @@
     .movies_section { margin-left: 15px; }
     .movies_section .movies_item { margin-right: 15px; }
 
+    #movies_details_section #love_icon { 
+        margin-left: 88%; 
+        margin-top: -30px;
+        width: 30px;
+    }
+
     .movies_section .movies_item .movie_poster {
         width: 170px;
         height: 240px;
@@ -185,13 +189,15 @@
     }
 
     #movies_details_section #movie_watch_popup {
-        padding-top: 10px;
-    }
-
-    #movies_details_section #movie_watch_popup {
         position: fixed;
         right: 0;
         top: 0;
+        padding-top: 10px;
+    }
+
+    #movies_details_section #movie_watch_popup p {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     #movies_details_section #movie_watch_popup #popup_close_icon {
@@ -213,11 +219,6 @@
     #movies_details_section .movies_infos {
         margin-top: -350px;
         height: 170vh!important;
-    }
-
-    #movies_details_section #love_icon svg { 
-        margin-top: -50px;
-        position: absolute;
     }
 
     #movies_details_section .back_link {
@@ -299,7 +300,6 @@
     }
 
     #movies_details_section .back_link p { margin-top: 23px; }
-    #movies_details_section #love_icon { margin-top: 22px; }
     #movies_details_section #productors #name { margin-top: 3px; }
 
     .content_page #ind_text {

@@ -19,7 +19,7 @@
 }
 
 /* 
-✨ There is somethings to test with this : ✨
+✨ There is somethings to test here : ✨
 html {
     background: url('https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fnetflixlife.com%2Ffiles%2F2022%2F03%2FTheUmbrellaAcademy_Season3_Episode1_00_07_52_17R.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -31,14 +31,16 @@ html {
 
 ::-webkit-scrollbar { 
     width: 7px; 
-    height: 4px;
-    display: none;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #040a22;
 }
 
 ::-webkit-scrollbar-track { background: transparent; }  
+
 ::-webkit-scrollbar-thumb {
    background: white;
-   border-radius: 15px;
+   border-radius: 10px;
 }
 
 a { 
@@ -198,6 +200,8 @@ a {
     display: flex;
     overflow-x: auto;
     padding-left: 10px;
+    overflow-y: hidden;
+    padding-right: 10px;
 }
 
 #movies_section_space {
@@ -445,6 +449,7 @@ a {
 
 #movies_details_section #movie_watch_popup {
     backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.512);
     height: 100%;
     width: 100%;
     z-index: 100;
@@ -490,9 +495,9 @@ a {
 /* 🙎‍♂️ My profile page style : 🙎‍♀️ */
 #my_profile_section {
     margin-top: 140px;
-    width: 100%;
     color: white;
     padding: 20px;
+    padding-left: 35px;
     position: absolute;
 }
 /* 🙎‍♂️ End of My profile page style 🙎‍♀️ */

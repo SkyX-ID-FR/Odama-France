@@ -143,15 +143,15 @@ export default function MoviesPage(props) {
         <p id="ind_description">Retrouvez ici tout les meilleurs films et émissions de la semaine afin de ne laisser passer aucun programme qui vaut la peine d'être vu !</p>
         <div className='movies_section'>
           {show_box_office_movie}
-        </div><br/><br/>
+        </div><br/><br/><br/>
 
         <h1 id="ind_text">La sélection Odama&copy; ✨ : </h1>  
         <p id="ind_description">Vous ne savez pas quoi regarder ? Choissisez notre sélection : elle est faites pour tout les goûts, tout âges et plaira à tout le monde.</p>
         <div className='movies_section'>
           {show_odama_selection}
-        </div><br/><br/>
+        </div><br/><br/><br/>
 
-        <h1 id="ind_text">Tout les films de la plateforme 👋 : </h1>  
+        <h1 id="ind_text">Tout les films disponibles 🎥 : </h1>  
         <p id="ind_description">Retrouvez ici tout les films de la plateforme dans un long slider interminable...</p>
         <div className='movies_section'>
           {show_all_movies}

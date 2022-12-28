@@ -71,7 +71,8 @@ export default function DetailsMoviesPage(props) {
         <div id='movie_watch_popup'>
           <img onClick={close_movie_popup} id="popup_close_icon" src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' alt="close_icon"/>
           {/* 🔊 Movie Player Component (iframe) : 🔊 */}
-          <div id='movie_component'></div>
+          <div id='movie_component'></div><br/>
+          <p>🛑 Pour des raisons d'anonymat, de sécurité et d'utilisation excessives des données mobiles : ce player n'est disponible qu'en utlisation via le wifi ! 🛑</p>
         </div>
 
         <div className='movies_infos'>
