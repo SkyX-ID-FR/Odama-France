@@ -136,7 +136,7 @@ export default function MoviesPage(props) {
     setTimeout(function(){
       $("#loader_section").hide();
       $("#loader_page_finish").fadeIn(700);
-    }, 2000);
+    }, 200000);
   }, []);
 
   return (

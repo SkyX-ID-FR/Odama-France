@@ -326,10 +326,10 @@
         position: relative;
     }
 
-    #loader_section { margin-top: 45%; }
+    #loader_section { margin-top: 35%; }
     #loader_section img { 
         margin-left: 0px; 
-        width: 30px;
+        width: 25px;
     }
 }
 
