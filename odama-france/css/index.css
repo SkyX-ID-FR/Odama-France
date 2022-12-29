@@ -574,8 +574,8 @@ a {
 }
 
 #movies_library_popup {
-    backdrop-filter: blur(10px);
-    background-color: transparent;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.564);
     position: fixed;
     padding-left: 35px;
     padding-top: 40px;

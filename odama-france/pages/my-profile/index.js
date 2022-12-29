@@ -10,27 +10,38 @@ import Head from 'next/head';
 import Header from '../../components/Header.js';
 import $ from 'jquery';
 import { useEffect } from 'react'; 
+import { useRouter } from 'next/router';
 
-export default function MyProfile() {
+export async function getStaticProps() {
+    const filePath = path.join(process.cwd(), 'pages/movies/details/movies.json');
+    const jsonData = await fsPromises.readFile(filePath);
+    const objectData = JSON.parse(jsonData);
+    return { props: objectData }
+}
+
+export default function MyProfile(props) {
+    const router = useRouter();
+    const file_data = props.all_movies; 
+
     useEffect(function() {
         $("#movies_library_popup").hide();
         $("#more_info_container").click(function() { $("#movies_library_popup").fadeIn(400); }); 
         $("#close_icon_popup").click(function() { $("#movies_library_popup").hide(); });
         
-        if (JSON.parse(localStorage.getItem('list_movies_liked')) == null) {
-            /* let list_movies_liked = [];
-            localStorage.setItem('list_movies_liked', JSON.stringify(list_movies_liked)); */
-    
+        if (JSON.parse(localStorage.getItem('list_movies_liked')) == null) {    
             document.getElementById("all_liked_movies_component").innerHTML = `
                 <div class="not_found_component">
                     <img src="https://cdni.iconscout.com/illustration/premium/thumb/not-found-4064375-3363936.png" alt="not_found_img"/>
-                    <h1>Aucuns films ou séries ne peut être affiché(e)s !</h1>
-                    <p>{ Raison : auncuns films ou séries n'est aimés.. ❤ ]</p>
+                    <h1>Aucun(e)s films ou séries ne peut être affiché(e)s !</h1>
+                    <p>[ Raison : auncun(e)s films ou séries n'est aimés.. ❤ ]</p>
                 </div>
             `;
+
+            let list_movies_liked = [];
+            localStorage.setItem('list_movies_liked', JSON.stringify(list_movies_liked));
         } else {
             const list_movies_liked = JSON.parse(localStorage.getItem('list_movies_liked'));
-            document.getElementById("all_liked_movies_component").innerHTML = `<p>ok !</p>`;
+            document.getElementById("all_liked_movies_component").innerHTML = `<p>${list_movies_liked}</p>`;
         }
     }, []);
 
