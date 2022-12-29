@@ -205,10 +205,11 @@
 
     #movies_library_popup {
         padding: 15px;
+        padding-top: 50px;
     }
 
     #movies_library_popup #close_icon_popup {
-        margin-top: -5px!important;
+        margin-top: -40px!important;
         margin-right: 30px!important;
     }
 
