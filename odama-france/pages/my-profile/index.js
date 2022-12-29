@@ -10,19 +10,8 @@ import Head from 'next/head';
 import Header from '../../components/Header.js';
 import $ from 'jquery';
 import { useEffect } from 'react'; 
-import { useRouter } from 'next/router';
-
-export async function getStaticProps() {
-    const filePath = path.join(process.cwd(), 'pages/movies/details/movies.json');
-    const jsonData = await fsPromises.readFile(filePath);
-    const objectData = JSON.parse(jsonData);
-    return { props: objectData }
-}
 
 export default function MyProfile(props) {
-    const router = useRouter();
-    const file_data = props.all_movies; 
-
     useEffect(function() {
         $("#movies_library_popup").hide();
         $("#more_info_container").click(function() { $("#movies_library_popup").fadeIn(400); }); 
