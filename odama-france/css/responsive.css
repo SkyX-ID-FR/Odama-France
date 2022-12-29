@@ -181,6 +181,7 @@
 
     #movies_details_section #movie_watch_popup #popup_player {
         margin-top: 2%;
+        height: 350px;
     }
 
     #movies_details_section #movie_watch_popup {
