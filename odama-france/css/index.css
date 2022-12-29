@@ -469,8 +469,8 @@ a {
 #movies_details_section #movie_watch_popup #popup_player {
     margin-top: 70px;
     border-radius: 10px;
-    width: 70%;
-    height: 537px;
+    width: 50%;
+    height: 600px;
 }
 /* 🎫 End of Movies details page style 🎫 */
 

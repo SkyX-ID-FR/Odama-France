@@ -9,10 +9,15 @@
 /* 📌 Link Google Font Links : 📌 */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
+@media only screen and (max-width: 1860px) {
+    #movies_details_section #movie_watch_popup #popup_player { height: 470px; }
+}
+
 @media only screen and (max-width: 1240px) {
     .github_link { margin-left: -12%; }
     #movies_details_section #productors { margin-left: 42%; }
     #movies_details_section .movies_infos .content #synopsis_description { width: 90%; }
+    #movies_details_section #movie_watch_popup #popup_player { height: 390px; }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -158,6 +163,7 @@
 
     #movies_details_section #movie_watch_popup #popup_player {
         width: 92%;
+        margin: 20px;
     }
 
     #movies_details_section #love_icon { 
@@ -182,6 +188,10 @@
     #movies_details_section #movie_watch_popup #popup_player {
         margin-top: 2%;
         height: 350px;
+    }
+
+    #movies_details_section #movie_watch_popup #popup_player .video {
+        background-color: red;
     }
 
     #movies_details_section #movie_watch_popup {
