@@ -10,6 +10,15 @@ import Head from 'next/head';
 import Header from '../../components/Header.js';
 import $ from 'jquery';
 import { useEffect } from 'react'; 
+import fsPromises from 'fs/promises';
+import path from 'path';
+
+export async function getStaticProps() {
+    const filePath = path.join(process.cwd(), 'pages/movies/details/movies.json');
+    const jsonData = await fsPromises.readFile(filePath);
+    const objectData = JSON.parse(jsonData);
+    return { props: objectData }
+  }
 
 export default function MyProfile(props) {
     useEffect(function() {
@@ -27,7 +36,17 @@ export default function MyProfile(props) {
             `;
         } else {
             const list_movies_liked = JSON.parse(localStorage.getItem('list_movies_liked'));
-            document.getElementById("all_liked_movies_component").innerHTML = `<p>${list_movies_liked}</p>`;
+            const movies_data = props.all_movies;
+
+            for (let id of list_movies_liked) {
+                document.getElementById("all_liked_movies_component").innerHTML += `
+                    <div class="movies_liked_item">
+                        <div id='rates'><p>${movies_data[id].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+                        <span class='movies_tags'>${movies_data[id].tags}</span>
+                        <img src="${movies_data[id].poster}" alt="movies_liked_poster"/>
+                    </div>
+                `;
+            }
         }
     }, []);
 

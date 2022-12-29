@@ -268,7 +268,7 @@ a {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
-    padding-bottom: 9px;
+    padding-bottom: 8px;
     position: absolute;
     margin-left: 160px;
     margin-top: -230px;
@@ -611,5 +611,64 @@ a {
     margin-left: -80px;
     margin-top: 10px;
     color: rgb(148, 148, 148);
+}
+
+#movies_library_popup .movies_liked_item {
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 30px;
+}
+
+#movies_library_popup .movies_liked_item:hover {
+    transition: all 0.5s;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+#movies_library_popup .movies_liked_item img {
+    width: 270px;
+    border-radius: 10px;
+    height: 366px;
+}
+
+#movies_library_popup .movies_liked_item .movies_tags {
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    margin-top: 322px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.323);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 9px;
+    border-radius: 10px;
+    margin-left: 9px;
+}
+
+#movies_library_popup .movies_liked_item #rates {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.323);
+    position: absolute;
+    margin-left: 175px;
+    margin-top: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 9px;
+    border-radius: 10px;
+}
+
+#movies_library_popup .movies_liked_item #rates p {
+    float: left;
+}
+
+#movies_library_popup .movies_liked_item #rates img {
+    width: 20px;
+    height: 19px;
+    float: left;
+    margin-left: 5px;
 }
 /* 🙎‍♂️ End of My profile page style 🙎‍♀️ */

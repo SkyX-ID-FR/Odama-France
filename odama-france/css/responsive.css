@@ -202,6 +202,29 @@
         font-size: 35px;
         width: 400px;
     }
+
+    #movies_library_popup .movies_liked_item {
+        margin-bottom: 20px;
+    }
+
+    .movies_section .movies_item .movies_infos_poster #rates {
+        margin-left: 82px;
+        margin-top: -124px;
+    }
+
+    #movies_library_popup .movies_liked_item .movies_tags {
+        margin-top: 245px;
+    }
+
+    #movies_library_popup .movies_liked_item img {
+        width: 210px;
+        height: 290px;
+    }
+
+    #movies_library_popup .movies_liked_item #rates {
+        margin-top: 5px;
+        margin-left: 120px;
+    }
 }
 
 @media only screen and (max-width: 582px) {
@@ -402,11 +425,6 @@
     #movies_library_popup .not_found_component p { 
         width: 60%;
         margin-left: 10%;
-    }
-
-    .movies_section .movies_item .movies_infos_poster #rates {
-        margin-left: 82px;
-        margin-top: -124px;
     }
 }
 

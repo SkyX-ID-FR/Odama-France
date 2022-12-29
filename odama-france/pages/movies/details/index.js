@@ -12,7 +12,6 @@ import fsPromises from 'fs/promises';
 import path from 'path';
 import Link from 'next/link';
 import $ from 'jquery';
-import { useState } from 'react';
 
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), 'pages/movies/details/movies.json');
