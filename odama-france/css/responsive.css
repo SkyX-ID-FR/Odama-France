@@ -429,7 +429,7 @@
     }
 
     #movies_library_popup .not_found_component h1 { 
-        margin-left: -5px; 
+        margin-left: 15px; 
         font-size: 30px;
         width: 350px;
         margin-top: -60px;
