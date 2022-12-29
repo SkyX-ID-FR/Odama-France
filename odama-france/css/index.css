@@ -44,11 +44,9 @@ html {
 }
 
 a { 
-    color: white;
+    color: rgb(0, 207, 0);
     text-decoration: none; 
 }
-
-#link_discord { color: rgb(15, 206, 15); }
 /* 📊 Completementary style : 📊 */
 .github_link {
     margin-top: 20px;
@@ -573,10 +571,6 @@ a {
     margin-bottom: 45px;
 }
 
-#my_profile_section .description a {
-    color: rgb(20, 209, 20);
-}
-
 #movies_library_popup {
     backdrop-filter: blur(20px);
     background-color: rgba(0, 0, 0, 0.564);
@@ -616,6 +610,6 @@ a {
 #movies_library_popup .not_found_component p {
     margin-left: -80px;
     margin-top: 10px;
-    color: rgb(14, 226, 14);
+    color: rgb(148, 148, 148);
 }
 /* 🙎‍♂️ End of My profile page style 🙎‍♀️ */
