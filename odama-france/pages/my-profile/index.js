@@ -32,7 +32,7 @@ export default function MyProfile(props) {
     }, []);
 
     function remove_localstorage() {
-        localStorage.removeItem('list_movies_liked');
+        localStorage.clear();
         alert("Pas de soucis ! Tout vos paramètres sont bien effacés ! 🎉");
     }
 
