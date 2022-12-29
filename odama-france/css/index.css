@@ -263,10 +263,28 @@ a {
     font-size: 13px;
 }
 
-.movies_section .movies_item .movies_infos_poster #love_icon {
+.movies_section .movies_item .movies_infos_poster #rates {
+    background-color: rgba(0, 0, 0, 0.135);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 9px;
     position: absolute;
-    margin-top: -229px;
-    margin-left: 85%;
+    margin-left: 160px;
+    margin-top: -230px;
+}
+
+.movies_section .movies_item .movies_infos_poster #rates p {
+    float: left;
+}
+
+.movies_section .movies_item .movies_infos_poster #rates img {
+    width: 15px;
+    float: left;
+    margin-left: 8px;
+    margin-top: 2px;
 }
 /* 🎥 End of Movies section's style 🎥 */
 
@@ -308,7 +326,6 @@ a {
     position: absolute;
     z-index: 20;
     font-size: 25px;
-    color: white;
 }
 
 #movies_details_section #love_icon:active {
@@ -470,7 +487,7 @@ a {
     margin-top: 70px;
     border-radius: 10px;
     width: 50%;
-    height: 610px;
+    height: 605px;
 }
 /* 🎫 End of Movies details page style 🎫 */
 
@@ -496,7 +513,7 @@ a {
 
 /* ⌛ Loading section style : ⌛ */
 #loader_section {
-    margin-top: 20%;
+    margin-top: 15%;
     width: 100%;
     position: absolute;
     text-align: center;
@@ -510,10 +527,91 @@ a {
 
 /* 🙎‍♂️ My profile page style : 🙎‍♀️ */
 #my_profile_section {
-    margin-top: 140px;
+    margin-top: 150px;
     color: white;
     padding: 20px;
-    padding-left: 35px;
+    padding-left: 50px;
     position: absolute;
+    width: 80%;
+}
+
+#my_profile_section #more_info_container {
+    width: 80%;
+    border: 3px solid white;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+#my_profile_section #more_info_container:hover {
+    color: black;
+    background-color: white;
+    transition: all 1s;
+}
+
+#my_profile_section #more_info_container i {
+    width: 28px;
+    float: right;
+    margin-top: 4.5px;
+    background-color: transparent;
+    margin-right: -15px;
+    stroke: white;
+}
+
+#my_profile_section .big_title {
+    font-size: 55px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+#my_profile_section .description a {
+    color: rgb(20, 209, 20);
+}
+
+#movies_library_popup {
+    backdrop-filter: blur(10px);
+    background-color: transparent;
+    position: fixed;
+    padding-left: 35px;
+    padding-top: 40px;
+    height: 100%;
+    width: 100%;
+    z-index: 110;
+    color: white;
+}
+
+#movies_library_popup * {
+    background-color: transparent;
+}
+
+#movies_library_popup #close_icon_popup {
+    width: 35px;
+    float: right;
+    margin-right: 60px;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+#movies_library_popup .not_found_component {
+    text-align: center;
+}
+
+#movies_library_popup .not_found_component h1 {
+    margin-top: -80px;
+    font-weight: 800;
+    width: 600px;
+    margin-left: 34%;
+    font-size: 45px;
+}
+
+#movies_library_popup .not_found_component p {
+    margin-left: -80px;
+    margin-top: 10px;
+    color: rgb(14, 226, 14);
 }
 /* 🙎‍♂️ End of My profile page style 🙎‍♀️ */

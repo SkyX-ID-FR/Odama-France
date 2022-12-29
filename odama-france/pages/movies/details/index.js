@@ -23,17 +23,39 @@ export async function getStaticProps() {
 
 export default function DetailsMoviesPage(props) {
   const movies_data = props.all_movies;
-  const [btnColor, setBtnColor] = useState("white"); 
 
   useEffect(function() {
     const movie_id = localStorage.getItem('item_id');
     const general_movie_data = movies_data[movie_id];
 
-    $("#love_icon").click(function() {
-      console.log("Love button clicked ! 🎉");
+    /* 📬 If no array is initialized, then do it and save it in the browser's localstorage : 📬 */
+    if (JSON.parse(localStorage.getItem('list_movies_liked')) == null) {
+      let list_movies_liked = [];
+      localStorage.setItem('list_movies_liked', JSON.stringify(list_movies_liked));
+    } 
+
+    const list_movies_liked = JSON.parse(localStorage.getItem('list_movies_liked'));
+    $("#love_icon").click(function() { 
+      if (list_movies_liked.indexOf(movie_id) == -1) {
+        /* 📢 If this movie is liked, then add it to the library : 📢 */
+        list_movies_liked.push(movie_id);
+        localStorage.setItem('list_movies_liked', JSON.stringify(list_movies_liked));
+
+        /* Also change the color of love_icon : */
+        document.getElementById("love_icon").style.color = "red";
+      } else {        
+        /* 📢 Else you delete it : 📢 */
+        const id_to_remove = list_movies_liked.indexOf(movie_id);
+        list_movies_liked.splice(id_to_remove, 1);
+        localStorage.setItem('list_movies_liked', JSON.stringify(list_movies_liked));
+
+        /* Also change the color of love_icon : */
+        document.getElementById("love_icon").style.color = "white";
+      }
     });
 
     /* ✨ Then, we complete the different variables in the page : ✨ */
+    if (list_movies_liked.indexOf(movie_id) !== -1) { document.getElementById("love_icon").style.color = "red"; } else { document.getElementById("love_icon").style.color = "white"; }
     document.getElementById("movie_title").innerHTML = general_movie_data.title;
     document.getElementById("movies_details_section").style.backgroundImage = `url(${general_movie_data.background})`;
     document.getElementById("short_infos").innerHTML = `${general_movie_data.duration} &nbsp; · &nbsp; ${general_movie_data.tags} &nbsp; · &nbsp; ${general_movie_data.year}`;
@@ -61,7 +83,7 @@ export default function DetailsMoviesPage(props) {
 
       <section id='movies_details_section'>  
         <Link className='back_link' style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies"><img className='back_icon' src='https://svgur.com/i/p5L.svg'/><p>Revenir à tout les films</p></Link>
-        <div onClick={() => {btnColor === "white" ? setBtnColor("red") : setBtnColor("white");}} style={{ color: btnColor }} id="love_icon"><i class="fa fa-heart"></i></div>
+        <div id="love_icon"><i className="fa fa-heart"></i></div>
         
         <h1 id="movie_title"></h1>
         <p id="short_infos"></p>

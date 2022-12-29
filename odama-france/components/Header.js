@@ -32,6 +32,7 @@ export default function LeftNavBar() {
             <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies" id="movies-link">🎞 Films</Link></li>
             <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/series" id="series-link">🎥 Séries</Link></li>
             <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/contact" id="contact-link">📬 Contact</Link></li>
+            <li id="my_profile_link"><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/my-profile">👤 Mon profile</Link></li>
           </ul>
 
           <footer className='responsive_menu_footer'>
