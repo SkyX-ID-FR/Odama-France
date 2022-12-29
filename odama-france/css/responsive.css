@@ -370,7 +370,6 @@
     #my_profile_section #more_info_container {
         border: 2px solid white;
         font-size: 15px;
-        margin-top: 50px;
         width: 250px;
         padding-top: 10px;
         padding-bottom: 13px;
@@ -398,6 +397,11 @@
         font-size: 30px;
         width: 350px;
         margin-top: -60px;
+    }
+
+    .movies_section .movies_item .movies_infos_poster #rates {
+        margin-left: 82px;
+        margin-top: -124px;
     }
 }
 

@@ -545,7 +545,7 @@ a {
     padding-bottom: 15px;
     font-size: 18px;
     cursor: pointer;
-    margin-top: 50px;
+    margin-top: 15px;
 }
 
 #my_profile_section #more_info_container:hover {
@@ -567,6 +567,10 @@ a {
     font-size: 55px;
     font-weight: 900;
     margin-bottom: 8px;
+}
+
+#my_profile_section .description {
+    margin-bottom: 45px;
 }
 
 #my_profile_section .description a {
