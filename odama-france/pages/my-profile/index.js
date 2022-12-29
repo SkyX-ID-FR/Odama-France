@@ -34,6 +34,7 @@ export default function MyProfile(props) {
     function remove_localstorage() {
         localStorage.clear();
         alert("Pas de soucis ! Tout vos paramètres sont bien effacés ! 🎉");
+        location.reload();
     }
 
     return (
