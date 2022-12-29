@@ -225,7 +225,7 @@ export default function Home() {
 
             Cette fois basé sur les appréciations des 15 000 utilisateurs de la version précédente, elle s'appuie sur une interface doté d'un tout nouveau design,
             les préférences de l'utilisateur seront enregistrées et analysées pour une meilleure expérience. Un système de commentaires et de likes sera également mis 
-            en place pour référencer les meilleurs films. Si vous souhaitez partagez la plateforme, donnez un avis/remarques, sachez qu'un <a href="https://discord.gg/RxeUj2vAWp" target="_blank">serveur Discord Officiel</a> a été créer pour ça. N'hésitez pas à le rejoindre ! 
+            en place pour référencer les meilleurs films. Si vous souhaitez partagez la plateforme, donnez un avis/remarques, sachez qu'un <a id="link_discord" href="https://discord.gg/RxeUj2vAWp" target="_blank">serveur Discord Officiel</a> a été créer pour ça. N'hésitez pas à le rejoindre ! 
             <br/><br/><b>- Odama, you like it !</b> 😉
           </p>
 

@@ -173,12 +173,6 @@
     .movies_section { margin-left: 15px; }
     .movies_section .movies_item { margin-right: 15px; }
 
-    #movies_details_section #love_icon { 
-        margin-left: 88%; 
-        margin-top: -30px;
-        width: 30px;
-    }
-
     .movies_section .movies_item .movie_poster {
         width: 170px;
         height: 240px;
@@ -210,7 +204,7 @@
         margin-left: 10px;
     }
 
-    .movies_section .movies_item .movies_infos_poster #love_icon svg {
+    .movies_section .movies_item .movies_infos_poster #love_icon {
         margin: 0;
         margin-left: 80%;
         margin-top: -120px;

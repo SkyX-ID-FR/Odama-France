@@ -44,10 +44,11 @@ html {
 }
 
 a { 
-    color: rgb(158, 158, 158); 
+    color: white;
     text-decoration: none; 
 }
 
+#link_discord { color: rgb(15, 206, 15); }
 /* 📊 Completementary style : 📊 */
 .github_link {
     margin-top: 20px;
@@ -264,8 +265,8 @@ a {
 
 .movies_section .movies_item .movies_infos_poster #love_icon {
     position: absolute;
-    margin-top: -112px;
-    margin-left: 70%;
+    margin-top: -229px;
+    margin-left: 85%;
 }
 /* 🎥 End of Movies section's style 🎥 */
 
@@ -344,7 +345,7 @@ a {
 }
 
 #movies_details_section .movies_infos {
-    background: linear-gradient(0deg, rgb(7, 18, 65) 55%, rgba(7, 18, 65, 0.231) 90%, rgba(7, 18, 65, 0) 100%);
+    background: linear-gradient(0deg, #142f60 55%, #142f6073 70%, #142f6000 100%);
     width: 100%;
     height: 100vh;
     position: absolute; 
@@ -467,8 +468,9 @@ a {
 
 #movies_details_section #movie_watch_popup #popup_player {
     margin-top: 70px;
-    border-radius: 15px;
-    width: 40%;
+    border-radius: 10px;
+    width: 70%;
+    height: 500px;
 }
 /* 🎫 End of Movies details page style 🎫 */
 

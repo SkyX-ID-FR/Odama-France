@@ -40,13 +40,13 @@ export default function DetailsMoviesPage(props) {
     document.getElementById("profile_pic").src = general_movie_data.productors[0].profile_pic;
     document.getElementById("name").innerHTML = general_movie_data.productors[0].name;
     document.getElementById("synopsis_description").innerHTML = `${general_movie_data.synopsis} <br/><br/><br/><a target="_blank" href="${general_movie_data.trailer}">🎬 Voir la bande-annonce de ce film ! 🎬</a>`;
-    document.getElementById("movie_component").innerHTML = `<video controls id="popup_player"><source src="${general_movie_data.source}" type="video/mp4"></video>`;
+    document.getElementById("movie_component").innerHTML = `<iframe id="popup_player" src="${general_movie_data.source}" frameborder="0" allowfullscreen></iframe>`;
   }, []);
 
   function open_movie_popup() { $("#movie_watch_popup").fadeIn(400); }
   function close_movie_popup() { 
     $("#movie_watch_popup").fadeOut(400); 
-    document.getElementById("popup_player").pause();
+    $('#popup_player').attr('src', $('#popup_player').attr('src'));
   }
 
   return (
@@ -71,8 +71,7 @@ export default function DetailsMoviesPage(props) {
         <div id='movie_watch_popup'>
           <img onClick={close_movie_popup} id="popup_close_icon" src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' alt="close_icon"/>
           {/* 🔊 Movie Player Component (iframe) : 🔊 */}
-          <div id='movie_component'></div><br/>
-          <p>🛑 Pour des raisons d'anonymat, de sécurité et d'utilisation excessives des données mobiles : ce player n'est disponible qu'en utlisation via le wifi ! 🛑</p>
+          <div id='movie_component'></div>
         </div>
 
         <div className='movies_infos'>
