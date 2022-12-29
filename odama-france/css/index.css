@@ -494,6 +494,20 @@ a {
 }
 /* 🚧 End of 404 Page Error style 🚧 */
 
+/* ⌛ Loading section style : ⌛ */
+#loader_section {
+    margin-top: 20%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+#loader_section img {
+    width: 40px;
+    margin-left: -70px;
+}
+/* ⌛ End of Loading section style ⌛ */
+
 /* 🙎‍♂️ My profile page style : 🙎‍♀️ */
 #my_profile_section {
     margin-top: 140px;

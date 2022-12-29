@@ -9,8 +9,10 @@
 import Head from 'next/head';
 import Header from '../../components/Header.js';
 import fsPromises from 'fs/promises';
-import path from 'path'
-import { useRouter } from 'next/router'
+import path from 'path';
+import { useRouter } from 'next/router';
+import $ from 'jquery';
+import { useEffect } from 'react'; 
 
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), 'pages/movies/details/movies.json');
@@ -128,6 +130,15 @@ export default function MoviesPage(props) {
     )
   }
 
+  useEffect(function() {
+    $("#loader_page_finish").hide();
+    
+    setTimeout(function(){
+      $("#loader_section").hide();
+      $("#loader_page_finish").fadeIn(700);
+    }, 3100);
+  }, []);
+
   return (
     <>
       <Head>
@@ -138,7 +149,12 @@ export default function MoviesPage(props) {
       </Head>
 
       <Header/>
-      <section className="content_page">
+
+      <section id="loader_section">
+        <img src='https://media3.giphy.com/media/L05HgB2h6qICDs5Sms/giphy.gif'/>
+      </section>
+
+      <section className="content_page" id="loader_page_finish">
         <h1 id="ind_text">Box office de la semaine 🎁 : </h1>  
         <p id="ind_description">Retrouvez ici tout les meilleurs films et émissions de la semaine afin de ne laisser passer aucun programme qui vaut la peine d'être vu !</p>
         <div className='movies_section'>

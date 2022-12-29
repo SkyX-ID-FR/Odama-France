@@ -40,6 +40,11 @@
     .github_link { margin-left: -17%; }
 }
 
+@media only screen and (max-width: 940px) {
+    #loader_section { margin-top: 30%; }
+    #loader_section img { margin-left: -50px; }
+}
+
 @media only screen and (max-width: 840px) {
     #navbar {
         margin-top: 15px!important;
@@ -319,6 +324,12 @@
         margin-top: 70px;
         margin-left: 10px;
         position: relative;
+    }
+
+    #loader_section { margin-top: 45%; }
+    #loader_section img { 
+        margin-left: 10px; 
+        width: 30px;
     }
 }
 
