@@ -389,14 +389,19 @@
 
     #movies_library_popup .not_found_component img {
         width: 400px;
-        margin-left: -100px;
+        margin-left: -70px;
     }
 
     #movies_library_popup .not_found_component h1 { 
-        margin-left: -20px; 
+        margin-left: -15px; 
         font-size: 30px;
         width: 350px;
         margin-top: -60px;
+    }
+
+    #movies_library_popup .not_found_component p { 
+        width: 60%;
+        margin-left: 10%;
     }
 
     .movies_section .movies_item .movies_infos_poster #rates {
