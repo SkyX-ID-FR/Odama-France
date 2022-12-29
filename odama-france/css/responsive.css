@@ -328,7 +328,7 @@
 
     #loader_section { margin-top: 45%; }
     #loader_section img { 
-        margin-left: 10px; 
+        margin-left: 0px; 
         width: 30px;
     }
 }

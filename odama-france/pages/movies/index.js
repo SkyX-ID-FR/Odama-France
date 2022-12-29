@@ -132,11 +132,11 @@ export default function MoviesPage(props) {
 
   useEffect(function() {
     $("#loader_page_finish").hide();
-    
+
     setTimeout(function(){
       $("#loader_section").hide();
       $("#loader_page_finish").fadeIn(700);
-    }, 3100);
+    }, 2000);
   }, []);
 
   return (
