@@ -502,6 +502,11 @@
         font-size: 14px;
         color: white!important;
     }
+
+    .genres_page .movies_section #rates {
+        margin-top: -125px!important;
+        margin-left: 100px!important;
+    }
 }
 
 @media only screen and (max-width: 465px) {
