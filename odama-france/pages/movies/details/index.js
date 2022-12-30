@@ -24,6 +24,8 @@ export default function DetailsMoviesPage(props) {
   const movies_data = props.all_movies;
 
   useEffect(function() {
+    $("#add_movies_toast").hide(); 
+    $("#remove_movies_toast").hide(); 
     const movie_id = localStorage.getItem('item_id');
     const general_movie_data = movies_data[movie_id];
 
@@ -42,6 +44,12 @@ export default function DetailsMoviesPage(props) {
 
         /* Also change the color of love_icon : */
         document.getElementById("love_icon").style.color = "red";
+        $("#add_movies_toast").show();
+        $("#add_movies_toast").animate({bottom: '80px'}), 5000;
+
+        setTimeout(function(){
+          $("#add_movies_toast").fadeOut(500);
+        }, 5500);
       } else {        
         /* 📢 Else you delete it : 📢 */
         const id_to_remove = list_movies_liked.indexOf(movie_id);
@@ -50,6 +58,12 @@ export default function DetailsMoviesPage(props) {
 
         /* Also change the color of love_icon : */
         document.getElementById("love_icon").style.color = "white";
+        $("#remove_movies_toast").show();
+        $("#remove_movies_toast").animate({bottom: '80px'}), 5000;
+
+        setTimeout(function(){
+          $("#remove_movies_toast").fadeOut(500);
+        }, 5500);
       }
     });
 
@@ -69,6 +83,9 @@ export default function DetailsMoviesPage(props) {
     $("#movie_watch_popup").fadeOut(400); 
     $('#popup_player').attr('src', $('#popup_player').attr('src'));
   }
+
+  function close_add_movies_toast() { $("#add_movies_toast").fadeOut(500); }
+  function close_remove_movies_toast() { $("#remove_movies_toast").fadeOut(500); }
 
   return (
     <>
@@ -102,7 +119,16 @@ export default function DetailsMoviesPage(props) {
             <p id="synopsis_description"></p>
           </div>
         </div>
-        {/* <footer id="movies_details_footer">Made with <font color="red">❤</font> by @skyx_id_fr <br/>Version BETA</footer> */}
+        
+        <div id="add_movies_toast" className='toast_popup'>
+          <img onClick={close_add_movies_toast} src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' alt="close_icon"/>
+          <p>Ce film a bien été ajouté à vos favoris ! 🎉<br/>Vous pouvez retrouver tout vos films aimés dans <Link style={{textDecoration:"none", backgroundColor:"transparent"}} href="/my-profile">votre bibiliothèque personnelle..</Link></p>
+        </div>
+
+        <div id="remove_movies_toast" className='toast_popup'>
+          <img onClick={close_remove_movies_toast} src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' alt="close_icon"/>
+          <p>Ce film a bien été supprimé de vos favoris ! ❌<br/>Vous pouvez retrouver tout vos films aimés dans <Link style={{textDecoration:"none", backgroundColor:"transparent"}} href="/my-profile">votre bibiliothèque personnelle..</Link></p>
+        </div>
       </section>
     </>
   )

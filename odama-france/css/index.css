@@ -296,6 +296,26 @@ a {
     color: white;
 }
 
+#movies_details_section .toast_popup {
+    background-color: rgba(0, 0, 0, 0.312);
+    backdrop-filter: blur(10px);
+    width: 40%;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    margin-left: 30%;
+    padding: 15px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+#movies_details_section .toast_popup img {
+    width: 25px;
+    float: right;
+    margin-right: -8px;
+    margin-top: -8px;
+}
+
 #movies_details_section .back_link {
     text-decoration: none;
     color: white;

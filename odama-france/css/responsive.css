@@ -47,6 +47,11 @@
     }
 
     .github_link { margin-left: -17%; }
+
+    #movies_details_section .toast_popup {
+        width: 80%;
+        margin-left: 8%;
+    }
 }
 
 @media only screen and (max-width: 973px) {
@@ -445,6 +450,16 @@
     .movies_section .movies_item .movies_infos_poster #rates {
         margin-left: 82px;
         margin-top: -125px;
+    }
+
+    #movies_details_section .toast_popup {
+        width: 85%;
+        margin-left: 3.5%;
+        font-size: 14px;
+        bottom: 0px;
+        background-color: #040a22;
+        box-shadow: 0px 0px 50px rgb(97, 97, 97);
+        position: fixed;
     }
 }
 
