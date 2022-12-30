@@ -204,7 +204,7 @@
     }
 
     #movies_library_popup {
-        padding: 15px;
+        padding: 10px;
         padding-top: 50px;
     }
 
@@ -215,11 +215,12 @@
 
     #movies_library_popup .movies_liked_item {
         margin-bottom: 20px;
+        margin-right: 15px;
     }
 
     #movies_library_popup .movies_liked_item #rates {
-        margin-top: 5px;
-        margin-left: 93px;
+        margin-top: 3px;
+        margin-left: 75px;
         padding-bottom: 7px;
         font-size: 13px;
     }
@@ -229,14 +230,15 @@
     }
 
     #movies_library_popup .movies_liked_item .movies_tags {
-        margin-top: 213px;
+        margin-top: 170px;
         margin-left: 3px;
-        font-size: 13px;
+        font-size: 12px;
+        width: 110px;
     }
 
     #movies_library_popup .movies_liked_item img {
-        width: 180px;
-        height: 250px;
+        width: 160px;
+        height: 220px;
     }
 }
 
@@ -425,19 +427,24 @@
 
     #movies_library_popup .not_found_component img {
         width: 400px;
-        margin-left: -70px;
+        margin-left: -20px;
     }
 
     #movies_library_popup .not_found_component h1 { 
-        margin-left: -15px; 
+        margin-left: 15px; 
         font-size: 30px;
         width: 350px;
         margin-top: -60px;
     }
 
     #movies_library_popup .not_found_component p { 
-        width: 60%;
-        margin-left: 10%;
+        width: 70%;
+        margin-left: 11%;
+    }
+
+    .movies_section .movies_item .movies_infos_poster #rates {
+        margin-left: 82px;
+        margin-top: -125px;
     }
 }
 
