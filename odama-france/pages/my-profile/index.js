@@ -30,8 +30,8 @@ export default function MyProfile(props) {
             document.getElementById("all_liked_movies_component").innerHTML = `
                 <div class="not_found_component">
                     <img src="https://cdni.iconscout.com/illustration/premium/thumb/not-found-4064375-3363936.png" alt="not_found_img"/>
-                    <h1>Aucun(e)s films ou séries ne peut être affiché(e)s !</h1>
-                    <p>[ Pourquoi ? Aucun(e)s films ou séries n'ont été aimé(e)s.. ❤ ]</p>
+                    <h1>Aucun(s) film(s) n'a pu être affiché(s) !</h1>
+                    <p>[ Pourquoi ? Aucun(s) film(s) n'a été aimé(s)... ❤ ]</p>
                 </div>
             `;
         } else {

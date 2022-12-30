@@ -13,6 +13,7 @@ import path from 'path';
 import { useRouter } from 'next/router';
 import $ from 'jquery';
 import { useEffect } from 'react'; 
+import Link from 'next/link';
 
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), 'pages/movies/details/movies.json');
@@ -154,6 +155,9 @@ export default function MoviesPage(props) {
       </section>
 
       <section className="content_page" id="loader_page_finish">
+        <br/><Link className='link_to_genres' style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies/genres" id="home-link">Voir les films triés par genres.. 📚</Link>
+        <br/><br/><br/><br/>
+
         <h1 id="ind_text">Box office de la semaine 🎁 : </h1>  
         <p id="ind_description">Retrouvez ici tout les meilleurs films et émissions de la semaine afin de ne laisser passer aucun programme qui vaut la peine d'être vu !</p>
         <div className='movies_section'>

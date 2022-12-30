@@ -247,6 +247,21 @@
     }
 }
 
+@media only screen and (max-width: 750px) {
+    .genres_page h1 {
+        margin-left: 20px;
+    }
+
+    .genres_page p {
+        margin-left: 20px;
+    }
+
+    .genres_page .movies_section {
+        margin-top: 150px;
+        margin-left: 10px;
+    }
+}
+
 @media only screen and (max-width: 582px) {
     .github_link { margin-left: -25%; }
 }
@@ -461,6 +476,31 @@
         background-color: #040a22;
         box-shadow: 0px 0px 50px rgb(36, 36, 36);
         position: fixed;
+    }
+
+    .genres_page h1 {
+        font-size: 35px;
+    }
+
+    .genres_page p {
+        font-size: 12px;
+        margin-top: 70px;
+        width: 90%;
+    }
+
+    .genres_page .movies_section {
+        margin-top: 140px;
+    }
+
+    .genres_page .back_link {
+        margin-left: 20px;
+    }
+    
+    .genres_page .back_link p {
+        margin-top: -24px;
+        margin-left: 45px;
+        font-size: 14px;
+        color: white!important;
     }
 }
 

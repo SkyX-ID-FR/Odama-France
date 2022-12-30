@@ -190,6 +190,50 @@ a {
     margin-right: auto;
     text-align: justify;
 }
+
+.genres_page h1 {
+    position: absolute;
+    margin-left: 50px;
+    font-weight: 900;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.genres_page p {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 73px;
+}
+
+.genres_page .movies_section {
+    margin-top: 120px;
+}
+
+.genres_page .movies_section #rates {
+    padding-right: 10px!important;
+    margin-left: 180px!important;
+    margin-top: -230px!important;
+}
+
+.genres_page .movies_section #rates img {
+    margin-left: 20px!important;
+}
+
+.genres_page .movies_section #rates p {
+    margin-left: -8px;
+    margin-top: 0px;
+}
+
+.genres_page .back_link {
+    margin-left: 40px;
+}
+
+.genres_page .back_link p {
+    margin-top: -24px;
+    margin-left: 65px;
+    font-size: 14px;
+    color: white!important;
+}
 /* 📦 End of Content Page's style 📦 */
 
 /* 🎥 Movies section's style : 🎥 */
@@ -213,6 +257,25 @@ a {
     font-weight: 800;
     font-size: 38px;
     margin-bottom: 25px;
+}
+
+.content_page .link_to_genres {
+    background-color: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    border: 3px solid white;
+    font-weight: 600;
+    z-index: 100;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.content_page .link_to_genres:hover {
+    background-color: white!important;
+    transition: all 0.5s!important;
+    color: black!important;
 }
 
 .content_page #ind_description {
