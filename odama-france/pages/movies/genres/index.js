@@ -89,7 +89,7 @@ export default function MoviesPage(props) {
         </div><br/><br/><br/>
 
         <h1>Genre - Action 💪</h1>
-        <p>Est-ce qu'il y a vraiment mieux qu'un bon film de comédie ? Odama&copy; vous propose une sélection digne des plus grands fous rire du cinéma français. Et maintenant peut-être le plus dur : à vous de choisir !</p>
+        <p>Des flingues, de la musique entraînante et une histoire palpitante : tout pour vous faire vibrer durant toute la longueure de chaques films qui se trouve dans cette sélection...</p>
         <div className='movies_section'>
           <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[1].id}>
             <img src={file_data[1].poster} className='movie_poster' alt='movie-poster'/>  
