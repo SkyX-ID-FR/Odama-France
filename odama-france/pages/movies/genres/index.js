@@ -27,6 +27,14 @@ export default function MoviesPage(props) {
   const file_data = props.all_movies; 
   let show_humour_movies = [];
 
+  useEffect(function() {
+    $("#loader_page_finish").hide();
+    setTimeout(function(){
+      $("#loader_section").hide();
+      $("#loader_page_finish").fadeIn(700);
+    }, 1100);
+  }, []);
+
   const RedirectToMoviesDetails = event => {
     var id_element = event.currentTarget.id;
     localStorage.setItem('item_id', id_element);
