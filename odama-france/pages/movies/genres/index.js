@@ -25,15 +25,6 @@ export async function getStaticProps() {
 export default function MoviesPage(props) {
   const router = useRouter();
   const file_data = props.all_movies; 
-  let show_humour_movies = [];
-
-  useEffect(function() {
-    $("#loader_page_finish").hide();
-    setTimeout(function(){
-      $("#loader_section").hide();
-      $("#loader_page_finish").fadeIn(700);
-    }, 1100);
-  }, []);
 
   const RedirectToMoviesDetails = event => {
     var id_element = event.currentTarget.id;
@@ -41,21 +32,35 @@ export default function MoviesPage(props) {
     router.push({pathname: '../movies/details'});
   };
 
-  let humour_movies_id = 11;
-  while (humour_movies_id < 18) {
-    humour_movies_id++;
-    show_humour_movies.push (
-      <>
-        <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[humour_movies_id].id}>
-          <img src={file_data[humour_movies_id].poster} className='movie_poster' alt='movie-poster'/>  
-          <div className='movies_infos_poster'>
-            <div id='rates'><p>{file_data[humour_movies_id].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
-            <span className='movies_tags'>{file_data[humour_movies_id].tags}</span>
+  useEffect(function() {
+    $("#loader_page_finish").hide();
+    $("#genres_popup").hide();
+
+    setTimeout(function(){
+      $("#loader_section").hide();
+      $("#loader_page_finish").fadeIn(700);
+    }, 1000);
+  }, []);
+
+  const show_genres_poppup = event => {
+    $("#genres_popup").fadeIn(300); 
+    var movies_genres_selected = event.currentTarget.id;
+    document.getElementById("movies_list").innerHTML = "";
+
+    for (let i = 1; i < file_data.length; i++) {
+      if (file_data[i].genres.indexOf(movies_genres_selected) !== -1) {
+        document.getElementById("movies_list").innerHTML += `
+          <div id='movies_genres_item'>
+            <img src='${file_data[i].poster}' id="poster_img" alt='poster_img'/>
+            <div id='rates'><p>${file_data[i].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+            <span id='tags'>${file_data[i].tags}</span>
           </div>
-        </div>
-      </>
-    )
+        `;
+      }
+    }
   }
+
+  function close_popup() { $("#genres_popup").fadeOut(300); }
 
   return (
     <>
@@ -75,79 +80,22 @@ export default function MoviesPage(props) {
       <section className="content_page genres_page" id="loader_page_finish">
         <Link className='back_link' style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies"><img className='back_icon' src='https://svgur.com/i/p5L.svg'/><p>Revenir à tout les films</p></Link><br/><br/>
         
-        <h1>Genre - Comédie 😂</h1>
-        <p>Est-ce qu'il y a vraiment mieux qu'un bon film de comédie ? Odama&copy; vous propose une sélection digne des plus grands fous rire du cinéma français. Et maintenant peut-être le plus dur : à vous de choisir !</p>
-        <div className='movies_section'>
-          <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[5].id}>
-            <img src={file_data[5].poster} className='movie_poster' alt='movie-poster'/>  
-            <div className='movies_infos_poster'>
-              <div id='rates'><p>{file_data[5].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
-              <span className='movies_tags'>{file_data[5].tags}</span>
-            </div>
-          </div>
-          {show_humour_movies}
-        </div><br/><br/><br/>
+        <div className='button_genres_group'>
+          <h1>Choissisez votre genre de film préféré :</h1>
+          <p>Cela nous permettra de sauvegarder vos préférences d'utilisateurs et d'améliorer votre expérience avec la plateforme Odama&copy;.</p>
 
-        <h1>Genre - Action 💪</h1>
-        <p>Des flingues, de la musique entraînante et une histoire palpitante : tout pour vous faire vibrer durant toute la longueure de chaques films qui se trouve dans cette sélection...</p>
-        <div className='movies_section'>
-          <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[1].id}>
-            <img src={file_data[1].poster} className='movie_poster' alt='movie-poster'/>  
-            <div className='movies_infos_poster'>
-              <div id='rates'><p>{file_data[1].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
-              <span className='movies_tags'>{file_data[1].tags}</span>
-            </div>
-          </div>
-
-          <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[19].id}>
-            <img src={file_data[19].poster} className='movie_poster' alt='movie-poster'/>  
-            <div className='movies_infos_poster'>
-              <div id='rates'><p>{file_data[19].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
-              <span className='movies_tags'>{file_data[19].tags}</span>
-            </div>
-          </div>
-
-          <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[20].id}>
-            <img src={file_data[20].poster} className='movie_poster' alt='movie-poster'/>  
-            <div className='movies_infos_poster'>
-              <div id='rates'><p>{file_data[20].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
-              <span className='movies_tags'>{file_data[20].tags}</span>
-            </div>
-          </div>
-
-          <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[21].id}>
-            <img src={file_data[21].poster} className='movie_poster' alt='movie-poster'/>  
-            <div className='movies_infos_poster'>
-              <div id='rates'><p>{file_data[21].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
-              <span className='movies_tags'>{file_data[21].tags}</span>
-            </div>
-          </div>
-
-          <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[22].id}>
-            <img src={file_data[22].poster} className='movie_poster' alt='movie-poster'/>  
-            <div className='movies_infos_poster'>
-              <div id='rates'><p>{file_data[22].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
-              <span className='movies_tags'>{file_data[22].tags}</span>
-            </div>
-          </div>
-
-          <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[23].id}>
-            <img src={file_data[23].poster} className='movie_poster' alt='movie-poster'/>  
-            <div className='movies_infos_poster'>
-              <div id='rates'><p>{file_data[23].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
-              <span className='movies_tags'>{file_data[23].tags}</span>
-            </div>
-          </div>
-
-          <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[24].id}>
-            <img src={file_data[24].poster} className='movie_poster' alt='movie-poster'/>  
-            <div className='movies_infos_poster'>
-              <div id='rates'><p>{file_data[24].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
-              <span className='movies_tags'>{file_data[24].tags}</span>
-            </div>
-          </div>
+          <button onClick={show_genres_poppup} id="humour">Comédie 😂</button>
+          <button onClick={show_genres_poppup} id="aventure">Aventure 🗡</button>
+          <button onClick={show_genres_poppup} id="drame">Drame 😥</button>
+          <button onClick={show_genres_poppup} id="action">Action 🔥</button>
+          <button onClick={show_genres_poppup} id="horreur">Horreur 💀</button>
         </div>
       </section>
+
+      <div id="genres_popup">
+          <img onClick={close_popup} id="close_icon" src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' alt="close_icon"/>
+          <div id='movies_list'></div>
+      </div>
     </>
   )
 }

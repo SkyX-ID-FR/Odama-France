@@ -195,6 +195,131 @@ a {
     padding-bottom: 100px;
 }
 
+.genres_page .button_genres_group {
+    margin-left: 45px;
+    margin-top: 20px;
+}
+
+.genres_page .button_genres_group h1 {
+    position: relative;
+    margin-left: 0px;
+    font-size: 40px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.genres_page .button_genres_group p {
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 5px;
+    margin-left: 0px;
+    font-size: 15px;
+}
+
+.genres_page .button_genres_group button {
+    background-color: #030928;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    margin-right: 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    border-color: transparent;
+    margin-bottom: 20px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    box-shadow: 10px 10px 70px #030928;
+}
+
+.genres_page .button_genres_group button:hover {
+    transition: all 0.6s;
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+#genres_popup {
+    background-color: rgba(0, 0, 0, 0.693)!important;
+    backdrop-filter: blur(8px)!important;
+    height: 200%;
+    position: absolute;
+    padding: 40px;
+    width: 100%;
+    z-index: 110;
+    color: white;
+    padding-top: 100px;
+}
+
+#genres_popup * {
+    background-color: transparent;
+}
+
+#genres_popup #close_icon {
+    float: right;
+    width: 35px;
+    margin-right: 60px;
+    cursor: pointer;
+    margin-top: -80px;
+}
+
+#genres_popup #movies_list #movies_genres_item {
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+#genres_popup #movies_list #movies_genres_item:hover {
+    transition: all 0.4s;
+    transform: scale(1.05);
+}
+
+#genres_popup #movies_list #movies_genres_item #poster_img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+#genres_popup #movies_list #movies_genres_item #rates {
+    background-color: rgba(0, 0, 0, 0.297);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    margin-top: -300px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    border-radius: 10px;
+    margin-left: 110px;
+}
+
+#genres_popup #movies_list #movies_genres_item #rates p {
+    float: left;
+}
+
+#genres_popup #movies_list #movies_genres_item #rates img {
+    width: 15px;
+    margin-top: 2.2px;
+    margin-left: 5px;
+    float: left;
+}
+
+#genres_popup #movies_list #movies_genres_item #tags {
+    background-color: rgba(0, 0, 0, 0.297);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 5px;
+    margin-top: 262px;
+    margin-left: -195px;
+    padding-bottom: 7px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
 .genres_page h1 {
     position: absolute;
     margin-left: 50px;
