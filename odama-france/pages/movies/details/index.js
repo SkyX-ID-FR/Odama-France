@@ -122,7 +122,7 @@ export default function DetailsMoviesPage(props) {
         
         <div id="add_movies_toast" className='toast_popup'>
           <img onClick={close_add_movies_toast} src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' alt="close_icon"/>
-          <p>Ce film a bien été ajouté à vos favoris ! 🎉<br/>Vous pouvez retrouver tout vos films aimés dans <Link style={{textDecoration:"none", backgroundColor:"transparent"}} href="/my-profile">votre bibiliothèque personnelle..</Link></p>
+          <p>Ce film a bien été ajouté dans vos favoris ! 🎉<br/>Vous pouvez retrouver tout vos films aimés dans <Link style={{textDecoration:"none", backgroundColor:"transparent"}} href="/my-profile">votre bibiliothèque personnelle..</Link></p>
         </div>
 
         <div id="remove_movies_toast" className='toast_popup'>

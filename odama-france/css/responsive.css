@@ -450,6 +450,7 @@
     .movies_section .movies_item .movies_infos_poster #rates {
         margin-left: 82px;
         margin-top: -125px;
+        padding-bottom: 7px;
     }
 
     #movies_details_section .toast_popup {
@@ -458,7 +459,7 @@
         font-size: 14px;
         bottom: 0px;
         background-color: #040a22;
-        box-shadow: 0px 0px 50px rgb(97, 97, 97);
+        box-shadow: 0px 0px 50px rgb(36, 36, 36);
         position: fixed;
     }
 }
