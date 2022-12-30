@@ -26,7 +26,7 @@ export default function MyProfile(props) {
         $("#more_info_container").click(function() { $("#movies_library_popup").fadeIn(400); }); 
         $("#close_icon_popup").click(function() { $("#movies_library_popup").hide(); });
         
-        if (JSON.parse(localStorage.getItem('list_movies_liked')) == null) {    
+        if (JSON.parse(localStorage.getItem('list_movies_liked')) == null || JSON.parse(localStorage.getItem('list_movies_liked')).length === 0) {    
             document.getElementById("all_liked_movies_component").innerHTML = `
                 <div class="not_found_component">
                     <img src="https://cdni.iconscout.com/illustration/premium/thumb/not-found-4064375-3363936.png" alt="not_found_img"/>
