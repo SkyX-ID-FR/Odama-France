@@ -29,6 +29,13 @@
     #movies_library_popup .not_found_component h1 { margin-left: 23%; }
 }
 
+@media only screen and (max-width: 1137px) {
+    #movies_list {
+        margin-top: 520px;
+        width: 87%;
+    }
+}
+
 @media only screen and (max-width: 1100px) {
     .content_page .hero_section {
         margin: 0px;
@@ -571,6 +578,30 @@
         margin-top: 215px;
         width: 130px;
         padding-right: 10px;
+    }
+
+    #movies_list {
+        margin-top: 560px;
+        margin-left: 20px;
+        width: 87%;
+    }
+
+    #movies_list #movies_genres_item #poster_img {
+        width: 155px;
+        height: 230px;
+    }
+
+    #movies_list #movies_genres_item #rates {
+        margin-top: -230px;
+        margin-left: 72px;
+    }
+
+    #movies_list #movies_genres_item #tags {
+        margin: 0px;
+        font-size: 11px;
+        margin-top: 200px;
+        width: 110px;
+        margin-left: -152px;
     }
 }
 

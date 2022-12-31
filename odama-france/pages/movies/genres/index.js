@@ -44,8 +44,8 @@ export default function MoviesPage(props) {
 
   const show_genres_poppup = event => {
     var movies_genres_selected = event.currentTarget.id;
-
     document.getElementById("movies_list").innerHTML = "";
+
     for (let i = 1; i < file_data.length; i++) {
         if (file_data[i].genres.indexOf(movies_genres_selected) !== -1) {
           document.getElementById("movies_list").innerHTML += `
