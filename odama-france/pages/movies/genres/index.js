@@ -45,19 +45,29 @@ export default function MoviesPage(props) {
   const show_genres_poppup = event => {
     $("#genres_popup").fadeIn(300); 
     var movies_genres_selected = event.currentTarget.id;
-    document.getElementById("movies_list").innerHTML = "";
 
-    for (let i = 1; i < file_data.length; i++) {
-      if (file_data[i].genres.indexOf(movies_genres_selected) !== -1) {
-        document.getElementById("movies_list").innerHTML += `
-          <div id='movies_genres_item'>
-            <img src='${file_data[i].poster}' id="poster_img" alt='poster_img'/>
-            <div id='rates'><p>${file_data[i].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
-            <span id='tags'>${file_data[i].tags}</span>
-          </div>
-        `;
+    document.getElementById("movies_list").innerHTML = `
+      <div id='movies_genres_item'>
+        <div class="loading_component">
+          <img src="https://media3.giphy.com/media/L05HgB2h6qICDs5Sms/giphy.gif" id="loader" alt="loader_gif"/>
+        </div>
+      </div>
+    `;
+
+    setTimeout(function(){
+      document.getElementById("movies_list").innerHTML = "";
+      for (let i = 1; i < file_data.length; i++) {
+        if (file_data[i].genres.indexOf(movies_genres_selected) !== -1) {
+          document.getElementById("movies_list").innerHTML += `
+            <div id='movies_genres_item'>
+                <img src='${file_data[i].poster}' id="poster_img" alt='poster_img'/>
+                <div id='rates'><p>${file_data[i].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+                <span id='tags'>${file_data[i].tags}</span>
+            </div>
+          `;
+        }
       }
-    }
+    }, 1500);
   }
 
   function close_popup() { $("#genres_popup").fadeOut(300); }

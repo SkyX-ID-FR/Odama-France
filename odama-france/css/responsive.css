@@ -532,13 +532,25 @@
     }
 
     #genres_popup {
-        padding-left: 38px;
+        padding-left: 30px;
+        height: 100%;
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    #genres_popup .loading_component img {
+        margin-left: -25px;
+        margin-top: 50px;
     }
 
     #genres_popup #close_icon {
         width: 25px;
-        margin-right: 0px;
-        margin-top: -85px;
+        margin-right: 10px;
+        margin-top: -65px;
+    }
+
+    #genres_popup #movies_list #movies_genres_item {
+        margin-right: 20px;
     }
 
     #genres_popup #movies_list #movies_genres_item #poster_img {

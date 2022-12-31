@@ -244,17 +244,25 @@ a {
 #genres_popup {
     background-color: rgba(0, 0, 0, 0.693)!important;
     backdrop-filter: blur(8px)!important;
-    height: 200%;
-    position: absolute;
     padding: 40px;
-    width: 100%;
     z-index: 110;
     color: white;
+    position: absolute; top:0px; bottom:0px; width: 100%;
     padding-top: 100px;
 }
 
 #genres_popup * {
     background-color: transparent;
+}
+
+#genres_popup .loading_component {
+    position: absolute;
+    text-align: center;
+    width: 90%!important;
+}
+
+#genres_popup .loading_component img {
+    width: 30px;
 }
 
 #genres_popup #close_icon {
