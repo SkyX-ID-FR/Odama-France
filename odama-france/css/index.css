@@ -238,11 +238,11 @@ a {
 .genres_page .button_genres_group button:hover {
     transform: scale(1.07);
     cursor: pointer;
-    box-shadow: 10px 10px 70px #030928;
+    box-shadow: 0px 0px 70px #030928;
 }
 
 .genres_page .button_genres_group button:active {
-    box-shadow: 10px 10px 70px #030928;
+    box-shadow: 0px 0px 70px #030928;
     transform: scale(0.95);
 }
 
