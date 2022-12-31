@@ -39,24 +39,26 @@ export default function MoviesPage(props) {
     setTimeout(function(){
       $("#loader_section").hide();
       $("#loader_page_finish").fadeIn(700);
-    }, 1000);
+    }, 1500);
   }, []);
 
   const show_genres_poppup = event => {
     var movies_genres_selected = event.currentTarget.id;
     document.getElementById("movies_list").innerHTML = "";
 
-    for (let i = 1; i < file_data.length; i++) {
+    setTimeout(function(){
+      for (let i = 1; i < file_data.length; i++) {
         if (file_data[i].genres.indexOf(movies_genres_selected) !== -1) {
           document.getElementById("movies_list").innerHTML += `
-            <div id='movies_genres_item'>
+            <a href="../movies/details" class='movies_genres_item' onClick="localStorage.setItem('item_id', this.id);" id="${file_data[i].id}">
                 <img src='${file_data[i].poster}' id="poster_img" alt='poster_img'/>
                 <div id='rates'><p>${file_data[i].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
                 <span id='tags'>${file_data[i].tags}</span>
-            </div>
+            </a>
           `;
         }
-    }
+      }
+    }, 500);
   }
 
   return (
@@ -90,7 +92,6 @@ export default function MoviesPage(props) {
       </section>
 
       <div id='movies_list'></div>
-      <br/><br/><br/><br/><br/><br/>
     </>
   )
 }

@@ -40,11 +40,11 @@ export default function MyProfile(props) {
 
             for (let id of list_movies_liked) {
                 document.getElementById("all_liked_movies_component").innerHTML += `
-                    <div class="movies_liked_item">
+                    <a href="../movies/details" onClick="localStorage.setItem('item_id', this.id);" id="${movies_data[id].id}" class="movies_liked_item">
                         <div id='rates'><p>${movies_data[id].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
                         <span class='movies_tags'>${movies_data[id].tags}</span>
                         <img src="${movies_data[id].poster}" alt="movies_liked_poster"/>
-                    </div>
+                    </a>
                 `;
             }
         }
