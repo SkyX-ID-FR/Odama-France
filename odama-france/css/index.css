@@ -43,10 +43,7 @@ html {
    border-radius: 10px;
 }
 
-a { 
-    color: rgb(0, 207, 0);
-    text-decoration: none; 
-}
+a {  color: gray; }
 /* 📊 Completementary style : 📊 */
 .github_link {
     margin-top: 20px;
