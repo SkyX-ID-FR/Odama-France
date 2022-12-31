@@ -58,7 +58,7 @@ export default function MoviesPage(props) {
           `;
         }
       }
-    }, 500);
+    }, 200);
   }
 
   return (
