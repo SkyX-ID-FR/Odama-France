@@ -241,81 +241,68 @@ a {
     cursor: pointer;
 }
 
-#genres_popup {
-    background-color: rgba(0, 0, 0, 0.693)!important;
-    backdrop-filter: blur(8px)!important;
-    padding: 40px;
-    z-index: 110;
-    color: white;
-    position: absolute; top:0px; bottom:0px; width: 100%;
-    padding-top: 100px;
-}
-
-#genres_popup * {
-    background-color: transparent;
-}
-
-#genres_popup .loading_component {
+#movies_list {
+    margin-left: 40px;
     position: absolute;
-    text-align: center;
-    width: 90%!important;
+    margin-top: 450px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 95%;
+    padding-top: 20px;
+    background-color: transparent;
+    padding-left: 10px;
 }
 
-#genres_popup .loading_component img {
-    width: 30px;
-}
-
-#genres_popup #close_icon {
-    float: right;
-    width: 35px;
-    margin-right: 60px;
-    cursor: pointer;
-    margin-top: -80px;
-}
-
-#genres_popup #movies_list #movies_genres_item {
+#movies_list #movies_genres_item {
     float: left;
     margin-right: 25px;
     margin-bottom: 25px;
     cursor: pointer;
 }
 
-#genres_popup #movies_list #movies_genres_item:hover {
+#movies_list #movies_genres_item * {
+    background-color: transparent;
+    color: white;
+}
+
+#movies_list #movies_genres_item:hover {
     transition: all 0.4s;
     transform: scale(1.05);
 }
 
-#genres_popup #movies_list #movies_genres_item #poster_img {
+#movies_list #movies_genres_item #poster_img {
     width: 200px;
     height: 300px;
     border-radius: 10px;
 }
 
-#genres_popup #movies_list #movies_genres_item #rates {
+#movies_list #movies_genres_item #rates {
     background-color: rgba(0, 0, 0, 0.297);
     backdrop-filter: blur(10px);
     position: absolute;
-    margin-top: -300px;
+    margin-top: -299px;
     padding-left: 20px;
     padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 20px;
+    padding-bottom: 7px;
+    padding-right: 10px;
     border-radius: 10px;
-    margin-left: 110px;
+    margin-left: 115px;
+    width: 50px;
 }
 
-#genres_popup #movies_list #movies_genres_item #rates p {
+#movies_list #movies_genres_item #rates p {
     float: left;
 }
 
-#genres_popup #movies_list #movies_genres_item #rates img {
+#movies_list #movies_genres_item #rates img {
     width: 15px;
     margin-top: 2.2px;
     margin-left: 5px;
     float: left;
 }
 
-#genres_popup #movies_list #movies_genres_item #tags {
+#movies_list #movies_genres_item #tags {
     background-color: rgba(0, 0, 0, 0.297);
     backdrop-filter: blur(10px);
     position: absolute;

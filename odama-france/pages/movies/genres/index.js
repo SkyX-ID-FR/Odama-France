@@ -43,20 +43,10 @@ export default function MoviesPage(props) {
   }, []);
 
   const show_genres_poppup = event => {
-    $("#genres_popup").fadeIn(300); 
     var movies_genres_selected = event.currentTarget.id;
 
-    document.getElementById("movies_list").innerHTML = `
-      <div id='movies_genres_item'>
-        <div class="loading_component">
-          <img src="https://media3.giphy.com/media/L05HgB2h6qICDs5Sms/giphy.gif" id="loader" alt="loader_gif"/>
-        </div>
-      </div>
-    `;
-
-    setTimeout(function(){
-      document.getElementById("movies_list").innerHTML = "";
-      for (let i = 1; i < file_data.length; i++) {
+    document.getElementById("movies_list").innerHTML = "";
+    for (let i = 1; i < file_data.length; i++) {
         if (file_data[i].genres.indexOf(movies_genres_selected) !== -1) {
           document.getElementById("movies_list").innerHTML += `
             <div id='movies_genres_item'>
@@ -66,11 +56,8 @@ export default function MoviesPage(props) {
             </div>
           `;
         }
-      }
-    }, 1500);
+    }
   }
-
-  function close_popup() { $("#genres_popup").fadeOut(300); }
 
   return (
     <>
@@ -102,10 +89,7 @@ export default function MoviesPage(props) {
         </div>
       </section>
 
-      <div id="genres_popup">
-          <img onClick={close_popup} id="close_icon" src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' alt="close_icon"/>
-          <div id='movies_list'></div>
-      </div>
+      <div id='movies_list'></div>
     </>
   )
 }
