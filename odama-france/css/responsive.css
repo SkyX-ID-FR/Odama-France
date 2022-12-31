@@ -558,12 +558,17 @@
         margin-left: 72px;
     }
 
-    #movies_list #movies_genres_item #tags {
+    #movies_list .movies_genres_item #rates p {
+        font-size: 13px!important;
+        margin-top: 1.5px;
+    }
+
+    #movies_list .movies_genres_item #tags {
         margin: 0px;
-        font-size: 11px;
-        margin-top: 200px;
-        width: 110px;
-        margin-left: -152px;
+        font-size: 13px;
+        margin-top: 265px;
+        width: 150px;
+        margin-left: -195px;
     }
 }
 
