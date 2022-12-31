@@ -7,7 +7,7 @@
             "poster":  "https://fr.web.img6.acsta.net/pictures/22/10/19/17/48/3044641.jpg",
             "background": "https://dx35vtwkllhj9.cloudfront.net/universalstudios/violent-night/images/bg.jpg",
             "tags": "Noël et Action",
-            "genres": ["drame", "action"],
+            "genres": ["action"],
             "duration": "1h52min",
             "year": "2022",
             "rate": "5,5",
@@ -93,7 +93,7 @@
             "background": "https://infodujour.fr/wp-content/uploads/2022/04/tenor.jpg",
             "tags": "Rap et Drame",
             "duration": "1h41min",
-            "genres": ["humour", "drame"],
+            "genres": ["humour"],
             "year": "2022",
             "rate": "9,8",
             "source": "https://tomacloud.com/iframe/KsLNeDebqA",
@@ -178,7 +178,7 @@
             "background": "https://www.voo.be/fr/tv/regarder/content/voo/files/vod/images/416954.still.jpg",
             "tags": "Comédie et Retraite",
             "duration": "1h37min",
-            "genres": ["humour", "action"],
+            "genres": ["humour"],
             "year": "2022",
             "rate": "9,6",
             "source": "https://tomacloud.com/iframe/gNjCAHUpaM",
@@ -211,7 +211,7 @@
             "poster": "https://www.themoviedb.org/t/p/original/onjNaw9ef5JsA9674mPzqV7tGYf.jpg",
             "background": "https://imgsrc.cineserie.com/2022/05/loin-du-pe%CC%81riph-1.jpeg?ver=1",
             "tags": "Action et Humour",
-            "genres": ["humour", "action"],
+            "genres": ["humour", "aventure"],
             "duration": "1h59min",
             "year": "2022",
             "rate": "9,2",
@@ -245,7 +245,7 @@
             "poster": "https://www.themoviedb.org/t/p/original/1a7O0s8VwKrWveD58WpBF3a5FIz.jpg",
             "background": "http://mondocine.net/wp-content/uploads/2022/06/la-traversee-film-2022-3.jpg",
             "tags": "Comédie et Aventure",
-            "genres": ["drame", "humour", "aventure"],
+            "genres": ["drame", "humour"],
             "duration": "1h45min",
             "year": "2022",
             "rate": "9,7",
@@ -262,7 +262,7 @@
             "poster": "https://www.themoviedb.org/t/p/original/zq7B2VrFcBZa6YyMHV9C1iggmWm.jpg",
             "background": "https://www.ecranlarge.com/media/cache/1600x1200/uploads/image/001/452/classico-affiche-francaise-1452132.jpg",
             "tags": "Comédie et Foot",
-            "genres": ["humoour"],
+            "genres": ["humour"],
             "duration": "1h37min",
             "year": "2022",
             "rate": "9,3",
@@ -407,6 +407,23 @@
             "synopsis": "Coccinelle est un assassin malchanceux et particulièrement déterminé à accomplir sa nouvelle mission paisiblement après que trop d'entre elles aient déraillé. Mais le destin en a décidé autrement et l'embarque dans le train le plus rapide au monde aux côtés d'adversaires redoutables qui ont tous un point commun, mais dont les intérêts divergent radicalement... Il doit alors tenter par tous les moyens de descendre du train.",
             "productors": [
                   { "name": "David Leitch <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img5.acsta.net/c_310_420/pictures/19/07/24/09/51/5643922.jpg"}
+            ]
+      },
+      {
+            "id": 25,
+            "title": "Avalonia",
+            "poster": "https://www.themoviedb.org/t/p/original/ryW6BRF8zDZoTFVSjmaoIiHxUa5.jpg",
+            "background": "https://dx35vtwkllhj9.cloudfront.net/disney/strange-world/images/regions/ca_fr/share.jpg",
+            "tags": "Enfant et Humour",
+            "genres": ["humour"],
+            "duration": "1h42min",
+            "year": "2022",
+            "rate": "5,1",
+            "source": "https://tomacloud.com/iframe/ExzD330i50",
+            "trailer": "https://www.youtube.com/watch?v=eXn-FkKwRcc",
+            "synopsis": "Les Clade, une famille d’explorateurs légendaires, découvrent un monde inexploré, plein de dangers et peuplé de créatures fantastiques. Ils sont aidés dans leur quête d’un blob espiègle et de leur chien à trois pattes. Hélas, les querelles entre ses différents membres menacent de faire échouer cette nouvelle mission, qui est – de loin – la plus cruciale.",
+            "productors": [
+                  { "name": "Qui Nguyen <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/commons/v9/common/empty/empty_portrait.png"}
             ]
       }
   ]

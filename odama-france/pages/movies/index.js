@@ -105,6 +105,14 @@ export default function MoviesPage(props) {
   /* ✨ List of best movies on Odama's App : ✨ */
   show_odama_selection.push (
     <>
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[25].id}>
+        <img src={file_data[25].poster} className='movie_poster' alt='movie-poster'/>  
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[25].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+          <span className='movies_tags'>{file_data[25].tags}</span>
+        </div>
+      </div>
+
       <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[5].id}>
         <img src={file_data[5].poster} className='movie_poster' alt='movie-poster'/>  
         <div className='movies_infos_poster'>
@@ -134,14 +142,6 @@ export default function MoviesPage(props) {
         <div className='movies_infos_poster'>
           <div id='rates'><p>{file_data[8].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
           <span className='movies_tags'>{file_data[8].tags}</span>
-        </div>
-      </div>
-
-      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[9].id}>
-        <img src={file_data[9].poster} className='movie_poster' alt='movie-poster'/>  
-        <div className='movies_infos_poster'>
-          <div id='rates'><p>{file_data[9].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
-          <span className='movies_tags'>{file_data[9].tags}</span>
         </div>
       </div>
     </>
