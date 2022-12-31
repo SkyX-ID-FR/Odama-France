@@ -485,6 +485,10 @@
         position: fixed;
     }
 
+    .genres_page {
+        padding-bottom: 100px;
+    }
+
     .genres_page h1 {
         font-size: 35px;
     }
@@ -536,48 +540,6 @@
     
     .genres_page .button_genres_group p {
         font-size: 13px;
-    }
-
-    #genres_popup {
-        padding-left: 30px;
-        height: 100%;
-        text-align: center;
-        padding-top: 80px;
-    }
-
-    #genres_popup .loading_component img {
-        margin-left: -25px;
-        margin-top: 50px;
-    }
-
-    #genres_popup #close_icon {
-        width: 25px;
-        margin-right: 10px;
-        margin-top: -65px;
-    }
-
-    #genres_popup #movies_list #movies_genres_item {
-        margin-right: 20px;
-    }
-
-    #genres_popup #movies_list #movies_genres_item #poster_img {
-        width: 170px;
-        height: 250px;
-        border-radius: 10px;
-    }
-
-    #genres_popup #movies_list #movies_genres_item #rates {
-        margin-top: -250px;
-        margin-left: 85px;
-    }
-
-    #genres_popup #movies_list #movies_genres_item #tags {
-        font-size: 13px;
-        margin: 0px;
-        margin-left: -166px;
-        margin-top: 215px;
-        width: 130px;
-        padding-right: 10px;
     }
 
     #movies_list {

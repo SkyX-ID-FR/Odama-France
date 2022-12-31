@@ -232,13 +232,18 @@ a {
     -o-background-size: cover;
     background-size: cover;
     color: white;
-    box-shadow: 10px 10px 70px #030928;
+    transition: all 0.2s;
 }
 
 .genres_page .button_genres_group button:hover {
-    transition: all 0.6s;
     transform: scale(1.07);
     cursor: pointer;
+    box-shadow: 10px 10px 70px #030928;
+}
+
+.genres_page .button_genres_group button:active {
+    box-shadow: 10px 10px 70px #030928;
+    transform: scale(0.95);
 }
 
 #movies_list {

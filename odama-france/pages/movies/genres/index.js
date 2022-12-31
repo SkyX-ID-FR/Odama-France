@@ -90,6 +90,7 @@ export default function MoviesPage(props) {
       </section>
 
       <div id='movies_list'></div>
+      <br/><br/><br/><br/><br/><br/>
     </>
   )
 }
