@@ -245,7 +245,7 @@
             "poster": "https://www.themoviedb.org/t/p/original/1a7O0s8VwKrWveD58WpBF3a5FIz.jpg",
             "background": "http://mondocine.net/wp-content/uploads/2022/06/la-traversee-film-2022-3.jpg",
             "tags": "Comédie et Aventure",
-            "genres": ["drame", "humour"],
+            "genres": ["humour"],
             "duration": "1h45min",
             "year": "2022",
             "rate": "9,7",
@@ -424,6 +424,74 @@
             "synopsis": "Les Clade, une famille d’explorateurs légendaires, découvrent un monde inexploré, plein de dangers et peuplé de créatures fantastiques. Ils sont aidés dans leur quête d’un blob espiègle et de leur chien à trois pattes. Hélas, les querelles entre ses différents membres menacent de faire échouer cette nouvelle mission, qui est – de loin – la plus cruciale.",
             "productors": [
                   { "name": "Qui Nguyen <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/commons/v9/common/empty/empty_portrait.png"}
+            ]
+      },
+      {
+            "id": 26,
+            "title": "Lamborghini",
+            "poster": "https://www.themoviedb.org/t/p/original/RKgnYLhCNGCUkrhiCRrs40rEHe.jpg",
+            "background": "https://i.ytimg.com/vi/WjTICfrC25s/maxresdefault.jpg",
+            "tags": "Drame et Historique",
+            "genres": ["drame"],
+            "duration": "1h38min",
+            "year": "2022",
+            "rate": "8,7",
+            "source": "https://tomacloud.com/iframe/xmqEFeNFnl",
+            "trailer": "https://www.youtube.com/watch?v=kzqwRxorvKE",
+            "synopsis": "L'histoire du fondateur Ferruccio Lamborghini et de sa relation avec son grand rival, Enzo Ferrari. Le documentaire met l'accent sur cette guerre entre les ateliers de Sant'Agata Bolognese et de Maranello.",
+            "productors": [
+                  { "name": "Boddy Moresco <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/commons/v9/common/empty/empty_portrait.png"}
+            ]
+      },
+      {
+            "id": 27,
+            "title": "Athena",
+            "poster": "https://fr.web.img5.acsta.net/pictures/22/09/02/11/45/0753062.jpg",
+            "background": "https://occ-0-1432-1007.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABW6NPcgLIVlcEvKfI2h0pS8qLHY400P1PPJ6K8H70PZXoynN021QY1vgUsoTFW-AtDnCEa_-hOXxKhgfzy-pIqx7bSnFD-tbqpv1.jpg?r=f9b",
+            "tags": "Drame et Cité",
+            "genres": ["drame"],
+            "duration": "1h37min",
+            "year": "2022",
+            "rate": "9,8",
+            "source": "https://tomacloud.com/iframe/grfxHPz1eb",
+            "trailer": "https://www.youtube.com/watch?v=kzqwRxorvKE",
+            "synopsis": "Rappelé du front à la suite de la mort de son plus jeune frère, décédé des suites d’une prétendue intervention de police, Abdel retrouve sa famille déchirée. Entre le désir de vengeance de son petit frère Karim et le business en péril de son grand frère dealer Moktar, il essaye de calmer les tensions. Minute après minute, la cité Athena se transforme en château fort, théâtre d’une tragédie familiale et collective à venir. Au moment où chacun pense avoir trouvé la vérité, la cité est sur le point de basculer dans le chaos…",
+            "productors": [
+                  { "name": "Romain Gavras <br/> Français 🇫🇷", "profile_pic": "https://fr.web.img4.acsta.net/c_310_420/pictures/17/10/05/15/03/2104482.jpg"}
+            ]
+      },
+      {
+            "id": 28,
+            "title": "Goliath",
+            "poster": "https://www.themoviedb.org/t/p/original/7lk068aWyOynhZU3jooaZnjFxa8.jpg",
+            "background": "https://media.lesechos.com/api/v1/images/view/62277dfbbc294425a043fd4a/1280x720/0701078492495-web-tete.jpg",
+            "tags": "Drame et Thriller",
+            "genres": ["drame"],
+            "duration": "2h02min",
+            "year": "2022",
+            "rate": "8,1",
+            "source": "https://tomacloud.com/iframe/Lj5utTZkRz",
+            "trailer": "https://www.youtube.com/watch?v=I3gZ6Iz6yQI",
+            "synopsis": "France, professeure de sport le jour, ouvrière la nuit, milite activement contre l’usage des pesticides. Patrick, obscur et solitaire avocat parisien, est spécialiste en droit environnemental. Mathias, lobbyiste brillant et homme pressé, défend les intérêts d’un géant de l’agrochimie. Suite à l’acte radical d’une anonyme, ces trois destins, qui n’auraient jamais dû se croiser, vont se bousculer, s’entrechoquer et s’embraser.",
+            "productors": [
+                  { "name": "Frédéric Tellier <br/> Français 🇫🇷", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/pictures/19/04/04/14/21/0204770.jpg"}
+            ]
+      },
+      {
+            "id": 29,
+            "title": "Notre-Dame brûle !",
+            "poster": "https://www.themoviedb.org/t/p/original/Aqd3sjDPGs37SAss0XGSHbXRlgM.jpg",
+            "background": "https://cloudfront-eu-central-1.images.arcpublishing.com/leparisien/KDUOKLLZ2BDV5M4RHWEKBT333Y.JPG",
+            "tags": "Drame et Thriller",
+            "genres": ["drame"],
+            "duration": "1h50min",
+            "year": "2022",
+            "rate": "7,5",
+            "source": "https://tomacloud.com/iframe/IreGiWAqma",
+            "trailer": "https://www.youtube.com/watch?v=YlDXdPSEtgk",
+            "synopsis": "Le long métrage de Jean-Jacques Annaud, reconstitue heure par heure l’invraisemblable réalité des évènements du 15 avril 2019 lorsque la cathédrale subissait le plus important sinistre de son histoire. Et comment des femmes et des hommes vont mettre leurs vies en péril dans un sauvetage rocambolesque et héroïque.",
+            "productors": [
+                  { "name": "Jean-Jacques Annaud <br/> Français 🇫🇷", "profile_pic": "https://fr.web.img5.acsta.net/c_310_420/pictures/18/04/09/15/13/3056605.jpg"}
             ]
       }
   ]

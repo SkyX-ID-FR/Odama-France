@@ -144,6 +144,14 @@ export default function MoviesPage(props) {
           <span className='movies_tags'>{file_data[8].tags}</span>
         </div>
       </div>
+
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[28].id}>
+        <img src={file_data[28].poster} className='movie_poster' alt='movie-poster'/>  
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[28].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+          <span className='movies_tags'>{file_data[28].tags}</span>
+        </div>
+      </div>
     </>
   )
 
