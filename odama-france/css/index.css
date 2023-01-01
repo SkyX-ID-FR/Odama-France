@@ -700,22 +700,60 @@ a {  color: gray; }
 /* 🎫 End of Movies details page style 🎫 */
 
 /* 🚧 404 Page Error style : 🚧 */
+.error_page_container * { background-color: white; }
 .error_page_container {
-    background-color: #040a22;
-    padding-top: 8%;
     height: 100vh;
     width: 100%;
-}
-
-.error_page_container * {
-    background-color: #040a22;
-}
-
-.error_page_container .not_found_message {
-    color: white;
-    font-weight: 700;
+    background-color: white;
     text-align: center;
-    font-size: 21px;
+    position: fixed;
+}
+
+.error_page_container h1 {
+    font-size: 170px;
+    font-weight: 800;
+    margin-left: -100px;
+    padding-top: 8%;
+}
+
+.error_page_container p {
+    margin-top: 15px;
+    color: gray;
+    width: 600px;
+    margin-left: 33.5%;
+}
+
+.error_page_container button {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    font-size: 15px;
+    margin-top: 35px;
+    margin-left: -120px;
+    border-radius: 20px;
+    font-weight: 600;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.error_page_container button:hover {
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+
+.error_page_container button:active {
+    transform: scale(0.9);
+}
+
+.error_page_container img {
+    width: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 10px;
 }
 /* 🚧 End of 404 Page Error style 🚧 */
 

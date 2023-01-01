@@ -17,7 +17,10 @@ export default function not_found() {
       </Head>
 
       <div className='error_page_container'>
-        <h1 className="not_found_message">🚧 Désolé mais cette page est introuvable et/ou en cours de dev ! 🚧<br/><font size="3">Revenez plus tard.. 😊</font></h1>
+        <img src='https://zupimages.net/up/22/28/k6tc.png' alt='odama_logo'/>
+        <h1>Oops !</h1>
+        <p>Cette page n'est pas disponible ou est tout simplement en cours de développement. Repassez plus tard ou cliquez sur le bouton ci-dessous pour revenir à l'accueil :</p>
+        <a href='/'><button>Revenir en lieu sûr</button></a>
       </div>
     </>
   }
