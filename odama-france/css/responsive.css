@@ -287,6 +287,10 @@
 }
 
 @media only screen and (max-width: 503px) {
+    .content_page .hero_section p {
+        margin-left: 22px;
+    }
+
     .movies_section { margin-left: 15px; }
     .movies_section .movies_item { margin-right: 15px; }
 
