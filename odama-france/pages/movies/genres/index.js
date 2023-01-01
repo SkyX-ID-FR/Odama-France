@@ -88,7 +88,7 @@ export default function MoviesPage(props) {
           <button onClick={show_genres_poppup} id="drame">Drame 😥</button>
           <button onClick={show_genres_poppup} id="action">Action 🔥</button>
           <button onClick={show_genres_poppup} id="horreur">Horreur 💀</button>
-          <button onClick={show_genres_poppup} id="fantastique">Fantastique ✨</button>
+          <button onClick={show_genres_poppup} id="heros">Super-Héros 🚀</button>
         </div>
       </section>
 

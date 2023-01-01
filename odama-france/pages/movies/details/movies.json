@@ -41,7 +41,7 @@
             "poster": "https://fr.web.img2.acsta.net/pictures/22/04/14/18/30/0040092.jpg",
             "background": "https://cdn.sortiraparis.com/images/80/77381/724674-jurassic-world-3-le-monde-d-apres-la-bande-annonce.jpg",
             "tags": "Dinosaures, Action",
-            "genres": ["aventure", "action"],
+            "genres": ["aventure"],
             "duration": "2h05min",
             "year": "2022",
             "rate": "7,1",
@@ -93,7 +93,7 @@
             "background": "https://infodujour.fr/wp-content/uploads/2022/04/tenor.jpg",
             "tags": "Rap et Drame",
             "duration": "1h41min",
-            "genres": ["humour"],
+            "genres": ["humour", "drame"],
             "year": "2022",
             "rate": "9,8",
             "source": "https://tomacloud.com/iframe/KsLNeDebqA",
@@ -110,7 +110,7 @@
             "background": "https://a.ltrbxd.com/resized/sm/upload/0m/ve/dk/6h/prey-2022-1200-1200-675-675-crop-000000.jpg?v=9894795e99",
             "tags": "Indien et Predator",
             "duration": "1h40min",
-            "genres": ["horreur", "action"],
+            "genres": ["horreur"],
             "year": "2022",
             "rate": "7,9",
             "source": "https://tomacloud.com/iframe/R2LiHIV7lx",
@@ -126,7 +126,7 @@
             "poster": "https://fr.web.img5.acsta.net/pictures/22/02/16/17/42/3125788.jpg",
             "background": "https://cdn-elle.ladmedia.fr/var/plain_site/storage/images/loisirs/cinema/news/the-batman-2-une-suite-avec-robert-pattinson-confirmee-4017404/96618235-1-fre-FR/The-Batman-2-une-suite-avec-Robert-Pattinson-confirmee.jpg",
             "tags": "Batman et Action",
-            "genres": ["aventure", "action"],
+            "genres": ["action"],
             "duration": "2h55min",
             "year": "2022",
             "rate": "7,6",
@@ -211,7 +211,7 @@
             "poster": "https://www.themoviedb.org/t/p/original/onjNaw9ef5JsA9674mPzqV7tGYf.jpg",
             "background": "https://imgsrc.cineserie.com/2022/05/loin-du-pe%CC%81riph-1.jpeg?ver=1",
             "tags": "Action et Humour",
-            "genres": ["humour", "aventure"],
+            "genres": ["humour", "action"],
             "duration": "1h59min",
             "year": "2022",
             "rate": "9,2",
@@ -345,7 +345,7 @@
             "id": 21,
             "title": "Seoul Vibe",
             "poster": "https://www.themoviedb.org/t/p/original/ffX0TL3uKerLXACkuZGWhAPMbAq.jpg",
-            "background": "https://www.ecranlarge.com/media/cache/1600x1200/uploads/image/001/455/a84usw0jwhh5rpakzv7gwp532fl-181.jpg",
+            "background": "https://occ-0-1433-2568.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABY79Lef-vV5T_5qHY7zb0cHSdw4T7RNMIvyCtpIrPS9uD3fwCWhx-3zMNgcw8dZYLtKMfTmPTgWzraKhPJU3PjwYlK0jstObZSQr.jpg?r=d51",
             "tags": "Action et Mécanique",
             "genres": ["action"],
             "duration": "2h18min",
@@ -492,6 +492,193 @@
             "synopsis": "Le long métrage de Jean-Jacques Annaud, reconstitue heure par heure l’invraisemblable réalité des évènements du 15 avril 2019 lorsque la cathédrale subissait le plus important sinistre de son histoire. Et comment des femmes et des hommes vont mettre leurs vies en péril dans un sauvetage rocambolesque et héroïque.",
             "productors": [
                   { "name": "Jean-Jacques Annaud <br/> Français 🇫🇷", "profile_pic": "https://fr.web.img5.acsta.net/c_310_420/pictures/18/04/09/15/13/3056605.jpg"}
+            ]
+      },
+      {
+            "id": 30,
+            "title": "Le loup et le Lion",
+            "poster": "https://www.themoviedb.org/t/p/original/oIBdL9Jlj9HYqwPo2UP4KRSALlK.jpg",
+            "background": "https://leparisien.fr/resizer/Fa-5W4vQU93qTnmnRehOeOkLX0A=/1200x675/cloudfront-eu-central-1.images.arcpublishing.com/leparisien/MRWDBOD75JDJZE4DMYOGBOYXNA.jpg",
+            "tags": "Drame et Aventure",
+            "genres": ["aventure"],
+            "duration": "1h50min",
+            "year": "2021",
+            "rate": "7,7",
+            "source": "https://tomacloud.com/iframe/qO3Mo2nCjW",
+            "trailer": "https://www.youtube.com/watch?v=PDejpiMuuSI",
+            "synopsis": "A la mort de son grand père, Alma, jeune pianiste de 20 ans revient dans la maison de son enfance, perdue sur une île déserte du Canada. Là, tout bascule quand un louveteau et un lionceau en détresse surgissent dans sa vie. Elle choisit de les garder pour les sauver et l’improbable se produit : ils grandissent ensemble et s’aiment comme des frères. Mais leur monde idéal s’écroule lorsque leur secret est découvert...",
+            "productors": [
+                  { "name": "Gilles de Maistre <br/> Français 🇫🇷", "profile_pic": "https://fr.web.img2.acsta.net/c_310_420/pictures/16/12/07/10/53/308317.jpg"}
+            ]
+      },
+      {
+            "id": 31,
+            "title": "Les tuches 4",
+            "poster": "https://www.themoviedb.org/t/p/original/dv60Gev15GBYSHJrIzl1iE2dkew.jpg",
+            "background": "https://s.yimg.com/ny/api/res/1.2/ZfgFpXyUJD2uuLVUXwU.Bg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02MDA-/https://media.zenfs.com/fr/europe1_312/5a5b19eb9b5652ae7c073ab1e43f02f4",
+            "tags": "Comédie et Noël",
+            "genres": ["humour"],
+            "duration": "1h32min",
+            "year": "2021",
+            "rate": "4,6",
+            "source": "https://tomacloud.com/iframe/JMeYIxe12f",
+            "trailer": "https://www.youtube.com/watch?v=vxWSTApFmR4",
+            "synopsis": "Après avoir démissionné de son poste de président de la république, Jeff et sa famille sont heureux de retrouver leur village de Bouzolles. A l’approche des fêtes de fin d’année, Cathy demande un unique cadeau : renouer les liens avec sa sœur Maguy, et son mari Jean-Yves avec qui Jeff est fâché depuis 10 ans. La réconciliation aurait pu se dérouler sans problème, sauf que lors d’un déjeuner, Jeff et Jean-Yves, vont une nouvelle fois trouver un sujet de discorde : NOËL. Cette querelle familiale qui n’aurait jamais dû sortir de Bouzolles va se transformer en bras de fer entre Jeff et un géant de la distribution sur Internet.",
+            "productors": [
+                  { "name": "Olivier Baroux <br/> Français 🇫🇷", "profile_pic": "https://fr.web.img4.acsta.net/c_310_420/pictures/15/11/20/12/39/572629.jpg"}
+            ]
+      },
+      {
+            "id": 32,
+            "title": "Smile",
+            "poster": "https://www.themoviedb.org/t/p/original/3kbtoJw6ZN0UUQhSuiRbAatr2kV.jpg",
+            "background": "https://helios-i.mashable.com/imagery/articles/00VToX6rr9RORxFXIhJC9wE/images-1.fill.size_2000x1125.v1664292409.jpg",
+            "tags": "Horreur et Thriller",
+            "genres": ["horreur"],
+            "duration": "1h55min",
+            "year": "2022",
+            "rate": "4,2",
+            "source": "https://tomacloud.com/iframe/HMCSkdVXwQ",
+            "trailer": "https://www.youtube.com/watch?v=cWFD7WvDILE",
+            "synopsis": "Après avoir été témoin d'un incident traumatisant impliquant l’une de ses patientes, la vie de la psychiatre Rose Cotter tourne au cauchemar. Terrassée par une force mystérieuse, Rose va devoir se confronter à son passé pour tenter de survivre…",
+            "productors": [
+                  { "name": "Parker Finn <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/commons/v9/common/empty/empty_portrait.png"}
+            ]
+      },
+      {
+            "id": 33,
+            "title": "La proie du diable",
+            "poster": "https://www.themoviedb.org/t/p/original/jZaug9eRUbYFT1PKWwD4CDRe8gO.jpg",
+            "background": "https://image.tmdb.org/t/p/original/eRoeiAhDMrbSxXrHpteEOoslpfs.jpg",
+            "tags": "Horreur et Thriller",
+            "genres": ["horreur"],
+            "duration": "1h33min",
+            "year": "2022",
+            "rate": "2,8",
+            "source": "https://tomacloud.com/iframe/7Z6xC3RU6j",
+            "trailer": "https://www.youtube.com/watch?v=YpFCpDvPB-s",
+            "synopsis": "Selon les archives du Vatican, les cas de possession démoniaque ont considérablement augmenté ces dernières années. Pour y faire face, l'Église catholique a secrètement rouvert les écoles d’exorcisme. Sur ce champ de bataille spirituel, Sœur Ann, une jeune nonne, se distingue comme une combattante prometteuse. Bien qu’il soit interdit aux religieuses de pratiquer des exorcismes, un professeur détecte chez elle ce don particulier et accepte de l’initier. Mais son âme est en danger car les forces maléfiques qu'elle combat sont mystérieusement liées à son passé traumatique : le diable l’a choisie et il veut entrer…",
+            "productors": [
+                  { "name": "Daniel Stamm <br/> Allemand 🇩🇪", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/medias/nmedia/18/79/00/42/19486800.jpg"}
+            ]
+      },
+      {
+            "id": 34,
+            "title": "Barbaque",
+            "poster": "https://www.themoviedb.org/t/p/original/8HmvuuB45ZI3Ph8Z0BaxaWKPd1.jpg",
+            "background": "https://pbs.twimg.com/media/EuheQaHXIAIAZwH.jpg:large",
+            "tags": "Horreur et Gore",
+            "genres": ["horreur"],
+            "duration": "1h28min",
+            "year": "2022",
+            "rate": "6,4",
+            "source": "https://tomacloud.com/iframe/hCiEtPy6Wh",
+            "trailer": "https://m.youtube.com/watch?v=8Nls68w8PSE",
+            "synopsis": "Vincent et Sophie sont bouchers. Leur commerce, tout comme leur couple, est en crise. Mais leur vie va basculer le jour où Vincent tue accidentellement un vegan militant qui a saccagé leur boutique… Pour se débarrasser du corps, il en fait un jambon que sa femme va vendre par mégarde. Jamais jambon n’avait connu un tel succès ! L’idée de recommencer pourrait bien les titiller…",
+            "productors": [
+                  { "name": "Fabrice Eboué <br/> Français 🇫🇷", "profile_pic": "https://fr.web.img4.acsta.net/c_310_420/pictures/17/07/11/11/56/572372.jpg"}
+            ]
+      },
+      {
+            "id": 35,
+            "title": "Uncharted",
+            "poster": "https://www.themoviedb.org/t/p/original/yd12LPRc6X7dZvSMo57xbXVGk3G.jpg",
+            "background": "https://images.fanart.tv/fanart/uncharted-61e143cf81505.jpg",
+            "tags": "Aventure et Action",
+            "genres": ["aventure"],
+            "duration": "1h56min",
+            "year": "2022",
+            "rate": "3,1",
+            "source": "https://tomacloud.com/iframe/V8L6gCmsta",
+            "trailer": "https://www.youtube.com/watch?v=mduvAjUGl4s",
+            "synopsis": "Nathan Drake, voleur astucieux et intrépide, est recruté par le chasseur de trésors chevronné Victor « Sully » Sullivan pour retrouver la fortune de Ferdinand Magellan, disparue il y a 500 ans. Ce qui ressemble d’abord à un simple casse devient finalement une course effrénée autour du globe pour s’emparer du trésor avant l’impitoyable Moncada, qui est persuadé que sa famille est l’héritière légitime de cette fortune. Si Nathan et Sully réussissent à déchiffrer les indices et résoudre l’un des plus anciens mystères du monde, ils pourraient rafler la somme de 5 milliards de dollars et peut-être même retrouver le frère de Nathan, disparu depuis longtemps… mais encore faudrait-il qu’ils apprennent à travailler ensemble.",
+            "productors": [
+                  { "name": "Ruben Fleischer <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img2.acsta.net/c_310_420/medias/nmedia/18/87/62/28/20455622.jpg"}
+            ]
+      },
+      {
+            "id": 36,
+            "title": "The NorthMan",
+            "poster": "https://www.themoviedb.org/t/p/original/hk0JZyTHfgN35f43pJUhDPTNjM0.jpg",
+            "background": "https://lust4live.fr/wp-content/uploads/2022/05/The-Northman-ZZ.jpg",
+            "tags": "Aventure et Vikings",
+            "genres": ["aventure"],
+            "duration": "2h17min",
+            "year": "2022",
+            "rate": "8,6",
+            "source": "https://tomacloud.com/iframe/2eGTzjqmpZ",
+            "trailer": "https://www.youtube.com/watch?v=oGmdCuUPwfI",
+            "synopsis": "Le jeune prince Amleth vient tout juste de devenir un homme quand son père est brutalement assassiné par son oncle qui s'empare alors de la mère du garçon. Amleth fuit son royaume insulaire en barque, en jurant de se venger. Deux décennies plus tard, Amleth est devenu un berserkr, un guerrier viking capable d'entrer dans une fureur bestiale, qui pille et met à feu, avec ses frères berserkir, des villages slaves jusqu'à ce qu'une devineresse lui rappelle son vœu de venger son père, de secourir sa mère et de tuer son oncle. Il embarque alors sur un bateau pour l'Islande et entre, avec l'aide d'Olga, une jeune Slave prise comme esclave, dans la ferme de son oncle, en se faisant lui aussi passer pour un esclave, avec l'intention d'y perpétrer sa vengeance.",
+            "productors": [
+                  { "name": "Robert Eggers <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img5.acsta.net/c_310_420/pictures/19/04/26/13/47/1893623.jpg"}
+            ]
+      },
+      {
+            "id": 37,
+            "title": "Amsterdam",
+            "poster": "https://www.themoviedb.org/t/p/original/chCrPG0LJeilfJwsWPAfmWiJI2T.jpg",
+            "background": "https://whatstrending.com/wp-content/uploads/2022/07/Untitled-design-2022-07-06T142256.460-1200x630.jpg",
+            "tags": "Aventure et Histoire",
+            "genres": ["aventure"],
+            "duration": "2h14min",
+            "year": "2022",
+            "rate": "7,9",
+            "source": "https://tomacloud.com/iframe/0tErHwv8Le",
+            "trailer": "https://www.youtube.com/watch?v=D9H30S10zog",
+            "synopsis": "L'histoire de trois amis proches qui se retrouvent au centre de l’une des intrigues parmi les plus secrètes et choquantes de l'histoire américaine.",
+            "productors": [
+                  { "name": "David Owen Russell <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img3.acsta.net/c_310_420/pictures/15/12/24/11/29/375327.jpg"}
+            ]
+      },
+      {
+            "id": 38,
+            "title": "Spider-Man : No Way Home",
+            "poster": "https://www.themoviedb.org/t/p/original/i9ZSZCUMYRpm2AEE2ceNPQPAygn.jpg",
+            "background": "https://s1.thcdn.com/design-assets/products/13508485/13508485/No%20way%20home%20banner.jpg",
+            "tags": "Super-Héros",
+            "genres": ["heros"],
+            "duration": "2h30min",
+            "year": "2022",
+            "rate": "4,4",
+            "source": "https://tomacloud.com/iframe/lQxyR9FqhP",
+            "trailer": "https://www.youtube.com/watch?v=7w_w10HVa54",
+            "synopsis": "Pour la première fois dans son histoire cinématographique, Spider-Man, le héros sympa du quartier est démasqué et ne peut désormais plus séparer sa vie normale de ses lourdes responsabilités de super-héros. Quand il demande de l'aide à Doctor Strange, les enjeux deviennent encore plus dangereux, le forçant à découvrir ce qu'être Spider-Man signifie véritablement.",
+            "productors": [
+                  { "name": "Jon Watts <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img5.acsta.net/c_310_420/pictures/17/06/29/14/09/430968.jpg"}
+            ]
+      },
+      {
+            "id": 39,
+            "title": "Thor : Love and Thunder",
+            "poster": "https://www.themoviedb.org/t/p/original/kSMarEm3ESOOr11dzsep2RZ1ClD.jpg",
+            "background": "https://www.universdescomics.com/wp-content/uploads/2022/06/Thor-Love-and-Thunder-banner.jpg",
+            "tags": "Super-Héros",
+            "genres": ["heros"],
+            "duration": "2h13min",
+            "year": "2022",
+            "rate": "2,2",
+            "source": "https://tomacloud.com/iframe/Mtc0knl41V",
+            "trailer": "https://www.youtube.com/watch?v=LWD2v47AQoA",
+            "synopsis": "Alors que Thor est en pleine introspection et en quête de sérénité, sa retraite est interrompue par un tueur galactique connu sous le nom de Gorr, qui s’est donné pour mission d’exterminer tous les dieux. Pour affronter cette menace, Thor demande l’aide de Valkyrie, de Korg et de son ex-petite amie Jane Foster, qui, à sa grande surprise, manie inexplicablement son puissant marteau, le Mjolnir. Ensemble, ils se lancent dans une dangereuse aventure cosmique pour comprendre les motivations qui poussent Gorr à la vengeance et l’arrêter avant qu’il ne soit trop tard.",
+            "productors": [
+                  { "name": "Taika Waititi <br/> Néo-Zélandais 🇳🇿", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/pictures/19/07/11/15/12/3164290.jpg"}
+            ]
+      },
+      {
+            "id": 40,
+            "title": "Doctor Strange",
+            "poster": "https://www.themoviedb.org/t/p/original/dbJDPJBHKxnMyvcc12mcbGK5RPF.jpg",
+            "background": "https://linfotoutcourt.com/wp-content/uploads/2022/05/affiche.jpeg",
+            "tags": "Super-Héros",
+            "genres": ["heros"],
+            "duration": "2h06min",
+            "year": "2022",
+            "rate": "3,6",
+            "source": "https://tomacloud.com/iframe/Mtc0knl41V",
+            "trailer": "https://www.youtube.com/watch?v=J7u1bDo_4sk",
+            "synopsis": "Dans ce nouveau film Marvel Studios, l’univers cinématographique Marvel déverrouille et repousse les limites du multivers encore plus loin. Voyagez dans l’inconnu avec Doctor Strange, qui avec l’aide d’anciens et de nouveaux alliés mystiques, traverse les réalités hallucinantes et dangereuses du multivers pour affronter un nouvel adversaire mystérieux.",
+            "productors": [
+                  { "name": "Sam Raimi <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/medias/nmedia/18/35/22/19/20480744.jpg"}
             ]
       }
   ]
