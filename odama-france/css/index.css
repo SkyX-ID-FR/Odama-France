@@ -886,8 +886,8 @@ a {  color: gray; }
 
 /* 📬 Contact's Page style : 📬 */
 #contact_section {
-    margin-top: 200px;
-    width: calc(100% - 100px);
+    margin-top: 240px;
+    width: calc(100% - 170px);
     position: absolute;
     margin-left: 42px;
     color: white;
@@ -898,71 +898,41 @@ a {  color: gray; }
     background-color: transparent;
 }
 
-#contact_section h1 {
-    font-size: 70px;
-    font-weight: 800;
-}
-
-#contact_section p {
-    font-size: 17px;
-    width: 48%;
-    margin-left: 26%;
-    margin-top: 15px;
-}
-
-#contact_section #re_contact {
-    color: white;
-    border: 3px solid gray;
-    outline: none;
-    padding-left: 35px;
-    padding-top: 10px;
-    font-size: 17px;
-    padding-bottom: 13px;
-    padding-right: 35px;
-    border-radius: 30px;
-    width: 30%;
-    margin-left: -20px;
-    margin-top: 50px;
-    height: 30px;
-}
-
-#contact_section #message_textarea {
-    margin-top: 10px;
-    padding-left: 35px;
-    padding-top: 25px;
-    font-size: 17px;
-    padding-bottom: 13px;
-    padding-right: 35px;
-    border-radius: 20px;
-    width: 40%;
-    height: 70px;
-    border: 3px solid gray;
-    outline: none;
-    color: white;
-}
-
-#contact_section #send_out {
-    margin-top: 25px;
-    padding-left: 60px;
-    padding-right: 60px;
-    font-size: 17px;
-    color: white;
-    padding-top: 7px;
-    padding-bottom: 10px;
-    border: 3px solid white;
-    border-radius: 20px;
+#contact_section .discord_logo {
+    background-color: #030928;
+    width: 100px;
+    padding: 30px;
+    border-radius: 40px;
+    padding-bottom: 35px;
     cursor: pointer;
     transition: all 0.4s;
 }
 
-#contact_section #send_out:hover {
-    transform: scale(1.1);
-    color: black;
-    background-color: white;
-    font-weight: 600;
+#contact_section .discord_logo:hover {
+    transform: scale(1.07);
 }
 
-#contact_section #send_out:active {
+#contact_section .discord_logo:active {
     transform: scale(0.9);
+}
+
+#contact_section h1 {
+    font-size: 55px;
+    font-weight: 850;
+    margin-top: 10px;
+    margin-left: -50px;
+}
+
+#contact_section h1 img {
+    width: 50px;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 11px;
+}
+
+#contact_section p {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 10px;
 }
 /* 📬 End of Contact's Page style 📬 */
