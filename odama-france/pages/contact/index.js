@@ -22,7 +22,7 @@ export default function Contact() {
 
             <Header/>
             <section id="contact_section">
-                <a href="" target="_blank"><img className="discord_logo" src='https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6cc3c481a15a141738_icon_clyde_white_RGB.png' alt='discord_logo'/></a>
+                <a href="https://discord.gg/RxeUj2vAWp" target="_blank"><img className="discord_logo" src='https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6cc3c481a15a141738_icon_clyde_white_RGB.png' alt='discord_logo'/></a>
                 <h1>Odama France <img src='https://images.emojiterra.com/twitter/v13.1/512px/1f1eb-1f1f7.png'/></h1>
                 <p>Odama&copy; est la seule plateforme de streaming 100% cloud, sécurisée et open-source en France. Sans aucunes pubs, des players avec un flux en HD minimum et une interface UI : elle comblera amplement vos souhaits de streaming !</p>
             </section>  
