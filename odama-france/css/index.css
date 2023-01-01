@@ -883,3 +883,86 @@ a {  color: gray; }
     margin-left: 5px;
 }
 /* 🙎‍♂️ End of My profile page style 🙎‍♀️ */
+
+/* 📬 Contact's Page style : 📬 */
+#contact_section {
+    margin-top: 200px;
+    width: calc(100% - 100px);
+    position: absolute;
+    margin-left: 42px;
+    color: white;
+    text-align: center;
+}
+
+#contact_section * {
+    background-color: transparent;
+}
+
+#contact_section h1 {
+    font-size: 70px;
+    font-weight: 800;
+}
+
+#contact_section p {
+    font-size: 17px;
+    width: 48%;
+    margin-left: 26%;
+    margin-top: 15px;
+}
+
+#contact_section #re_contact {
+    color: white;
+    border: 3px solid gray;
+    outline: none;
+    padding-left: 35px;
+    padding-top: 10px;
+    font-size: 17px;
+    padding-bottom: 13px;
+    padding-right: 35px;
+    border-radius: 30px;
+    width: 30%;
+    margin-left: -20px;
+    margin-top: 50px;
+    height: 30px;
+}
+
+#contact_section #message_textarea {
+    margin-top: 10px;
+    padding-left: 35px;
+    padding-top: 25px;
+    font-size: 17px;
+    padding-bottom: 13px;
+    padding-right: 35px;
+    border-radius: 20px;
+    width: 40%;
+    height: 70px;
+    border: 3px solid gray;
+    outline: none;
+    color: white;
+}
+
+#contact_section #send_out {
+    margin-top: 25px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 17px;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    border: 3px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#contact_section #send_out:hover {
+    transform: scale(1.1);
+    color: black;
+    background-color: white;
+    font-weight: 600;
+}
+
+#contact_section #send_out:active {
+    transform: scale(0.9);
+}
+/* 📬 End of Contact's Page style 📬 */

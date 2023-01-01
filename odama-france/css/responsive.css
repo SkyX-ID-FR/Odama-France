@@ -59,6 +59,19 @@
         width: 80%;
         margin-left: 8%;
     }
+
+    #contact_section p { 
+        width: 80%;
+        margin-left: 9%;
+    }
+
+    #contact_section #re_contact { 
+        width: 80%;
+    }
+
+    #contact_section #message_textarea {
+        width: 81%;
+    }
 }
 
 @media only screen and (max-width: 973px) {
@@ -569,6 +582,56 @@
         margin-top: 265px;
         width: 150px;
         margin-left: -195px;
+    }
+
+    #contact_section {
+        margin-top: 120px;
+        margin-left: 20px;
+    }
+
+    #contact_section h1 {
+        font-size: 40px;
+        float: left;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    #contact_section p {
+        font-size: 14px;
+        width: 100%;
+        margin-left: 0px;
+        text-align: left;
+    }
+
+    #contact_section #re_contact {
+        font-size: 14px;
+        padding-top: 7px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 20px;
+        border-radius: 10px;
+        width: 100%;
+        margin-left: 0px;
+        border: 2px solid white;
+    }
+
+    #contact_section #message_textarea {
+        font-size: 14px;
+        padding-left: 15px;
+        padding-right: 10px;
+        padding-top: 15px;
+        padding-bottom: 13px;
+        height: 60px;
+        margin-top: 0px;
+        width: 100%;
+        margin-left: 0px;
+        border-radius: 10px;
+        border: 2px solid white;
+    }
+
+    #contact_section #send_out {
+        margin-left: 19%;
+        font-size: 14px;
     }
 }
 
