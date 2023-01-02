@@ -16,6 +16,11 @@
 
 @media only screen and (max-width: 1540px) {
     #movies_library_popup .not_found_component h1 { margin-left: 28%; }
+    .error_page_container p { margin-left: 27%; }
+}
+
+@media only screen and (max-width: 1300px) {
+    .error_page_container p { margin-left: 23%; }
 }
 
 @media only screen and (max-width: 1240px) {
@@ -37,6 +42,7 @@
 }
 
 @media only screen and (max-width: 1100px) {
+    .error_page_container p { margin-left: 17%; }
     .content_page .hero_section {
         margin: 0px;
     }
@@ -82,6 +88,7 @@
     #loader_section { margin-top: 30%; }
     #loader_section img { margin-left: -50px; }
     #movies_library_popup .not_found_component h1 { margin-left: 2%; }
+    .error_page_container p { margin-left: 11%; }
 }
 
 @media only screen and (max-width: 840px) {

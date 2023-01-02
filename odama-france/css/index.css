@@ -720,7 +720,8 @@ a {  color: gray; }
     margin-top: 15px;
     color: gray;
     width: 600px;
-    margin-left: 33.5%;
+    margin-left: 33%;
+    margin-right: auto
 }
 
 .error_page_container button {
