@@ -12,6 +12,7 @@ import fsPromises from 'fs/promises';
 import path from 'path';
 import Link from 'next/link';
 import $ from 'jquery';
+import Loader from '../../../components/Loader';
 
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), 'pages/movies/details/movies.json');
@@ -22,6 +23,15 @@ export async function getStaticProps() {
 
 export default function DetailsMoviesPage(props) {
   const movies_data = props.all_movies;
+
+  /* ⌛ Launch Loading Function Screen : ⌛ */
+  useEffect(function() {
+    $("#movies_details_section").hide();
+    setTimeout(function(){
+      $("#loader_screen").hide();
+      $("#movies_details_section").fadeIn(800);
+    }, 2100);
+  }, []);
 
   useEffect(function() {
     $("#add_movies_toast").hide(); 
@@ -96,6 +106,7 @@ export default function DetailsMoviesPage(props) {
         <link rel="icon" href="https://zupimages.net/up/22/28/k6tc.png"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
       </Head>
+      <Loader/>
 
       <section id='movies_details_section'>  
         <Link className='back_link' style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies"><img className='back_icon' src='https://svgur.com/i/p5L.svg'/><p>Revenir à tout les films</p></Link>
