@@ -269,7 +269,7 @@ a {  color: grey; }
 }
 
 #movies_list .movies_genres_item:hover {
-    transition: all 0.4s;
+    transition: all 0.7s;
     transform: scale(1.05);
 }
 
@@ -368,11 +368,11 @@ a {  color: grey; }
     display: flex;
     margin-left: 50px;
     overflow-x: visible;
-    padding-left: 85px;
     overflow-y: hidden;
     padding-right: 10px;
 }
 
+#slider { padding-left: 85px; }
 .movies_section .scrolling_button {
     background-color: #040a22;
     /* background: rgba(255, 255, 255, 0.2); */
@@ -380,13 +380,27 @@ a {  color: grey; }
     box-shadow: 0px 0px 70px rgb(0, 0, 0);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    height: 375px;
-    margin-right: 20px;
+    height: 390px;
     border-radius: 15px;
-    margin-left: -75px;
     z-index: 100;
     position: absolute;
     cursor: pointer;
+    margin-top: 0px;
+}
+
+.movies_section .left {
+    margin-left: -75px;
+}
+
+.movies_section .right {
+    float: right;
+    position: absolute;
+    right: 20px;
+}
+
+.movies_section .right img {
+    transform: rotate(-180deg);
+    margin-left: 23px!important;
 }
 
 .movies_section .scrolling_button:hover {
@@ -454,14 +468,14 @@ a {  color: grey; }
 
 .movies_section .movies_item .movie_poster {
     width: 250px;
-    height: 350px;
+    height: 370px;
     border-radius: 10px;
     margin-bottom: 25px;
 }
 
 .movies_section .movies_item .movies_infos_poster {
     background-image: linear-gradient(to bottom, #00000000, #000000dc, #000000);
-    margin-top: -140px;
+    margin-top: -145px;
     height: 120px;
     margin-bottom: 20px;
     position: relative;
@@ -487,8 +501,8 @@ a {  color: grey; }
     padding-top: 5px;
     padding-bottom: 8px;
     position: absolute;
-    margin-left: 160px;
-    margin-top: -230px;
+    margin-left: 157px;
+    margin-top: -248px;
 }
 
 .movies_section .movies_item .movies_infos_poster #rates p {
@@ -736,6 +750,7 @@ a {  color: grey; }
     background-color: white;
     text-align: center;
     position: fixed;
+    padding-left: 50px;
 }
 
 .error_page_container h1 {
@@ -791,7 +806,7 @@ a {  color: grey; }
 #loader_screen {
     background-color: #030928;
     text-align: center;
-    padding-top: 15%;
+    padding-top: 8%;
     width: 100%;
     position: absolute;
     height: 100%;

@@ -680,6 +680,91 @@
             "productors": [
                   { "name": "Sam Raimi <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/medias/nmedia/18/35/22/19/20480744.jpg"}
             ]
+      },
+      {
+            "id": 41,
+            "title": "Novembre",
+            "poster": "https://www.themoviedb.org/t/p/original/ylr0lRmfpmTzTI7A4J7UDjuO71F.jpg",
+            "background": "https://www.lescinemasaixois.com/films/medias/photo3_14573.jpg",
+            "tags": "Drame et Policier",
+            "genres": ["drame"],
+            "duration": "1h47min",
+            "year": "2022",
+            "rate": "9,9",
+            "source": "https://tomacloud.com/iframe/xdkqdeobpl",
+            "trailer": "https://www.youtube.com/watch?v=WMVUcbe4Y9U",
+            "synopsis": "Une plongée au cœur de l’Anti-Terrorisme pendant les 5 jours d'enquête qui ont suivi les attentats du 13 novembre.",
+            "productors": [
+                  { "name": "Cédric Jimenez <br/> Français 🇫🇷", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/pictures/17/01/05/15/36/336995.jpg"}
+            ]
+      },
+      {
+            "id": 42,
+            "title": "Poker Face",
+            "poster": "https://www.themoviedb.org/t/p/original/uUeLr12fYHvVPyjI3Hjr2fZ7NaK.jpg",
+            "background": "https://dl.moviesr.net/images/3Ljjc.jpg",
+            "tags": "Drame et Poker",
+            "genres": ["drame"],
+            "duration": "1h34min",
+            "year": "2022",
+            "rate": "3,6",
+            "source": "https://tomacloud.com/iframe/tRaPhXKFXO",
+            "trailer": "https://www.youtube.com/watch?v=I9mTHSTyWt0",
+            "synopsis": "Dans le monde du poker à gros enjeux et de la finance internationale, un milliardaire de la technologie prend de gros risques...",
+            "productors": [
+                  { "name": "Russell Crowe <br/> Néo-Zélandais 🇳🇿", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/pictures/16/05/17/17/15/053871.jpg"}
+            ]
+      },
+      {
+            "id": 43,
+            "title": "Kompromat",
+            "poster": "https://www.themoviedb.org/t/p/original/2gOkXQ0SoQSLb6p5KYFUxQIYliJ.jpg",
+            "background": "https://media.gqmagazine.fr/photos/6315f6144031debc52ed0169/master/pass/Kompromat.jpg",
+            "tags": "Drame et Aventure",
+            "genres": ["drame", "aventure"],
+            "duration": "2h07min",
+            "year": "2022",
+            "rate": "10",
+            "source": "https://tomacloud.com/iframe/nHogo9eXgD",
+            "trailer": "https://www.youtube.com/watch?v=won__dBEhzE",
+            "synopsis": "Russie, 2017. Mathieu Roussel est arrêté et incarcéré sous les yeux de sa fille. Expatrié français, il est victime d’un « kompromat », de faux documents compromettants utilisés par les services secrets russes pour nuire à un ennemi de l’Etat. Menacé d’une peine de prison à vie, il ne lui reste qu’une option : s’évader, et rejoindre la France par ses propres moyens…",
+            "productors": [
+                  { "name": "Jérôme Salle <br/> Français 🇫🇷", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/medias/nmedia/18/68/21/74/20535618.jpg"}
+            ]
+      },
+      {
+            "id": 44,
+            "title": "Chat Potté 2",
+            "poster": "https://www.themoviedb.org/t/p/original/kO35BwoKHyP1VRulxZJVeEl5dvS.jpg",
+            "background": "https://cdn.sortiraparis.com/images/80/77381/737445-le-chat-potte-2-la-derniere-quete-la-bande-annonce.jpg",
+            "tags": "Aventure et Enfant",
+            "genres": [""],
+            "duration": "1h42min",
+            "year": "2022",
+            "rate": "3,7",
+            "source": "https://tomacloud.com/iframe/Va9RT6uJRJ",
+            "trailer": "https://www.youtube.com/watch?v=sozUO_Ot43E",
+            "synopsis": "Le Chat Potté découvre que sa passion pour l'aventure et son mépris du danger ont fini par lui coûter cher : il a épuisé huit de ses neuf vies, et en a perdu le compte au passage. Afin de retomber sur ses pattes notre héros velu se lance littéralement dans la quête de sa vie. Il s'embarque dans une aventure épique aux confins de la Forêt Sombre afin de dénicher la mythique Etoile à vœu, seule susceptible de lui rendre ses vies perdues. Mais quand il ne vous en reste qu’une, il faut savoir faire profil bas, se montrer prudent et demander de l’aide. C’est ainsi qu’il se tourne vers son ancienne partenaire et meilleure ennemie de toujours : l’ensorcelante Kitty Pattes De Velours. Le Chat Potté et la belle Kitty vont être aidés dans leur quête, à leur corps bien défendant, par Perro, un corniaud errant et galleux à la langue bien pendue et d’une inaltérable bonne humeur. Ensemble ils tenteront de garder une longueur d’avance sur la redoutable Boucles D’Or et son gang des Trois Ours, véritable famille de mafieux, mais aussi sur Little Jack Horner devenu bien grand, ou encore sur le chasseur de primes le plus féroce du coin : Le Loup.",
+            "productors": [
+                  { "name": "Joel Crawford <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/commons/v9/common/empty/empty_portrait.png"}
+            ]
+      },
+      {
+            "id": 45,
+            "title": "Pelé",
+            "poster": "https://www.themoviedb.org/t/p/original/b1XoAl8TJi7zbKO3GUzRUBrpSxq.jpg",
+            "background": "https://cdn.7days.ru/pic/65a/885754/385098/76.jpg",
+            "tags": "Foot",
+            "genres": [""],
+            "duration": "1h48min",
+            "year": "2021",
+            "rate": "7,1",
+            "source": "https://tomacloud.com/iframe/7ZFmoOlmcJ",
+            "trailer": "https://www.youtube.com/watch?v=nmsRMEK1J4Y",
+            "synopsis": "Ce documentaire raconte l'histoire de Pelé, de sa quête de perfection et du statut mythique qui est désormais le sien dans le football et au-delà.",
+            "productors": [
+                  { "name": "David Tryhorn <br/> Anglais 🇬🇧", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/commons/v9/common/empty/empty_portrait.png"}
+            ]
       }
   ]
 }
