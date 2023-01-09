@@ -365,12 +365,40 @@ a {  color: grey; }
 /* 🎥 Movies section's style : 🎥 */
 .movies_section {
     margin-top: -5px;
-    margin-left: 40px;
     display: flex;
-    overflow-x: auto;
-    padding-left: 10px;
+    margin-left: 50px;
+    overflow-x: visible;
+    padding-left: 85px;
     overflow-y: hidden;
     padding-right: 10px;
+}
+
+.movies_section .scrolling_button {
+    background-color: #040a22;
+    /* background: rgba(255, 255, 255, 0.2); */
+    border-radius: 16px;
+    box-shadow: 0px 0px 70px rgb(0, 0, 0);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    height: 375px;
+    margin-right: 20px;
+    border-radius: 15px;
+    margin-left: -75px;
+    z-index: 100;
+    position: absolute;
+    cursor: pointer;
+}
+
+.movies_section .scrolling_button:hover {
+    transition: all 0.5s;
+    transform: scale(1.02);
+}
+
+.movies_section .scrolling_button img {
+    width: 12px;
+    margin-left: 20px;
+    margin-top: 160px;
+    margin-right: 25px;
 }
 
 #movies_section_space {

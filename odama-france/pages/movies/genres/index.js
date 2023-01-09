@@ -39,7 +39,7 @@ export default function MoviesPage(props) {
     setTimeout(function(){
       $("#loader_screen").hide();
       $("#loader_page_finish").fadeIn(800);
-    }, 2100);
+    }, 3000);
   }, []);
 
   const show_genres_poppup = event => {

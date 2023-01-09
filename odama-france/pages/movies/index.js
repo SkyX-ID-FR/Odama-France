@@ -154,9 +154,12 @@ export default function MoviesPage(props) {
     setTimeout(function(){
       $("#loader_screen").hide();
       $("#loader_page_finish").fadeIn(800);
-    }, 4000);
-  }, []);
+    }, 4100);
 
+    $(".scrolling_button").click(function(){
+      $('.movies_section').animate( { scrollLeft: '-=400' }, 800);
+    });
+  }, []);
   return (
     <>
       <Head>
@@ -164,7 +167,7 @@ export default function MoviesPage(props) {
         <meta name="description" content="Odama est la seule plateforme de streaming 100% cloud, sécurisée et open-source en France ! 🇫🇷"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="icon" href="https://zupimages.net/up/22/28/k6tc.png"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
       </Head>
       <Loader/>
 
@@ -177,18 +180,21 @@ export default function MoviesPage(props) {
           <h1 id="ind_text">Box office de la semaine 🎁 : </h1>  
           <p id="ind_description">Retrouvez ici tout les meilleurs films et émissions de la semaine afin de ne laisser passer aucun programme qui vaut la peine d'être vu !</p>
           <div className='movies_section'>
+            <div id="scroll_left" className='scrolling_button'><img src='https://static-00.iconduck.com/assets.00/chevronleft-icon-303x512-jl07qugm.png'/></div>
             {show_box_office_movie}
           </div><br/><br/><br/>
 
           <h1 id="ind_text">La sélection Odama&copy; ✨ : </h1>  
           <p id="ind_description">Vous ne savez pas quoi regarder ? Choissisez notre sélection : elle est faites pour tout les goûts, tout âges et plaira à tout le monde.</p>
           <div className='movies_section'>
+            <div id="scroll_left" className='scrolling_button'><img src='https://static-00.iconduck.com/assets.00/chevronleft-icon-303x512-jl07qugm.png'/></div>
             {show_odama_selection}
           </div><br/><br/><br/>
 
           <h1 id="ind_text">Tout les films disponibles 🎥 : </h1>  
           <p id="ind_description">Retrouvez ici tout les films de la plateforme dans un long slider interminable...</p>
           <div className='movies_section'>
+            <div className='scrolling_button'><img src='https://static-00.iconduck.com/assets.00/chevronleft-icon-303x512-jl07qugm.png'/></div>
             {show_all_movies}
           </div>
 
