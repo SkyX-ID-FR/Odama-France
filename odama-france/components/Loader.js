@@ -10,7 +10,7 @@ export default function Loader() {
   return (
     <section id="loader_screen">
         <img className="logo_app" src="https://zupimages.net/up/22/28/exo5.png" alt="logo_app"/>
-        <img className="logo_loading" src="https://www.hik-cloud.com/safe-center/static/loading.gif" alt="logo_loading"/>
+        <img className="logo_loading" src="https://zupimages.net/up/23/02/ao70.gif" alt="logo_loading"/>
     </section>
   )
 }
