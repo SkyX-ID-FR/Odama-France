@@ -645,6 +645,17 @@
         margin-left: 0px;
         text-align: center;
     }
+
+    #loader_screen .logo_app {
+        width: 90px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    #loader_screen .logo_loading {
+        width: 120px;
+        margin-left: -106.5px;
+    }
 }
 
 @media only screen and (max-width: 465px) {

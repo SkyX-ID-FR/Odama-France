@@ -3,7 +3,7 @@
   |       |.--|  |.---.-.--------.---.-.    |    ___|.----.---.-.-----.----.-----.
   |   -   ||  _  ||  _  |        |  _  |    |    ___||   _|  _  |     |  __|  -__|
   |_______||_____||___._|__|__|__|___._|    |___|    |__| |___._|__|__|____|_____|
-  Version 1.1.0 - By @skyx_id_fr      "Odama, you like it ! ✨"
+  Version 1.1.0 - By @skyx_id_fr - "Odama, you like it ! ✨"
 */
 
 import Head from 'next/head';
@@ -14,6 +14,7 @@ import { useRouter } from 'next/router';
 import $ from 'jquery';
 import { useEffect } from 'react'; 
 import Link from 'next/link';
+import Loader from '../../components/Loader.js';
 
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), 'pages/movies/details/movies.json');
@@ -48,14 +49,6 @@ export default function MoviesPage(props) {
       </div>
     )
   }
-
-  useEffect(function() {
-    $("#loader_page_finish").hide();
-    setTimeout(function(){
-      $("#loader_section").hide();
-      $("#loader_page_finish").fadeIn(700);
-    }, 2100);
-  }, []);
 
   /* 🎫 Show already box office of the week static ID 🎫 : */
   show_box_office_movie.push (
@@ -155,6 +148,15 @@ export default function MoviesPage(props) {
     </>
   )
 
+  /* ⌛ Launch Loading Function Screen : ⌛ */
+  useEffect(function() {
+    $("#loader_page_finish").hide();
+    setTimeout(function(){
+      $("#loader_screen").hide();
+      $("#loader_page_finish").fadeIn(800);
+    }, 4000);
+  }, []);
+
   return (
     <>
       <Head>
@@ -164,36 +166,35 @@ export default function MoviesPage(props) {
         <link rel="icon" href="https://zupimages.net/up/22/28/k6tc.png"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
       </Head>
+      <Loader/>
 
+      <div id="loader_page_finish">
       <Header/>
-      <section id="loader_section">
-        <img src='https://media3.giphy.com/media/L05HgB2h6qICDs5Sms/giphy.gif'/>
-      </section>
+        <section className="content_page">
+          <br/><Link className='link_to_genres' style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies/genres" id="home-link">Voir les films triés par genres.. 📚</Link>
+          <br/><br/><br/><br/>
 
-      <section className="content_page" id="loader_page_finish">
-        <br/><Link className='link_to_genres' style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies/genres" id="home-link">Voir les films triés par genres.. 📚</Link>
-        <br/><br/><br/><br/>
+          <h1 id="ind_text">Box office de la semaine 🎁 : </h1>  
+          <p id="ind_description">Retrouvez ici tout les meilleurs films et émissions de la semaine afin de ne laisser passer aucun programme qui vaut la peine d'être vu !</p>
+          <div className='movies_section'>
+            {show_box_office_movie}
+          </div><br/><br/><br/>
 
-        <h1 id="ind_text">Box office de la semaine 🎁 : </h1>  
-        <p id="ind_description">Retrouvez ici tout les meilleurs films et émissions de la semaine afin de ne laisser passer aucun programme qui vaut la peine d'être vu !</p>
-        <div className='movies_section'>
-          {show_box_office_movie}
-        </div><br/><br/><br/>
+          <h1 id="ind_text">La sélection Odama&copy; ✨ : </h1>  
+          <p id="ind_description">Vous ne savez pas quoi regarder ? Choissisez notre sélection : elle est faites pour tout les goûts, tout âges et plaira à tout le monde.</p>
+          <div className='movies_section'>
+            {show_odama_selection}
+          </div><br/><br/><br/>
 
-        <h1 id="ind_text">La sélection Odama&copy; ✨ : </h1>  
-        <p id="ind_description">Vous ne savez pas quoi regarder ? Choissisez notre sélection : elle est faites pour tout les goûts, tout âges et plaira à tout le monde.</p>
-        <div className='movies_section'>
-          {show_odama_selection}
-        </div><br/><br/><br/>
+          <h1 id="ind_text">Tout les films disponibles 🎥 : </h1>  
+          <p id="ind_description">Retrouvez ici tout les films de la plateforme dans un long slider interminable...</p>
+          <div className='movies_section'>
+            {show_all_movies}
+          </div>
 
-        <h1 id="ind_text">Tout les films disponibles 🎥 : </h1>  
-        <p id="ind_description">Retrouvez ici tout les films de la plateforme dans un long slider interminable...</p>
-        <div className='movies_section'>
-          {show_all_movies}
-        </div>
-
-        <div id='movies_section_space'></div>
-      </section>
+          <div id='movies_section_space'></div>
+        </section>
+      </div>
     </>
   )
 }

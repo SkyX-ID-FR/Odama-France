@@ -6,15 +6,11 @@
   Version 1.1.0 - By @skyx_id_fr - "Odama, you like it ! ✨"
 */
 
-import '../css/index.css';
-import '../css/responsive.css';
-import { Analytics } from '@vercel/analytics/react';
-
-export default function App({ Component, pageProps }) {
+export default function Loader() {
   return (
-    <>
-      <Component {...pageProps} />
-      <Analytics />
-    </>
+    <section id="loader_screen">
+        <img className="logo_app" src="https://zupimages.net/up/22/28/exo5.png" alt="logo_app"/>
+        <img className="logo_loading" src="https://www.hik-cloud.com/safe-center/static/loading.gif" alt="logo_loading"/>
+    </section>
   )
 }

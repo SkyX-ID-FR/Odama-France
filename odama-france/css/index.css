@@ -43,7 +43,7 @@ html {
    border-radius: 10px;
 }
 
-a {  color: gray; }
+a {  color: rgb(10, 221, 10); }
 /* 📊 Completementary style : 📊 */
 .github_link {
     margin-top: 20px;
@@ -108,7 +108,7 @@ a {  color: gray; }
     -webkit-transition-property: transform;
     transition-property: transform;
     -webkit-transform: scale(1.025);
-    transform: scale(1.025);
+    transform: scale(1.020);
 }
 
 #responsive_menu_side_bar {
@@ -759,16 +759,25 @@ a {  color: gray; }
 /* 🚧 End of 404 Page Error style 🚧 */
 
 /* ⌛ Loading section style : ⌛ */
-#loader_section {
-    margin-top: 15%;
+#loader_screen {
+    background-color: #030928;
+    text-align: center;
+    padding-top: 15%;
     width: 100%;
     position: absolute;
-    text-align: center;
+    height: 100%;
+    color: white;
 }
 
-#loader_section img {
-    width: 40px;
-    margin-left: -70px;
+#loader_screen * { background-color: transparent; }
+#loader_screen .logo_app {
+    width: 125px;
+    margin-bottom: 35px;
+}
+
+#loader_screen .logo_loading {
+    width: 150px;
+    margin-left: -136.5px;
 }
 /* ⌛ End of Loading section style ⌛ */
 
