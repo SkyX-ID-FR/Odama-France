@@ -178,7 +178,7 @@ export default function MoviesPage(props) {
     setTimeout(function(){
       $("#loader_screen").hide();
       $("#loader_page_finish").fadeIn(800);
-    }, 4100);
+    }, 3300);
 
     $(".left").click(function(){ $('#slider').animate( { scrollLeft: '-=500' }, 800); });
     $(".right").click(function(){ $('#slider').animate( { scrollLeft: '+=500' }, 800); });

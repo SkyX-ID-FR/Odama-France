@@ -23,7 +23,7 @@ export async function getStaticProps() {
 export default function MyProfile(props) {
     useEffect(function() {
         $("#movies_library_popup").hide();
-        $("#more_info_container").click(function() { $("#movies_library_popup").fadeIn(400); }); 
+        $("#show_movies_library").click(function() { $("#movies_library_popup").fadeIn(400); }); 
         $("#close_icon_popup").click(function() { $("#movies_library_popup").hide(); });
         
         if (JSON.parse(localStorage.getItem('list_movies_liked')) == null || JSON.parse(localStorage.getItem('list_movies_liked')).length === 0) {    
@@ -31,7 +31,7 @@ export default function MyProfile(props) {
                 <div class="not_found_component">
                     <img src="https://cdni.iconscout.com/illustration/premium/thumb/not-found-4064375-3363936.png" alt="not_found_img"/>
                     <h1>Aucun(s) film(s) n'a pu être affiché(s) !</h1>
-                    <p>[ Pourquoi ? Aucun(s) film(s) n'a été aimé(s)... ❤ ]</p>
+                    <p>[ Pourquoi ? Aucun(s) film(s) n'a été aimé(s)... <font color="red">❤</font> ]</p>
                 </div>
             `;
         } else {
@@ -70,8 +70,11 @@ export default function MyProfile(props) {
             <section id="my_profile_section">
                 <h1 className='big_title'>Mon profil :</h1>
                 <p className='description'>Retrouvez ici votre espace personnel avec quelques infos ainsi que vos films et séries préféré(e)s. Odama se soucie de votre sécurité sur Internet de se fait, vous devriez utiliser un VPN pour masquer et peut-être chiffrer également votre IP (108.16.11.3). Vous pouvez retrouver l'intégralité de notre projet sur le repos Github correspondant en open-source à cette adresse : <a href="https://github.com/SkyX-ID-FR/Odama-France" target="_blank">https://github.com/SkyX-ID-FR/Odama-France</a>. Toutes idées, remarques ou reports de bugs peuvent être envoyés depuis notre page de contact...</p>
-                <div id='more_info_container'>Ma bibliothèque de films ✨ <i class="fa fa-chevron-right"></i></div>
-                <div onClick={remove_localstorage} id='more_info_container'>Réinitialiser vos paramètres d'utilisateurs 📦 <i class="fa fa-trash-o"></i></div>
+                
+                <div className='button_group_action'>
+                    <button id="show_movies_library">Ma bibliothèque de films ! ✨</button>
+                    <button id="two" onClick={remove_localstorage}>Réinitialiser vos paramètres d'utilisateurs... 📦</button>
+                </div>
             </section>
 
             <div id='movies_library_popup'>
