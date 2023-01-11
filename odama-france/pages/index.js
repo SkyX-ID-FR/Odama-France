@@ -33,7 +33,7 @@ export default function Home() {
             Cette fois basé sur les appréciations des 15 000 utilisateurs de la version précédente, elle s'appuie sur une interface doté d'un tout nouveau design,
             les préférences de l'utilisateur seront enregistrées et analysées pour une meilleure expérience. Un système de commentaires et de likes sera également mis 
             en place pour référencer les meilleurs films. Si vous souhaitez partagez la plateforme, donnez un avis/remarques, sachez qu'un <a id="link_discord" href="https://discord.gg/RxeUj2vAWp" target="_blank">serveur Discord Officiel</a> a été créer pour ça. N'hésitez pas à le rejoindre ! 
-            <br/><br/><b>- Odama, you like it !</b> 😉
+            <br/><br/>- Odama, you like it ! 😉
           </p>
 
           <a className='github_link' href="https://github.com/SkyX-ID-FR/Odama-France" target="_blank"><img src='https://camo.githubusercontent.com/fe3b97974431a5652f0572ef8dd3c46d206d0aeb9658c7dd1f9c766ed89e4215/68747470733a2f2f69636f6e2d6c6962726172792e636f6d2f696d616765732f6769746875622d69636f6e2d77686974652f6769746875622d69636f6e2d77686974652d362e6a7067' alt='github_logo' className='github_button_logo'/><p>Projet Github</p></a>

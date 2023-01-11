@@ -836,7 +836,7 @@ a {  color: grey; }
 }
 
 #my_profile_section .button_group_action button {
-    width: 35%;
+    width: 30%;
     border: 3px solid white;
     border-radius: 15px;
     padding-left: 20px;
@@ -857,7 +857,7 @@ a {  color: grey; }
 }
 
 #my_profile_section .button_group_action button:active {
-    transform: scale(0.7);
+    transform: scale(0.9);
 }
 
 #my_profile_section .button_group_action button i {
@@ -917,7 +917,7 @@ a {  color: grey; }
 }
 
 #movies_library_popup .not_found_component p {
-    margin-left: -80px;
+    margin-left: -40px;
     margin-top: 10px;
     color: rgb(148, 148, 148);
 }

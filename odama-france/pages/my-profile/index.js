@@ -31,7 +31,7 @@ export default function MyProfile(props) {
                 <div class="not_found_component">
                     <img src="https://cdni.iconscout.com/illustration/premium/thumb/not-found-4064375-3363936.png" alt="not_found_img"/>
                     <h1>Aucun(s) film(s) n'a pu être affiché(s) !</h1>
-                    <p>[ Pourquoi ? Aucun(s) film(s) n'a été aimé(s)... <font color="red">❤</font> ]</p>
+                    <p>Pourquoi ? Il n'y a tout simplement aucun(s) film(s) aimé(s)... <font color="red">❤</font></p>
                 </div>
             `;
         } else {
