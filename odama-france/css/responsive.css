@@ -311,6 +311,10 @@
     .error_page_container button {
         margin-left: 10px;
     }
+
+    ::-webkit-scrollbar {
+        height: 4px;
+    }
 }
 
 @media only screen and (max-width: 582px) {
@@ -320,9 +324,9 @@
 @media only screen and (max-width: 503px) {
     #my_profile_section .button_group_action button {
         width: 300px;
-        padding-left: 0px;
+        padding-left: 10px;
         padding-right: 10px;
-        font-size: 17px;
+        font-size: 15px;
     }
 
     #my_profile_section .button_group_action #two {
@@ -343,10 +347,6 @@
 
     #movies_details_section #movie_watch_popup #popup_player {
         margin-top: 2%;
-    }
-
-    #movies_details_section #movie_watch_popup #popup_player .video {
-        background-color: red;
     }
 
     #movies_details_section #movie_watch_popup {
@@ -513,18 +513,9 @@
     }
 
     #movies_library_popup #close_icon_popup {
-        margin-right: 3px!important;
+        margin-right: 1px!important;
         margin-top: -58px!important;
-    }
-
-    #my_profile_section #more_info_container i {
-        display: none;
-    }
-
-    #movies_library_popup #close_icon_popup {
         width: 25px;
-        margin-right: 47px;
-        margin-top: -28px;
     }
 
     #movies_library_popup .not_found_component img {
