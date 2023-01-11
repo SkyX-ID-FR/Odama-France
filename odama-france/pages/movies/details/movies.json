@@ -765,6 +765,23 @@
             "productors": [
                   { "name": "David Tryhorn <br/> Anglais 🇬🇧", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/commons/v9/common/empty/empty_portrait.png"}
             ]
+      },
+      {
+            "id": 46,
+            "title": "Glass Onion",
+            "poster": "https://www.themoviedb.org/t/p/original/j8mGH7DzwUD9soODpUI64PWNumg.jpg",
+            "background": "https://occ-0-2774-32.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABekeLR1_UTvm-LGCdAfnoJm8ghWkXLS8izpG3FQ9ok9fwONCMPKSy6iLZz82y9QqnSgbgBBJNw0DsROmZ3Ye3c0ERgCAp7yLMvy5.jpg?r=878",
+            "tags": "Enquête et action",
+            "genres": ["action"],
+            "duration": "2h18min",
+            "year": "2022",
+            "rate": "10",
+            "source": "https://tomacloud.com/iframe/GAs1LJFJte",
+            "trailer": "https://www.youtube.com/watch?v=E3WFik1IrYI",
+            "synopsis": "Direction la Grèce pour le célèbre détective Benoit Blanc, qui doit élucider un mystère entourant un milliardaire de la technologie et son groupe d'amis hauts en couleur.",
+            "productors": [
+                  { "name": "Rian Johnson <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img2.acsta.net/c_310_420/pictures/18/01/04/16/06/2641767.jpg"}
+            ]
       }
   ]
 }
