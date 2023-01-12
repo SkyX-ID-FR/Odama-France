@@ -21,13 +21,13 @@ export async function getStaticProps() {
 export default function Search(props) {
     const movies_data = props.all_movies; 
 
-    setTimeout(function(){
+    setTimeout(function() {
         if (typeof window !== "undefined") {
             document.getElementById("search_input_query").addEventListener('input', updateValue);
     
             function updateValue(e) {
                 document.getElementById("result_item").innerHTML = "";
-                for (let i = 1; i < movies_data.length; i++) {
+                for (let i = 1; i < movies_data.length; i++) {                    
                     if (document.getElementById("search_input_query").value.length == 0) {
                         document.getElementById("result_item").innerHTML = "";
                     } else if (movies_data[i].title.indexOf(e.target.value) !== -1) {
@@ -41,7 +41,7 @@ export default function Search(props) {
                 }
             }
         }
-    }, 1000);    
+    }, 500);    
 
     return (
       <>
@@ -57,7 +57,7 @@ export default function Search(props) {
         <section id="search_section">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
             <input type="text" id="search_input_query" placeholder="Rechercher ici vos films et séries préférées !"/>
-            <span>Exemple : Goliath, Novembre ou Spider-Man...</span>
+            <span>Exemple : Goliath, Novembre ou Spider-Man... &nbsp; Faites bien attention aux majuscules devant le nom ! ⚠</span>
 
             <div id='result_item'></div>
         </section>

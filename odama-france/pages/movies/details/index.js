@@ -30,7 +30,7 @@ export default function DetailsMoviesPage(props) {
     setTimeout(function(){
       $("#loader_screen").hide();
       $("#movies_details_section").fadeIn(800);
-    }, 2100);
+    }, 1500);
   }, []);
 
   useEffect(function() {
@@ -55,7 +55,7 @@ export default function DetailsMoviesPage(props) {
         /* Also change the color of love_icon : */
         document.getElementById("love_icon").style.color = "red";
         $("#add_movies_toast").show();
-        $("#add_movies_toast").animate({bottom: '80px'}), 5000;
+        $("#add_movies_toast").animate({bottom: '50px'}), 5000;
 
         setTimeout(function(){
           $("#add_movies_toast").fadeOut(500);
@@ -69,7 +69,7 @@ export default function DetailsMoviesPage(props) {
         /* Also change the color of love_icon : */
         document.getElementById("love_icon").style.color = "white";
         $("#remove_movies_toast").show();
-        $("#remove_movies_toast").animate({bottom: '80px'}), 5000;
+        $("#remove_movies_toast").animate({bottom: '50px'}), 5000;
 
         setTimeout(function(){
           $("#remove_movies_toast").fadeOut(500);
@@ -79,16 +79,18 @@ export default function DetailsMoviesPage(props) {
 
     /* ✨ Then, we complete the different variables in the page : ✨ */
     if (list_movies_liked.indexOf(movie_id) !== -1) { document.getElementById("love_icon").style.color = "red"; } else { document.getElementById("love_icon").style.color = "white"; }
-    document.getElementById("movie_title").innerHTML = general_movie_data.title;
     document.getElementById("movies_details_section").style.backgroundImage = `url(${general_movie_data.background})`;
-    document.getElementById("short_infos").innerHTML = `${general_movie_data.duration} &nbsp; · &nbsp; ${general_movie_data.tags} &nbsp; · &nbsp; ${general_movie_data.year}`;
-    document.getElementById("profile_pic").src = general_movie_data.productors[0].profile_pic;
-    document.getElementById("name").innerHTML = general_movie_data.productors[0].name;
-    document.getElementById("synopsis_description").innerHTML = `${general_movie_data.synopsis} <br/><br/><br/><a target="_blank" href="${general_movie_data.trailer}">🎬 Voir la bande-annonce de ce film ! 🎬</a>`;
+    document.getElementById("movie_poster").src = `${general_movie_data.poster}`;
+    document.getElementById("movie_title").innerHTML = `${general_movie_data.title}`;
+    document.getElementById("trailer_container").innerHTML = `<a href='${general_movie_data.trailer}' target="_blank"><button id="trailer_button"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/YouTube_social_white_squircle.svg/1200px-YouTube_social_white_squircle.svg.png" alt="app_logo"/><p>Voir la bande-annonce VF !</p></button></a>`;
+    document.getElementById("synopsis").innerHTML = `${general_movie_data.synopsis}`;
+    document.getElementById("duration").innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> ${general_movie_data.duration}`;
+    document.getElementById("tags").innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg> ${general_movie_data.tags}`;
+    document.getElementById("year").innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> ${general_movie_data.year}`;
     document.getElementById("movie_component").innerHTML = `<iframe id="popup_player" src="${general_movie_data.source}" scrolling="no" frameborder="0" allowfullscreen/>`;
   }, []);
 
-  function open_movie_popup() { $("#movie_watch_popup").fadeIn(400); }
+  function open_movie_popup() { $("#movie_watch_popup").fadeIn(200); }
   function close_movie_popup() { 
     $("#movie_watch_popup").fadeOut(400); 
     $('#popup_player').attr('src', $('#popup_player').attr('src'));
@@ -111,17 +113,37 @@ export default function DetailsMoviesPage(props) {
       <section id='movies_details_section'>  
         <Link className='back_link' style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies"><img className='back_icon' src='https://svgur.com/i/p5L.svg'/><p>Revenir à tout les films</p></Link>
         <div id="love_icon"><i className="fa fa-heart"></i></div>
-        
-        <h1 id="movie_title"></h1>
-        <p id="short_infos"></p>
-        <div id='productors'><img id="profile_pic" src=''/><p id="name"></p></div>
-        <div id='button_container'><button onClick={open_movie_popup} id="watch_button"><img src="https://zupimages.net/up/22/28/exo5.png" alt="app_logo"/><p>Voir ce film avec Odama !</p></button></div>
 
+        <div className='movies_infos'>
+          <div id='content'>
+            <div className='poster_box'><img src='' id="movie_poster" alt='movie_poster'/></div>
+
+            <div className='short_infos_box'>
+              <h1 id="movie_title"></h1>
+              <div className="tags_box">
+                <span id="duration"></span>
+                <span id="tags"></span>
+                <span id="year"></span>
+              </div>
+
+              <p id="synopsis"></p>
+              <button onClick={open_movie_popup} id="watch_button"><img src="https://zupimages.net/up/22/28/exo5.png" alt="app_logo"/><p>Voir ce film avec Odama !</p></button>
+              <div id='trailer_container'></div>
+            </div>
+
+            <div className='bottom_box'></div>
+          </div>
+        </div>
+
+        {/* 🎥 Watch Popup Movie : 🎥 */}
         <div id='movie_watch_popup'>
           <img onClick={close_movie_popup} id="popup_close_icon" src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' alt="close_icon"/>
-          {/* 🔊 Movie Player Component (iframe) : 🔊 */}
           <div id='movie_component'></div>
-        </div>
+        </div> 
+        
+        {/* <h1 id="movie_title"></h1>
+        <p id="short_infos"></p>
+        <div id='productors'><img id="profile_pic" src=''/><p id="name"></p></div>
 
         <div className='movies_infos'>
           <div className='content'>
@@ -129,7 +151,7 @@ export default function DetailsMoviesPage(props) {
             <h2 id="warning_message">⛔ Avertissement : certaines scènes, propos ou images peuvent heurter la sensibilité des jeunes spectateurs ! ⛔</h2>
             <p id="synopsis_description"></p>
           </div>
-        </div>
+        </div> */}
         
         <div id="add_movies_toast" className='toast_popup'>
           <img onClick={close_add_movies_toast} src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' alt="close_icon"/>
