@@ -315,6 +315,44 @@
     ::-webkit-scrollbar {
         height: 4px;
     }
+
+    #search_section { 
+        padding-left: 20px; 
+        margin-top: 110px;
+    }
+
+    #search_section input { 
+        margin-left: 0px;
+        margin-top: 0px;
+        font-size: 15px;
+    }
+
+    #search_section svg {
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    #search_section span {
+        margin-top: 55px;
+        margin-left: -77%;
+        font-size: 12px;
+    }
+
+    #search_section #result_item .movies_search_item #poster_img {
+        width: 145px;
+        height: 210px;
+    }
+
+    #search_section #result_item .movies_search_item #rates {
+        margin-top: -210px;
+        margin-left: 62px;
+        width: 40px;
+    }
+
+    #search_section #result_item .movies_search_item #rates p {
+        font-size: 13px;
+        margin-top: 2px;
+    }
 }
 
 @media only screen and (max-width: 582px) {
@@ -322,6 +360,19 @@
 }
 
 @media only screen and (max-width: 503px) {
+    #search_section input { 
+        width: 82%;
+    }
+
+    #search_section span {
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    #search_section #result_item {
+        margin-top: 50px;
+    }
+    
     #my_profile_section .button_group_action button {
         width: 300px;
         padding-left: 10px;

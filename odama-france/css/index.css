@@ -139,6 +139,13 @@ a {  color: grey; }
     display: none;
 }
 
+#navbar .menu_list #search-link svg {
+    background-color: transparent;
+    margin-top: -2px;
+    margin-right: -35px;
+    margin-left: 30px;
+}
+
 #navbar .menu_list li {
     float: left;
     text-align: center;
@@ -149,10 +156,10 @@ a {  color: grey; }
     margin-right: 45px;
 }
 
-#navbar .menu_list li:hover {
+/* #navbar .menu_list li:hover {
     transition: all 0.3s;
     transform: scale(1.15);
-}
+} */
 /* 📃 End of NavBar's style 📃 */
 
 /* 📦 Content Page's style : 📦 */
@@ -360,6 +367,108 @@ a {  color: grey; }
     margin-left: 65px;
     font-size: 14px;
     color: white!important;
+}
+
+#search_section {
+    margin-top: 130px;
+    padding-left: 55px;
+    position: absolute;
+    color: white;
+    width: 90%;
+    height: 300vh;
+}
+
+#search_section svg {
+    margin-left: 17.45%;
+    z-index: 20;
+    margin-top: 80px;
+    position: absolute;
+    background-color: transparent;
+    stroke: #030928;
+}
+
+#search_section input {
+    width: 70%;
+    margin-left: 17%;
+    padding-top: 10px;
+    margin-top: 70px;
+    padding-bottom: 13px;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-right: 10px;
+    border-color: transparent;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    outline: none;
+    font-weight: 500;
+    box-shadow: 10px 10px 50px #030928a0;
+}
+
+#search_section span {
+    margin-top: 122px;
+    position: absolute;
+    margin-left: -71%;
+    background-color: transparent;
+}
+
+#search_section #result_item {
+    width: 105%;
+    margin-top: 75px;
+    margin-left: 4px;
+    background-color: #030928;
+}
+
+#search_section #result_item a {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+
+#search_section #result_item .movies_search_item {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#search_section #result_item .movies_search_item * {
+    background-color: transparent;
+}
+
+#search_section #result_item .movies_search_item:hover {
+    transition: 1s;
+    transform: scale(1.05);
+}
+
+#search_section #result_item .movies_search_item #poster_img {
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+}
+
+#search_section #result_item .movies_search_item #rates {
+    background-color: rgba(0, 0, 0, 0.135);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    position: absolute;
+    margin-top: -298px;
+    margin-left: 110px;
+    width: 45px;
+}
+
+#search_section #result_item .movies_search_item #rates p {
+    float: left;
+}
+
+#search_section #result_item .movies_search_item #rates img {
+    width: 15px;
+    float: left;
+    margin-left: 7px;
+    margin-top: 1.5px;
 }
 /* 📦 End of Content Page's style 📦 */
 
@@ -613,7 +722,7 @@ a {  color: grey; }
 }
 
 #movies_details_section .movies_infos {
-    background: linear-gradient(0deg, #071241 55%, #071241b7 70%, #07124100 100%);
+    background: linear-gradient(0deg, #071241 40%, #071241b7 70%, #07124100 90%);
     width: 100%;
     height: 100vh;
     position: absolute; 
@@ -657,7 +766,7 @@ a {  color: grey; }
     cursor: pointer;
     position: absolute;
     margin-left: -140px;
-    box-shadow: 0px 0px 90px black;
+    box-shadow: 0px 0px 80px black;
     transition: all 0.3s;
     margin-top: 450px;
     padding-top: 5px;

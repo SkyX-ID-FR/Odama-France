@@ -10,7 +10,6 @@ import Head from 'next/head';
 import Header from '../../../components/Header.js';
 import fsPromises from 'fs/promises';
 import path from 'path';
-import { useRouter } from 'next/router';
 import $ from 'jquery';
 import { useEffect } from 'react'; 
 import Link from 'next/link.js';
@@ -24,14 +23,7 @@ export async function getStaticProps() {
 }
 
 export default function MoviesPage(props) {
-  const router = useRouter();
   const file_data = props.all_movies; 
-
-  const RedirectToMoviesDetails = event => {
-    var id_element = event.currentTarget.id;
-    localStorage.setItem('item_id', id_element);
-    router.push({pathname: '../movies/details'});
-  };
 
   /* ⌛ Launch Loading Function Screen : ⌛ */
   useEffect(function() {
