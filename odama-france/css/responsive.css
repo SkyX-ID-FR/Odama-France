@@ -378,6 +378,7 @@
         padding-left: 10px;
         padding-right: 10px;
         font-size: 15px;
+        border-radius: 30px;
     }
 
     #my_profile_section .button_group_action #two {

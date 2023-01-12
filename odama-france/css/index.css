@@ -1056,6 +1056,12 @@ a {  color: grey; }
     cursor: pointer;
 }
 
+#movies_library_popup #all_liked_movies_component button {
+    background-color: red;
+    margin-left: -280px;
+    margin-top: -100px;
+}
+
 #movies_library_popup .movies_liked_item img {
     width: 270px;
     border-radius: 10px;
