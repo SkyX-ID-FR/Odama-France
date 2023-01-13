@@ -523,10 +523,6 @@
         height: 170vh;
     }
 
-    #movies_details_section #movie_watch_popup #popup_player {
-        height: 352px;
-    }
-
     #movies_details_section #love_icon {
         font-size: 22px;
         margin-top: 13px;
