@@ -53,19 +53,19 @@ export default function MoviesPage(props) {
   /* 🎫 Show already box office of the week static ID 🎫 : */
   show_box_office_movie.push (
     <>
-      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[46].id}>
-        <img src={file_data[46].poster} className='movie_poster' alt='movie-poster'/>  
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[47].id}>
+        <img src={file_data[47].poster} className='movie_poster' alt='movie-poster'/>  
         <div className='movies_infos_poster'>
-          <div id='rates'><p>{file_data[46].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
-          <span className='movies_tags'>{file_data[46].tags}</span>
+          <div id='rates'><p>{file_data[47].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+          <span className='movies_tags'>{file_data[47].tags}</span>
         </div>
       </div>
 
-      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[41].id}>
-        <img src={file_data[41].poster} className='movie_poster' alt='movie-poster'/>  
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[48].id}>
+        <img src={file_data[48].poster} className='movie_poster' alt='movie-poster'/>  
         <div className='movies_infos_poster'>
-          <div id='rates'><p>{file_data[41].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
-          <span className='movies_tags'>{file_data[41].tags}</span>
+          <div id='rates'><p>{file_data[48].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+          <span className='movies_tags'>{file_data[48].tags}</span>
         </div>
       </div>
 
@@ -77,11 +77,11 @@ export default function MoviesPage(props) {
         </div>
       </div>
 
-      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[43].id}>
-        <img src={file_data[43].poster} className='movie_poster' alt='movie-poster'/> 
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[49].id}>
+        <img src={file_data[49].poster} className='movie_poster' alt='movie-poster'/> 
         <div className='movies_infos_poster'>
-          <div id='rates'><p>{file_data[43].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
-          <span className='movies_tags'>{file_data[43].tags}</span>
+          <div id='rates'><p>{file_data[49].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+          <span className='movies_tags'>{file_data[49].tags}</span>
         </div>
       </div>
 

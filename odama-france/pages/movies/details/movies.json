@@ -782,6 +782,57 @@
             "productors": [
                   { "name": "Rian Johnson <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img2.acsta.net/c_310_420/pictures/18/01/04/16/06/2641767.jpg"}
             ]
+      },
+      {
+            "id": 47,
+            "title": "Devotion",
+            "poster": "https://www.themoviedb.org/t/p/original/26yQPXymbWeCLKwcmyL8dRjAzth.jpg",
+            "background": "https://assets-prd.ignimgs.com/2022/08/01/devotionofficialtrailer-ign-blogroll-1659373207406.jpg",
+            "tags": "Action et Avions",
+            "genres": ["action"],
+            "duration": "2h19min",
+            "year": "2023",
+            "rate": "6,9",
+            "source": "https://tomacloud.com/iframe/ybbQDAdBWL",
+            "trailer": "https://www.youtube.com/watch?v=iGDf6wJiSXM",
+            "synopsis": "Un aviateur noir de la marine américaine et son loyal ailier se soutiennent à la vie à la mort dans cette épopée sur la guerre de Corée, inspirée d'une incroyable histoire vraie.",
+            "productors": [
+                  { "name": "J.D Dillard <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/commons/v9/common/empty/empty_portrait.png"}
+            ]
+      },
+      {
+            "id": 48,
+            "title": "Avatar 1",
+            "poster": "https://www.themoviedb.org/t/p/original/3npygfmEhqnmNTmDWhHLz1LPcbA.jpg",
+            "background": "http://img.over-blog-kiwi.com/0/99/46/17/20170328/ob_41ea23_avtr-he-bg-03.jpg",
+            "tags": "Aventure et Science-Fiction",
+            "genres": ["aventure"],
+            "duration": "2h42min",
+            "year": "2009",
+            "rate": "8,1",
+            "source": "https://tomacloud.com/iframe/9gy9gbnH7H",
+            "trailer": "https://www.youtube.com/watch?v=60ArLSCgjSU",
+            "synopsis": "Malgré sa paralysie, Jake Sully, un ancien marine immobilisé dans un fauteuil roulant, est resté un combattant au plus profond de son être. Il est recruté pour se rendre à des années-lumière de la Terre, sur Pandora, où de puissants groupes industriels exploitent un minerai rarissime destiné à résoudre la crise énergétique sur Terre. Parce que l'atmosphère de Pandora est toxique pour les humains, ceux-ci ont créé le Programme Avatar, qui permet à des pilotes humains de lier leur esprit à un avatar, un corps biologique commandé à distance, capable de survivre dans cette atmosphère létale. Ces avatars sont des hybrides créés génétiquement en croisant l'ADN humain avec celui des Na'vi, les autochtones de Pandora.",
+            "productors": [
+                  { "name": "James Cameron <br/> Canadien 🇨🇦", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/pictures/22/12/07/15/19/3602099.jpg"}
+            ]
+      },
+      {
+            "id": 49,
+            "title": "Rodeo",
+            "poster": "https://www.themoviedb.org/t/p/original/1lgd9hM7tBURweqzxR3WdfWp80g.jpg",
+            "background": "https://www.francetvinfo.fr/pictures/fsuMGFEmVWOwbO7b5-4MQMEsYag/1500x843/2022/08/31/php1d0gNC.jpg",
+            "tags": "Aventure et Motos",
+            "genres": ["drame"],
+            "duration": "1h45min",
+            "year": "2022",
+            "rate": "4,8",
+            "source": "https://tomacloud.com/iframe/ZCR0kEpIOh",
+            "trailer": "https://www.youtube.com/watch?v=Ef4N8FNgQ8s",
+            "synopsis": "Julia vit de petites combines et voue une passion dévorante, presque animale, à la pratique de la moto. Un jour d’été, elle fait la rencontre d’une bande de motards adeptes du cross-bitume et infiltre ce milieu clandestin, constitué majoritairement de jeunes hommes. Avant qu’un accident ne fragilise sa position au sein de la bande...",
+            "productors": [
+                  { "name": "Lola Quivoron <br/> Français 🇫🇷", "profile_pic": "https://fr.web.img5.acsta.net/c_310_420/pictures/22/06/29/15/55/3727034.jpg"}
+            ]
       }
   ]
 }
