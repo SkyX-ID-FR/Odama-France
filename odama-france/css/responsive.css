@@ -98,19 +98,6 @@
         width: 80%;
         margin-left: 8%;
     }
-
-    #contact_section p { 
-        width: 80%;
-        margin-left: 9%;
-    }
-
-    #contact_section #re_contact { 
-        width: 80%;
-    }
-
-    #contact_section #message_textarea {
-        width: 81%;
-    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -825,41 +812,6 @@
         margin-top: 265px;
         width: 150px;
         margin-left: -195px;
-    }
-
-    #contact_section {
-        margin-top: 150px;
-        margin-left: 20px;
-        text-align: left;
-    }
-
-    #contact_section .discord_logo {
-        width: 60px;
-        padding-top: 20px;
-        padding-bottom: 23px;
-        padding-left: 30px;
-        padding-right: 30px;
-        margin-left: 55%;
-    }
-
-    #contact_section h1 {
-        font-size: 40px;
-        width: 150%;
-        margin-left: 13%;
-        margin-top: 20px;
-    }
-
-    #contact_section h1 img {
-        width: 30px;
-        margin-top: 12px;
-        margin-left: 10px;
-    }
-
-    #contact_section p {
-        font-size: 14px;
-        width: 160%;
-        margin-left: 0px;
-        text-align: center;
     }
 
     #loader_screen {

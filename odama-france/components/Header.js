@@ -31,7 +31,7 @@ export default function LeftNavBar() {
             <li><Link  style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/" id="home-link">🏠 Accueil</Link></li>
             <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies" id="movies-link">🎞 Films</Link></li>
             <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/series" id="series-link">🎥 Séries</Link></li>
-            <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/contact" id="contact-link">📬 Contact</Link></li><br/><br/>
+            <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} target="_blank" href="https://linktr.ee/odama_france" id="contact-link">📬 Contact</Link></li><br/><br/>
             <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/search">🔍 Rechercher</Link></li>
             <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/my-profile">👤 Mon profil</Link></li>
           </ul>
@@ -49,7 +49,7 @@ export default function LeftNavBar() {
           <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/" id="home-link">Accueil</Link></li>
           <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies" id="movies-link">Films</Link></li>
           <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/series" id="series-link">Séries</Link></li>
-          <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/contact" id="contact-link">Contact</Link></li>
+          <li><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} target="_blank" href="https://linktr.ee/odama_france" id="contact-link">Contact</Link></li>
           <li id="search-link"><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></Link></li>
           <li id="profile-link"><Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/my-profile"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></Link></li>
         </ul>
