@@ -186,8 +186,8 @@
 
 @media only screen and (max-width: 840px) {
     #movies_details_section #love_icon {
-        margin-left: 92%!important;
-        margin-top: 16px;
+        margin-left: 90%!important;
+        margin-top: 13px;
     }
     
     #navbar {
@@ -300,14 +300,15 @@
     }
 
     #movies_details_section .back_link .back_icon { 
-        margin-left: 20px;
-        width: 22px;
+        margin-left: 12px;
+        margin-top: 18.4px;
+        width: 20px;
     }
 
     #movies_details_section .back_link p { 
-        margin-left: 45px; 
-        font-size: 15px;
-        margin-top: 23px;
+        margin-left: 33px; 
+        font-size: 13px;
+        margin-top: 20px;
     }
 
     #movies_details_section #productors { margin-left: 34%; }
@@ -513,55 +514,68 @@
 }
 
 @media only screen and (max-width: 503px) {
+    #movies_details_section .movies_infos {
+        background-color: rgba(0, 0, 0, 0.242);
+    }
+
+    #movies_details_section #movie_watch_popup #popup_player {
+        height: 352px;
+    }
+
     #movies_details_section #love_icon {
         font-size: 22px;
-        margin-top: 17px;
-        margin-left: 90%!important;
+        margin-top: 13px;
+        margin-left: 89%!important;
     }
 
     #movies_details_section .movies_infos #content .poster_box img {
-        margin-left: 155px;
+        margin-left: 152px;
+        border-radius: 10px;
+        margin-top: -30px;
+        width: 230px;
+        height: 340px;
     }
 
     #movies_details_section .movies_infos #content .short_infos_box h1 {
         font-size: 60px;
-        margin-left: 72.5%;
-        margin-top: 35px;
+        margin-left: 73.2%;
+        margin-top: 20px;
         width: 350px;
     }
 
     #movies_details_section .movies_infos #content .short_infos_box .tags_box {
-        margin-left: 75.5%;
-        width: 300px;
-        margin-top: 40px;
+        margin-left: 72.7%;
+        width: 370px;
+        margin-top: 15px;
     }
 
-    #movies_details_section .movies_infos #content .short_infos_box .tags_box #tags {
+    /* #movies_details_section .movies_infos #content .short_infos_box .tags_box #tags {
         position: absolute;
         margin-top: 40px;
         margin-left: -160px;
-    }
+    } */
 
     #movies_details_section .movies_infos #content .short_infos_box .tags_box #year {
         position: absolute;
-        margin-top: 90px;
+        margin-top: 42px;
         width: 80px;
-        margin-left: -140px;
+        margin-left: -235px;
         padding-top: 5px;
-    }
+    } 
 
     #movies_details_section .movies_infos #content .short_infos_box #synopsis {
-        margin-left: 73.5%;
+        margin-left: 73.7%;
         width: 330px;
-        margin-top: 140px;
+        margin-top: 90px;
     }
 
     #movies_details_section .movies_infos #content .short_infos_box #watch_button {
-        margin-left: 77%;
+        margin-left: 79.3%;
     }
 
     #movies_details_section .movies_infos #content .short_infos_box #trailer_button {
-        margin-left: 77%;
+        margin-left: 79.3%;
+        margin-top: 125px;
     }
 
     #search_section input { 
