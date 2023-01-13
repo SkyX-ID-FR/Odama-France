@@ -702,7 +702,7 @@ a {  color: grey; }
 
 #movies_details_section .movies_infos #content .short_infos_box .tags_box {
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: -1°px;
 }
 
 #movies_details_section .movies_infos #content .short_infos_box .tags_box span {

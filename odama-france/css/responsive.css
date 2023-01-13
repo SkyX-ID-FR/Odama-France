@@ -558,9 +558,9 @@
 
     #movies_details_section .movies_infos #content .short_infos_box .tags_box #year {
         position: absolute;
-        margin-top: 42px;
+        margin-top: 44px;
         width: 80px;
-        margin-left: -235px;
+        margin-left: -230px;
         padding-top: 5px;
     } 
 
