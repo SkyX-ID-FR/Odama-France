@@ -516,11 +516,11 @@
 @media only screen and (max-width: 503px) {
     #movies_details_section .movies_infos {
         background-color: rgba(0, 0, 0, 0.242);
-        height: 150vh;
+        height: 170vh;
     }
 
     #movies_details_section {
-        height: 150vh;
+        height: 170vh;
     }
 
     #movies_details_section #movie_watch_popup #popup_player {
