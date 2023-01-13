@@ -702,7 +702,7 @@ a {  color: grey; }
 
 #movies_details_section .movies_infos #content .short_infos_box .tags_box {
     margin-top: 20px;
-    margin-left: -10px;
+    margin-left: 10px;
 }
 
 #movies_details_section .movies_infos #content .short_infos_box .tags_box span {
@@ -789,6 +789,7 @@ a {  color: grey; }
 #movies_details_section .movies_infos #content .bottom_box {
     /* background-color: yellow; */
     grid-area: 4 / 1 / 6 / 7;
+    margin-top: 50px;
 }
 
 #movies_details_section .toast_popup {
