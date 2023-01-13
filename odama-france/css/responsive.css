@@ -343,7 +343,7 @@
     }
 
     #movies_library_popup .movies_liked_item .movies_tags {
-        margin-top: 185px;
+        margin-top: 207px!important;
         margin-left: 4px;
         font-size: 12px;
         width: 110px;
@@ -351,7 +351,7 @@
 
     #movies_library_popup .movies_liked_item img {
         width: 160px;
-        height: 220px;
+        height: 240px;
     }
 }
 
