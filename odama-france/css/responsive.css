@@ -22,6 +22,10 @@
     #movies_details_section .movies_infos #content .short_infos_box #trailer_button { margin-left: 220px; }
 }
 
+@media only screen and (max-width: 1683px) {
+    #movies_list { margin-top: 490px; }
+}
+
 @media only screen and (max-width: 1670px) {
     #movies_details_section .movies_infos #content .short_infos_box h1 { margin-left: 810px; }
     #movies_details_section .movies_infos #content .short_infos_box .tags_box { margin-left: 540px; }
@@ -363,6 +367,10 @@
     }
 }
 
+@media only screen and (max-width: 753px) {
+    #movies_list { margin-top: 580px; }
+}
+
 @media only screen and (max-width: 750px) {
     .genres_page h1 {
         margin-left: 20px;
@@ -498,6 +506,10 @@
     #confirm_popup .content .button_group { margin-top: 120px; }
 }
 
+@media only screen and (max-width: 688px) {
+    #movies_list { margin-top: 650px; }
+}
+
 @media only screen and (max-width: 640px) {
     #confirm_popup .content { width: 70%; }
     #confirm_popup .content .button_group { margin-top: 150px; }
@@ -599,8 +611,9 @@
     }
 
     #search_section span {
-        margin-left: 10px;
-        margin-top: 5px;
+        margin-left: -363px;
+        width: 80%;
+        margin-top: 55px;
     }
 
     #search_section #result_item {
@@ -814,8 +827,8 @@
     }
 
     #movies_list {
-        margin-top: 560px;
-        margin-left: 20px;
+        margin-top: 590px;
+        margin-left: 10px;
         width: 87%;
     }
 
@@ -896,6 +909,12 @@
 
     #confirm_popup .content .button_group { margin-top: 200px; }
     #confirm_popup .content .button_group #no { margin-top: 15px; }
+
+    #search_section span {
+        margin-left: 5px;
+        margin-top: 10px;
+        width: 95%;
+    }
 }
 
 @media only screen and (max-width: 345px) {

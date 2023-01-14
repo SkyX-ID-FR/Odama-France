@@ -254,7 +254,7 @@ a {  color: grey; }
 #movies_list {
     margin-left: 40px;
     position: absolute;
-    margin-top: 450px;
+    margin-top: 420px;
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;

@@ -195,7 +195,7 @@
             "background": "https://digitalcine.b-cdn.net/wp-content/uploads/2017/01/tous-en-scene_image-3.jpg",
             "tags": "Enfant et Musicale",
             "duration": "1h50min",
-            "genres": ["humour"],
+            "genres": ["kids"],
             "year": "2021",
             "rate": "7,3",
             "source": "https://tomacloud.com/iframe/feGMow8Axg",
@@ -415,7 +415,7 @@
             "poster": "https://www.themoviedb.org/t/p/original/ryW6BRF8zDZoTFVSjmaoIiHxUa5.jpg",
             "background": "https://dx35vtwkllhj9.cloudfront.net/disney/strange-world/images/regions/ca_fr/share.jpg",
             "tags": "Enfant et Humour",
-            "genres": ["humour"],
+            "genres": ["kids"],
             "duration": "1h42min",
             "year": "2022",
             "rate": "5,1",
@@ -649,7 +649,7 @@
       },
       {
             "id": 39,
-            "title": "Thor : Love and Thunder",
+            "title": "Thor 4",
             "poster": "https://www.themoviedb.org/t/p/original/kSMarEm3ESOOr11dzsep2RZ1ClD.jpg",
             "background": "https://www.universdescomics.com/wp-content/uploads/2022/06/Thor-Love-and-Thunder-banner.jpg",
             "tags": "Super-Héros",
@@ -738,7 +738,7 @@
             "poster": "https://www.themoviedb.org/t/p/original/kO35BwoKHyP1VRulxZJVeEl5dvS.jpg",
             "background": "https://cdn.sortiraparis.com/images/80/77381/737445-le-chat-potte-2-la-derniere-quete-la-bande-annonce.jpg",
             "tags": "Aventure et Enfant",
-            "genres": [""],
+            "genres": ["kids"],
             "duration": "1h42min",
             "year": "2022",
             "rate": "3,7",
@@ -832,6 +832,57 @@
             "synopsis": "Julia vit de petites combines et voue une passion dévorante, presque animale, à la pratique de la moto. Un jour d’été, elle fait la rencontre d’une bande de motards adeptes du cross-bitume et infiltre ce milieu clandestin, constitué majoritairement de jeunes hommes. Avant qu’un accident ne fragilise sa position au sein de la bande...",
             "productors": [
                   { "name": "Lola Quivoron <br/> Français 🇫🇷", "profile_pic": "https://fr.web.img5.acsta.net/c_310_420/pictures/22/06/29/15/55/3727034.jpg"}
+            ]
+      },
+      {
+            "id": 50,
+            "title": "Les minions 2",
+            "poster": "https://www.themoviedb.org/t/p/original/ucLdEGaIFlpIdGlkzYj2OcXbGhz.jpg",
+            "background": "http://www.premiere.fr/sites/default/files/styles/partage_rs/public/2022-06/5636452.jpg-r_1920_1080-f_jpg-q_x-xxyxx.jpg",
+            "tags": "Enfants et Minions",
+            "genres": ["kids"],
+            "duration": "1h28min",
+            "year": "2022",
+            "rate": "3,9",
+            "source": "https://tomacloud.com/iframe/f5LKCR9BJH",
+            "trailer": "https://www.youtube.com/watch?v=B3TgV2AEtDM",
+            "synopsis": "Alors que les années 70 battent leur plein, Gru qui grandit en banlieue au milieu des jeans à pattes d’éléphants et des chevelures en fleur, met sur pied un plan machiavélique à souhait pour réussir à intégrer un groupe célèbre de super méchants, connu sous le nom de Vicious 6, dont il est le plus grand fan. Il est secondé dans sa tâche par les Minions, ses petits compagnons aussi turbulents que fidèles. Avec l’aide de Kevin, Stuart, Bob et Otto – un nouveau Minion arborant un magnifique appareil dentaire et un besoin désespéré de plaire - ils vont déployer ensemble des trésors d’ingéniosité afin de construire leur premier repaire, expérimenter leurs premières armes, et lancer leur première mission.",
+            "productors": [
+                  { "name": "Kyle Balda <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/pictures/15/06/22/14/52/299926.jpg"}
+            ]
+      },
+      {
+            "id": 51,
+            "title": "Il était une fois 2",
+            "poster": "https://www.themoviedb.org/t/p/original/6djieHJEPqfYAV2Kyz2fK3QY3Du.jpg",
+            "background": "http://www.premiere.fr/sites/default/files/styles/partage_rs/public/2022-09/D.jpg",
+            "tags": "Enfants et Magie",
+            "genres": ["kids"],
+            "duration": "2h01min",
+            "year": "2022",
+            "rate": "6,5",
+            "source": "https://tomacloud.com/iframe/rDCVeGhcqj",
+            "trailer": "https://www.youtube.com/watch?v=fV86QoAGzPY",
+            "synopsis": "Giselle et Robert sont mariés depuis 15 ans. Lassés de la vie citadine, ils emménagent dans le quartier résidentiel de Monroeville avec leur petite famille, dans l’espoir de mener une existence un peu plus féerique. Malheureusement, les choses ne se déroulent pas sans accrocs. Les banlieues chics sont régies de façon stricte, comme ne cesse de le rappeler Malvina Monroe, gardienne du temple autoproclamée.",
+            "productors": [
+                  { "name": "Adam Shankman <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/commons/v9/common/empty/empty_portrait.png"}
+            ]
+      },
+      {
+            "id": 52,
+            "title": "Thor 2",
+            "poster": "https://www.themoviedb.org/t/p/original/eAIGX0nlwlb5sMb4uDRGNFqMyG9.jpg",
+            "background": "https://3238leblogdemarvelll-1278.kxcdn.com/wp-content/uploads/2013/10/thor-le-monde-des-tenebres-banniere.jpg",
+            "tags": "Super-Héros",
+            "genres": ["heros"],
+            "duration": "1h52min",
+            "year": "2013",
+            "rate": "4,7",
+            "source": "https://tomacloud.com/iframe/BHauy9qOKe",
+            "trailer": "https://www.youtube.com/watch?v=WocFedghAHI",
+            "synopsis": "Thor : Le Monde des ténèbres nous entraîne dans les nouvelles aventures de Thor, le puissant Avenger, qui lutte pour sauver la Terre et les neuf mondes d’un mystérieux ennemi qui convoite l’univers tout entier… Après les films Marvel Thor et Avengers, Thor se bat pour restaurer l’ordre dans le cosmos, mais une ancienne race, sous la conduite du terrible Malekith, un être assoiffé de vengeance, revient pour répandre les ténèbres.",
+            "productors": [
+                  { "name": "Alan Taylor <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/pictures/210/520/21052033_20131023120435772.jpg"}
             ]
       }
   ]
