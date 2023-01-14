@@ -1139,4 +1139,77 @@ a {  color: grey; }
     float: left;
     margin-left: 5px;
 }
+
+#confirm_popup {
+    background-color: #040a228e;
+    backdrop-filter: blur(3px);
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+#confirm_popup * { background-color: transparent; }
+#confirm_popup .content {
+    background-color: #030928;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border-radius: 20px;
+    padding: 40px;
+    color: white;
+    font-weight: normal;
+    box-shadow: 0px 0px 100px #061045;
+}
+
+#confirm_popup .content #close_icon {
+    width: 30px;
+    float: right;
+    margin-right: -30px;
+    margin-top: -30px;
+    cursor: pointer;
+}
+
+#confirm_popup .content h1 {
+    font-weight: 800;
+    font-size: 40px;
+    width: 90%;
+    line-height: 42px;
+}
+
+#confirm_popup .content span {
+    position: absolute;
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgb(183, 183, 183);
+    width: 45%;
+}
+
+#confirm_popup .content .button_group {
+    margin-top: 100px;
+}
+
+#confirm_popup .content .button_group button {
+    margin-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 20px;
+    border-color: transparent;
+    box-shadow: 0px 0px 50px black;
+    cursor: pointer;
+}
+
+#confirm_popup .content .button_group button:hover {
+    transition: all 0.7s;
+    transform: scale(1.07);
+}
+
+#confirm_popup .content .button_group #yes { background-color: rgb(17, 139, 17); }
+#confirm_popup .content .button_group #no { background-color: rgb(210, 10, 10); }
 /* 🙎‍♂️ End of My profile page style 🙎‍♀️ */

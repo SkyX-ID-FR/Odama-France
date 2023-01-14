@@ -51,6 +51,7 @@
     #movies_details_section .movies_infos #content .short_infos_box .tags_box { margin-left: 31%; }
     #movies_details_section .movies_infos #content .short_infos_box #watch_button { margin-left: 0%; }
     #movies_details_section .movies_infos #content .short_infos_box #trailer_button { margin-left: 25%; }
+    #confirm_popup .content .button_group { margin-top: 140px; }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -65,6 +66,13 @@
     #movies_details_section .movies_infos #content .short_infos_box .tags_box { margin-left: 38%; }
     #movies_details_section .movies_infos #content .short_infos_box #watch_button { margin-left: 3%; }
     #movies_details_section .movies_infos #content .short_infos_box #trailer_button { margin-left: 30%; }
+}
+
+@media only screen and (max-width: 1142px) {
+    #confirm_popup .content { width: 70%; }
+    #confirm_popup .content h1 { width: 100%; }
+    #confirm_popup .content span { width: 70%; }
+    #confirm_popup .content .button_group { margin-top: 110px; }
 }
 
 @media only screen and (max-width: 1137px) {
@@ -476,6 +484,26 @@
     }
 }
 
+@media only screen and (max-width: 730px) {
+    #confirm_popup .content {
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    #confirm_popup .content h1 {
+        font-size: 35px;
+        line-height: 38px;
+    }
+
+    #confirm_popup .content .button_group { margin-top: 120px; }
+}
+
+@media only screen and (max-width: 640px) {
+    #confirm_popup .content { width: 70%; }
+    #confirm_popup .content .button_group { margin-top: 150px; }
+    #confirm_popup .content .button_group #no { margin-top: 20px; }
+}
+
 @media only screen and (max-width: 582px) {
     .github_link { margin-left: -25%; }
 
@@ -839,12 +867,35 @@
     }
 }
 
+@media only screen and (max-width: 457px) {
+    #confirm_popup .content span { margin-top: 20px; }
+    #confirm_popup .content .button_group { margin-top: 170px; }
+    #confirm_popup .content .button_group #no { margin-top: 20px; }
+}
+
 @media only screen and (max-width: 465px) {
     .github_link { margin-left: -32%; }
 }
 
 @media only screen and (max-width: 401px) {
     .github_link { margin-left: -36%; }
+
+    #confirm_popup .content {
+        box-shadow: 0px 0px 50px rgb(99, 99, 99);
+    }
+
+    #confirm_popup .content #close_icon {
+        width: 25px;
+        margin-top: -33px;
+    }
+
+    #confirm_popup .content h1 {
+        font-size: 33px;
+        line-height: 35px;
+    }
+
+    #confirm_popup .content .button_group { margin-top: 200px; }
+    #confirm_popup .content .button_group #no { margin-top: 15px; }
 }
 
 @media only screen and (max-width: 345px) {

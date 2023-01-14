@@ -22,6 +22,7 @@ export async function getStaticProps() {
 
 export default function MyProfile(props) {
     useEffect(function() {
+        $("#confirm_popup").hide();
         $("#movies_library_popup").hide();
         $("#show_movies_library").click(function() { $("#movies_library_popup").fadeIn(400); }); 
         $("#close_icon_popup").click(function() { $("#movies_library_popup").hide(); });
@@ -48,13 +49,17 @@ export default function MyProfile(props) {
                 `;
             }
         }
-    }, []);
 
-    function remove_localstorage() {
-        localStorage.clear();
-        alert("Pas de soucis ! Tout vos paramètres sont bien effacés ! 🎉");
-        location.reload();
-    }
+        $("#two").click(function() { $("#confirm_popup").fadeIn(400); }); 
+        $("#close_icon").click(function() { $("#confirm_popup").fadeOut(400); }); 
+        $("#no").click(function() { $("#confirm_popup").fadeOut(400); }); 
+
+        /* 📂 Delete all localStorage (also user's library) : 📂 */
+        $("#yes").click(function() {
+            localStorage.clear();
+            location.reload();
+        }); 
+    }, []);
 
     return (
         <>
@@ -73,13 +78,26 @@ export default function MyProfile(props) {
                 
                 <div className='button_group_action'>
                     <button id="show_movies_library">Ma bibliothèque de films ! ✨</button>
-                    <button id="two" onClick={remove_localstorage}>Réinitialiser vos paramètres d'utilisateurs... 📦</button>
+                    <button id="two">Réinitialiser vos paramètres d'utilisateurs... 📦</button>
                 </div>
             </section>
 
             <div id='movies_library_popup'>
                 <img id="close_icon_popup" src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' alt="close_icon"/>
                 <div id="all_liked_movies_component"></div>
+            </div>
+
+            <div id="confirm_popup">
+                <div class="content">
+                    <img id="close_icon" src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' alt="close_icon"/>
+                    <h1>Êtes-vous vraiment sûr(e) de vouloir supprimer toutes vos préférences utilisateurs ? 😓</h1>
+                    <span>Si vous cliquez sur oui, toutes vos préférences et paramètres utilisateurs normalement enregistrés localement vont être supprimés. Cette action est irréversible : c'est-à-dire que vous ne pourrez plus restituer vos données personnelles. Si vous souhaitez continuer, cliquez sur oui sinon cliquez sur non.</span>
+
+                    <div className='button_group'>
+                        <button id="yes">Oui, pas de soucis ! ✔️</button>
+                        <button id="no">Non, c'est une erreur... ❌</button>
+                    </div>
+                </div>
             </div>
         </>
     )
