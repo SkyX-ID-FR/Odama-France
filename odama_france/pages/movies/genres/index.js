@@ -80,7 +80,7 @@ export default function MoviesPage(props) {
             <button onClick={show_genres_poppup} id="horreur">Horreur 💀</button>
             <button onClick={show_genres_poppup} id="fantastic">Fantastique ✨</button>
             <button onClick={show_genres_poppup} id="heros">Super-Héros 🚀</button>
-            <button onClick={show_genres_poppup} id="kids">Disney + Enfants 🧑</button>
+            <button onClick={show_genres_poppup} id="kids">Disney & Enfants 🧑</button>
           </div>
         </section>
       </div>
