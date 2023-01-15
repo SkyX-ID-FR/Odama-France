@@ -656,7 +656,7 @@
             "genres": ["heros"],
             "duration": "2h13min",
             "year": "2022",
-            "rate": "2,2",
+            "rate": "8,7",
             "source": "https://tomacloud.com/iframe/Mtc0knl41V",
             "trailer": "https://www.youtube.com/watch?v=LWD2v47AQoA",
             "synopsis": "Alors que Thor est en pleine introspection et en quête de sérénité, sa retraite est interrompue par un tueur galactique connu sous le nom de Gorr, qui s’est donné pour mission d’exterminer tous les dieux. Pour affronter cette menace, Thor demande l’aide de Valkyrie, de Korg et de son ex-petite amie Jane Foster, qui, à sa grande surprise, manie inexplicablement son puissant marteau, le Mjolnir. Ensemble, ils se lancent dans une dangereuse aventure cosmique pour comprendre les motivations qui poussent Gorr à la vengeance et l’arrêter avant qu’il ne soit trop tard.",
@@ -666,14 +666,14 @@
       },
       {
             "id": 40,
-            "title": "Doctor Strange",
+            "title": "Doctor Strange 2",
             "poster": "https://www.themoviedb.org/t/p/original/dbJDPJBHKxnMyvcc12mcbGK5RPF.jpg",
             "background": "https://linfotoutcourt.com/wp-content/uploads/2022/05/affiche.jpeg",
             "tags": "Super-Héros",
             "genres": ["heros"],
             "duration": "2h06min",
             "year": "2022",
-            "rate": "3,6",
+            "rate": "8,7",
             "source": "https://tomacloud.com/iframe/Mtc0knl41V",
             "trailer": "https://www.youtube.com/watch?v=J7u1bDo_4sk",
             "synopsis": "Dans ce nouveau film Marvel Studios, l’univers cinématographique Marvel déverrouille et repousse les limites du multivers encore plus loin. Voyagez dans l’inconnu avec Doctor Strange, qui avec l’aide d’anciens et de nouveaux alliés mystiques, traverse les réalités hallucinantes et dangereuses du multivers pour affronter un nouvel adversaire mystérieux.",
@@ -883,6 +883,159 @@
             "synopsis": "Thor : Le Monde des ténèbres nous entraîne dans les nouvelles aventures de Thor, le puissant Avenger, qui lutte pour sauver la Terre et les neuf mondes d’un mystérieux ennemi qui convoite l’univers tout entier… Après les films Marvel Thor et Avengers, Thor se bat pour restaurer l’ordre dans le cosmos, mais une ancienne race, sous la conduite du terrible Malekith, un être assoiffé de vengeance, revient pour répandre les ténèbres.",
             "productors": [
                   { "name": "Alan Taylor <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/pictures/210/520/21052033_20131023120435772.jpg"}
+            ]
+      },
+      {
+            "id": 53,
+            "title": "Il était une fois 1",
+            "poster": "https://www.themoviedb.org/t/p/original/sshYxlZEGEMNMqS7hIZVtqxcz6e.jpg",
+            "background": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/49EFD80346E76AC06BE3CDFA5094CA772AA4B59DB06CD4ECF355344949D3A4E1/scale?width=1200&aspectRatio=1.78&format=jpeg",
+            "tags": "Enfants et Magie",
+            "genres": ["kids"],
+            "duration": "1h48min",
+            "year": "2007",
+            "rate": "2,9",
+            "source": "https://tomacloud.com/file/j0E3sRvAiM",
+            "trailer": "https://www.youtube.com/watch?v=XJN7mE8TzxQ",
+            "synopsis": "La très belle princesse Giselle est bannie de son royaume magique de dessin animé et de musique par la méchante reine. Elle se retrouve à Manhattan... Déroutée par ce nouvel environnement étrange qui ne fonctionne pas selon le principe ils vécurent heureux à tout jamais, Giselle découvre un monde qui a désespérément besoin de magie et d'enchantements... Elle va faire la connaissance d'un séduisant avocat spécialiste du divorce, qui est venu à son aide et dont elle tombe amoureuse. Le problème, c'est qu'elle est déjà fiancée au parfait prince de conte de fées. La question est : un amour de conte de fées peut-il survivre dans le monde réel ?",
+            "productors": [
+                  { "name": "Kevin Lima <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/commons/v9/common/empty/empty_portrait.png"}
+            ]
+      },
+      {
+            "id": 54,
+            "title": "Thor 1",
+            "poster": "https://www.themoviedb.org/t/p/original/q8pF6s9b9veTQvxTqMDIQf9nJKi.jpg",
+            "background": "https://kakavfilm.com/wp-content/uploads/2011/04/thor1.jpg",
+            "tags": "Super-Héros",
+            "genres": ["heros"],
+            "duration": "1h55min",
+            "year": "2011",
+            "rate": "6,9",
+            "source": "https://tomacloud.com/iframe/heeJZPYG2j",
+            "trailer": "https://www.youtube.com/watch?v=nMNyXmQxYwI",
+            "synopsis": "Au royaume d’Asgard, Thor est un guerrier aussi puissant qu’arrogant dont les actes téméraires déclenchent une guerre ancestrale. Banni et envoyé sur Terre, par son père Odin, il est condamné à vivre parmi les humains. Mais lorsque les forces du mal de son royaume s’apprêtent à se déchaîner sur la Terre, Thor va apprendre à se comporter en véritable héros…",
+            "productors": [
+                  { "name": "Kenneth Branagh <br/> Anglais 🇬🇧", "profile_pic": "https://fr.web.img5.acsta.net/c_310_420/pictures/17/06/01/17/11/336884.jpg"}
+            ]
+      },
+      {
+            "id": 55,
+            "title": "Thor 3",
+            "poster": "https://www.themoviedb.org/t/p/original/mAA8RXkgF87jSWWMSf6hgLl73mk.jpg",
+            "background": "https://preview.redd.it/6saa1231rnt41.jpg?auto=webp&s=273034752685f503d84e5ea2c1f56b2536d09543",
+            "tags": "Super-Héros",
+            "genres": ["heros"],
+            "duration": "2h11min",
+            "year": "2017",
+            "rate": "9,4",
+            "source": "https://tomacloud.com/iframe/xmLIvzjNc2",
+            "trailer": "https://www.youtube.com/watch?v=uj-6DMmSLOw",
+            "synopsis": "Privé de son puissant marteau, Thor est retenu prisonnier sur une lointaine planète aux confins de l’univers. Pour sauver Asgard, il va devoir lutter contre le temps afin d’empêcher l’impitoyable Hela d’accomplir le Ragnarök – la destruction de son monde et la fin de la civilisation asgardienne. Mais pour y parvenir, il va d’abord devoir mener un combat titanesque de gladiateurs contre celui qui était autrefois son allié au sein des Avengers : l’incroyable Hulk…",
+            "productors": [
+                  { "name": "Taika Waititi <br/> Néo-Zélandais 🇳🇿", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/pictures/19/07/11/15/12/3164290.jpg"}
+            ]
+      },
+      {
+            "id": 56,
+            "title": "Doctor Strange 1",
+            "poster": "https://www.themoviedb.org/t/p/original/7wZ7mx7tY5SgflQKuJmQvwu3wGm.jpg",
+            "background": "https://3238leblogdemarvelll-1278.kxcdn.com/wp-content/uploads/2016/10/doctor-strange-banniere-marvel-studios.jpg",
+            "tags": "Super-Héros",
+            "genres": ["heros"],
+            "duration": "1h55min",
+            "year": "2016",
+            "rate": "6,7",
+            "source": "https://tomacloud.com/iframe/K8gdJx0H8T",
+            "trailer": "https://www.youtube.com/watch?v=bly7XM7QzSY",
+            "synopsis": "Doctor Strange suit l'histoire du Docteur Stephen Strange, talentueux neurochirurgien qui, après un tragique accident de voiture, doit mettre son égo de côté et apprendre les secrets d'un monde caché de mysticisme et de dimensions alternatives. Basé à New York, dans le quartier de Greenwich Village, Doctor Strange doit jouer les intermédiaires entre le monde réel et ce qui se trouve au-delà, en utlisant un vaste éventail d'aptitudes métaphysiques et d'artefacts pour protéger le Marvel Cinematic Universe.",
+            "productors": [
+                  { "name": "Scott Derrickson <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img3.acsta.net/c_310_420/pictures/16/10/21/16/02/557240.jpg"}
+            ]
+      },
+      {
+            "id": 57,
+            "title": "Day Shift",
+            "poster": "https://www.themoviedb.org/t/p/original/yQNo9KVTyDzx3NXgyCLqnaZ0k0K.jpg",
+            "background": "https://occ-0-448-1360.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABYoSqodDCY2m6LSOyQl-b-GHyUUsJulBi5GpyaGD225rxWmFuh9sjwQA7J3YtlzNv1cdxONnEq9XbkIEyXgCXFuzwNsqljxO5sG0.jpg?r=9f9",
+            "tags": "Vampires et Action",
+            "genres": ["fantastic"],
+            "duration": "1h53min",
+            "year": "2022",
+            "rate": "8,9",
+            "source": "https://tomacloud.com/iframe/YG4K0Ao8Xt",
+            "trailer": "https://www.youtube.com/watch?v=9z1uIAJ4Jic",
+            "synopsis": "À Los Angeles, un chasseur de vampires a une semaine afin de réunir l'argent nécessaire pour payer l'école et l'appareil dentaire de sa fille. Il va devoir se saigner…",
+            "productors": [
+                  { "name": "JJ Perry <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/commons/v9/common/empty/empty_portrait.png"}
+            ]
+      },
+      {
+            "id": 58,
+            "title": "Les minions 1",
+            "poster": "https://www.themoviedb.org/t/p/original/sGuZHYvu0mXeQCwvJ5yzk2Yoytq.jpg",
+            "background": "https://www.ecranlarge.com/uploads/image/000/992/les-minions-photo-992142.jpg",
+            "tags": "Enfants et Minions",
+            "genres": ["kids"],
+            "duration": "1h31min",
+            "year": "2015",
+            "rate": "6,6",
+            "source": "https://tomacloud.com/iframe/uErvJJjyEY",
+            "trailer": "https://www.youtube.com/watch?v=fBw-G-Xhv2I",
+            "synopsis": "A l'origine de simples organismes monocellulaires de couleur jaune, les Minions ont évolué au cours des âges au service de maîtres plus abjectes les uns que les autres. Les disparitions répétitives de ceux-ci, des tyrannosaures à Napoléon, ont plongé les Minions dans une profonde dépression. Mais l'un d'eux, prénommé Kevin, a une idée. Flanqué de Stuart, l'adolescent rebelle et de l'adorable petit Bob, Kevin part à la recherche d'un nouveau patron malfaisant pour guider les siens. Nos trois Minions se lancent dans un palpitant voyage qui va les conduire à leur nouveau maître : Scarlet Overkill, la première superméchante de l'histoire. De l'Antarctique au New York des années 60, nos trois compères arrivent finalement à Londres, où ils vont devoir faire face à la plus terrible menace de leur existence : l'annihilation de leur espèce.",
+            "productors": [
+                  { "name": "Pierre Coffin <br/> Français 🇫🇷", "profile_pic": "https://fr.web.img2.acsta.net/c_310_420/pictures/15/07/03/11/56/394258.jpg"}
+            ]
+      },
+      {
+            "id": 59,
+            "title": "Sans répit",
+            "poster": "https://www.themoviedb.org/t/p/original/fdA09RK9nzbXr2HD9DKMSRRIwC3.jpg",
+            "background": "https://www.premiere.fr/sites/default/files/styles/scale_crop_1280x720/public/2022-02/Sans%20re%CC%81pit.jpg",
+            "tags": "Drame et Action",
+            "genres": ["drame", "action"],
+            "duration": "1h36min",
+            "year": "2021",
+            "rate": "8,8",
+            "source": "https://tomacloud.com/iframe/QoCtasbdgs",
+            "trailer": "https://www.youtube.com/watch?v=EB9GIb0dzPs",
+            "synopsis": "Alors qu'il fait l'objet d'une enquête pour corruption, le lieutenant Thomas Blin doit se rendre en pleine nuit aux funérailles de sa mère. En voulant éviter un chien sur le route, il percute accidentellement un homme et le tue sur le coup. Paniqué, il décide de cacher le corps. Croyant être tiré d'affaires, il se retrouve embarqué dans une spirale infernale, quand l'enquête sur l'individu disparu est confiée à un de ses collègues, et qu'un mystérieux témoin tente de le faire chanter...",
+            "productors": [
+                  { "name": "Régis Blondeau <br/> Français 🇫🇷", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/commons/v9/common/empty/empty_portrait.png"}
+            ]
+      },
+      {
+            "id": 61,
+            "title": "Boîte Noire",
+            "poster": "https://www.themoviedb.org/t/p/original/jIfFFC4YwiI8TVaGtbl1eT9BRaI.jpg",
+            "background": "https://assets.mubicdn.net/images/film/273459/image-w1280.jpg?1595158663",
+            "tags": "Drame et Avions",
+            "genres": ["drame"],
+            "duration": "2h10min",
+            "year": "2021",
+            "rate": "10",
+            "source": "https://tomacloud.com/iframe/KewciZTzih",
+            "trailer": "https://www.youtube.com/watch?v=mAs0C9T5EC0",
+            "synopsis": "Que s’est-il passé à bord du vol Dubaï-Paris avant son crash dans le massif alpin ? Technicien au BEA, autorité responsable des enquêtes de sécurité dans l’aviation civile, Mathieu Vasseur est propulsé enquêteur en chef sur une catastrophe aérienne sans précédent. Erreur de pilotage ? Défaillance technique ? Acte terroriste ? L’analyse minutieuse des boîtes noires va pousser Mathieu à mener en secret sa propre investigation. Il ignore encore jusqu’où va le mener sa quête de vérité.",
+            "productors": [
+                  { "name": "Yann Gozlan <br/> Français 🇫🇷", "profile_pic": "https://fr.web.img3.acsta.net/c_310_420/pictures/21/09/07/16/00/2411915.jpg"}
+            ]
+      },
+      {
+            "id": 62,
+            "title": "Spider-Man : Homecoming",
+            "poster": "https://www.themoviedb.org/t/p/original/77Z0g5fc1qWJ7SfHyeiHsMkYx5O.jpg",
+            "background": "http://jcclm.com/wp-content/uploads/2017/08/thumb-1920-817125.jpg",
+            "tags": "Super-Héros",
+            "genres": ["heros"],
+            "duration": "2h13min",
+            "year": "2017",
+            "rate": "7,8",
+            "source": "https://tomacloud.com/iframe/3QhLPNCpU8",
+            "trailer": "https://www.youtube.com/watch?v=mJQ4u-kXoGc",
+            "synopsis": "Après ses spectaculaires débuts dans Captain America : Civil War, le jeune Peter Parker découvre peu à peu sa nouvelle identité, celle de Spider-Man, le super-héros lanceur de toile. Galvanisé par son expérience avec les Avengers, Peter rentre chez lui auprès de sa tante May, sous l’œil attentif de son nouveau mentor, Tony Stark. Il s’efforce de reprendre sa vie d’avant, mais au fond de lui, Peter rêve de se prouver qu’il est plus que le sympathique super héros du quartier. L’apparition d’un nouvel ennemi, le Vautour, va mettre en danger tout ce qui compte pour lui...",
+            "productors": [
+                  { "name": "Jon Watts <br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img5.acsta.net/c_310_420/pictures/17/06/29/14/09/430968.jpg"}
             ]
       }
   ]

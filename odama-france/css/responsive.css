@@ -12,6 +12,7 @@
 @media only screen and (max-width: 1860px) {
     #movies_details_section #movie_watch_popup #popup_player { height: 470px; }
     #movies_library_popup .not_found_component h1 { margin-left: 0px; }
+    #movies_list { margin-top: 490px; }
 }
 
 @media only screen and (max-width: 1800px) {
@@ -20,10 +21,6 @@
     #movies_details_section .movies_infos #content .short_infos_box #synopsis { margin-left: 740px; }
     #movies_details_section .movies_infos #content .short_infos_box #watch_button { margin-left: -100px; }
     #movies_details_section .movies_infos #content .short_infos_box #trailer_button { margin-left: 220px; }
-}
-
-@media only screen and (max-width: 1683px) {
-    #movies_list { margin-top: 490px; }
 }
 
 @media only screen and (max-width: 1670px) {
@@ -641,7 +638,7 @@
 
     .movies_section .movies_item .movie_poster {
         width: 170px;
-        height: 240px;
+        height: 260px;
     }
 
     #movies_details_section #movie_watch_popup #popup_player {
@@ -722,6 +719,7 @@
         padding-top: 70px;
         padding-left: 28px;
         width: auto;
+        height: 200%;
     }
 
     #movies_library_popup #close_icon_popup {
@@ -749,7 +747,7 @@
 
     .movies_section .movies_item .movies_infos_poster #rates {
         margin-left: 79px;
-        margin-top: -118px;
+        margin-top: -140px;
         padding-bottom: 7px;
     }
 
@@ -827,7 +825,7 @@
     }
 
     #movies_list {
-        margin-top: 590px;
+        margin-top: 650px;
         margin-left: 10px;
         width: 87%;
     }

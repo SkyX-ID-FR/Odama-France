@@ -42,7 +42,7 @@ export default function LeftNavBar() {
       </div>
       
       <section id="navbar">
-        <img src="https://zupimages.net/up/22/28/exo5.png" className="odama_app_logo" alt="odama_app_logo"/>
+        <Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/"><img src="https://zupimages.net/up/22/28/exo5.png" className="odama_app_logo" alt="odama_app_logo"/></Link>
         <img onClick={open_side_bar_menu} src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png' className='menu_white_icon' alt='menu_icon'/>
 
         <ul className="menu_list">
