@@ -1060,7 +1060,7 @@ a {  color: grey; }
 
 #movies_library_popup .not_found_component p {
     margin-left: -40px;
-    margin-top: 10px;
+    margin-top: 0px;
     color: rgb(148, 148, 148);
 }
 

@@ -53,6 +53,14 @@ export default function MoviesPage(props) {
   /* 🎫 Show already box office of the week static ID 🎫 : */
   show_box_office_movie.push (
     <>
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[62].id}>
+        <img src={file_data[62].poster} className='movie_poster' alt='movie-poster'/>  
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[62].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+          <span className='movies_tags'>{file_data[62].tags}</span>
+        </div>
+      </div>
+
       <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[47].id}>
         <img src={file_data[47].poster} className='movie_poster' alt='movie-poster'/>  
         <div className='movies_infos_poster'>
@@ -93,19 +101,19 @@ export default function MoviesPage(props) {
         </div>
       </div>
 
-      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[4].id}>
-        <img src={file_data[4].poster} className='movie_poster' alt='movie-poster'/>  
-        <div className='movies_infos_poster'>
-          <div id='rates'><p>{file_data[4].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div> 
-          <span className='movies_tags'>{file_data[4].tags}</span>
-        </div>
-      </div>
-
       <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[45].id}>
         <img src={file_data[45].poster} className='movie_poster' alt='movie-poster'/>  
         <div className='movies_infos_poster'>
           <div id='rates'><p>{file_data[45].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div> 
           <span className='movies_tags'>{file_data[45].tags}</span>
+        </div>
+      </div>
+
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[63].id}>
+        <img src={file_data[63].poster} className='movie_poster' alt='movie-poster'/>  
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[63].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div> 
+          <span className='movies_tags'>{file_data[63].tags}</span>
         </div>
       </div>
     </>
@@ -114,6 +122,14 @@ export default function MoviesPage(props) {
   /* ✨ List of best movies on Odama's App : ✨ */
   show_odama_selection.push (
     <>
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[65].id}>
+        <img src={file_data[65].poster} className='movie_poster' alt='movie-poster'/>  
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[65].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div> 
+          <span className='movies_tags'>{file_data[65].tags}</span>
+        </div>
+      </div>
+
       <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[60].id}>
         <img src={file_data[60].poster} className='movie_poster' alt='movie-poster'/>  
         <div className='movies_infos_poster'>
@@ -186,7 +202,7 @@ export default function MoviesPage(props) {
     setTimeout(function(){
       $("#loader_screen").hide();
       $("#loader_page_finish").fadeIn(800);
-    }, 2300);
+    }, 3300);
 
     $(".left").click(function(){ $('#slider').animate( { scrollLeft: '-=500' }, 800); });
     $(".right").click(function(){ $('#slider').animate( { scrollLeft: '+=500' }, 800); });
