@@ -182,8 +182,9 @@
     .content_page .link_to_genres {
         margin-left: 51px;
         font-size: 15px;
-        border: 2px solid white;
+        border: 3px solid white;
         font-weight: 500;
+        padding-bottom: 16px;
     }
 }
 
