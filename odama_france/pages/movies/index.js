@@ -221,7 +221,7 @@ export default function MoviesPage(props) {
       <div id="loader_page_finish">
       <Header/>
         <section className="content_page">
-          <br/><br/><Link className='link_to_genres' style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies/genres">Voir les films triés par genres... 📚</Link>
+          <br/><Link className='link_to_genres' style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies/genres">Voir les films triés par genres... 📚</Link>
           <br/><br/><br/><br/>
 
           <h1 id="ind_text">Box office de la semaine 🎁 : </h1>  

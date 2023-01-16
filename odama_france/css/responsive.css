@@ -180,8 +180,10 @@
     #movies_details_section .movies_infos #content .short_infos_box #trailer_button { margin-left: 34%; }
 
     .content_page .link_to_genres {
-        margin-left: 47px;
+        margin-left: 49px;
         font-size: 15px;
+        border: 2px solid white;
+        font-weight: 500;
     }
 }
 
