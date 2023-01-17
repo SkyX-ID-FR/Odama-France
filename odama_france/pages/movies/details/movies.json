@@ -1105,6 +1105,40 @@
             "productors": [
                   { "name": "Nessim Chikhaoui<br/> Français 🇫🇷", "profile_pic": "https://fr.web.img3.acsta.net/c_310_420/pictures/22/01/11/10/17/4043550.jpg"}
             ]
+      },
+      {
+            "id": 66,
+            "title": "The social network",
+            "poster": "https://img.betaseries.com/YOY6JsejKIUwYugurelWEr7IhZ4=/600x900/smart/https%3A%2F%2Fpictures.betaseries.com%2Ffilms%2Faffiches%2Foriginal%2F414.jpg",
+            "background": "https://images.lanouvellerepublique.fr/image/upload/61dd4177778301e1328b45ab.jpg",
+            "tags": "Tech et Drame",
+            "genres": ["drame"],
+            "duration": "2h01min",
+            "year": "2010",
+            "rate": "10",
+            "source": "https://tomacloud.com/iframe/bDIFH76nM5",
+            "trailer": "https://www.youtube.com/watch?v=lJwHm-_iojk",
+            "synopsis": "Une soirée bien arrosée d'octobre 2003, Mark Zuckerberg, un étudiant qui vient de se faire plaquer par sa petite amie, pirate le système informatique de l'Université de Harvard pour créer un site, une base de données de toutes les filles du campus. Il affiche côte à côte deux photos et demande à l'utilisateur de voter pour la plus canon. Il baptise le site Facemash. Le succès est instantané : l'information se diffuse à la vitesse de l'éclair et le site devient viral, détruisant tout le système de Harvard et générant une controverse sur le campus à cause de sa misogynie.",
+            "productors": [
+                  { "name": "David Fincher<br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img5.acsta.net/c_310_420/medias/nmedia/18/64/19/48/19965756.jpg"}
+            ]
+      },
+      {
+            "id": 67,
+            "title": "After 2",
+            "poster": "https://fr.web.img6.acsta.net/pictures/20/11/25/16/18/0204755.jpg",
+            "background": "https://images.lanouvellerepublique.fr/image/upload/61dd4177778301e1328b45ab.jpg",
+            "tags": "Tech et Drame",
+            "genres": ["drame"],
+            "duration": "2h01min",
+            "year": "2010",
+            "rate": "10",
+            "source": "https://uptostream.com/iframe/myfn2axw2tua?aff_id=154379",
+            "trailer": "https://www.youtube.com/watch?v=lJwHm-_iojk",
+            "synopsis": "Une soirée bien arrosée d'octobre 2003, Mark Zuckerberg, un étudiant qui vient de se faire plaquer par sa petite amie, pirate le système informatique de l'Université de Harvard pour créer un site, une base de données de toutes les filles du campus. Il affiche côte à côte deux photos et demande à l'utilisateur de voter pour la plus canon. Il baptise le site Facemash. Le succès est instantané : l'information se diffuse à la vitesse de l'éclair et le site devient viral, détruisant tout le système de Harvard et générant une controverse sur le campus à cause de sa misogynie.",
+            "productors": [
+                  { "name": "David Fincher<br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img5.acsta.net/c_310_420/medias/nmedia/18/64/19/48/19965756.jpg"}
+            ]
       }
   ]
 }
