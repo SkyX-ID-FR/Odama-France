@@ -881,7 +881,9 @@ a {  color: grey; }
     margin-top: 70px;
     border-radius: 10px;
     width: 50%;
-    height: 605px;
+    height: 600px;
+    background-color: black;
+    box-shadow: 0px 10px 50px rgb(87, 87, 87);
 }
 /* 🎫 End of Movies details page style 🎫 */
 

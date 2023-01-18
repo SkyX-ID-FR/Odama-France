@@ -1122,6 +1122,23 @@
             "productors": [
                   { "name": "David Fincher<br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img5.acsta.net/c_310_420/medias/nmedia/18/64/19/48/19965756.jpg"}
             ]
+      },
+      {
+            "id": 67,
+            "title": "Bac Nord",
+            "poster": "https://fr.web.img3.acsta.net/pictures/21/06/07/13/11/2832970.jpg",
+            "background": "https://www.lepoint.fr/images/2021/08/17/22038709lpw-22041553-libre-jpg_8166208.jpg",
+            "tags": "Marseille et Drame",
+            "genres": ["drame", "action"],
+            "duration": "1h44min",
+            "year": "2021",
+            "rate": "10",
+            "source": "https://usaupload.com/6R0b/Bac_Nord_2020_FRENCH_1080p_HDLight_x264_AC3_EXTREME_Extreme_Down_Plus_mkv-n4vpdu2n5u5p.mp4?download_token=aab7080cbd49939e05813a43c7ba819fd40f336cd12ef8aa8c6636390f13b6ed",
+            "trailer": "https://www.youtube.com/watch?v=iyVLnChTs8w",
+            "synopsis": "2012. Les quartiers Nord de Marseille détiennent un triste record : la zone au taux de criminalité le plus élevé de France. Poussée par sa hiérarchie, la BAC Nord, brigade de terrain, cherche sans cesse à améliorer ses résultats. Dans un secteur à haut risque, les flics adaptent leurs méthodes, franchissant parfois la ligne jaune. Jusqu'au jour où le système judiciaire se retourne contre eux…",
+            "productors": [
+                  { "name": "Cédric Jimenez<br/> Français 🇫🇷", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/pictures/17/01/05/15/36/336995.jpg"}
+            ]
       }
   ]
 }
