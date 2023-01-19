@@ -158,7 +158,7 @@ export default function DetailsMoviesPage(props) {
         <div id='movie_watch_popup'>
           <img onClick={close_movie_popup} id="popup_close_icon" src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' alt="close_icon"/>
           <video controls id="player_1" className="popup_player"><source src="" type="video/mp4"/></video>
-          <iframe id="player_2" className="popup_player" src="" scrolling="no" frameborder="0" allowfullscreen/>
+          <iframe id="player_2" className="popup_player" src="" scrolling="no" frameborder="0" allowFullScreen/>
 
           <div id='player_changed'>
             <label onClick={change_player} class="switch"><input id="test" type="checkbox"/><div></div></label>
