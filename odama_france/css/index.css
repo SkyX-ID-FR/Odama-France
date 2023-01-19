@@ -651,7 +651,7 @@ a {  color: grey; }
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
-    background-color: rgba(3, 9, 38, 0.389);
+    background-color: rgba(3, 9, 38, 0.474);
 }
 
 #movies_details_section .movies_infos #content {
@@ -877,14 +877,60 @@ a {  color: grey; }
     cursor: pointer;
 }
 
-#movies_details_section #movie_watch_popup #popup_player {
-    margin-top: 70px;
+#movies_details_section #movie_watch_popup .popup_player {
+    margin-top: 50px;
     border-radius: 10px;
     width: 50%;
-    height: 600px;
+    height: 605px;
     background-color: black;
     box-shadow: 0px 10px 50px rgb(87, 87, 87);
 }
+
+#movies_details_section #movie_watch_popup #player_changed {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: -17.5%;
+}
+
+#movies_details_section #movie_watch_popup #player_changed p {
+    margin-top: -27px;
+    margin-left: 370px;
+}
+
+#movies_details_section #movie_watch_popup #player_changed .switch input {
+    position: absolute;
+    opacity: 0;
+}
+  
+#movies_details_section #movie_watch_popup #player_changed .switch {
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+    height: 1em;
+    width: 2em;
+    /* background: #BDB9A6; */
+    background-color: #142e60;
+    border-radius: 1em;
+}
+  
+#movies_details_section #movie_watch_popup #player_changed .switch div {
+    height: 20px;
+    width: 20px;
+    margin-top: 3px;
+    margin-left: 6px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0.1em 0.3em rgba(0,0,0,0.3);
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    transition: all 300ms;
+}
+  
+#movies_details_section #movie_watch_popup #player_changed .switch input:checked + div {
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+} 
 /* 🎫 End of Movies details page style 🎫 */
 
 /* 🚧 404 Page Error style : 🚧 */
@@ -966,7 +1012,7 @@ a {  color: grey; }
 
 #loader_screen .logo_loading {
     width: 150px;
-    margin-left: -139px;
+    margin-left: -142px;
 }
 /* ⌛ End of Loading section style ⌛ */
 

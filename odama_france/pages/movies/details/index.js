@@ -30,6 +30,7 @@ export default function DetailsMoviesPage(props) {
     setTimeout(function(){
       $("#loader_screen").hide();
       $("#movies_details_section").fadeIn(800);
+      $("#player_2").hide(); 
     }, 1500);
   }, []);
 
@@ -38,6 +39,8 @@ export default function DetailsMoviesPage(props) {
     $("#remove_movies_toast").hide(); 
     const movie_id = localStorage.getItem('item_id');
     const general_movie_data = movies_data[movie_id];
+
+    /* console.log(general_movie_data.source[1]); */
 
     /* 📬 If no array is initialized, then do it and save it in the browser's localstorage : 📬 */
     if (JSON.parse(localStorage.getItem('list_movies_liked')) == null) {
@@ -84,21 +87,36 @@ export default function DetailsMoviesPage(props) {
     document.getElementById("movie_title").innerHTML = `${general_movie_data.title}`;
     document.getElementById("trailer_container").innerHTML = `<a href='${general_movie_data.trailer}' target="_blank"><button id="trailer_button"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/YouTube_social_white_squircle.svg/1200px-YouTube_social_white_squircle.svg.png" alt="app_logo"/><p>Voir la bande-annonce VF !</p></button></a>`;
     document.getElementById("synopsis").innerHTML = `${general_movie_data.synopsis}`;
+    document.getElementById("player_2").src = general_movie_data.source[0];
+    document.getElementById("player_1").src = general_movie_data.source[1]; 
     document.getElementById("duration").innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> ${general_movie_data.duration}`;
     document.getElementById("tags").innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg> ${general_movie_data.tags}`;
     document.getElementById("year").innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> ${general_movie_data.year}`;
-    document.getElementById("movie_component").innerHTML = `<video controls id="popup_player"><source src="${general_movie_data.source}" type="video/mp4"/><video/>`;
   }, []);
 
   function open_movie_popup() { $("#movie_watch_popup").fadeIn(200); }
   function close_movie_popup() { 
     $("#movie_watch_popup").fadeOut(400); 
-    $('#popup_player').attr('src', $('#popup_player').attr('src'));
-    $('#popup_player').trigger('pause');
+    $('#player_1').trigger('pause');
+    $('#player_2').attr('src', $('iframe').attr('src'));
   }
 
   function close_add_movies_toast() { $("#add_movies_toast").fadeOut(500); }
   function close_remove_movies_toast() { $("#remove_movies_toast").fadeOut(500); }
+
+  function change_player() {
+    if (document.getElementById('test').checked == true) {
+      $("#player_2").show(); 
+      $("#player_1").hide(); 
+      $('#player_1').trigger('pause');
+      $('#player_2').attr('src', $('iframe').attr('src'));
+    } else {
+      $("#player_1").show();
+      $("#player_2").hide(); 
+      $('#player_1').trigger('pause');
+      $('#player_2').attr('src', $('iframe').attr('src'));
+    }
+  }
 
   return (
     <>
@@ -139,7 +157,13 @@ export default function DetailsMoviesPage(props) {
         {/* 🎥 Watch Popup Movie : 🎥 */}
         <div id='movie_watch_popup'>
           <img onClick={close_movie_popup} id="popup_close_icon" src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' alt="close_icon"/>
-          <div id='movie_component'></div>
+          <video controls id="player_1" className="popup_player"><source src="" type="video/mp4"/></video>
+          <iframe id="player_2" className="popup_player" src="" scrolling="no" frameborder="0" allowfullscreen/>
+
+          <div id='player_changed'>
+            <label onClick={change_player} class="switch"><input id="test" type="checkbox"/><div></div></label>
+            <p>Changement de players MP4 Host/TM 🎥</p>
+          </div>
         </div> 
         
         {/* <h1 id="movie_title"></h1>
