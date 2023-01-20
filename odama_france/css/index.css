@@ -93,12 +93,10 @@ a {  color: grey; }
     margin-bottom: 20px;
     position: fixed;
     margin-top: 25px!important;
-
-    /* Test somethings 😉 : */
-    width: calc(100% - 120px);
+    width: calc(100% - 100px);
     margin-top: 20px;
-    border-radius: 20px;
-    margin-left: 40px!important;
+    border-radius: 45px;
+    margin-left: 29px!important;
     box-shadow: 10px 10px 70px #030928;
     margin: 8px;
 }
@@ -119,6 +117,7 @@ a {  color: grey; }
 #navbar .odama_app_logo {
     width: 55px;
     background-color: transparent;
+    margin-left: 5px;
 }
 
 #navbar .menu_list {
@@ -879,7 +878,7 @@ a {  color: grey; }
 
 #movies_details_section #movie_watch_popup .popup_player {
     margin-top: 50px;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 50%;
     height: 605px;
     background-color: black;
@@ -887,14 +886,14 @@ a {  color: grey; }
 }
 
 #movies_details_section #movie_watch_popup #player_changed {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
-    margin-left: -17.5%;
+    margin-left: -17%;
 }
 
 #movies_details_section #movie_watch_popup #player_changed p {
-    margin-top: -27px;
-    margin-left: 370px;
+    margin-top: -27.2px;
+    margin-left: 368px;
 }
 
 #movies_details_section #movie_watch_popup #player_changed .switch input {
@@ -907,7 +906,7 @@ a {  color: grey; }
     font-size: 25px;
     cursor: pointer;
     height: 1em;
-    width: 2em;
+    width: 49px;
     /* background: #BDB9A6; */
     background-color: #142e60;
     border-radius: 1em;
@@ -916,8 +915,8 @@ a {  color: grey; }
 #movies_details_section #movie_watch_popup #player_changed .switch div {
     height: 20px;
     width: 20px;
-    margin-top: 3px;
-    margin-left: 6px;
+    margin-top: 3.1px;
+    margin-left: 4px;
     border-radius: 50%;
     background: white;
     box-shadow: 0 0.1em 0.3em rgba(0,0,0,0.3);
@@ -930,7 +929,35 @@ a {  color: grey; }
     -webkit-transform: translate3d(100%, 0, 0);
     -moz-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
-} 
+}
+
+#movies_details_section #movie_watch_popup #download_button {
+    color: white;
+    text-decoration: none;
+    background-color: #142e60;
+    border-radius: 20px;
+    padding-top: 13px;
+    padding-bottom: 17px;
+    padding-left: 60px;
+    padding-right: 70px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 25px;
+    position: absolute;
+    margin-left: -165px;
+    box-shadow: 0px 10px 50px black;
+    transition: all 0.2s;
+}
+
+#movies_details_section #movie_watch_popup #download_button:hover {
+    transform: scale(1.1);
+}
+
+#movies_details_section #movie_watch_popup #download_button svg {
+    width: 20px;
+    margin-right: 10px;
+    margin-bottom: -4px;
+}
 /* 🎫 End of Movies details page style 🎫 */
 
 /* 🚧 404 Page Error style : 🚧 */
