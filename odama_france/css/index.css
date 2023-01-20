@@ -1003,13 +1003,13 @@ a {  color: grey; }
     border: 3px solid black;
     cursor: pointer;
     transition: all 0.4s;
-    color: white!important;
+    color: black!important;
 }
 
 .error_page_container button:hover {
     transform: scale(1.1);
     background-color: black;
-    color: white;
+    color: white!important;
 }
 
 .error_page_container button:active {
