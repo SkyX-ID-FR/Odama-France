@@ -931,7 +931,11 @@ a {  color: grey; }
     transform: translate3d(100%, 0, 0);
 }
 
-#movies_details_section #movie_watch_popup #download_button {
+#movies_details_section #movie_watch_popup .action_group {
+    background-color: red;
+}
+
+#movies_details_section #movie_watch_popup .action_group #download_button {
     color: white;
     text-decoration: none;
     background-color: #142e60;
@@ -949,11 +953,11 @@ a {  color: grey; }
     transition: all 0.2s;
 }
 
-#movies_details_section #movie_watch_popup #download_button:hover {
+#movies_details_section #movie_watch_popup .action_group #download_button:hover {
     transform: scale(1.1);
 }
 
-#movies_details_section #movie_watch_popup #download_button svg {
+#movies_details_section #movie_watch_popup .action_group #download_button svg {
     width: 20px;
     margin-right: 10px;
     margin-bottom: -4px;
@@ -999,6 +1003,7 @@ a {  color: grey; }
     border: 3px solid black;
     cursor: pointer;
     transition: all 0.4s;
+    color: white!important;
 }
 
 .error_page_container button:hover {
