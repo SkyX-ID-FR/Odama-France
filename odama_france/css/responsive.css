@@ -1046,18 +1046,16 @@
     #confirm_popup .content .button_group { margin-top: 200px; }
     #confirm_popup .content .button_group #no { margin-top: 15px; }
 
-    #search_section span {
-        margin-left: 25px;
-        margin-top: 80px;
-        width: 95%;
-        left: 0px;
-        position: absolute;
+    #search_section input {
+        margin-top: -20px;
     }
-}
 
-@media only screen and (max-width: 394px) {
+    #search_section svg {
+        margin-top: -2px;
+    }
+
     #search_section span {
-        margin-top: 12px!important;
+        display: none;
     }
 }
 
