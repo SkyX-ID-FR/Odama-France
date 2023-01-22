@@ -119,7 +119,7 @@ export default function MoviesPage(props) {
     </>
   )
 
-  /* ✨ List of best movies on Odama's App : ✨ */
+  /* ✨ List of best movies on Odama's App : ✨  */
   show_odama_selection.push (
     <>
       <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[67].id}>
@@ -214,7 +214,33 @@ export default function MoviesPage(props) {
 
     $(".left").click(function(){ $('#slider').animate( { scrollLeft: '-=500' }, 800); });
     $(".right").click(function(){ $('#slider').animate( { scrollLeft: '+=500' }, 800); });
+    $("#slide_2").hide();
+    $("#slide_3").hide();
+    document.getElementById("slide_1").style.backgroundImage = `url("${file_data[67].background}")`;
+    $(".point_1").css("background-color", "white"); $(".point_2").css("background-color", "transparent"); $(".point_3").css("background-color", "transparent");
+    $("#next_1").click(function() { $("#slide_1").hide(); $("#slide_2").fadeIn(900); $("#slide_3").hide(); document.getElementById("slide_2").style.backgroundImage = `url("${file_data[62].background}")`; $(".point_1").css("background-color", "transparent"); $(".point_2").css("background-color", "white"); $(".point_3").css("background-color", "transparent"); });
+    $("#next_2").click(function() { $("#slide_1").hide(); $("#slide_2").hide(); $("#slide_3").fadeIn(900); document.getElementById("slide_3").style.backgroundImage = `url("${file_data[65].background}")`; $(".point_1").css("background-color", "transparent"); $(".point_2").css("background-color", "transparent"); $(".point_3").css("background-color", "white"); });
+    $("#previous_2").click(function() { $("#slide_1").fadeIn(900); $("#slide_2").hide(); $("#slide_3").hide(); document.getElementById("slide_1").style.backgroundImage = `url("${file_data[67].background}")`; $(".point_1").css("background-color", "white"); $(".point_2").css("background-color", "transparent"); $(".point_3").css("background-color", "transparent"); });
+    $("#previous_3").click(function() { $("#slide_1").hide(); $("#slide_2").fadeIn(900); $("#slide_3").hide(); document.getElementById("slide_2").style.backgroundImage = `url("${file_data[62].background}")`; $(".point_1").css("background-color", "transparent"); $(".point_2").css("background-color", "white"); $(".point_3").css("background-color", "transparent"); });
+
+    /* ✨ Add metrics data(s) to slides in slider_section #1 : ✨ */
+    document.getElementById("title_movies_1").innerHTML = file_data[67].title;
+    document.getElementById("rates_movies_1").innerHTML = `<p>${file_data[67].tags}&nbsp; · &nbsp;${file_data[67].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/>`;
+    /* document.getElementById("author_name_1").innerHTML = file_data[60].productors[0].name;
+    document.getElementById("author_img_1").src = file_data[60].productors[0].profile_pic; */
+    document.getElementById("watch_button_1").innerHTML = `<a href="../movies/details" onClick="localStorage.setItem('item_id', this.id);" id="${file_data[67].id}" class="movies_liked_item"><img src="https://zupimages.net/up/22/28/exo5.png"/> Regarder ce film avec Odama !</a>`;
+  
+    /* ✨ Add metrics data(s) to slides in slider_section #2 : ✨ */
+    document.getElementById("title_movies_2").innerHTML = file_data[62].title;
+    document.getElementById("rates_movies_2").innerHTML = `<p>${file_data[62].tags}&nbsp; · &nbsp;${file_data[62].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/>`;
+    document.getElementById("watch_button_2").innerHTML = `<a href="../movies/details" onClick="localStorage.setItem('item_id', this.id);" id="${file_data[62].id}" class="movies_liked_item"><img src="https://zupimages.net/up/22/28/exo5.png"/> Regarder ce film avec Odama !</a>`;
+
+    /* ✨ Add metrics data(s) to slides in slider_section #3 : ✨ */
+    document.getElementById("title_movies_3").innerHTML = file_data[65].title;
+    document.getElementById("rates_movies_3").innerHTML = `<p>${file_data[65].tags}&nbsp; · &nbsp;${file_data[65].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/>`;
+    document.getElementById("watch_button_3").innerHTML = `<a href="../movies/details" onClick="localStorage.setItem('item_id', this.id);" id="${file_data[65].id}" class="movies_liked_item"><img src="https://zupimages.net/up/22/28/exo5.png"/> Regarder ce film avec Odama !</a>`;
   }, []);
+
   return (
     <>
       <Head>
@@ -229,29 +255,71 @@ export default function MoviesPage(props) {
       <div id="loader_page_finish">
       <Header/>
         <section className="content_page">
-          <br/><Link className='link_to_genres' style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies/genres">Voir les films triés par genres... 📚</Link>
+          {/* 👀 Modern Slider woth box_office movies : 👀 */}
+          <section id="slider_best_movies">
+            <div id='slide_1' className='slider_screen_slide'>
+              <div className='content_box'>
+                <h1 className='movies_title' id="title_movies_1"></h1>
+                <div className='left_box'><div className='rates_box' id="rates_movies_1"></div><div className='img_ind'><img src="https://cdn-icons-png.flaticon.com/512/5977/5977585.png" alt="imdb_icon"/><img src="https://www.freepnglogos.com/uploads/dolby-digital-png-logo/the-works-active-media-dolby-digital-png-logo-10.png" alt='full_hd_quality_icon'/></div></div>
+                <div className='watch_button_box' id='watch_button_1'></div>
+                <div className='indicator_point'><li className="point_1"></li><li className="point_2"></li><li className="point_3"></li></div>
+
+                {/* <div className='authors_box'>
+                  <img id="author_img_1" src='' alt="author_img"/>
+                  <p id="author_name_1"></p>
+                </div> */}
+                <button className='next_button' id="next_1"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+              </div>
+            </div>
+
+            <div id='slide_2' className='slider_screen_slide'>
+              <div className='content_box'>
+                <h1 id="title_movies_2"></h1>
+                <div className='left_box'><div className='rates_box' id="rates_movies_2"></div><div className='img_ind'><img src="https://cdn-icons-png.flaticon.com/512/5977/5977585.png" alt="imdb_icon"/><img src="https://www.freepnglogos.com/uploads/dolby-digital-png-logo/the-works-active-media-dolby-digital-png-logo-10.png" alt='full_hd_quality_icon'/></div></div>
+                <div className='watch_button_box' id='watch_button_2'></div>
+                <div className='indicator_point'><li className="point_1"></li><li className="point_2"></li><li className="point_3"></li></div>
+                
+                <button className='previous_button' id="previous_2"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                <button className='next_button' id="next_2"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+              </div>
+            </div>
+            
+            <div id='slide_3' className='slider_screen_slide'>
+              <div className='content_box'>
+                <h1 id="title_movies_3"></h1>
+                <div className='left_box'><div className='rates_box' id="rates_movies_3"></div><div className='img_ind'><img src="https://cdn-icons-png.flaticon.com/512/5977/5977585.png" alt="imdb_icon"/><img src="https://www.freepnglogos.com/uploads/dolby-digital-png-logo/the-works-active-media-dolby-digital-png-logo-10.png" alt='full_hd_quality_icon'/></div></div>
+                <div className='watch_button_box' id='watch_button_3'></div>
+                <div className='indicator_point'><li className="point_1"></li><li className="point_2"></li><li className="point_3"></li></div>
+                
+                <button className='previous_button' id="previous_3"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+              </div>
+            </div>
+          </section><br/><br/>
+
+          {/* <br/><Link className='link_to_genres' style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies/genres">Voir les films triés par genres... 📚</Link>
           <br/><br/><br/><br/>
 
           <h1 id="ind_text">Box office de la semaine 🎁 : </h1>  
           <p id="ind_description">Retrouvez ici tout les meilleurs films et émissions de la semaine afin de ne laisser passer aucun programme qui vaut la peine d'être vu !</p>
           <div className='movies_section'>
             {show_box_office_movie}
-          </div><br/><br/><br/>
+              </div><br/><br/><br/> */}
+          
+          <div className='second_bloc_soon'>
+            <h1 id="ind_text">La sélection Odama&copy; ✨ : </h1>  
+            <p id="ind_description">Vous ne savez pas quoi regarder ? Choissisez notre sélection : elle est faites pour tout les goûts, tout âges et plaira à tout le monde.</p>
+            <div className='movies_section'>
+              {show_odama_selection}
+            </div><br/><br/><br/>
 
-          <h1 id="ind_text">La sélection Odama&copy; ✨ : </h1>  
-          <p id="ind_description">Vous ne savez pas quoi regarder ? Choissisez notre sélection : elle est faites pour tout les goûts, tout âges et plaira à tout le monde.</p>
-          <div className='movies_section'>
-            {show_odama_selection}
-          </div><br/><br/><br/>
-
-          <h1 id="ind_text">Tout les films disponibles 🎥 : </h1>  
-          <p id="ind_description">Retrouvez ici tout les films de la plateforme dans un long slider interminable...</p>
-          <div className='movies_section' id='slider'>
-            <div className='scrolling_button left'><img src='https://static-00.iconduck.com/assets.00/chevronleft-icon-303x512-jl07qugm.png'/></div>
-            {show_all_movies}
-            <div className='scrolling_button right'><img src='https://static-00.iconduck.com/assets.00/chevronleft-icon-303x512-jl07qugm.png'/></div>
+            <h1 id="ind_text">Tout les films disponibles 🎥 : </h1>  
+            <p id="ind_description">Retrouvez ici tout les films de la plateforme dans un long slider interminable...</p>
+            <div className='movies_section' id='slider'>
+              <div className='scrolling_button left'><img src='https://static-00.iconduck.com/assets.00/chevronleft-icon-303x512-jl07qugm.png'/></div>
+              {show_all_movies}
+              <div className='scrolling_button right'><img src='https://static-00.iconduck.com/assets.00/chevronleft-icon-303x512-jl07qugm.png'/></div>
+            </div>
           </div>
-
           <div id='movies_section_space'></div>
         </section>
       </div>

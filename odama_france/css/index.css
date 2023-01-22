@@ -106,8 +106,8 @@ a {  color: grey; }
     transition-duration: 0.3s;
     -webkit-transition-property: transform;
     transition-property: transform;
-    -webkit-transform: scale(1.025);
-    transform: scale(1.020);
+    -webkit-transform: scale(1.015);
+    transform: scale(1.015);
 }
 
 #responsive_menu_side_bar {
@@ -469,6 +469,197 @@ a {  color: grey; }
     margin-left: 7px;
     margin-top: 1.5px;
 }
+
+/* 👀 Best movies section slider : 👀 */
+.content_page #slider_best_movies {
+    margin-left: 35px;
+    border-radius: 30px;
+    margin-right: 35px;
+    margin-top: -10px;
+    height: 400px;
+    box-shadow: 10px 10px 70px #030928;
+    background-color: #030928;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content_page #slider_best_movies .slider_screen_slide {
+    backdrop-filter: blur(3px);
+    height: 400px;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content_page #slider_best_movies .slider_screen_slide .content_box {
+    backdrop-filter: blur(3px);
+    position: absolute;
+    padding-top: 30px;
+    padding-left: 140px;
+    height: 370px;
+    border-radius: 30px;
+    width: 93.2%;
+}
+
+.content_page #slider_best_movies .slider_screen_slide h1 {
+    color: white;
+    font-weight: 800;
+    font-size: 80px;
+    margin-top: 20px;
+    text-shadow: 10px 5px 15px black;
+    float: left;
+}
+
+.content_page #slider_best_movies .slider_screen_slide .left_box {
+    margin-top: 95px;
+    position: absolute;
+    margin-left: 3px;
+}
+
+.content_page #slider_best_movies .slider_screen_slide .rates_box {
+    float: left;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.content_page #slider_best_movies .slider_screen_slide .rates_box p {
+    float: left;
+    font-size: 18px;
+    margin-top: -1px;
+    text-shadow: 0px 3px 20px black;
+}
+
+.content_page #slider_best_movies .slider_screen_slide .rates_box img {
+    width: 15px;
+    margin-bottom: -2px;
+    margin-left: 5px;
+}
+
+.content_page #slider_best_movies .slider_screen_slide .img_ind {
+    float: right;
+}
+
+.content_page #slider_best_movies .slider_screen_slide .img_ind img {
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+    filter: drop-shadow(0px 10px 30px black);
+}
+
+.content_page #slider_best_movies .slider_screen_slide .img_ind img:nth-child(2) {
+    margin-top: 15px;
+}
+
+.content_page #slider_best_movies .slider_screen_slide .authors_box {
+    position: absolute;
+    width: 180px;
+    margin-top: 245px;
+    margin-left: 3px;
+}
+
+.content_page #slider_best_movies .slider_screen_slide .authors_box p {
+    margin-left: 12px;
+    margin-top: 6.5px;
+    float: left;
+}
+
+.content_page #slider_best_movies .slider_screen_slide .authors_box img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+}
+
+.content_page #slider_best_movies .slider_screen_slide .watch_button_box {
+    background-color: #040a22;
+    width: 350px;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 40px;
+    margin-top: 160px;
+    padding-top: 21px;
+    padding-bottom: 6px;
+    transition: all 0.4s;
+    box-shadow: 5px 0px 30px #7b7b7b;
+    margin-left: -5px;
+}
+
+.content_page #slider_best_movies .slider_screen_slide .watch_button_box:hover {
+    transform: scale(1.04);
+}
+
+.content_page #slider_best_movies .slider_screen_slide .watch_button_box a img {
+    width: 50px;
+    float: left;
+    margin-right: 5px;
+    margin-left: 30px;
+    margin-top: -16px;
+}
+
+.content_page #slider_best_movies .slider_screen_slide .watch_button_box a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.content_page #slider_best_movies .slider_screen_slide .next_button {
+    width: 120px;
+    float: right;
+    height: 405px;
+    margin-top: -40px;
+    width: 60px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    cursor: pointer;
+    margin-right: 0px;
+    border: 0;
+}
+
+.content_page #slider_best_movies .slider_screen_slide .next_button svg {
+    margin-top: -250px;
+    width: 40px;
+}
+
+.content_page #slider_best_movies .slider_screen_slide .previous_button {
+    width: 120px;
+    float: left!important;
+    height: 405px;
+    margin-top: -40px;
+    width: 60px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    position: absolute;
+    left: 0;
+    margin-left: 0px;
+}
+
+.content_page #slider_best_movies .slider_screen_slide .previous_button svg {
+    margin-top: -250px;
+    width: 40px;
+    transform: rotate(-180deg);
+}
+
+.content_page #slider_best_movies .slider_screen_slide .indicator_point {
+    margin-left: 38%;
+    margin-top: 345px;
+    position: absolute;
+}
+
+.content_page #slider_best_movies .slider_screen_slide .indicator_point li {
+    width: 40px;
+    border-radius: 10px;
+    height: 3.5px;
+    border: 3px solid white;
+    float: left;
+    list-style-type: none;
+    margin-right: 10px;
+}
+/* 👀 Best movies section slider 👀 */
 /* 📦 End of Content Page's style 📦 */
 
 /* 🎥 Movies section's style : 🎥 */
@@ -833,8 +1024,8 @@ a {  color: grey; }
 
 #movies_details_section .back_link p {
     font-size: 17px;
-    margin-top: 23.5px;
-    margin-left: 60px;
+    margin-top: 23.9px;
+    margin-left: 58px;
     position: absolute;
     z-index: 20;
 }
@@ -997,7 +1188,7 @@ a {  color: grey; }
     padding-bottom: 13px;
     font-size: 15px;
     margin-top: 35px;
-    margin-left: -135px;
+    margin-left: -125px;
     border-radius: 20px;
     font-weight: 600;
     border: 3px solid black;
