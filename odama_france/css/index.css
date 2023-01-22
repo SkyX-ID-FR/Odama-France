@@ -579,12 +579,12 @@ a {  color: grey; }
     cursor: pointer;
     position: absolute;
     border-radius: 40px;
-    margin-top: 160px;
+    margin-top: 155px;
     padding-top: 21px;
     padding-bottom: 6px;
     transition: all 0.4s;
     box-shadow: 5px 0px 30px #7b7b7b;
-    margin-left: -5px;
+    margin-left: -10px;
 }
 
 .content_page #slider_best_movies .slider_screen_slide .watch_button_box:hover {

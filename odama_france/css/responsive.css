@@ -13,7 +13,7 @@
     #movies_details_section #movie_watch_popup .popup_player { height: 505px; }
     #movies_library_popup .not_found_component h1 { margin-left: 0px; }
     #movies_list { margin-top: 490px; }
-    .content_page #²_best_movies .slider_screen_slide .next_button { margin-right: 1.5%; }
+    .content_page #slider_best_movies .slider_screen_slide .next_button { margin-right: 1.5%; }
     .content_page #slider_best_movies .slider_screen_slide .previous_button { margin-left: -5px; }
 }
 
@@ -1047,11 +1047,20 @@
     #confirm_popup .content .button_group #no { margin-top: 15px; }
 
     #search_section span {
-        margin-left: 8px;
-        margin-top: 10px;
+        margin-left: 25px;
+        margin-top: 55px;
         width: 95%;
+        left: 0px;
+        position: absolute;
     }
 }
+
+@media only screen and (max-width: 394px) {
+    #search_section span {
+        margin-top: 12px!important;
+    }
+}
+
 
 @media only screen and (max-width: 345px) {
     .github_link { margin-left: -41%; }
