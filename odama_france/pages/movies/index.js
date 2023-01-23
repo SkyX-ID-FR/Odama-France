@@ -306,6 +306,9 @@ export default function MoviesPage(props) {
               </div><br/><br/><br/> */}
           
           <div className='second_bloc_soon'>
+            <br/><Link className='link_to_genres' style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies/genres">Voir les films triés par genres... 📚</Link>
+            <br/><br/><br/><br/>
+
             <h1 id="ind_text">La sélection Odama&copy; ✨ : </h1>  
             <p id="ind_description">Vous ne savez pas quoi regarder ? Choissisez notre sélection : elle est faites pour tout les goûts, tout âges et plaira à tout le monde.</p>
             <div className='movies_section'>
