@@ -15,7 +15,7 @@
     font-weight: normal;
     font-size: normal;
     font-family: 'Lato', sans-serif;
-    background-color: #142e60;
+    background-color: rgb(20, 46, 96);
 }
 
 /* 
@@ -88,7 +88,7 @@ a {  color: grey; }
 /* 📃 NavBar's style : 📃 */
 #navbar {
     padding: 20px;
-    background-color: #040a22;
+    background-color: rgb(4, 10, 34);
     z-index: 100;
     margin-bottom: 20px;
     position: fixed;
@@ -1069,7 +1069,7 @@ a {  color: grey; }
 
 #movies_details_section #movie_watch_popup .popup_player {
     margin-top: 50px;
-    border-radius: 20px;
+    border-radius: 18px;
     width: 50%;
     height: 605px;
     background-color: black;
@@ -1079,7 +1079,7 @@ a {  color: grey; }
 #movies_details_section #movie_watch_popup #player_changed {
     margin-top: 10px;
     text-align: center;
-    margin-left: -17%;
+    margin-left: -18%;
 }
 
 #movies_details_section #movie_watch_popup #player_changed p {

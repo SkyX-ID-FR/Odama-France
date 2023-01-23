@@ -91,15 +91,19 @@ export default function DetailsMoviesPage(props) {
     document.getElementById("year").innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> ${general_movie_data.year}`;
   }, []);
 
-  function open_movie_popup() { $("#movie_watch_popup").fadeIn(200); }
-  function close_movie_popup() {  $("#movie_watch_popup").fadeOut(400); }
   function close_add_movies_toast() { $("#add_movies_toast").fadeOut(500); }
   function close_remove_movies_toast() { $("#remove_movies_toast").fadeOut(500); }
+  function open_movie_popup() { $("#movie_watch_popup").fadeIn(200); }
+  function close_movie_popup() {  
+    $("#movie_watch_popup").fadeOut(400); 
+    $('#player_2').attr('src', $('#player_2').attr('src'));
+  }
 
   function change_player(e) {
     if (e.target.checked == true) {
       $("#player_1").show(); 
       $("#player_2").hide(); 
+      $('#player_2').attr('src', $('#player_2').attr('src'));
     } else {
       $("#player_2").show(); 
       $("#player_1").hide(); 

@@ -200,7 +200,7 @@
 
 @media only screen and (max-width: 900px) {
     .content_page #slider_best_movies .slider_screen_slide .next_button { margin-right: 90px; }
-    #movies_details_section #movie_watch_popup #download_button { margin-left: -33%!important; }
+    #movies_details_section #movie_watch_popup #download_button {  margin-left: -33%!important; }
     #movies_details_section .movies_infos #content .short_infos_box .tags_box { margin-left: 53%; }
     #movies_details_section .movies_infos #content .short_infos_box #watch_button { margin-left: 34%; }
     #movies_details_section .movies_infos #content .short_infos_box #trailer_button { margin-left: 34%; }
@@ -1045,6 +1045,10 @@
     #search_section #result_item { margin-top: 25px; }
     #search_section svg { margin-top: -2px; }
     #search_section span { display: none; }
+    #movies_details_section #movie_watch_popup #download_button {
+        margin-top: 28px!important;
+        margin-left: -34%!important;
+    }
 }
 
 
