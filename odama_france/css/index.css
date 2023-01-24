@@ -1074,6 +1074,9 @@ a {  color: grey; }
     height: 605px;
     background-color: black;
     box-shadow: 0px 10px 50px rgb(87, 87, 87);
+    overflow: hidden; 
+    z-index: 999999;
+    margin-left: 10px;
 }
 
 #movies_details_section #movie_watch_popup #player_changed {
