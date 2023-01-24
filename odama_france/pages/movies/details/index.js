@@ -138,7 +138,7 @@ export default function DetailsMoviesPage(props) {
               </div>
 
               <p id="synopsis"></p>
-              <button onClick={open_movie_popup} id="watch_button"><img src="https://zupimages.net/up/22/28/exo5.png" alt="app_logo"/><p>Voir ce film avec Odama !</p></button>
+              <a href='#'><button onClick={open_movie_popup} id="watch_button"><img src="https://zupimages.net/up/22/28/exo5.png" alt="app_logo"/><p>Voir ce film avec Odama !</p></button></a>
               <div id='trailer_container'></div>
             </div>
 
