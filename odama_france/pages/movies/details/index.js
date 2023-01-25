@@ -97,6 +97,7 @@ export default function DetailsMoviesPage(props) {
   function close_movie_popup() {  
     $("#movie_watch_popup").fadeOut(400); 
     $('#player_2').attr('src', $('#player_2').attr('src'));
+    $('#player_1').attr('src', $('#player_1').attr('src'));
   }
 
   function change_player(e) {
@@ -107,6 +108,7 @@ export default function DetailsMoviesPage(props) {
     } else {
       $("#player_2").show(); 
       $("#player_1").hide(); 
+      $('#player_1').attr('src', $('#player_1').attr('src'));
     }
   }
 
@@ -163,18 +165,6 @@ export default function DetailsMoviesPage(props) {
             {/* Todo : add new tips/actions here ! 📂 */}
           </div>
         </div> 
-        
-        {/* <h1 id="movie_title"></h1>
-        <p id="short_infos"></p>
-        <div id='productors'><img id="profile_pic" src=''/><p id="name"></p></div>
-
-        <div className='movies_infos'>
-          <div className='content'>
-            <h1 id="synopsis_title">Synopsis :</h1>
-            <h2 id="warning_message">⛔ Avertissement : certaines scènes, propos ou images peuvent heurter la sensibilité des jeunes spectateurs ! ⛔</h2>
-            <p id="synopsis_description"></p>
-          </div>
-        </div> */}
         
         <div id="add_movies_toast" className='toast_popup'>
           <img onClick={close_add_movies_toast} src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/2048px-VisualEditor_-_Icon_-_Close_-_white.svg.png' alt="close_icon"/>

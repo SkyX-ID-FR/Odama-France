@@ -1006,23 +1006,6 @@
       },
       {
             "id": 60,
-            "title": "Boîte Noire",
-            "poster": "https://www.themoviedb.org/t/p/original/jIfFFC4YwiI8TVaGtbl1eT9BRaI.jpg",
-            "background": "https://assets.mubicdn.net/images/film/273459/image-w1280.jpg?1595158663",
-            "tags": "Drame et Avions",
-            "genres": ["drame"],
-            "duration": "2h10min",
-            "year": "2021",
-            "rate": "10",
-            "source": ["https://tomacloud.com/iframe/KewciZTzih", ""],
-            "trailer": "https://www.youtube.com/watch?v=mAs0C9T5EC0",
-            "synopsis": "Que s’est-il passé à bord du vol Dubaï-Paris avant son crash dans le massif alpin ? Technicien au BEA, autorité responsable des enquêtes de sécurité dans l’aviation civile, Mathieu Vasseur est propulsé enquêteur en chef sur une catastrophe aérienne sans précédent. Erreur de pilotage ? Défaillance technique ? Acte terroriste ? L’analyse minutieuse des boîtes noires va pousser Mathieu à mener en secret sa propre investigation. Il ignore encore jusqu’où va le mener sa quête de vérité.",
-            "productors": [
-                  { "name": "Yann Gozlan <br/> Français 🇫🇷", "profile_pic": "https://fr.web.img3.acsta.net/c_310_420/pictures/21/09/07/16/00/2411915.jpg"}
-            ]
-      },
-      {
-            "id": 61,
             "title": "Spider-Man : Homecoming",
             "poster": "https://www.themoviedb.org/t/p/original/77Z0g5fc1qWJ7SfHyeiHsMkYx5O.jpg",
             "background": "http://jcclm.com/wp-content/uploads/2017/08/thumb-1920-817125.jpg",
@@ -1039,7 +1022,7 @@
             ]
       },
       {
-            "id": 62,
+            "id": 61,
             "title": "Le menu",
             "poster": "https://www.themoviedb.org/t/p/original/9TEOMzY7uvjEZpwr5zSPfEI4NxJ.jpg",
             "background": "https://www.premiere.fr/sites/default/files/styles/scale_crop_1280x720/public/2022-08/the%20menu.jpg",
@@ -1056,7 +1039,7 @@
             ]
       },
       {
-            "id": 63,
+            "id": 62,
             "title": "L'année du requin",
             "poster": "https://www.themoviedb.org/t/p/original/gSJktrtxs3ZqXP0o2Nubgw2x4uf.jpg",
             "background": "https://m.media-amazon.com/images/M/MV5BN2E5NjYyZDktODRiNC00ZjFlLTlhNjUtNzc5OWViNTNkNmIxXkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg",
@@ -1073,7 +1056,7 @@
             ]
       },
       {
-            "id": 64,
+            "id": 63,
             "title": "Qu'est-ce qu'on a tous fait au bon dieu ?",
             "poster": "https://www.themoviedb.org/t/p/original/jN0xIYBgkfSWIMqhJlQMyPY29ti.jpg",
             "background": "https://video.fnac-static.com/0/Video/FR/NR/42/8b/dc/14453570/3011-1.jpeg",
@@ -1090,24 +1073,7 @@
             ]
       },
       {
-            "id": 65,
-            "title": "Placés",
-            "poster": "https://www.themoviedb.org/t/p/original/epKakliobTsoCDMqGSKGpy3RGbx.jpg",
-            "background": "https://images.lanouvellerepublique.fr/image/upload/61dd4177778301e1328b45ab.jpg",
-            "tags": "Comédie et Drame",
-            "genres": ["drame", "humour"],
-            "duration": "1h51min",
-            "year": "2022",
-            "rate": "10",
-            "source": ["https://tomacloud.com/iframe/4jw5SF6Kcc", ""],
-            "trailer": "https://www.youtube.com/watch?v=Jozix9UvWrY",
-            "synopsis": "Parce qu’il a oublié sa carte d’identité, Elias ne peut passer les épreuves du concours d’entrée à Sciences Po. À la recherche d’un job en attendant de pouvoir se présenter à nouveau, il devient éducateur dans une Maison d’Enfants à Caractère Social.",
-            "productors": [
-                  { "name": "Nessim Chikhaoui<br/> Français 🇫🇷", "profile_pic": "https://fr.web.img3.acsta.net/c_310_420/pictures/22/01/11/10/17/4043550.jpg"}
-            ]
-      },
-      {
-            "id": 66,
+            "id": 64,
             "title": "The social network",
             "poster": "https://img.betaseries.com/YOY6JsejKIUwYugurelWEr7IhZ4=/600x900/smart/https%3A%2F%2Fpictures.betaseries.com%2Ffilms%2Faffiches%2Foriginal%2F414.jpg",
             "background": "https://media.vanityfair.fr/photos/60d36fe0ad3f6ddbd63a3412/master/pass/vf_the_social_network_1202.jpeg",
@@ -1124,7 +1090,7 @@
             ]
       },
       {
-            "id": 67,
+            "id": 65,
             "title": "Bac Nord",
             "poster": "https://fr.web.img3.acsta.net/pictures/21/06/07/13/11/2832970.jpg",
             "background": "https://www.lepoint.fr/images/2021/08/17/22038709lpw-22041553-libre-jpg_8166208.jpg",
@@ -1142,7 +1108,7 @@
             ]
       },
       {
-            "id": 68,
+            "id": 66,
             "title": "Les choristes",
             "poster": "https://fr.web.img5.acsta.net/medias/nmedia/18/35/18/77/18373973.jpg",
             "background": "https://resize-parismatch.lanmedia.fr/var/pm/public/media/image/2022/03/05/07/Trois-choses-a-savoir-sur-Les-Choristes.jpg?VersionId=ZjFcL6MaUSWQNka9sHaLEfX1NJf3z9tU",
