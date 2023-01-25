@@ -122,11 +122,11 @@ export default function MoviesPage(props) {
   /* ✨ List of best movies on Odama's App : ✨  */
   show_odama_selection.push (
     <>
-      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[30].id}>
-        <img src={file_data[30].poster} className='movie_poster' alt='movie-poster'/>  
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[61].id}>
+        <img src={file_data[61].poster} className='movie_poster' alt='movie-poster'/>  
         <div className='movies_infos_poster'>
-          <div id='rates'><p>{file_data[30].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div> 
-          <span className='movies_tags'>{file_data[30].tags}</span>
+          <div id='rates'><p>{file_data[61].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div> 
+          <span className='movies_tags'>{file_data[61].tags}</span>
         </div>
       </div>
 
@@ -210,10 +210,10 @@ export default function MoviesPage(props) {
     $("#slide_3").hide();
     document.getElementById("slide_1").style.backgroundImage = `url("${file_data[65].background}")`;
     $(".point_1").css("background-color", "white"); $(".point_2").css("background-color", "transparent"); $(".point_3").css("background-color", "transparent");
-    $("#next_1").click(function() { $("#slide_1").hide(); $("#slide_2").fadeIn(900); $("#slide_3").hide(); document.getElementById("slide_2").style.backgroundImage = `url("${file_data[62].background}")`; $(".point_1").css("background-color", "transparent"); $(".point_2").css("background-color", "white"); $(".point_3").css("background-color", "transparent"); });
-    $("#next_2").click(function() { $("#slide_1").hide(); $("#slide_2").hide(); $("#slide_3").fadeIn(900); document.getElementById("slide_3").style.backgroundImage = `url("${file_data[65].background}")`; $(".point_1").css("background-color", "transparent"); $(".point_2").css("background-color", "transparent"); $(".point_3").css("background-color", "white"); });
+    $("#next_1").click(function() { $("#slide_1").hide(); $("#slide_2").fadeIn(900); $("#slide_3").hide(); document.getElementById("slide_2").style.backgroundImage = `url("${file_data[8].background}")`; $(".point_1").css("background-color", "transparent"); $(".point_2").css("background-color", "white"); $(".point_3").css("background-color", "transparent"); });
+    $("#next_2").click(function() { $("#slide_1").hide(); $("#slide_2").hide(); $("#slide_3").fadeIn(900); document.getElementById("slide_3").style.backgroundImage = `url("${file_data[41].background}")`; $(".point_1").css("background-color", "transparent"); $(".point_2").css("background-color", "transparent"); $(".point_3").css("background-color", "white"); });
     $("#previous_2").click(function() { $("#slide_1").fadeIn(900); $("#slide_2").hide(); $("#slide_3").hide(); document.getElementById("slide_1").style.backgroundImage = `url("${file_data[65].background}")`; $(".point_1").css("background-color", "white"); $(".point_2").css("background-color", "transparent"); $(".point_3").css("background-color", "transparent"); });
-    $("#previous_3").click(function() { $("#slide_1").hide(); $("#slide_2").fadeIn(900); $("#slide_3").hide(); document.getElementById("slide_2").style.backgroundImage = `url("${file_data[62].background}")`; $(".point_1").css("background-color", "transparent"); $(".point_2").css("background-color", "white"); $(".point_3").css("background-color", "transparent"); });
+    $("#previous_3").click(function() { $("#slide_1").hide(); $("#slide_2").fadeIn(900); $("#slide_3").hide(); document.getElementById("slide_2").style.backgroundImage = `url("${file_data[8].background}")`; $(".point_1").css("background-color", "transparent"); $(".point_2").css("background-color", "white"); $(".point_3").css("background-color", "transparent"); });
 
     /* ✨ Add metrics data(s) to slides in slider_section #1 : ✨ */
     document.getElementById("title_movies_1").innerHTML = file_data[65].title;
@@ -223,14 +223,14 @@ export default function MoviesPage(props) {
     document.getElementById("watch_button_1").innerHTML = `<a href="../movies/details" onClick="localStorage.setItem('item_id', this.id);" id="${file_data[65].id}" class="movies_liked_item"><img src="https://zupimages.net/up/22/28/exo5.png"/> Regarder ce film avec Odama !</a>`;
   
     /* ✨ Add metrics data(s) to slides in slider_section #2 : ✨ */
-    document.getElementById("title_movies_2").innerHTML = file_data[62].title;
-    document.getElementById("rates_movies_2").innerHTML = `<p>${file_data[62].tags}&nbsp; · &nbsp;${file_data[62].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/>`;
-    document.getElementById("watch_button_2").innerHTML = `<a href="../movies/details" onClick="localStorage.setItem('item_id', this.id);" id="${file_data[62].id}" class="movies_liked_item"><img src="https://zupimages.net/up/22/28/exo5.png"/> Regarder ce film avec Odama !</a>`;
+    document.getElementById("title_movies_2").innerHTML = file_data[8].title;
+    document.getElementById("rates_movies_2").innerHTML = `<p>${file_data[8].tags}&nbsp; · &nbsp;${file_data[8].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/>`;
+    document.getElementById("watch_button_2").innerHTML = `<a href="../movies/details" onClick="localStorage.setItem('item_id', this.id);" id="${file_data[8].id}" class="movies_liked_item"><img src="https://zupimages.net/up/22/28/exo5.png"/> Regarder ce film avec Odama !</a>`;
 
     /* ✨ Add metrics data(s) to slides in slider_section #3 : ✨ */
-    document.getElementById("title_movies_3").innerHTML = file_data[65].title;
-    document.getElementById("rates_movies_3").innerHTML = `<p>${file_data[65].tags}&nbsp; · &nbsp;${file_data[65].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/>`;
-    document.getElementById("watch_button_3").innerHTML = `<a href="../movies/details" onClick="localStorage.setItem('item_id', this.id);" id="${file_data[65].id}" class="movies_liked_item"><img src="https://zupimages.net/up/22/28/exo5.png"/> Regarder ce film avec Odama !</a>`;
+    document.getElementById("title_movies_3").innerHTML = file_data[41].title;
+    document.getElementById("rates_movies_3").innerHTML = `<p>${file_data[41].tags}&nbsp; · &nbsp;${file_data[41].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/>`;
+    document.getElementById("watch_button_3").innerHTML = `<a href="../movies/details" onClick="localStorage.setItem('item_id', this.id);" id="${file_data[41].id}" class="movies_liked_item"><img src="https://zupimages.net/up/22/28/exo5.png"/> Regarder ce film avec Odama !</a>`;
   }, []);
 
   return (
