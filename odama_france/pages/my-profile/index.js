@@ -74,7 +74,7 @@ export default function MyProfile(props) {
             <Header/>
             <section id="my_profile_section">
                 <h1 className='big_title'>Mon profil :</h1>
-                <p className='description'>Retrouvez ici votre espace personnel avec quelques infos ainsi que vos films et séries préféré(e)s. Odama se soucie de votre sécurité sur Internet de se fait, vous devriez utiliser un VPN pour masquer et peut-être chiffrer également votre IP (108.16.11.3). Vous pouvez retrouver l'intégralité de notre projet sur le repos Github correspondant en open-source à cette adresse : <a href="https://github.com/SkyX-ID-FR/Odama-France" target="_blank">https://github.com/SkyX-ID-FR/Odama-France</a>. Toutes idées, remarques ou reports de bugs peuvent être envoyés depuis notre page de contact...</p>
+                <p className='description'>Retrouvez-ici votre espace personnel avec quelques informations propre avec votre utilisation comme vos films et séries préféré(e)s, le tout regroupé sous forme de bibliothèque intéractive. Toutes vos préférences utilisateurs sont enregistrées localement sur votre appareil (pour pas qu'Odama y est accède) mais vous pouvez à tout moment les supprimer en cliquant sur le bouton de droite, juste ci-dessous. Toutes idées, remarques ou reports de bugs peuvent être envoyés depuis notre page de contact...</p>
                 
                 <div className='button_group_action'>
                     <button id="show_movies_library">Ma bibliothèque de films ! ✨</button>

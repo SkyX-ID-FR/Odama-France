@@ -1123,6 +1123,23 @@
             "productors": [
                   { "name": "Christophe Barratier<br/> Français 🇫🇷", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/pictures/16/05/02/11/59/570316.jpg"}
             ]
+      },
+      {
+            "id": 67,
+            "title": "Tous en scène 1",
+            "poster": "https://www.themoviedb.org/t/p/original/6igG1J3T6uavROpQAhKfptm4KA4.jpg",
+            "background": "https://www.programme-tv.net/imgre/fit/~1~tel~2021~12~24~d43f4726-99cb-4edc-a4f0-8126153a7724.jpeg/1200x600/crop-from/top/quality/80/focus-point/844,389/tous-en-scene-tf1-decouvrez-toutes-les-chansons-du-film.jpg",
+            "tags": "Enfant et Musicale",
+            "genres": ["kids"],
+            "duration": "1h48min",
+            "year": "2017",
+            "rate": "7,3",
+            "source": ["", "https://tomacloud.com/iframe/RmQ0aKbCFZ"],
+            "trailer": "https://www.youtube.com/watch?v=uf5gShKiZRE",
+            "synopsis": "Buster Moon est un élégant koala qui dirige un grand théâtre, jadis illustre, mais aujourd’hui tombé en désuétude. Buster est un éternel optimiste, un peu bougon, qui aime son précieux théâtre au-delà de tout et serait prêt à tout pour le sauver. C’est alors qu’il trouve une chance en or pour redorer son blason tout en évitant la destruction de ses rêves et de toutes ses ambitions: une compétition mondiale de chant.",
+            "productors": [
+                  { "name": "Carth Jennings<br/> Anglais 🇬🇧", "profile_pic": "https://fr.web.img3.acsta.net/c_310_420/pictures/16/12/05/16/57/551583.jpg"}
+            ]
       }
   ]
 }
