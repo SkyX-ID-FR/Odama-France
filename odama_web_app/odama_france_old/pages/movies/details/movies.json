@@ -1140,6 +1140,74 @@
             "productors": [
                   { "name": "Carth Jennings<br/> Anglais 🇬🇧", "profile_pic": "https://fr.web.img3.acsta.net/c_310_420/pictures/16/12/05/16/57/551583.jpg"}
             ]
+      },
+      {
+            "id": 68,
+            "title": "Black Panther 2",
+            "poster": "https://www.themoviedb.org/t/p/original/7ZINBixo7zO21iF9doe1cSTHrV4.jpg",
+            "background": "https://www.cnet.com/a/img/resize/b2af532d056aed9b23669ba7b8a1ee6587064c2a/hub/2022/07/25/ec2c3223-e034-419c-aab6-17c6a9365706/black-panther-2-namor-social.png?auto=webp",
+            "tags": "Action et Combat",
+            "genres": ["aventure", "action"],
+            "duration": "2h41min",
+            "year": "2022",
+            "rate": "8,4",
+            "source": ["", "https://tomacloud.com/iframe/ilLrFFMAKX"],
+            "trailer": "https://www.youtube.com/watch?v=afDNAILz6Tw",
+            "synopsis": "La Reine Ramonda, Shuri, M’Baku, Okoye et les Dora Milaje luttent pour protéger leur nation des ingérences d’autres puissances mondiales après la mort du roi T’Challa. Alors que le peuple s’efforce d’aller de l’avant, nos héros vont devoir s’unir et compter sur l’aide de la mercenaire Nakia et d’Everett Ross pour faire entrer le royaume du Wakanda dans une nouvelle ère. Mais une terrible menace surgit d’un royaume caché au plus profond des océans : Talokan.",
+            "productors": [
+                  { "name": "Ryan Coogler<br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img3.acsta.net/c_310_420/pictures/16/01/08/10/46/216577.jpg"}
+            ]
+      },
+      {
+            "id": 69,
+            "title": "Babylon",
+            "poster": "https://www.themoviedb.org/t/p/original/6HadxxG5IfrUtx58Q2IwAEuqK2L.jpg",
+            "background": "https://media-assets.vanityfair.it/photos/63c43619787d59ec34627895/master/pass/Margot-Robbie-Babylon-2022-2222.jpg",
+            "tags": "Drame et Historique",
+            "genres": ["drame"],
+            "duration": "3h09min",
+            "year": "2023",
+            "rate": "5,8",
+            "source": ["", "https://tomacloud.com/iframe/NAwbQzxgRZ"],
+            "trailer": "https://www.youtube.com/watch?v=DT7jEnwK5MI",
+            "synopsis": "Los Angeles des années 1920. Récit d’une ambition démesurée et d’excès les plus fous, BABYLON retrace l’ascension et la chute de différents personnages lors de la création d’Hollywood, une ère de décadence et de dépravation sans limites.",
+            "productors": [
+                  { "name": "Damien Chazelle<br/> Américain 🇺🇸", "profile_pic": "https://fr.web.img3.acsta.net/c_310_420/pictures/17/01/10/11/57/215425.jpg"}
+            ]
+      },
+      {
+            "id": 70,
+            "title": "Megan",
+            "poster": "https://www.themoviedb.org/t/p/original/xBl5AGw7HXZcv1nNXPlzGgO4Cfo.jpg",
+            "background": "https://www.denofgeek.com/wp-content/uploads/2023/01/M3gan-dancing.jpeg?fit=1200%2C675",
+            "tags": "Horreur et Robots",
+            "genres": ["horreur"],
+            "duration": "1h42min",
+            "year": "2022",
+            "rate": "7,3",
+            "source": ["", "https://tomacloud.com/iframe/aKyTDwX3yf"],
+            "trailer": "https://www.youtube.com/watch?v=kIlqOrf3mK8",
+            "synopsis": "M3GAN est un miracle technologique, une cyber poupée dont l’intelligence artificielle est programmée pour être la compagne idéale des enfants et la plus sûre alliée des parents. Conçue par Gemma, la brillante roboticienne d’une entreprise de jouets, M3GAN peut écouter, observer et apprendre tout en étant à la fois l’amie et le professeur, la camarade de jeu et la protectrice de l’enfant à qui elle est liée.",
+            "productors": [
+                  { "name": "Gerard Johnstone<br/> Néo-Zélandais 🇳🇿", "profile_pic": "https://m.media-amazon.com/images/M/MV5BMjAxMTMwODU0Ml5BMl5BanBnXkFtZTgwMjg4NDUzOTE@._V1_.jpg"}
+            ]
+      },
+      {
+            "id": 71,
+            "title": "Astérix et Obélix 2",
+            "poster": "https://www.themoviedb.org/t/p/original/tQQE0901nqdpzYGEAZtDbdTlxe6.jpg",
+            "background": "https://image.tmdb.org/t/p/original/miavmZ9UTTCRSTDklhNKheZqvWg.jpg",
+            "tags": "Enfants et BD",
+            "genres": ["kids"],
+            "duration": "1h47min",
+            "year": "2003",
+            "rate": "5,7",
+            "source": ["", "https://tomacloud.com/iframe/7YIPhwoAe6"],
+            "trailer": "https://www.youtube.com/watch?v=7Nd1ZCwB5PI",
+            "synopsis": "Cléopâtre, la reine d’Égypte, décide, pour défier l'Empereur romain Jules César, de construire en trois mois un palais somptueux en plein désert. Si elle y parvient, celui-ci devra concéder publiquement que le peuple égyptien est le plus grand de tous les peuples. Pour ce faire, Cléopâtre fait appel à Numérobis, un architecte d'avant-garde plein d'énergie. S'il réussit, elle le couvrira d'or. S'il échoue, elle le jettera aux crocodiles.",
+            "productors": [
+                  { "name": "Alain Chabat<br/> Français 🇫🇷", "profile_pic": "https://fr.web.img6.acsta.net/c_310_420/pictures/20/12/21/16/47/5878583.jpg"}
+            ]
       }
   ]
 }

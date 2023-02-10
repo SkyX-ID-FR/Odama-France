@@ -15,7 +15,7 @@
     font-weight: normal;
     font-size: normal;
     font-family: 'Lato', sans-serif;
-    background-color: rgb(20, 46, 96);
+    background-color: #142e60;
 }
 
 /* 
@@ -88,14 +88,14 @@ a {  color: grey; }
 /* 📃 NavBar's style : 📃 */
 #navbar {
     padding: 20px;
-    background-color: rgb(4, 10, 34);
+    background-color: #040a22;
     z-index: 100;
     margin-bottom: 20px;
     position: fixed;
     margin-top: 25px!important;
     width: calc(100% - 100px);
     margin-top: 20px;
-    border-radius: 45px;
+    border-radius: 70px;
     margin-left: 29px!important;
     box-shadow: 10px 10px 70px #030928;
     margin: 8px;
@@ -662,6 +662,203 @@ a {  color: grey; }
 /* 👀 Best movies section slider 👀 */
 /* 📦 End of Content Page's style 📦 */
 
+/* 💼 New movies page 2023 : 💼 */
+.new_movies_section {
+    margin-top: 160px;
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    width: 95%;
+    padding-left: 35px;
+}
+
+.new_movies_section * {
+    background-color: transparent;
+}
+
+.new_movies_section .slider_component {
+    position: absolute;
+    width: 100%;
+}
+
+.slider::-webkit-scrollbar { display: none;  }
+.new_movies_section .slider_component .slider {
+    max-height: 280px;
+    max-width: 100%;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    border-radius: 40px;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+  
+.new_movies_section .slider_component .slider__slide {
+    height: 100vh;
+    min-width: 100vw;
+    width: 100%;
+    font-size: 4rem;
+    display: flex;
+    scroll-snap-align: start;
+}
+
+/* 📂 Content Box in Slide Page : 📂 */
+.new_movies_section .slider_component .slider__slide a {
+    margin: 0px;
+    z-index: 10;
+}
+
+.new_movies_section .slider_component .slider__slide .bg_img {
+    width: 100%;
+    object-fit: cover;
+    z-index: 5;
+    filter: blur(6px);
+}
+
+.new_movies_section .slider_component .slider__slide .movie_title {
+    margin-top: 40px;
+    font-size: 20px;
+    z-index: 10;
+    margin-left: -94%;
+    font-size: 70px;
+    text-shadow: 0px 10px 20px rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+.new_movies_section .slider_component .slider__slide .movie_title img {
+    width: 80px;
+    margin-left: 8px;
+    margin-bottom: -1px;
+}
+
+.new_movies_section .slider_component .slider__slide .movie_infos {
+    margin-top: 120px;
+    z-index: 10;
+    font-size: 15px;
+    width: 500px;
+    height: 20px;
+}
+
+.new_movies_section .slider_component .slider__slide #movies_infos_1 { margin-left: -27.7%; }
+.new_movies_section .slider_component .slider__slide #movies_infos_2 { margin-left: -16.6%; }
+.new_movies_section .slider_component .slider__slide #movies_infos_3 { margin-left: -14.7%; }
+.new_movies_section .slider_component .slider__slide #movies_infos_4 { margin-left: -32%; }
+
+.new_movies_section .slider_component .slider__slide .new_watch_button {
+    z-index: 20;
+    height: 50px;
+    color: white;
+    background-color: #040a22;
+    padding-top: 18px;
+    padding-bottom: 40px;
+    border-radius: 40px;
+    padding-left: 30px;
+    padding-right: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-color: transparent;
+    transition: all 0.3s;
+    margin-top: 155px;
+    margin-left: -24%;
+}
+
+.new_movies_section .slider_component .slider__slide .new_watch_button:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 5px 70px black;
+}
+
+.new_movies_section .slider_component .slider__slide .new_watch_button:active {
+    transform: scale(0.95);
+}
+
+.new_movies_section .slider_component .slider__slide .new_watch_button img {
+    width: 40px;
+    float: left;
+    margin-top: -11px;
+    margin-right: 7px;
+}
+
+.new_movies_section .slider_component .slider__slide span {
+    z-index: 10;
+    font-size: 15px;
+    margin-left: 17%;
+    margin-top: 228px;
+    backdrop-filter: blur(10px);
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.23);
+}
+
+.new_movies_section .slider_component .slider__slide span svg {
+    width: 20px;
+    margin-bottom: -5px;
+    stroke: white;
+    margin-right: 10px;
+}
+
+.new_movies_section .slider_component .slider__slide .viewer {
+    z-index: 30;
+    margin-left: 18.5%;
+    margin-top: -15px;
+    height: 50px;
+}
+
+.new_movies_section .slider_component .slider__slide .viewer img {
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -15px;
+    box-shadow: -5px 0px 20px rgba(0, 0, 0, 0.475);
+}
+
+.new_movies_section .slider_component .slider__slide .viewer p {
+    font-size: 16px;
+    float: right;
+    margin-top: 37px;
+    margin-left: 10px;
+    text-shadow: 0px 0px 20px black;
+}
+/* 📂 End of Content Box in Slide Page 📂 */
+  
+.right-arrow,
+.left-arrow {
+    position: absolute;
+    height: 280px;
+    width: 40px;
+    cursor: pointer;
+    stroke: white; 
+    margin-left: -20px;
+    margin-right: -20px;
+    z-index: 10;
+}
+  
+.right-arrow { 
+    padding-right: 20px;
+    padding-left: 30px;
+    right: 18px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-image: linear-gradient(to right, #040a2200, #040a22);
+    /* background-image: linear-gradient(to right, #142f6000, #142e60); */
+}
+
+.left-arrow { 
+    padding-left: 20px;
+    padding-right: 40px;
+    left: 18px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px; 
+    background-image: linear-gradient(to left, #040a2200, #040a22);
+    /* background-image: linear-gradient(to left, #142f6000, #142e60); */
+}
+/* 💼 End of New movies page 2023 ! 💼 */
+
 /* 🎥 Movies section's style : 🎥 */
 .movies_section {
     margin-top: -5px;
@@ -917,7 +1114,7 @@ a {  color: grey; }
 #movies_details_section .movies_infos #content .short_infos_box #watch_button {
     background-color: #040a22;
     border-color: transparent;
-    border-radius: 20px;
+    border-radius: 40px;
     color: white;
     z-index: 30;
     width: 280px;
@@ -927,7 +1124,7 @@ a {  color: grey; }
     box-shadow: 0px 0px 80px rgb(127, 127, 127);
     transition: all 0.3s;
     margin-top: 40px;
-    padding-top: 5px;
+    padding-top: 6.5px;
     padding-bottom: 6px;
 }
 
@@ -950,7 +1147,7 @@ a {  color: grey; }
 #movies_details_section .movies_infos #content .short_infos_box #trailer_button {
     background-color: rgb(148, 11, 11);
     border-color: transparent;
-    border-radius: 20px;
+    border-radius: 40px;
     color: white;
     z-index: 30;
     width: 280px;
@@ -959,15 +1156,15 @@ a {  color: grey; }
     margin-left: 60px;
     box-shadow: 0px 0px 80px rgb(70, 70, 70);
     transition: all 0.3s;
-    margin-top: 40px;
-    padding-top: 5px;
-    padding-bottom: 6px;
+    margin-top: 41px;
+    padding-top: 6px;
+    padding-bottom: 7px;
 }
 
 #movies_details_section .movies_infos #content .short_infos_box #trailer_button img {
     width: 40px;
     float: left;
-    margin-left: 12px;
+    margin-left: 15px;
 }
 
 #movies_details_section .movies_infos #content .short_infos_box #trailer_button p {

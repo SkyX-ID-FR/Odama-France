@@ -7,7 +7,7 @@
 */
 
 import Head from 'next/head';
-import Header from '../components/Header.js'
+import Header from '../components/Header.js';
 
 export default function Home() {  
   if (process.browser) { console.clear(); console.info("Odama© webapp starting on " + document.location + " ! ✨"); }

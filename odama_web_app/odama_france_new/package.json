@@ -1,0 +1,20 @@
+{
+  "name": "odama_france_new",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "13.1.6",
+    "feather-icons": "^4.29.0",
+    "jquery": "^3.6.3",
+    "next": "13.1.6",
+    "push.js": "^1.0.12",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}

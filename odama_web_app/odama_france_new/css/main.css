@@ -1,0 +1,319 @@
+/* 
+   _______     __                            _______                              
+  |       |.--|  |.---.-.--------.---.-.    |    ___|.----.---.-.-----.----.-----.
+  |   -   ||  _  ||  _  |        |  _  |    |    ___||   _|  _  |     |  __|  -__|
+  |_______||_____||___._|__|__|__|___._|    |___|    |__| |___._|__|__|____|_____|
+  Version 1.1.0 - By @skyx_id_fr - "Odama, you like it ! ✨"
+*/
+
+/* 📌 Link Google Font Links : 📌 */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-weight: normal;
+  font-size: normal;
+  font-family: 'Lato', sans-serif;
+}
+
+::-webkit-scrollbar { 
+  width: 7px; 
+  height: 8px;
+  border-radius: 10px;
+  background-color: #040a22;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track { background: transparent; }  
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #041335;
+  color: white;
+}
+
+#responsive_nav { display: none; }
+#responsive_box { display: none; }
+/* 💼 LeftNav Style : 💼 */
+#leftnav_component {
+  float: left;
+  height: 100vh;
+  width: 15%;
+  background-color: #040A22;
+  position: fixed;
+  box-shadow: 10px 0px 20px #020e29;
+  padding-top: 20px;
+  padding-left: 30px;
+  z-index: 50;
+}
+
+#leftnav_component .odama_app_logo {
+  width: 70px;
+}
+
+#leftnav_component #notif_bell_button {
+  float: right;
+  margin-right: 25px;
+  margin-top: 20px;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+#leftnav_component #notif_bell_button svg {
+  stroke: white;
+  width: 30px;
+}
+
+#leftnav_component .main_menu {
+  margin-top: 25px;
+}
+
+#leftnav_component .main_menu .indicator {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: grey;
+}
+
+#leftnav_component .main_menu ul {
+  list-style-type: none;
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+
+#leftnav_component .main_menu ul li {
+  font-size: 19px;
+  font-weight: 300;
+  background-color: rgba(99, 99, 99, 0.176);
+  width: 85%;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  padding-left: 22px;
+  border-radius: 15px;
+  margin-left: -5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#leftnav_component .main_menu .active { 
+  font-weight: 500!important; 
+  padding-top: 11px;
+  background-color: #96969659;
+}
+
+#leftnav_component .main_menu .active svg { stroke-width: 3px!important; }
+#leftnav_component .main_menu ul li:hover { transform: scale(1.04); }
+#leftnav_component .main_menu ul li:active { transform: scale(0.90); }
+
+#leftnav_component .main_menu ul li svg {
+  stroke: white;
+  width: 21px;
+  margin-bottom: -2px;
+  margin-right: 10px;
+  stroke-width: 2px;
+}
+/* 💼 End of LeftNav Style ! 💼 */
+
+/* 📚 Right Content Style : 📚 */
+#right_content_page {
+  margin-left: 16%;
+  height: 100vh;
+  text-align: center;
+  padding-top: 6%;
+}
+
+#right_content_page hr {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  border: 2px solid transparent;
+  height: 4px;
+  border-radius: 10px;
+  background-color: rgb(94, 94, 94);
+}
+
+#right_content_page .welcome_title {
+  text-shadow: 10px 0px 30px black;
+  font-size: 65px;
+  font-weight: 800;
+  margin-left: -25px;
+}
+
+#right_content_page .popcorn_icon {
+  width: 70px;
+  float: left;
+  margin-left: 15px;
+  margin-top: 3px;
+  position: absolute;
+}
+
+#right_content_page .welcome_description {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+#right_content_page .button_donations_box {
+  margin-top: 30px;
+  margin-left: -50px;
+}
+
+#right_content_page .button_donations_box button {
+  margin-left: 25px;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  border-radius: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.683);
+  border-color: transparent;
+  transition: all 0.3s;
+}
+
+#right_content_page .button_donations_box button:hover { transform: scale(1.1); }
+#right_content_page .button_donations_box button:active { transform: scale(0.95); }
+#right_content_page .button_donations_box #coffee { background-color: rgb(198, 149, 12); }
+#right_content_page .button_donations_box #paypal { background-color: rgb(22, 97, 158); }
+
+#right_content_page .button_donations_box button img {
+  width: 15px;
+  float: left;
+  margin-right: 15px;
+}
+
+#right_content_page .calendar_box {
+  margin-top: 100px;
+}
+
+#right_content_page .calendar_box .selector {
+  display: flex;
+  justify-content: center;
+}
+
+#right_content_page .calendar_box .selector .item {
+  margin-right: 20px;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 35px;
+  padding-bottom: 10px;
+  border-radius: 40px;
+  background-color: rgba(99, 99, 99, 0.176);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+#right_content_page .calendar_box .selector .item:hover { transform: scale(1.05); }
+#right_content_page .calendar_box .selector .item:active { transform: scale(0.95); }
+
+#right_content_page .calendar_box .selector .item h1 {
+  font-weight: 750;
+  font-size: 40px;
+  color: rgb(139, 139, 139);
+}
+
+#right_content_page .calendar_box .selector .item p {
+  font-size: 14px;
+  color: rgb(139, 139, 139);
+  position: absolute;
+  margin-top: -3px;
+}
+
+#right_content_page .calendar_box .selector .item .circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0;
+  margin-top: 40px;
+  margin-left: 16.5px;
+}
+
+#right_content_page .calendar_box .selector .active_item {
+  background-color: #040A22;
+  box-shadow: 0px 0px 75px rgb(92, 92, 92);
+}
+
+#right_content_page .calendar_box .selector .active_item h1 { color: white; }
+#right_content_page .calendar_box .selector .active_item .circle { opacity: 1; }
+
+#right_content_page .calendar_box .event_item {
+  background-color: #040A22;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  height: 170px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 30px;
+  padding-right: 20px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 120px rgb(80, 80, 80);
+  transition: all 0.4s;
+  margin-bottom: 25px;
+  margin-top: 60px;
+}
+
+#right_content_page .calendar_box .event_item:hover {
+  transform: scale(1.02);
+}
+
+#right_content_page .calendar_box .event_item svg {
+  stroke: white;
+  width: 25px;
+  height: 25px;
+  margin-top: -8px;
+  margin-right: -4px;
+  cursor: pointer;
+  float: right;
+}
+
+#right_content_page .calendar_box .event_item span {
+  color: #a5a5a5;
+  font-size: 15px;
+}
+
+#right_content_page .calendar_box .event_item h1 {
+  font-weight: 700;
+  font-size: 33px;
+  margin-top: 10px;
+}
+
+#right_content_page .calendar_box .event_item p {
+  color: rgb(160, 160, 160);
+}
+
+#right_content_page .calendar_box .event_item .authors {
+  margin-top: 37px;
+}
+
+#right_content_page .calendar_box .event_item .authors img {
+  width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  float: left;
+  margin-right: 8px;
+  margin-top: -5.5px;
+}
+
+#right_content_page .calendar_box .event_item .authors p {
+  color: white;
+  font-size: 14px;
+}
+/* 📚 End of Right Content Style ! 📚 */

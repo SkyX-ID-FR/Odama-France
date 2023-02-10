@@ -1,0 +1,348 @@
+/* 
+   _______     __                            _______                              
+  |       |.--|  |.---.-.--------.---.-.    |    ___|.----.---.-.-----.----.-----.
+  |   -   ||  _  ||  _  |        |  _  |    |    ___||   _|  _  |     |  __|  -__|
+  |_______||_____||___._|__|__|__|___._|    |___|    |__| |___._|__|__|____|_____|
+  Version 1.1.0 - By @skyx_id_fr - "Odama, you like it ! ✨"
+*/
+
+/* 🎈 Main Page Menu + Right Content Page Responsive BreakPoint : 🎈 */
+@media only screen and (max-width: 1330px) {
+    #leftnav_component { display: none; }
+    #responsive_nav {
+        display: block;
+        background-color: #020e29;
+        /* backdrop-filter: blur(10px); */
+        box-shadow: 0px 0px 100px rgba(161, 161, 161, 0.648);
+        padding-top: 15px;
+        padding-bottom: 12px;
+        padding-left: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+        border-radius: 55px;
+        position: fixed;
+        width: 94%;
+        z-index: 50;
+    }
+
+    #responsive_nav .odama_app_logo {
+        width: 55px;
+        margin-left: -5px;
+    }
+
+    #responsive_nav svg {
+        width: 30px;
+        stroke: white;
+        float: right;
+        margin-top: 15px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    #responsive_nav #menu_icon {
+        margin-right: 30px;
+    }    
+
+    #responsive_nav #bell_icon {
+        width: 25px;
+        margin-top: 18px;
+    }
+
+    #right_content_page {
+        margin-left: 0px;
+        margin-top: -15px;
+    }
+
+    #right_content_page .welcome_title {
+        margin-top: 100px;
+    }
+
+    /* 📚 Responsive Menu Onclick -> Box : 📚 */
+    #responsive_box {
+        display: block;
+        z-index: 50;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #020e29c5;
+        backdrop-filter: blur(10px);
+    }
+
+    #responsive_box #close_icon {
+        float: right;
+        width: 33px;
+        height: 33px;
+        margin-right: 12px;
+        margin-top: 12px;
+        stroke: white;
+        cursor: pointer;
+    }
+
+    #responsive_box .version_tag {
+        bottom: 0;
+        margin-bottom: 25px;
+        font-size: 14px;
+        text-align: center;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        font-weight: 300;
+    }
+
+    #responsive_box .content_box {
+        margin-top: 55px;
+        padding-left: 30px;
+    }
+
+    #responsive_box .content_box span {
+        text-transform: uppercase;
+        font-size: 14px;
+        color: rgb(152, 152, 152);
+    }
+
+    #responsive_box .content_box ul {
+        list-style: none;
+        margin-top: 5px;
+        margin-bottom: 40px;
+    }
+
+    #responsive_box .content_box ul li {
+        margin-bottom: 10px;
+        background-color: rgba(99, 99, 99, 0.316);
+        padding: 10px;
+        width: 95%;
+        border-radius: 15px;
+        padding-top: 12px;
+        padding-bottom: 14px;
+        padding-left: 15px;
+        transition: all 0.4s;
+    }
+
+    #responsive_box .content_box ul li:active {
+        transform: scale(0.93);
+    }
+
+    #responsive_box .content_box ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #responsive_box .content_box ul .item_link svg {
+        width: 30px;
+        height: 30px;
+        stroke: white;
+        float: left;
+        margin-top: -3.5px;
+    }
+
+    #responsive_box .content_box ul .item_link p {
+        margin-left: 40px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    #responsive_box .content_box ul .active_responsive { 
+        background-color: #9797977b; 
+        box-shadow: 0px 0px 30px rgba(42, 42, 42, 0.848);
+        padding-top: 13px;
+    }
+    
+    #responsive_box .content_box ul .active_responsive a svg { 
+        stroke-width: 2.3px; 
+        margin-top: -3px;
+    }
+    
+    #responsive_box .content_box ul .active_responsive a p { 
+        font-weight: 500!important; 
+        font-size: 19px;
+        margin-left: 33px;
+    }
+    /* 📚 End of Responsive Menu Onclick -> Box 📚 */
+}
+
+@media only screen and (max-width: 1200px) {
+    #right_content_page .welcome_title {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 120px;
+    }
+
+    #right_content_page .calendar_box .event_item {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 950px) { #responsive_nav { width: 93%; } }
+@media only screen and (max-width: 850px) { #responsive_box .content_box ul li { width: 88%; } }
+@media only screen and (max-width: 790px) { #responsive_nav { width: 91%; } }
+
+@media only screen and (max-width: 710px) {
+    #right_content_page .calendar_box {
+        padding-bottom: 20px;
+    }
+
+    #right_content_page .calendar_box .event_item {
+        height: 230px;
+        width: 85%;
+        margin-bottom: 400px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #responsive_nav { width: 90%; }
+}
+
+@media only screen and (max-width: 500px) {
+    #responsive_box #close_icon {
+        width: 27px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    #responsive_box .content_box {
+        padding-left: 20px;
+    }
+
+    #responsive_box .content_box span {
+        font-size: 12px;
+    }    
+
+    #responsive_box .content_box ul .item_link svg {
+        width: 25px;
+        height: 25px;
+        margin-top: -3px;
+    }    
+
+    #responsive_box .content_box ul .item_link p {
+        margin-left: 35px;
+        font-size: 17px;
+    }
+
+    ::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    #responsive_nav {
+        margin: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 31px;
+        padding-left: 22px;
+        padding-top: 10px;
+        padding-bottom: 7px;
+    }
+
+    #responsive_nav .odama_app_logo {
+        width: 45px;
+    }
+
+    #responsive_nav svg {
+        width: 25px;
+        margin-top: 10px;
+    }
+
+    #responsive_nav #menu_icon {
+        margin-right: 22px;
+        margin-top: 11px;
+    }
+
+    #responsive_nav #bell_icon {
+        width: 22px;
+        margin-top: 13px;
+    }
+
+    #right_content_page .welcome_title {
+        font-size: 45px;
+        line-height: 46px;
+        width: 90%;
+        margin-left: 21.5px; 
+        margin-top: 115px;
+    }
+
+    #right_content_page .welcome_title .popcorn_icon { display: none; }
+    #right_content_page .welcome_description {
+        width: 85%;
+        margin-top: 15px;
+        font-size: 13px;
+    }
+
+    #right_content_page .button_donations_box {
+        margin-top: 40px;
+        margin-left: -25px;
+    }
+
+    #right_content_page .button_donations_box button { margin-bottom: 15px; }
+
+    #right_content_page .calendar_box {
+        margin-top: 65px;
+        padding-bottom: 30px;
+    }
+
+    #right_content_page .calendar_box .selector {
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        padding-left: 95px;
+        padding-bottom: 30px;
+        padding-top: 20px;
+        margin-right: 10px;
+        -ms-overflow-style: none; 
+        scrollbar-width: none;
+    }
+
+    #right_content_page .calendar_box .selector::-webkit-scrollbar {
+        display: none;
+    }
+
+    #right_content_page .calendar_box .selector .item { 
+        margin-right: 15px;
+    }
+    
+    #right_content_page .calendar_box .selector .item h1 { font-size: 35px; }
+
+    #right_content_page .calendar_box .selector .item p { 
+        font-size: 13px; 
+        position: relative;
+    }
+
+    #right_content_page .calendar_box .selector .item .circle {
+        margin-left: 14px;
+        margin-top: 25px;
+    }
+
+    #right_content_page .calendar_box .selector .active_item { 
+        box-shadow: 0px 5px 50px rgba(103, 103, 103, 0.65); 
+    }
+
+    #right_content_page .calendar_box .event_item {
+        height: auto;
+        width: 79%;
+        margin-top: 20px;
+        margin-bottom: 32px;
+    }
+
+    #right_content_page .calendar_box .event_item h1 {
+        font-size: 35px;
+        line-height: 37px;
+        width: 105%;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    #right_content_page .calendar_box .event_item p {
+        font-size: 14px;
+    }
+
+    #right_content_page .calendar_box .event_item span {
+        font-size: 13px;
+    }
+
+    #right_content_page .calendar_box .event_item .authors img {
+        margin-top: 6px;
+    }    
+}

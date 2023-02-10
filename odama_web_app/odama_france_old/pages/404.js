@@ -7,6 +7,7 @@
 */
 
 import Head from 'next/head';
+
 export default function not_found() {
     return <>
       <Head>
