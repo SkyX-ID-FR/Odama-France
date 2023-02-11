@@ -11,7 +11,7 @@
     #leftnav_component { display: none; }
     #responsive_nav {
         display: block;
-        background-color: #020e29;
+        background-color: #040A22;
         /* backdrop-filter: blur(10px); */
         box-shadow: 0px 0px 100px rgba(161, 161, 161, 0.648);
         padding-top: 15px;
@@ -67,8 +67,8 @@
         top: 0;
         left: 0;
         width: 100%;
-        background-color: #020e29c5;
-        backdrop-filter: blur(10px);
+        background-color: #040a22ba;
+        backdrop-filter: blur(12px);
     }
 
     #responsive_box #close_icon {
@@ -146,20 +146,22 @@
     }
 
     #responsive_box .content_box ul .active_responsive { 
-        background-color: #9797977b; 
+        background-color: #9f9f9f8e; 
         box-shadow: 0px 0px 30px rgba(42, 42, 42, 0.848);
         padding-top: 13px;
+        padding-bottom: 13px;
     }
     
     #responsive_box .content_box ul .active_responsive a svg { 
-        stroke-width: 2.3px; 
+        stroke-width: 2.7px; 
         margin-top: -3px;
     }
     
     #responsive_box .content_box ul .active_responsive a p { 
-        font-weight: 500!important; 
+        font-weight: 510!important;
         font-size: 19px;
         margin-left: 33px;
+        margin-top: 1px;
     }
     /* 📚 End of Responsive Menu Onclick -> Box 📚 */
 }
@@ -343,6 +345,6 @@
     }
 
     #right_content_page .calendar_box .event_item .authors img {
-        margin-top: 6px;
+        margin-top: 4px;
     }    
 }
