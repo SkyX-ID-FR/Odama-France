@@ -60,15 +60,31 @@ body {
 #leftnav_component #notif_bell_button {
   float: right;
   margin-right: 25px;
-  margin-top: 20px;
+  margin-top: 13px;
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
+  padding: 10px;
 }
 
 #leftnav_component #notif_bell_button svg {
   stroke: white;
   width: 30px;
+}
+
+#leftnav_component #notif_bell_button .circle {
+  background-color: white;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  margin-top: -35px;
+  margin-left: 15px;
+  color: black;
+  font-size: 10px;
+  padding-top: 2px;
+  font-weight: 800;
 }
 
 #leftnav_component .main_menu {
@@ -103,17 +119,15 @@ body {
 }
 
 #leftnav_component .main_menu .active { 
-  font-weight: 510!important; 
+  font-weight: 500!important; 
   padding-top: 12px;
   padding-bottom: 15px;
   background-color: #96969659;
-  font-size: 21px;
 }
 
 #leftnav_component .main_menu .active svg { 
-  stroke-width: 2.7px!important; 
-  margin-bottom: -3.7px;
-  width: 29px;
+  stroke-width: 2.3px!important; 
+  margin-bottom: -3.2px;
   margin-right: 5px;
 }
 
@@ -128,6 +142,141 @@ body {
   stroke-width: 2px;
 }
 /* 💼 End of LeftNav Style ! 💼 */
+
+/* 📨 SideBar Notifications : 📨 */
+#notifications_side_bar {
+  backdrop-filter: blur(5px);
+  z-index: 150;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+#notifications_side_bar .content_box {
+  background-color: #040A22;
+  padding: 20px;
+  height: 100%;
+  width: 500px;
+  box-shadow: 10px 0px 100px rgba(89, 89, 89, 0.324);
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+#notifications_side_bar .content_box #close_icon_2 {
+  width: 30px;
+  height: 30px;
+  stroke: white;
+  cursor: pointer;
+  float: right;
+  margin-right: -5px;
+  margin-top: -5px;
+}
+
+#notifications_side_bar .content_box .center_title {
+  font-weight: 750;
+  margin-top: 40px;
+  font-size: 40px;
+}
+
+#notifications_side_bar .content_box .center_description {
+  font-weight: 300;
+  font-size: 15px;
+  width: 90%;
+}
+
+#notifications_side_bar .content_box .selector {
+  margin-top: 35px;
+}
+
+#notifications_side_bar .content_box .selector .table {
+  background-color: rgba(99, 99, 99, 0.176);
+  width: 140px;
+  padding-left: 10px;
+  padding-right: 0px;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  float: left;
+  margin-right: 12px;
+  color: rgb(183, 183, 183);
+}
+
+#notifications_side_bar .content_box .selector .table:hover { transform: scale(1.05); }
+#notifications_side_bar .content_box .selector .table:active { transform: scale(0.95); }
+
+#notifications_side_bar .content_box .selector .table svg {
+  width: 22px;
+  height: 22px;
+  stroke: rgb(183, 183, 183);
+  margin-bottom: -4px;
+  margin-right: 7px;
+}
+
+#notifications_side_bar .content_box .selector .active_2 {
+  background-color: #96969659;
+  color: white;
+  font-weight: 500;
+}
+
+#notifications_side_bar .content_box .selector .active_2 svg {
+  stroke-width: 2.5;
+  stroke: white;
+}
+
+/* 📦 Special Notifications Box Style : 📦 */
+.notifications_list_item {
+  margin-top: 100px;
+}
+
+.notifications_list_item .notifications_box {
+  background-color: rgba(99, 99, 99, 0.176);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 89%;
+  transition: all 0.5s;
+}
+
+.notifications_list_item .notifications_box:hover {
+  transform: scale(1.03);
+}
+
+.notifications_list_item .notifications_box .star_icon {
+  width: 25px;
+  height: 25px;
+  float: right;
+  margin-right: -5px;
+  margin-top: -5px;
+  stroke: white;
+  cursor: pointer;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.notifications_list_item .notifications_box .img_box { float: left; }
+.notifications_list_item .notifications_box .img_box img { width: 90px; }
+
+.notifications_list_item .notifications_box h1 {
+  font-weight: 800;
+  font-size: 30px;
+  margin-left: 100px;
+  margin-top: 1px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  width: 65%;
+}
+
+.notifications_list_item .notifications_box p {
+  font-size: 14px;
+  color: rgb(183, 183, 183);
+  margin-left: 10px;
+  width: 95%;
+}
+/* 📦 End of Special Notifications Box Style ! 📦 */
+/* 📨 End of SideBar Notifications ! 📨 */
 
 /* 📚 Right Content Style : 📚 */
 #right_content_page {
