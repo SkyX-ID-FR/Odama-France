@@ -65,7 +65,7 @@ export default function Home() {
 
           <div id="event_box_1">
             <div className='event_item'>
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+              <button title='Enregistrer cette actualité dans mon calendrier !'><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></button>
               <span>#dev · Le Mardi 7 Février 2023</span>
               <h1>La nouvelle version est en cours ! ✨</h1>
               <p>Après de longues et difficiles décisions, toute l'équipe d'Odama France peut t'annoncer officielement la sortie de la prochaine version et ça annonce du très très lourd !</p>
@@ -78,7 +78,7 @@ export default function Home() {
           
           <div id="event_box_2">
             <div className='event_item'>
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+              <button title='Enregistrer cette actualité dans mon calendrier !'><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></button>
               <span>#movies · Le Mardi 14 Février 2023</span>
               <h1>Ajout de nouveaux films ! 🎬</h1>
               <p>A partir de cette date, tous les films d'Odama France seront syncronisés avec une liste pré-définis qui contiendra tous les prochains films qui sortent au cinéma !</p>
@@ -91,7 +91,7 @@ export default function Home() {
 
           <div id="event_box_3">
             <div className='event_item'>
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+              <button title='Enregistrer cette actualité dans mon calendrier !'><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></button>
               <span>#version #news · Le Lundi 20 Février 2023</span>
               <h1>Sortie de la version 1.0 ! 🎉</h1>
               <p>Enfin ! La voilà ! La première "vraie" version d'Odama qui va te faire tourner la tête avec ses multiples nouvelles fonctionnalités et ajouts...</p>
@@ -104,7 +104,7 @@ export default function Home() {
 
           <div id="event_box_4">
             <div className='event_item'>
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+              <button title='Enregistrer cette actualité dans mon calendrier !'><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></button>
               <span>#series · Le Mecredi 3 Mars 2023</span>
               <h1>Ajout des séries ! 🎈</h1>
               <p>A partir de cette date, un paquet de séries françaises et internationales vont être ajoutés et notés sur la plateforme : dont celles qui ont le plus de succès sous les grandes enseignes !</p>
@@ -117,7 +117,7 @@ export default function Home() {
 
           <div id="event_box_5">
             <div className='event_item'>
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+              <button title='Enregistrer cette actualité dans mon calendrier !'><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></button>
               <span>#sport #news · Le Vendredi 17 Mars 2023</span>
               <h1>Ajout du sport ! ⚽</h1>
               <p>A partir de cette date, Odama France sera fier de t'annoncer qu'elle pourra diffuser plus de 25 chaînes de sport en continu avec comme deux sports principaux : le football et le basket.</p>

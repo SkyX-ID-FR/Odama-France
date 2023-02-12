@@ -146,7 +146,7 @@
     }
 
     #responsive_box .content_box ul .active_responsive { 
-        background-color: rgba(145, 145, 145, 0.689); 
+        background-color: #a3a3a381;
         box-shadow: 0px 0px 30px rgba(42, 42, 42, 0.848);
         padding-top: 13px;
         padding-bottom: 13px;
@@ -408,6 +408,7 @@
 
     .notifications_list_item .notifications_box {
         width: 82%;
+        padding-bottom: 25px;
     }
 
     .notifications_list_item .notifications_box .img_box { 
@@ -424,7 +425,7 @@
         font-size: 35px;
         width: 99%;
         margin-left: 5px;
-        line-height: 35px;
+        line-height: 34px;
         margin-top: -10px;
         margin-bottom: 0px;
     }
@@ -434,5 +435,9 @@
         font-weight: 400;
         margin-top: 15px;
         margin-left: 5px;
+    }
+
+    #notifications_side_bar .content_box .action_bar {
+        margin-left: 0px;
     }
 }

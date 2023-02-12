@@ -241,7 +241,7 @@ body {
 }
 
 .notifications_list_item .notifications_box:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .notifications_list_item .notifications_box .star_icon {
@@ -276,6 +276,48 @@ body {
   width: 95%;
 }
 /* 📦 End of Special Notifications Box Style ! 📦 */
+
+#notifications_side_bar .content_box .action_bar { 
+  margin-top: 20px; 
+  margin-left: 10px;
+  position: relative;
+  margin-bottom: 55px;
+}
+
+#notifications_side_bar .content_box .action_bar * {
+  color: white;
+  font-weight: 400;
+}
+
+#notifications_side_bar .content_box .action_bar .item_selector {
+  background-color: rgba(99, 99, 99, 0.176);
+  margin-right: 15px;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#notifications_side_bar .content_box .action_bar .item_selector svg {
+  width: 25px;
+  height: 25px;
+  float: left;
+  fill: #96969659;
+  stroke: rgb(53, 53, 53);
+}
+
+#notifications_side_bar .content_box .action_bar .item_selector .active_dyn_button {
+  fill: white;
+  stroke: #040A22;
+}
+
+#notifications_side_bar .content_box .action_bar .item_selector p {
+  margin-left: 35px;
+  margin-top: 7px;
+}
 /* 📨 End of SideBar Notifications ! 📨 */
 
 /* 📚 Right Content Style : 📚 */
@@ -431,7 +473,7 @@ body {
   transform: scale(1.02);
 }
 
-#right_content_page .calendar_box .event_item svg {
+#right_content_page .calendar_box .event_item button {
   stroke: white;
   width: 25px;
   height: 25px;
@@ -439,6 +481,8 @@ body {
   margin-right: -4px;
   cursor: pointer;
   float: right;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 #right_content_page .calendar_box .event_item span {
