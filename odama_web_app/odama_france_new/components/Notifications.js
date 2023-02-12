@@ -10,10 +10,10 @@ import $ from 'jquery';
 import { useEffect } from 'react';
 
 export default function Notifications() {
+    function later_msg() { alert("Désolé, mais cette fonctionnalité n'est tout simplement pas encore disponible ou définie pour le moment... 😥"); }
     useEffect(() => {
         $("#events_box").hide();
         $("#close_icon_2").unbind().click(function() { $("#notifications_side_bar").fadeOut(400); });
-        $(".star_icon").unbind().click(function() { alert("Désolé, mais cette fonctionnalité n'est tout simplement pas encore disponible ou définie pour le moment... 😥"); });
 
         $(".table").unbind().click(function(event) {
             if (event.target.id == "all_target") {
@@ -46,7 +46,7 @@ export default function Notifications() {
                     <div id='all_target_box'>
                         {/* 📂 All notifications_item : 📂 */}
                         <div className='notifications_box'>
-                            <button className="star_icon" title='Ajouter cette notification aux favoris !'><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
+                            <button onClick={later_msg} className="star_icon" title='Ajouter cette notification aux favoris !'><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
                             <div className='img_box'><img src="https://cdni.iconscout.com/illustration/premium/thumb/new-version-of-the-program-for-video-editing-6855167-5618717.png?f=avif" alt='box_icon'/></div>
                             <h1>Bienvenue dans la nouvelle version ! ✨</h1>
                             <p>Découvres dès maintenant la nouvelle version 1.1.2 d'Odama : avec ces nouvelles fonctionnalités et ces nouveaux ajouts, ça m'étonnerait qu'elle ne te plaise pas. En conclusion, une version qui annonce du très très lourd...</p>
@@ -56,7 +56,7 @@ export default function Notifications() {
                     <div id='events_box'>
                         {/* 🎁 Events notifications_item : 🎁 */}
                         <div className='notifications_box'>
-                            <button className="star_icon" title='Ajouter cette notification aux favoris !'><svg className="star_icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
+                            <button onClick={later_msg} className="star_icon" title='Ajouter cette notification aux favoris !'><svg className="star_icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></button>
                             <div className='img_box'><img src="https://cdni.iconscout.com/illustration/premium/thumb/newsletter-4118330-3414911.png?f=avif" alt='box_icon'/></div>
                             <h1>Motivé(e) pour devenir staff ? 🏆</h1>
                             <p>Tu es intérressé(e) de rejoindre une équipe motivée, mature et compétente capable de relever tous les défis ? J'ai une bonne nouvelle pour toi : dès aujourd'hui, Odama recrute quiconque voudrais rejoindre l'aventure. Pour cela, dépose ta candidature sur le serveur Discord ou envoie juste un petit message au compte Instagram...</p>

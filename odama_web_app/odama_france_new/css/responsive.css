@@ -146,19 +146,19 @@
     }
 
     #responsive_box .content_box ul .active_responsive { 
-        background-color: #9f9f9f8e; 
+        background-color: rgba(145, 145, 145, 0.689); 
         box-shadow: 0px 0px 30px rgba(42, 42, 42, 0.848);
         padding-top: 13px;
         padding-bottom: 13px;
     }
     
     #responsive_box .content_box ul .active_responsive a svg { 
-        stroke-width: 2.7px; 
-        margin-top: -3px;
+        stroke-width: 2.2px; 
+        margin-top: -2px;
     }
     
     #responsive_box .content_box ul .active_responsive a p { 
-        font-weight: 510!important;
+        font-weight: 500!important;
         font-size: 19px;
         margin-left: 33px;
         margin-top: 1px;
@@ -207,22 +207,25 @@
 /* 📨 Main Responsive SideBar Notifications : 📨 */
 @media only screen and (max-width: 600px) {
     #notifications_side_bar {
-        position: absolute;
+        position: fixed;
         background-color: #040A22!important;
-        height: 300%;
-    }
-
-    #notifications_side_bar .content_box {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: auto;
+        width: 100%;
         height: 100%;
     }
 
+    #notifications_side_bar .content_box::-webkit-scrollbar {
+        display: none;
+    }
+
+    #notifications_side_bar .content_box {
+        width: auto;
+        overflow-y: auto;
+    }
+
     #notifications_side_bar .content_box #close_icon_2 {
-        margin-top: 10px;
-        margin-right: -5px;
+        margin-top: 5px;
+        margin-right: -8px;
+        width: 27px;
     }
 
     #notifications_side_bar .content_box .center_title { margin-top: 60px; }
