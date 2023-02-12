@@ -153,12 +153,12 @@
     }
     
     #responsive_box .content_box ul .active_responsive a svg { 
-        stroke-width: 2.2px; 
+        stroke-width: 2.7px; 
         margin-top: -2px;
     }
     
     #responsive_box .content_box ul .active_responsive a p { 
-        font-weight: 500!important;
+        font-weight: 505!important;
         font-size: 19px;
         margin-left: 33px;
         margin-top: 1px;
