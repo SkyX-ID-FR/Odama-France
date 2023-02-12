@@ -108,6 +108,11 @@ export default function Notifications() {
                             <div className='img_box'><img src="https://zupimages.net/up/23/06/nqy7.png" alt='box_icon'/></div>
                             <h1>Motivé(e) pour devenir staff ? 🏆</h1>
                             <p>Tu es intérressé(e) de rejoindre une équipe motivée, mature et compétente capable de relever tous les défis ? J'ai une bonne nouvelle pour toi : dès aujourd'hui, Odama recrute quiconque voudrais rejoindre l'aventure. Pour cela, dépose ta candidature sur le serveur Discord ou envoie juste un petit message au compte Instagram...</p>
+
+                            <div className='action_bar'>
+                                <div className='item_selector like_button'><svg className='svg_like' viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg><p className="like_count"></p></div>
+                                <div className='item_selector dislike_button'><svg className='svg_dislike' viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"></path></svg><p className='dislike_count'></p></div>
+                            </div>
                         </div>
                     </div>
                 </div>
