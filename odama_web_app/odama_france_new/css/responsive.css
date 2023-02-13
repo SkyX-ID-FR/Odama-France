@@ -406,9 +406,13 @@
         color: rgb(183, 183, 183);
     }
 
+    .notifications_list_item {
+        margin-bottom: 60px;
+    }
+
     .notifications_list_item .notifications_box {
         width: 82%;
-        padding-bottom: 25px;
+        padding-bottom: 20px;
     }
 
     .notifications_list_item .notifications_box .img_box { 

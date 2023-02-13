@@ -44,7 +44,7 @@ body {
 #leftnav_component {
   float: left;
   height: 100vh;
-  width: 15%;
+  width: 18%;
   background-color: #040A22;
   position: fixed;
   box-shadow: 10px 0px 20px #020e29;
@@ -132,7 +132,7 @@ body {
 }
 
 #leftnav_component .main_menu ul li:hover { transform: scale(1.04); }
-#leftnav_component .main_menu ul li:active { transform: scale(0.90); }
+#leftnav_component .main_menu ul li:active { transform: scale(0.97); }
 
 #leftnav_component .main_menu ul li svg {
   stroke: white;
@@ -180,9 +180,10 @@ body {
 }
 
 #notifications_side_bar .content_box .center_description {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 15px;
   width: 90%;
+  color: rgb(185, 185, 185);
 }
 
 #notifications_side_bar .content_box .selector {
@@ -289,19 +290,19 @@ body {
   font-weight: 400;
 }
 
-#notifications_side_bar .content_box .action_bar .item_selector {
+#notifications_side_bar .content_box .action_bar .love_button {
   background-color: rgba(99, 99, 99, 0.176);
   margin-right: 15px;
   float: left;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 17px;
   padding-top: 7px;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
   border-radius: 10px;
   cursor: pointer;
 }
 
-#notifications_side_bar .content_box .action_bar .item_selector svg {
+#notifications_side_bar .content_box .action_bar .love_button svg {
   width: 25px;
   height: 25px;
   float: left;
@@ -309,14 +310,15 @@ body {
   stroke: rgb(53, 53, 53);
 }
 
-#notifications_side_bar .content_box .action_bar .item_selector .active_dyn_button {
-  fill: white;
-  stroke: #040A22;
+#notifications_side_bar .content_box .action_bar .active_dyn_button svg {
+  fill: red!important;
+  stroke: transparent!important;
 }
 
-#notifications_side_bar .content_box .action_bar .item_selector p {
+#notifications_side_bar .content_box .action_bar .love_button p {
   margin-left: 35px;
-  margin-top: 7px;
+  margin-top: 5.5px;
+  width: auto;
 }
 /* 📨 End of SideBar Notifications ! 📨 */
 
