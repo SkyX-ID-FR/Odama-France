@@ -13,7 +13,6 @@ import $ from 'jquery';
 export default function ResponsiveNav(props) {
     useEffect(() => {    
         $("#" + props.page_id_responsive).addClass("active_responsive");
-        $("#responsive_box").hide();
         $("#bell_icon").unbind().click(function() { $("#notifications_side_bar").fadeIn(400); });
         $("#close_icon").unbind().click(function() { $("#responsive_box").fadeOut(300); });
         $("#menu_icon").unbind().click(function() { $("#responsive_box").fadeIn(300); });
