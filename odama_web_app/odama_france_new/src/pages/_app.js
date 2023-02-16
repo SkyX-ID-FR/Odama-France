@@ -8,6 +8,8 @@
 
 import '../../css/main.css';
 import '../../css/responsive.css';
+import '../../css/movies_style.css';
+import '../../css/movies_responsive.css';
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />

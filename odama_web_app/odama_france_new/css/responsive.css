@@ -161,7 +161,7 @@
         font-weight: 505!important;
         font-size: 19px;
         margin-left: 33px;
-        margin-top: 1px;
+        margin-top: -1px;
     }
     /* 📚 End of Responsive Menu Onclick -> Box 📚 */
 
@@ -223,9 +223,10 @@
     }
 
     #notifications_side_bar .content_box #close_icon_2 {
-        margin-top: 5px;
-        margin-right: -8px;
+        margin-top: 10px;
+        margin-left: 81.5%;
         width: 27px;
+        position: fixed;
     }
 
     #notifications_side_bar .content_box .center_title { margin-top: 60px; }

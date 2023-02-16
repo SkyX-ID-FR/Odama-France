@@ -7,26 +7,16 @@
 */
 
 import $ from 'jquery';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Notifications() {
+    const [isHighlighted, setIsHighlighted] = useState(false);
     function later_msg() {alert("Désolé, mais cette fonctionnalité n'est tout simplement pas encore disponible ou définie pour le moment... 😥")};
 
     useEffect(() => {
-        var love_status = localStorage.getItem('love_status');
-        if (love_status == undefined) { $(".love_button").removeClass("active_dyn_button"); } else if (love_status == "yes") { $(".love_button").addClass("active_dyn_button"); } else if (love_status == "no") { $(".love_button").removeClass("active_dyn_button"); }
-
-        $(".love_button").unbind().click(function() {
-            if (love_status == undefined) {
-                localStorage.setItem('love_status', 'yes');
-            } else if (love_status == "yes") {
-                localStorage.setItem('love_status', 'no');
-            } else if (love_status == "no") {
-                localStorage.setItem('love_status', 'yes');
-            } 
-
-            window.location.reload();
-        });
+        const storedValue = localStorage.getItem('love_status');
+        setIsHighlighted(storedValue === 'true');
+        if (storedValue == undefined) { $(".love_button").removeClass("active_dyn_button"); } else if (storedValue == "true") { $(".love_button").addClass("active_dyn_button"); } else if (storedValue == "false") { $(".love_button").removeClass("active_dyn_button"); }
 
         $("#events_box").hide();
         $("#close_icon_2").unbind().click(function() { $("#notifications_side_bar").fadeOut(400); });
@@ -44,6 +34,14 @@ export default function Notifications() {
             }   
         });
     }, [])
+
+    function HandleLoveFunction() {
+        const newIsHighlighted = !isHighlighted;
+        setIsHighlighted(newIsHighlighted);
+        const loveIcons = document.querySelectorAll('.love_button');
+        for (let i = 0; i < loveIcons.length; i++) { loveIcons[i].classList.toggle('active_dyn_button'); }
+        localStorage.setItem('love_status', newIsHighlighted);
+    }
     
     return (
         <section id="notifications_side_bar">
@@ -65,7 +63,7 @@ export default function Notifications() {
                             <div className='img_box'><img src="https://zupimages.net/up/23/06/q81u.png" alt='box_icon'/></div>
                             <h1>Bienvenue dans la nouvelle version ! 🎉</h1>
                             <p>Découvres dès maintenant la nouvelle version 1.1.2 d'Odama : avec ces nouvelles fonctionnalités et ces nouveaux ajouts, ça m'étonnerait qu'elle ne te plaise pas. En conclusion, une version qui annonce du très très lourd...</p>
-                            <div className='action_bar'><div className='love_button'><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg><p className="counter">Tu trouves cette notification utile ?</p></div></div>
+                            <div className='action_bar'><div onClick={HandleLoveFunction} className='love_button'><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg><p>Tu trouves cette notification utile ?</p></div></div>
                         </div>
                     </div>
 
@@ -76,7 +74,7 @@ export default function Notifications() {
                             <div className='img_box'><img src="https://zupimages.net/up/23/06/nqy7.png" alt='box_icon'/></div>
                             <h1>Motivé(e) pour devenir staff ? 🏆</h1>
                             <p>Tu es intérressé(e) de rejoindre une équipe motivée, mature et compétente capable de relever tous les défis ? J'ai une bonne nouvelle pour toi : dès aujourd'hui, Odama recrute quiconque voudrais rejoindre l'aventure. Pour cela, dépose ta candidature sur le serveur Discord ou envoie juste un petit message au compte Instagram...</p>
-                            <div className='action_bar'><div className='love_button'><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg><p className="counter">Tu trouves cette notification utile ?</p></div></div>
+                            <div className='action_bar'><div onClick={HandleLoveFunction} className='love_button'><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg><p>Tu trouves cette notification utile ?</p></div></div>
                         </div>
                     </div>
                 </div>

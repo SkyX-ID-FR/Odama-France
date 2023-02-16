@@ -1,0 +1,206 @@
+/* 
+   _______     __                            _______                              
+  |       |.--|  |.---.-.--------.---.-.    |    ___|.----.---.-.-----.----.-----.
+  |   -   ||  _  ||  _  |        |  _  |    |    ___||   _|  _  |     |  __|  -__|
+  |_______||_____||___._|__|__|__|___._|    |___|    |__| |___._|__|__|____|_____|
+  Version 1.1.0 - By @skyx_id_fr - "Odama, you like it ! ✨"
+*/
+
+/* 🎬 Movies section style : 🎬 */
+#movies_section {
+    margin-left: 15%;
+    padding-left: 95px;
+    height: 100vh;
+    text-align: left;
+}
+
+/* 👀 Best movies section slider's style : 👀 */
+.slider::-webkit-scrollbar { display: none;  }
+#movies_section .slider_component {
+    width: 97%;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#movies_section .slider_component .slider {
+    max-height: 280px;
+    max-width: 100%;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    border-radius: 40px;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+  
+#movies_section .slider_component .slider__slide {
+    height: 100vh;
+    min-width: 100%;
+    font-size: 4rem;
+    display: flex;
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+#movies_section .slider_component .slider__slide a {
+    margin: 0px;
+    z-index: 10;
+}
+
+#movies_section .slider_component .slider__slide .bg_img {
+    width: 100%;
+    object-fit: cover;
+    z-index: 5;
+    filter: blur(6px);
+}
+
+#movies_section .slider_component .slider__slide .movie_title {
+    z-index: 10;
+    font-size: 70px;
+    text-shadow: 5px 5px 40px rgb(0, 0, 0);
+    font-weight: 700;
+    margin-top: 40px;
+    margin-left: -91%;
+    width: 100%;
+    height: 80px;
+    text-align: left;
+}
+
+#movies_section .slider_component .slider__slide .movie_title img {
+    width: 80px;
+    margin-left: 8px;
+    margin-bottom: -1px;
+}
+
+#movies_section .slider_component .slider__slide .movie_infos {
+    z-index: 10;
+    font-size: 15px;
+    margin-top: 120px;
+    margin-left: -100%;
+    width: 60%;
+    text-align: left;
+}
+
+/* #movies_section .slider_component .slider__slide #movies_infos_1 { margin-left: -35.5%; }
+#movies_section .slider_component .slider__slide #movies_infos_2 { margin-left: -28%; }
+#movies_section .slider_component .slider__slide #movies_infos_3 { margin-left: -31%; }
+#movies_section .slider_component .slider__slide #movies_infos_4 { margin-left: -21.3%; } */
+
+#movies_section .slider_component .slider__slide .new_watch_button {
+    z-index: 20;
+    height: 50px;
+    color: white;
+    background-color: #040a22;
+    padding-top: 18px;
+    padding-bottom: 40px;
+    border-radius: 40px;
+    padding-left: 30px;
+    padding-right: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-color: transparent;
+    transition: all 0.3s;
+    margin-top: 157px;
+    margin-left: -60.5%;
+}
+
+/* #movies_section .slider_component .slider__slide .first_watch_button { margin-left: -16%; }
+#movies_section .slider_component .slider__slide .second_watch_button { margin-left: -17.5%; }
+#movies_section .slider_component .slider__slide .third_watch_button { margin-left: -17%; }
+#movies_section .slider_component .slider__slide .four_watch_button { margin-left: -17.3%; } */
+
+#movies_section .slider_component .slider__slide .new_watch_button:hover {
+    transform: scale(1.05);
+    box-shadow: -5px 0px 70px black;
+}
+
+#movies_section .slider_component .slider__slide .new_watch_button:active {
+    transform: scale(0.95);
+}
+
+#movies_section .slider_component .slider__slide .new_watch_button img {
+    width: 40px;
+    float: left;
+    margin-top: -11px;
+    margin-right: 7px;
+}
+
+#movies_section .slider_component .slider__slide span {
+    z-index: 10;
+    font-size: 15px;
+    margin-top: 228px;
+    backdrop-filter: blur(10px);
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.23);
+    margin-left: 8%;
+    margin-right: auto;
+}
+
+#movies_section .slider_component .slider__slide span svg {
+    width: 20px;
+    margin-bottom: -5px;
+    stroke: white;
+    margin-right: 10px;
+}
+
+#movies_section .slider_component .slider__slide .viewer {
+    z-index: 10;
+    margin-top: -15px;
+    height: 50px;
+    margin-right: 30px;
+}
+
+#movies_section .slider_component .slider__slide .viewer img {
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -15px;
+    box-shadow: -5px 0px 20px rgba(0, 0, 0, 0.475);
+}
+
+#movies_section .slider_component .slider__slide .viewer p {
+    font-size: 16px;
+    float: right;
+    margin-top: 37px;
+    margin-left: 10px;
+    text-shadow: 0px 0px 20px black;
+}
+  
+.right-arrow,
+.left-arrow {
+    position: absolute;
+    height: 280px;
+    width: 40px;
+    cursor: pointer;
+    stroke: white; 
+    margin-left: 422px;
+    margin-right: 5px;
+    z-index: 10;
+}
+  
+.right-arrow { 
+    padding-right: 20px;
+    padding-left: 30px;
+    right: 18px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    /* background-image: linear-gradient(to right, #142f6000, #142e60); */
+}
+
+.left-arrow { 
+    padding-left: 20px;
+    padding-right: 40px;
+    left: 18px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px; 
+    /* background-image: linear-gradient(to left, #142f6000, #142e60); */
+}
+/* 👀 End of best movies section slider's style ! 👀 */

@@ -22,7 +22,6 @@ export default function ResponsiveNav(props) {
         <>
             <section id="responsive_nav">
                 <Link style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/"><img src="https://zupimages.net/up/22/28/exo5.png" className="odama_app_logo" alt="odama_app_logo"/></Link>
-
                 <svg id="menu_icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
                 <svg id="bell_icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
             </section>
@@ -33,8 +32,8 @@ export default function ResponsiveNav(props) {
                 <div className="content_box">
                     <span>Principal</span><br/>
                     <ul>
-                        <li id="home_link_responsive" className="item_link"><a href="#"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" className="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><p>Accueil</p></a></li>
-                        <li id="movie_link_responsive" className="item_link"><a href="#"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" className="feather feather-film"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg><p>Films</p></a></li>
+                        <li id="home_link_responsive" className="item_link"><a href="/"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" className="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><p>Accueil</p></a></li>
+                        <li id="movies_link_responsive" className="item_link"><a href="/movies/"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" className="feather feather-film"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg><p>Films</p></a></li>
                         {/* <li id="movie_link_responsive" className="item_link"><a href="#"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" className="feather feather-book"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg><p>Séries</p></a></li> */}
                         {/* <li id="movie_link_responsive" className="item_link"><a href="#"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" className="feather feather-activity"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg><p>Sport</p></a></li> */}
                     </ul>                

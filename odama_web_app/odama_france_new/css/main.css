@@ -47,7 +47,7 @@ body {
   width: 17.5%;
   background-color: #040A22;
   position: fixed;
-  box-shadow: 10px 0px 20px #020e29;
+  box-shadow: 10px 0px 30px #020e29;
   padding-top: 20px;
   padding-left: 30px;
   z-index: 50;
@@ -119,16 +119,16 @@ body {
 }
 
 #leftnav_component .main_menu .active { 
-  font-weight: 500!important; 
+  font-weight: 510!important; 
   padding-top: 12px;
   padding-bottom: 15px;
   background-color: #96969659;
 }
 
 #leftnav_component .main_menu .active svg { 
-  stroke-width: 2.3px!important; 
-  margin-bottom: -3.2px;
-  margin-right: 5px;
+  stroke-width: 2.7px!important; 
+  margin-bottom: -4px;
+  margin-right: 10px;
 }
 
 #leftnav_component .main_menu ul li:hover { transform: scale(1.04); }
