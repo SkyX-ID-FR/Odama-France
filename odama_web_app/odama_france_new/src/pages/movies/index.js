@@ -15,10 +15,10 @@ import path from 'path';
 import { useEffect } from 'react';
 
 export async function getStaticProps() {
-    const filePath = path.join(process.cwd(), './src/pages/movies/movies.json');
-    const jsonData = await fsPromises.readFile(filePath);
-    const objectData = JSON.parse(jsonData);
-    return { props: objectData }
+  const filePath = path.join(process.cwd(), './src/pages/movies/movies.json');
+  const jsonData = await fsPromises.readFile(filePath);
+  const objectData = JSON.parse(jsonData);
+  return { props: objectData }
 }
   
 export default function HomePage(props) {
@@ -50,26 +50,14 @@ export default function HomePage(props) {
         });
       }
   
-      /* Update 8sec (8000 ms) scrollRight to Left : */
-      let timerId = setInterval(scrollRight, 1000000);
+      let timerId = setInterval(scrollRight, 9000);
       function resetTimer() {
         clearInterval(timerId);
-        timerId = setInterval(scrollRight, 1000000);
+        timerId = setInterval(scrollRight, 9000);
       }
   
-      slider.addEventListener("click", function(ev) {
-        if (ev.target === leftArrow) {
-          scrollLeft();
-          resetTimer();
-        }
-      });
-  
-      slider.addEventListener("click", function(ev) {
-        if (ev.target === rightArrow) {
-          scrollRight();
-          resetTimer();
-        }
-      });
+      slider.addEventListener("click", function(ev) { if (ev.target === leftArrow) { scrollLeft(); resetTimer(); } });
+      slider.addEventListener("click", function(ev) { if (ev.target === rightArrow) { scrollRight(); resetTimer(); } });
     }, []);
 
     return (

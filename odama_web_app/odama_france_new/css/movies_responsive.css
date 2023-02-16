@@ -183,6 +183,7 @@
     #movies_section .slider_component .slider__slide span { opacity: 0; }
     #movies_section .slider_component .slider {
         max-height: 280px;
+        border-radius: 35px;
     }
 
     #movies_section .slider_component {
