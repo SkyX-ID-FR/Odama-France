@@ -276,7 +276,7 @@
     }
 
     #movies_section .slider_component .slider__slide .viewer p {
-        margin-left: 5px;
+        margin-left: -5px;
     }
 
     #movies_section .slider_component .slider__slide .movie_infos {
@@ -291,7 +291,7 @@
 
 @media only screen and (max-width: 380px) {
     #movies_section .slider_component .slider__slide .viewer { width: 200%; }
-    #movies_section .slider_component .slider__slide .viewer p { margin-left: -30px; }
+    #movies_section .slider_component .slider__slide .viewer p { margin-left: 0px; }
 
     #movies_section .slider_component .slider__slide .movie_title {
         margin-left: -98.5%;
