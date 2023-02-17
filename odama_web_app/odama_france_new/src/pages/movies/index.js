@@ -13,6 +13,7 @@ import Notifications from 'components/Notifications';
 import fsPromises from 'fs/promises';
 import path from 'path';
 import { useEffect } from 'react';
+import $ from 'jquery';
 
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), './src/pages/movies/movies.json');
@@ -25,11 +26,28 @@ export default function HomePage(props) {
     const all_movies_data = props.all_movies; 
 
     useEffect(function() {  
+      let slider_counter = localStorage.getItem('compteur') || 0;
+      localStorage.setItem('slider_counter', "0");
+
       const leftArrow = document.querySelector(".left-arrow"),
       rightArrow = document.querySelector(".right-arrow"),
       slider = document.querySelector(".slider");
   
       function scrollRight() {
+        $(".left-arrow").removeClass("arrow_disabled");
+        if (slider_counter == 2) {
+          $(".right-arrow").addClass("arrow_disabled");
+          $(".right-arrow").prop("disabled", true);
+        } else if (slider_counter > 2) {
+          localStorage.setItem('slider_counter', "2");
+        } else if (slider_counter < 0) {
+          localStorage.setItem('slider_counter', "0");
+        } else {
+          $(".right-arrow").removeClass("arrow_disabled");
+          slider_counter++;
+          localStorage.setItem('slider_counter', slider_counter);
+        }
+
         if (slider.scrollWidth - slider.clientWidth === slider.scrollLeft) {
           slider.scrollTo({
             left: 0,
@@ -44,6 +62,17 @@ export default function HomePage(props) {
       }
   
       function scrollLeft() {
+        $(".right-arrow").removeClass("arrow_disabled");
+        if (slider_counter == 0) {
+          $(".left-arrow").addClass("arrow_disabled");
+        } else if (slider_counter < 0) {
+          localStorage.setItem('slider_counter', "0");
+        } else {
+          $(".left-arrow").removeClass("arrow_disabled");
+          slider_counter--;
+          localStorage.setItem('slider_counter', slider_counter);
+        }
+
         slider.scrollBy({
           left: -window.innerWidth,
           behavior: "smooth"
@@ -58,6 +87,12 @@ export default function HomePage(props) {
   
       slider.addEventListener("click", function(ev) { if (ev.target === leftArrow) { scrollLeft(); resetTimer(); } });
       slider.addEventListener("click", function(ev) { if (ev.target === rightArrow) { scrollRight(); resetTimer(); } });
+
+      $(".selector_item").bind("click", function(event) {
+        const old_item = $(".active_movies_item").get(0).id;
+        document.getElementById(old_item).classList.remove("active_movies_item");
+        document.getElementById(event.currentTarget.id).classList.add("active_movies_item");
+      });
     }, []);
 
     return (
@@ -137,11 +172,20 @@ export default function HomePage(props) {
                         </div>
                     </div>
 
-                    <svg className="left-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    <svg className="left-arrow arrow_disabled" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
                     <svg className="right-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                     </div>
                 </div>
                 {/* 🎫 End of Box-office movies slider 🎫 */}
+
+                {/* 📖 Movies list selector : 📖 */}
+                <div className='movies_list_selector'>
+                  <div id="selector_1" className='selector_item active_movies_item'><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg> Tout les films disponibles</div>
+                  <div id="selector_2" className='selector_item'><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> La sélection Odama©</div>
+                  <div id="selector_3" className='selector_item'><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg> Les + regardés en ce moment</div>
+                  <div id="selector_4" className='selector_item'><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg> Voir les films triés par genres</div>
+                </div>
+                {/* 📖 End of Movies list selector 📖 */}
             </section>
         </>
     )
