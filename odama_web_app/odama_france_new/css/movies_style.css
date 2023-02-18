@@ -186,10 +186,7 @@
     z-index: 10;
 }
 
-.arrow_disabled {
-    display: none;
-}
-  
+.arrow_disabled { display: none; }
 .right-arrow { 
     padding-right: 20px;
     padding-left: 30px;
@@ -259,5 +256,83 @@
     fill: transparent;
     margin-bottom: -5px;
     margin-right: 10px;
+}
+
+#movies_section #movies_list {
+    margin-top: 95px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 95%;
+    margin-left: 25px;
+    padding-left: 15px;
+    margin-right: 10px;
+}
+
+#movies_section #movies_list::-webkit-scrollbar {
+    background-color: #040a22;
+    height: 5px;
+}
+
+#movies_section #movies_list::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+#movies_section #movies_list .movie_card {
+    float: none;
+    display: inline-block;
+    margin-right: 17px;
+    transition: all 0.5s;
+}
+
+#movies_section #movies_list .movie_card:hover {
+    transform: scale(1.03);
+}
+
+#movies_section #movies_list .movie_card .poster {
+    width: 205px;
+    height: 300px;
+    border-radius: 15px;
+    z-index: 10;
+}
+
+#movies_section #movies_list .movie_card .star {
+    background-color: #040a22;
+    width: 90px;
+    border-radius: 20px;
+    margin-left: 110px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: -40px;
+    z-index: 50;
+    position: relative;
+}
+
+#movies_section #movies_list .movie_card .star img {
+    width: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+
+#movies_section #movies_list .movie_card .star p {
+    float: right;
+    margin-top: -26.5px;
+    margin-right: 24px;
+}
+
+#movies_section #movies_list .movie_card .tags {
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    z-index: 50;
+    padding-left: 15px;
+    margin-top: -45px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 192px;
+    padding-bottom: 17px;
+    padding-top: 10px;
 }
 /* 📖 End of Movies list selector 📖 */

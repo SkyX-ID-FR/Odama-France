@@ -88,11 +88,26 @@ export default function HomePage(props) {
       slider.addEventListener("click", function(ev) { if (ev.target === leftArrow) { scrollLeft(); resetTimer(); } });
       slider.addEventListener("click", function(ev) { if (ev.target === rightArrow) { scrollRight(); resetTimer(); } });
 
+      /* 🎫 Movie selector JS part : 🎫 */
       $(".selector_item").bind("click", function(event) {
         const old_item = $(".active_movies_item").get(0).id;
         document.getElementById(old_item).classList.remove("active_movies_item");
         document.getElementById(event.currentTarget.id).classList.add("active_movies_item");
       });
+
+      let box_office_selection = '';
+
+      for (let i = 1; i < 10; i++) {
+        box_office_selection += `
+        <div class="movie_card">
+          <div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[i].rate}</p></div>
+          <img class="poster" src="${all_movies_data[i].poster}" alt="movie_poster"/>
+        </div>
+      `;
+      }
+
+      document.getElementById("movies_list").innerHTML = box_office_selection;
+      /* 🎫 End of Movie selector JS part ! 🎫 */
     }, []);
 
     return (
@@ -180,11 +195,13 @@ export default function HomePage(props) {
 
                 {/* 📖 Movies list selector : 📖 */}
                 <div className='movies_list_selector'>
-                  <div id="selector_1" className='selector_item active_movies_item'><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg> Tout les films disponibles</div>
+                  <div id="selector_1" className='selector_item active_movies_item'><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg> Sélection Box-Office</div>
                   <div id="selector_2" className='selector_item'><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> La sélection Odama©</div>
                   <div id="selector_3" className='selector_item'><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg> Les + regardés en ce moment</div>
                   <div id="selector_4" className='selector_item'><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg> Voir les films triés par genres</div>
                 </div>
+
+                <div id='movies_list'></div>
                 {/* 📖 End of Movies list selector 📖 */}
             </section>
         </>

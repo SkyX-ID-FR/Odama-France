@@ -55,6 +55,12 @@
     #movies_section .movies_list_selector .selector_item {
         margin-right: 5px;
     }
+
+    #movies_section #movies_list {
+        margin-left: -26.5%;
+        width: 120%;
+        margin-top: 90px;
+    }
 }
 
 @media only screen and (max-width: 1150px) {
@@ -87,15 +93,16 @@
 
 @media only screen and (max-width: 1085px) {
     #movies_section .movies_list_selector {
-        width: 120%;
+        width: 113%;
         overflow-x: auto;
         overflow-y: hidden;
         white-space: nowrap;
         padding-top: 10px;
         padding-bottom: 10px;
-        padding-left: 5px;
+        padding-left: 45px;
         margin-top: 20px;
-        margin-left: -205px;
+        margin-left: -215px;
+        border-radius: 20px;
     }
 
     #movies_section .movies_list_selector .selector_item {
@@ -103,9 +110,8 @@
         float: none;
     }
 
-    #movies_section .movies_list_selector::-webkit-scrollbar {
-       display: none;
-    }
+    #movies_section .movies_list_selector::-webkit-scrollbar { display: none; }
+    #movies_section #movies_list { margin-top: 15px; }
 }
 
 @media only screen and (max-width: 900px) {
@@ -123,6 +129,10 @@
 
     .left-arrow { margin-left: 0px}
     .right-arrow { margin-right: 0px; padding-right: 20px;}
+
+    #movies_section #movies_list {
+        margin-left: -30%;
+    }
 }
 
 @media only screen and (max-width: 840px) {
@@ -142,6 +152,13 @@
     #movies_section .slider_component .slider__slide span {
         margin-left: -300px;
     }
+
+    #movies_section .movies_list_selector {
+        margin-left: -195px;
+        width: 127%;
+        padding-right: 5px;
+        padding-left: 5px;
+    }    
 }
 
 @media only screen and (max-width: 800px) {
@@ -216,23 +233,62 @@
         padding-left: 20px;
         width: 125%;
     }
+
+    #movies_section #movies_list {
+        margin-left: -35%;
+    }
 }
 
 @media only screen and (max-width: 550px) {
     #movies_section .movies_list_selector {
         margin-left: -170px;
-    }
+    }    
 }
 
 @media only screen and (max-width: 500px) {
+    #movies_section #movies_list {
+        margin-left: -55%;
+        width: 148%;
+        padding-left: 10px;
+        padding-right: 0px;
+        margin-right: 0px;
+        margin-top: -120px;
+        padding-top: 80px;
+    }
+
+    #movies_section #movies_list .movie_card:hover {
+        box-shadow: -5px 0px 70px black;
+    }
+
+    #movies_section #movies_list .movie_card .poster {
+        width: 180px;
+        height: 260px;
+    }
+
+    #movies_section #movies_list .movie_card .star {
+        margin-left: 85px;
+    }
+
+    #movies_section #movies_list .movie_card .star p {
+        margin-top: -29px;
+    }
+
+    #movies_section #movies_list .movie_card .tags {
+        width: 165px;
+        margin-top: -45px;
+        font-size: 13px;
+    }
+
     #movies_section .movies_list_selector {
-        padding-top: 55px;
+        padding-top: 45px;
         margin-top: 0px;
         width: 145%;
-        padding-bottom: 15px;
+        padding-bottom: 12px;
         margin-left: -140px;
-        padding-left: 15px;
+        padding-left: 5px;
         padding-right: 0px;
+        border-radius: 10px;
+        height: 100px;
     }
 
     .arrow_disabled { display: block; stroke: rgb(98, 98, 98); }
@@ -247,7 +303,7 @@
     #movies_section .slider_component {
         width: auto;
         padding-top: 120px;
-        margin-left: -137px;
+        margin-left: -140px;
         margin-right: 15px;
     }
 
@@ -271,8 +327,8 @@
         background-color: #040a22;
         margin-top: 250px;
         height: 50px;
-        margin-left: 130px;
-        margin-right: 130px;
+        margin-left: 37%;
+        margin-right: 33%;
     }
 
     #movies_section .slider_component .slider__slide .movie_title {
@@ -309,7 +365,27 @@
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 440px) {
+    .right-arrow,
+    .left-arrow {
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+}
+
+@media only screen and (max-width: 400px) {    
+    #movies_section .movies_list_selector { width: 150%; }
+    #movies_section #movies_list {
+        margin: 0px;
+        padding: 0px;
+        margin-top: -155px;
+        margin-left: -140px;
+        padding-left: 15px;
+        width: 146%;
+        padding-bottom: 20px;
+        padding-top: 120px;
+    }
+    
     .right-arrow,
     .left-arrow {
         margin-left: 120px;
