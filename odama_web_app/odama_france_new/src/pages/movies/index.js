@@ -134,6 +134,8 @@ export default function HomePage(props) {
           document.getElementById("movies_list").innerHTML = odama_section;
         } else if (old_item == "selector_3") {
           document.getElementById("movies_list").innerHTML = most_viewed_selection;
+        } else {
+          document.getElementById("movies_list").innerHTML = "test";
         }
       });
       /* 🎫 End of Movie selector JS part ! 🎫 */
