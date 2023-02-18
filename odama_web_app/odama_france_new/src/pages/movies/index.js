@@ -122,40 +122,16 @@ export default function HomePage(props) {
       }
 
       document.getElementById("movies_list").innerHTML = box_office_selection;
-      /* $(".selector_item").unbind().click(function(event) {
-        const old_item = $(".active_movies_item").get(0).id;
-        document.getElementById(old_item).classList.remove("active_movies_item");
-        document.getElementById(event.currentTarget.id).classList.add("active_movies_item");
-        console.log(old_item);
-
-        document.getElementById("movies_list").innerHTML = "";
-        if (old_item == "selector_1") {
-          document.getElementById("movies_list").innerHTML = box_office_selection;
-        } else if (old_item == "selector_2") {
-          document.getElementById("movies_list").innerHTML = odama_section;
-        } else if (old_item == "selector_3") {
-          document.getElementById("movies_list").innerHTML = most_viewed_selection;
-        } else {
-          document.getElementById("movies_list").innerHTML = "test";
-        }
-      }); */
-
       $(".selector_item").click(function(event) {
         const old_item = $(".active_movies_item").attr("id");
         $("#" + old_item).removeClass("active_movies_item");
         $("#" + event.currentTarget.id).addClass("active_movies_item");
-      
-        $("#movies_list").html("");
-        if (old_item === "selector_1") {
-          $("#movies_list").html(box_office_selection);
-        } else if (old_item === "selector_2") {
-          $("#movies_list").html(odama_section);
-        } else if (old_item === "selector_3") {
-          $("#movies_list").html(most_viewed_selection);
-        } else {
-          $("#movies_list").html("test");
-        }
       });
+
+      $("#selector_1").click(function() { document.getElementById("movies_list").innerHTML = box_office_selection });
+      $("#selector_2").click(function() {document.getElementById("movies_list").innerHTML = odama_section });
+      $("#selector_3").click(function() {document.getElementById("movies_list").innerHTML = most_viewed_selection });
+      $("#selector_4").click(function() {document.getElementById("movies_list").innerHTML = "" });
       /* 🎫 End of Movie selector JS part ! 🎫 */
     }, []);
 
