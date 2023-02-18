@@ -122,7 +122,7 @@ export default function HomePage(props) {
       }
 
       document.getElementById("movies_list").innerHTML = box_office_selection;
-      $(".selector_item").bind("click", function(event) {
+      $(".selector_item").click(function(event) {
         const old_item = $(".active_movies_item").get(0).id;
         document.getElementById(old_item).classList.remove("active_movies_item");
         document.getElementById(event.currentTarget.id).classList.add("active_movies_item");
