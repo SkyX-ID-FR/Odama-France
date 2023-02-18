@@ -89,15 +89,12 @@ export default function HomePage(props) {
       slider.addEventListener("click", function(ev) { if (ev.target === rightArrow) { scrollRight(); resetTimer(); } });
 
       /* 🎫 Movie selector JS part : 🎫 */
-      $(".selector_item").bind("click", function(event) {
-        const old_item = $(".active_movies_item").get(0).id;
-        document.getElementById(old_item).classList.remove("active_movies_item");
-        document.getElementById(event.currentTarget.id).classList.add("active_movies_item");
-      });
-
+      /* 📦 Initialize all variable sections : 📦 */
       let box_office_selection = '';
+      let odama_section = "";
+      let most_viewed_selection = "";
 
-      for (let i = 1; i < 10; i++) {
+      for (let i = 71; i < all_movies_data.length; i++) {
         box_office_selection += `
         <div class="movie_card">
           <div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[i].rate}</p></div>
@@ -106,7 +103,39 @@ export default function HomePage(props) {
       `;
       }
 
+      for (let i = 1; i < 2; i++) {
+        odama_section += `
+        <div class="movie_card">
+          <div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[i].rate}</p></div>
+          <img class="poster" src="${all_movies_data[i].poster}" alt="movie_poster"/>
+        </div>
+      `;
+      }
+
+      for (let i = 10; i < 12; i++) {
+        most_viewed_selection += `
+        <div class="movie_card">
+          <div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[i].rate}</p></div>
+          <img class="poster" src="${all_movies_data[i].poster}" alt="movie_poster"/>
+        </div>
+      `;
+      }
+
       document.getElementById("movies_list").innerHTML = box_office_selection;
+      $(".selector_item").bind("click", function(event) {
+        const old_item = $(".active_movies_item").get(0).id;
+        document.getElementById(old_item).classList.remove("active_movies_item");
+        document.getElementById(event.currentTarget.id).classList.add("active_movies_item");
+
+        document.getElementById("movies_list").innerHTML = "";
+        if (old_item == "selector_1") {
+          document.getElementById("movies_list").innerHTML = box_office_selection;
+        } else if (old_item == "selector_2") {
+          document.getElementById("movies_list").innerHTML = odama_section;
+        } else if (old_item == "selector_3") {
+          document.getElementById("movies_list").innerHTML = most_viewed_selection;
+        }
+      });
       /* 🎫 End of Movie selector JS part ! 🎫 */
     }, []);
 
