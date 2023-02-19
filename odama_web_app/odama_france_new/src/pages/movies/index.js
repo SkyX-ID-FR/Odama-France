@@ -94,7 +94,7 @@ export default function HomePage(props) {
       let odama_section = "";
       let most_viewed_selection = "";
       let loader_component = "";
-      var global_delay = 3000000; 
+      var global_delay = 3000; 
 
       for (let i = 68; i < 77; i++) {
         box_office_selection += `
