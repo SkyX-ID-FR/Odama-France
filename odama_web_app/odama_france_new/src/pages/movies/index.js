@@ -142,9 +142,9 @@ export default function HomePage(props) {
       $("#scroll_left").unbind().click(function() { $('#movies_list').animate({scrollLeft:'+=500'}, 800); });
       $("#scroll_right").unbind().click(function() { $('#movies_list').animate({scrollLeft:'-=500'}, 800); });
 
-      $("#selector_1").click(function() { $('#movies_list').html(loader_component + box_office_selection); setTimeout(function() {$('#movies_list').html(box_office_selection)}, global_delay); });
-      $("#selector_2").click(function() { $('#movies_list').html(loader_component + odama_section); setTimeout(function() {$('#movies_list').html(odama_section)}, global_delay); });
-      $("#selector_3").click(function() { $('#movies_list').html(loader_component + most_viewed_selection); setTimeout(function() {$('#movies_list').html(most_viewed_selection)}, global_delay); });
+      $("#selector_1").click(function() { $('#movies_list').html(loader_component + box_office_selection); $('#movies_list').animate({scrollLeft:'-=1500'}); setTimeout(function() {$('#movies_list').html(box_office_selection)}, global_delay); });
+      $("#selector_2").click(function() { $('#movies_list').html(loader_component + odama_section); $('#movies_list').animate({scrollLeft:'-=1500'}); setTimeout(function() {$('#movies_list').html(odama_section)}, global_delay); });
+      $("#selector_3").click(function() { $('#movies_list').html(loader_component + most_viewed_selection); $('#movies_list').animate({scrollLeft:'-=1500'}); setTimeout(function() {$('#movies_list').html(most_viewed_selection)}, global_delay); });
       $("#selector_4").click(function() { $('#movies_list').html("Coming soon ! 😁"); });
       /* 🎫 End of Movie selector JS part ! 🎫 */
     }, []);
