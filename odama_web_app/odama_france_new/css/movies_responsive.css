@@ -15,6 +15,11 @@
     .left-arrow { margin-left: 21%;}
     .right-arrow { padding-right: 20px; }
     #movies_section .slider_component .slider__slide .viewer { margin-left: -550px; }
+    .loader_box { width: 77vw; }
+}
+
+@media only screen and (max-width: 1497px) {
+    .loader_box { width: 76vw; }
 }
 
 @media only screen and (max-width: 1406px) {
@@ -23,6 +28,7 @@
 }
 
 @media only screen and (max-width: 1330px) {
+    .loader_box { width: 95vw; }
     .left-arrow { margin-left: -5px;}
     .right-arrow { padding-right: 50px; }
     .right-arrow,
@@ -114,9 +120,12 @@
     #movies_section #movies_list { margin-top: 15px; }
 }
 
+@media only screen and (max-width: 960px) {
+    .loader_box { width: 92vw; }
+}
+
 @media only screen and (max-width: 900px) {
     .left-arrow { margin-left: 40px;}
-
     #movies_section .slider_component .slider__slide .movie_title {
         margin-top: 80px;
         margin-left: -80%;
@@ -237,6 +246,8 @@
     #movies_section #movies_list {
         margin-left: -35%;
     }
+
+    .loader_box { width: 90vw; }
 }
 
 @media only screen and (max-width: 550px) {
@@ -246,6 +257,16 @@
 }
 
 @media only screen and (max-width: 500px) {
+    .loader_box {
+        margin: 0px;
+        padding: 0px;
+        width: 95vw;
+        margin-left: -10px;
+        margin-top: -10px;
+        height: 170px;
+        padding-top: 120px;
+    }
+
     #movies_section #movies_list {
         margin-left: -55%;
         width: 148%;
@@ -262,7 +283,7 @@
 
     #movies_section #movies_list .movie_card .poster {
         width: 180px;
-        height: 260px;
+        height: 270px;
     }
 
     #movies_section #movies_list .movie_card .star {
@@ -373,7 +394,8 @@
     }
 }
 
-@media only screen and (max-width: 400px) {    
+@media only screen and (max-width: 400px) { 
+    .loader_box { margin-left: -15px; }  
     #movies_section .movies_list_selector { width: 150%; }
     #movies_section #movies_list {
         margin: 0px;
