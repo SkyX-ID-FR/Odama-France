@@ -122,7 +122,7 @@ export default function HomePage(props) {
         <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[43].rate}</p></div><img class="poster" src="${all_movies_data[43].poster}" alt="movie_poster"/></div>
         <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[45].rate}</p></div><img class="poster" src="${all_movies_data[46].poster}" alt="movie_poster"/></div>
         <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[59].rate}</p></div><img class="poster" src="${all_movies_data[59].poster}" alt="movie_poster"/></div>
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[8].rate}</p></div><img class="poster" src="${all_movies_data[8].poster}" alt="movie_poster"/></div>
+        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[49].rate}</p></div><img class="poster" src="${all_movies_data[49].poster}" alt="movie_poster"/></div>
         <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[61].rate}</p></div><img class="poster" src="${all_movies_data[61].poster}" alt="movie_poster"/></div>
         <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[50].rate}</p></div><img class="poster" src="${all_movies_data[50].poster}" alt="movie_poster"/></div>
         <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[65].rate}</p></div><img class="poster" src="${all_movies_data[65].poster}" alt="movie_poster"/></div>
@@ -138,6 +138,9 @@ export default function HomePage(props) {
         $("#" + old_item).removeClass("active_movies_item");
         $("#" + event.currentTarget.id).addClass("active_movies_item");
       });
+
+      $("#scroll_left").unbind().click(function() { $('#movies_list').animate({scrollLeft:'+=500'}, 800); });
+      $("#scroll_right").unbind().click(function() { $('#movies_list').animate({scrollLeft:'-=500'}, 800); });
 
       $("#selector_1").click(function() { $('#movies_list').html(loader_component + box_office_selection); setTimeout(function() {$('#movies_list').html(box_office_selection)}, global_delay); });
       $("#selector_2").click(function() { $('#movies_list').html(loader_component + odama_section); setTimeout(function() {$('#movies_list').html(odama_section)}, global_delay); });
@@ -238,6 +241,10 @@ export default function HomePage(props) {
                 </div>
 
                 <div id='movies_list'></div>
+                <div className='slider_button'>
+                  <button id="scroll_right"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Précédent</button>
+                  <button id="scroll_left"><svg id="svg_two" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg> Suivant</button>
+                </div>
                 {/* 📖 End of Movies list selector 📖 */}
             </section>
         </>

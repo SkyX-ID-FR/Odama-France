@@ -247,7 +247,7 @@
 }
 
 /* #movies_section .movies_list_selector .selector_item:hover { transform: scale(1.02); } */
-#movies_section .movies_list_selector .selector_item:active { transform: scale(0.95); }
+/* #movies_section .movies_list_selector .selector_item:active { transform: scale(0.95); } */
 
 #movies_section .movies_list_selector .selector_item svg {
     width: 20px;
@@ -333,6 +333,46 @@
     width: 192px;
     padding-bottom: 17px;
     padding-top: 10px;
+}
+
+#movies_section .slider_button {
+    margin-left: -20px;
+    padding-left: 50px;
+    padding-right: 25px;
+}
+
+#movies_section .slider_button button {
+    background-color: #040a22;
+    color: white;
+    font-size: 15px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 25px;
+    border-color: transparent;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#movies_section .slider_button button svg {
+    width: 22px;
+    height: 22px;
+    stroke: white;
+    float: left;
+    margin-right: 10px;
+    margin-top: -3px;
+}
+
+#movies_section .slider_button #scroll_left {
+    padding-right: 10px;
+    padding-left: 30px;
+    float: right;
+}
+
+#movies_section .slider_button button #svg_two {
+    float: right;
+    margin-right: 0px;
+    margin-left: 10px;
 }
 /* 📖 End of Movies list selector 📖 */
 

@@ -28,6 +28,8 @@
 }
 
 @media only screen and (max-width: 1330px) {
+    #movies_section .slider_button { display: none; }
+    #movies_section #movies_list::-webkit-scrollbar { display: block; }
     .loader_box { width: 95vw; }
     .left-arrow { margin-left: -5px;}
     .right-arrow { padding-right: 50px; }
@@ -260,7 +262,7 @@
     .loader_box {
         margin: 0px;
         padding: 0px;
-        width: 95vw;
+        width: 94vw;
         margin-left: -10px;
         margin-top: -10px;
         height: 170px;
@@ -269,7 +271,7 @@
 
     #movies_section #movies_list {
         margin-left: -55%;
-        width: 148%;
+        width: 144%;
         padding-left: 10px;
         padding-right: 0px;
         margin-right: 0px;
@@ -395,7 +397,12 @@
 }
 
 @media only screen and (max-width: 400px) { 
-    .loader_box { margin-left: -15px; }  
+    .loader_box { 
+        margin-left: -15px; 
+        margin-top: -15px;
+        height: 175px;
+    }  
+    
     #movies_section .movies_list_selector { width: 150%; }
     #movies_section #movies_list {
         margin: 0px;
