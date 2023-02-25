@@ -87,66 +87,6 @@ export default function HomePage(props) {
   
       slider.addEventListener("click", function(ev) { if (ev.target === leftArrow) { scrollLeft(); resetTimer(); } });
       slider.addEventListener("click", function(ev) { if (ev.target === rightArrow) { scrollRight(); resetTimer(); } });
-
-      /* 🎫 Movie selector JS part : 🎫 */
-      /* 📦 Initialize all variable sections : 📦 */
-      let box_office_selection = '';
-      let odama_section = "";
-      let most_viewed_selection = "";
-      let loader_component = "";
-      var global_delay = 3000; 
-
-      for (let i = 68; i < 77; i++) {
-        box_office_selection += `
-        <div class="movie_card">
-          <div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[i].rate}</p></div>
-          <img class="poster" src="${all_movies_data[i].poster}" alt="movie_poster"/>
-        </div>
-      `;
-      }
-      
-      odama_section = `
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[3].rate}</p></div><img class="poster" src="${all_movies_data[3].poster}" alt="movie_poster"/></div>
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[5].rate}</p></div><img class="poster" src="${all_movies_data[5].poster}" alt="movie_poster"/></div>
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[6].rate}</p></div><img class="poster" src="${all_movies_data[6].poster}" alt="movie_poster"/></div>
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[8].rate}</p></div><img class="poster" src="${all_movies_data[8].poster}" alt="movie_poster"/></div>
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[15].rate}</p></div><img class="poster" src="${all_movies_data[15].poster}" alt="movie_poster"/></div>
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[16].rate}</p></div><img class="poster" src="${all_movies_data[16].poster}" alt="movie_poster"/></div>
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[17].rate}</p></div><img class="poster" src="${all_movies_data[17].poster}" alt="movie_poster"/></div>
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[24].rate}</p></div><img class="poster" src="${all_movies_data[24].poster}" alt="movie_poster"/></div>
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[29].rate}</p></div><img class="poster" src="${all_movies_data[29].poster}" alt="movie_poster"/></div>
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[41].rate}</p></div><img class="poster" src="${all_movies_data[41].poster}" alt="movie_poster"/></div>
-      `;
-
-      most_viewed_selection = `
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[43].rate}</p></div><img class="poster" src="${all_movies_data[43].poster}" alt="movie_poster"/></div>
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[45].rate}</p></div><img class="poster" src="${all_movies_data[46].poster}" alt="movie_poster"/></div>
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[59].rate}</p></div><img class="poster" src="${all_movies_data[59].poster}" alt="movie_poster"/></div>
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[49].rate}</p></div><img class="poster" src="${all_movies_data[49].poster}" alt="movie_poster"/></div>
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[61].rate}</p></div><img class="poster" src="${all_movies_data[61].poster}" alt="movie_poster"/></div>
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[50].rate}</p></div><img class="poster" src="${all_movies_data[50].poster}" alt="movie_poster"/></div>
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[65].rate}</p></div><img class="poster" src="${all_movies_data[65].poster}" alt="movie_poster"/></div>
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[68].rate}</p></div><img class="poster" src="${all_movies_data[68].poster}" alt="movie_poster"/></div>
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[70].rate}</p></div><img class="poster" src="${all_movies_data[70].poster}" alt="movie_poster"/></div>
-        <div class="movie_card"><div class="star"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt="star_icon"/><p>${all_movies_data[55].rate}</p></div><img class="poster" src="${all_movies_data[55].poster}" alt="movie_poster"/></div>
-      `;
-
-      loader_component = `<div class="loader_box"><div class="loader"><svg class="circular" viewBox="25 25 50 50"><circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg></div></div>`;
-      $('#movies_list').html(loader_component + box_office_selection); setTimeout(function() {$('#movies_list').html(box_office_selection)}, global_delay);
-      $(".selector_item").click(function(event) {
-        const old_item = $(".active_movies_item").attr("id");
-        $("#" + old_item).removeClass("active_movies_item");
-        $("#" + event.currentTarget.id).addClass("active_movies_item");
-      });
-
-      $("#scroll_left").unbind().click(function() { $('#movies_list').animate({scrollLeft:'+=500'}, 800); });
-      $("#scroll_right").unbind().click(function() { $('#movies_list').animate({scrollLeft:'-=500'}, 800); });
-
-      $("#selector_1").click(function() { $('#movies_list').html(loader_component + box_office_selection); $('#movies_list').animate({scrollLeft:'-=1500'}); setTimeout(function() {$('#movies_list').html(box_office_selection)}, global_delay); });
-      $("#selector_2").click(function() { $('#movies_list').html(loader_component + odama_section); $('#movies_list').animate({scrollLeft:'-=1500'}); setTimeout(function() {$('#movies_list').html(odama_section)}, global_delay); });
-      $("#selector_3").click(function() { $('#movies_list').html(loader_component + most_viewed_selection); $('#movies_list').animate({scrollLeft:'-=1500'}); setTimeout(function() {$('#movies_list').html(most_viewed_selection)}, global_delay); });
-      $("#selector_4").click(function() { $('#movies_list').html("Coming soon ! 😁"); });
-      /* 🎫 End of Movie selector JS part ! 🎫 */
     }, []);
 
     return (
@@ -159,7 +99,7 @@ export default function HomePage(props) {
             </Head>
 
             <LeftNav page_id="movies_link"/>
-            <ResponsiveNav style={{"background-color": "red"}} page_id_responsive="movies_link_responsive"/>
+            <ResponsiveNav page_id_responsive="movies_link_responsive"/>
             <Notifications/>
 
             <section id="movies_section">
@@ -231,21 +171,6 @@ export default function HomePage(props) {
                     </div>
                 </div>
                 {/* 🎫 End of Box-office movies slider 🎫 */}
-
-                {/* 📖 Movies list selector : 📖 */}
-                <div className='movies_list_selector'>
-                  <div id="selector_1" className='selector_item active_movies_item'><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg> Sélection Box-Office</div>
-                  <div id="selector_2" className='selector_item'><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> La sélection Odama©</div>
-                  <div id="selector_3" className='selector_item'><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg> Les + regardés en ce moment</div>
-                  <div id="selector_4" className='selector_item'><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg> Voir les films triés par genres</div>
-                </div>
-
-                <div id='movies_list'></div>
-                <div className='slider_button'>
-                  <button id="scroll_right"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Précédent</button>
-                  <button id="scroll_left"><svg id="svg_two" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg> Suivant</button>
-                </div>
-                {/* 📖 End of Movies list selector 📖 */}
             </section>
         </>
     )
