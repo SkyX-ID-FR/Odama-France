@@ -13,6 +13,7 @@ import path from 'path';
 import { useRouter } from 'next/router';
 import $ from 'jquery';
 import { useEffect } from 'react'; 
+import Link from 'next/link';
 import Loader from '../../components/Loader.js';
 
 export async function getStaticProps() {
@@ -24,7 +25,10 @@ export async function getStaticProps() {
 
 export default function MoviesPage(props) {
   const router = useRouter();
-  const all_movies_data = props.all_movies; 
+  const file_data = props.all_movies; 
+  let show_all_movies = [];
+  let show_box_office_movie = [];
+  let show_odama_selection = [];
 
   const RedirectToMoviesDetails = event => {
     var id_element = event.currentTarget.id;
@@ -32,60 +36,201 @@ export default function MoviesPage(props) {
     router.push({pathname: '/movies/details'});
   };
 
+  /* 🎥 List all movies of DB file JSON 🎥 : */
+  for (let i = 1; i < file_data.length; i++) {
+    show_all_movies.push (
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[i].id}>
+        <img src={file_data[i].poster} className='movie_poster' alt='movie-poster'/>  
+        
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[i].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+          <span className='movies_tags'>{file_data[i].tags}</span>
+        </div>
+      </div>
+    )
+  }
+
+  /* 🎫 Show already box office of the week static ID 🎫 : */
+  show_box_office_movie.push (
+    <>
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[62].id}>
+        <img src={file_data[62].poster} className='movie_poster' alt='movie-poster'/>  
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[62].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+          <span className='movies_tags'>{file_data[62].tags}</span>
+        </div>
+      </div>
+
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[47].id}>
+        <img src={file_data[47].poster} className='movie_poster' alt='movie-poster'/>  
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[47].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+          <span className='movies_tags'>{file_data[47].tags}</span>
+        </div>
+      </div>
+
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[48].id}>
+        <img src={file_data[48].poster} className='movie_poster' alt='movie-poster'/>  
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[48].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+          <span className='movies_tags'>{file_data[48].tags}</span>
+        </div>
+      </div>
+
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[42].id}>
+        <img src={file_data[42].poster} className='movie_poster' alt='movie-poster'/>
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[42].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+          <span className='movies_tags'>{file_data[42].tags}</span>
+        </div>
+      </div>
+
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[49].id}>
+        <img src={file_data[49].poster} className='movie_poster' alt='movie-poster'/> 
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[49].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+          <span className='movies_tags'>{file_data[49].tags}</span>
+        </div>
+      </div>
+
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[44].id}>
+        <img src={file_data[44].poster} className='movie_poster' alt='movie-poster'/> 
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[44].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+          <span className='movies_tags'>{file_data[44].tags}</span>
+        </div>
+      </div>
+
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[45].id}>
+        <img src={file_data[45].poster} className='movie_poster' alt='movie-poster'/>  
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[45].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div> 
+          <span className='movies_tags'>{file_data[45].tags}</span>
+        </div>
+      </div>
+
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[63].id}>
+        <img src={file_data[63].poster} className='movie_poster' alt='movie-poster'/>  
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[63].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div> 
+          <span className='movies_tags'>{file_data[63].tags}</span>
+        </div>
+      </div>
+    </>
+  )
+
+  /* ✨ List of best movies on Odama's App : ✨  */
+  show_odama_selection.push (
+    <>
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[61].id}>
+        <img src={file_data[61].poster} className='movie_poster' alt='movie-poster'/>  
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[61].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div> 
+          <span className='movies_tags'>{file_data[61].tags}</span>
+        </div>
+      </div>
+
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[48].id}>
+        <img src={file_data[48].poster} className='movie_poster' alt='movie-poster'/>  
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[48].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div> 
+          <span className='movies_tags'>{file_data[48].tags}</span>
+        </div>
+      </div>
+
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[46].id}>
+        <img src={file_data[46].poster} className='movie_poster' alt='movie-poster'/>  
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[46].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+          <span className='movies_tags'>{file_data[46].tags}</span>
+        </div>
+      </div>
+
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[41].id}>
+        <img src={file_data[41].poster} className='movie_poster' alt='movie-poster'/>  
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[41].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+          <span className='movies_tags'>{file_data[41].tags}</span>
+        </div>
+      </div>
+
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[43].id}>
+        <img src={file_data[43].poster} className='movie_poster' alt='movie-poster'/>  
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[43].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+          <span className='movies_tags'>{file_data[43].tags}</span>
+        </div>
+      </div>
+
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[6].id}>
+        <img src={file_data[6].poster} className='movie_poster' alt='movie-poster'/>  
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[6].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+          <span className='movies_tags'>{file_data[6].tags}</span>
+        </div>
+      </div>
+
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[3].id}>
+        <img src={file_data[3].poster} className='movie_poster' alt='movie-poster'/>  
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[3].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+          <span className='movies_tags'>{file_data[3].tags}</span>
+        </div>
+      </div>
+
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[8].id}>
+        <img src={file_data[8].poster} className='movie_poster' alt='movie-poster'/>  
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[8].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+          <span className='movies_tags'>{file_data[8].tags}</span>
+        </div>
+      </div>
+
+      <div onClick={RedirectToMoviesDetails} className='movies_item' id={file_data[28].id}>
+        <img src={file_data[28].poster} className='movie_poster' alt='movie-poster'/>  
+        <div className='movies_infos_poster'>
+          <div id='rates'><p>{file_data[28].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/></div>
+          <span className='movies_tags'>{file_data[28].tags}</span>
+        </div>
+      </div>
+    </>
+  )
+
   /* ⌛ Launch Loading Function Screen : ⌛ */
   useEffect(function() {
-    "use strict";
     $("#loader_page_finish").hide();
     setTimeout(function(){
       $("#loader_screen").hide();
       $("#loader_page_finish").fadeIn(800);
-    }, 3000);
+    }, 3300);
 
-    const leftArrow = document.querySelector(".left-arrow"),
-    rightArrow = document.querySelector(".right-arrow"),
-    slider = document.querySelector(".slider");
+    $(".left").click(function(){ $('#slider').animate( { scrollLeft: '-=500' }, 800); });
+    $(".right").click(function(){ $('#slider').animate( { scrollLeft: '+=500' }, 800); });
+    $("#slide_2").hide();
+    $("#slide_3").hide();
+    document.getElementById("slide_1").style.backgroundImage = `url("${file_data[65].background}")`;
+    $(".point_1").css("background-color", "white"); $(".point_2").css("background-color", "transparent"); $(".point_3").css("background-color", "transparent");
+    $("#next_1").click(function() { $("#slide_1").hide(); $("#slide_2").fadeIn(900); $("#slide_3").hide(); document.getElementById("slide_2").style.backgroundImage = `url("${file_data[8].background}")`; $(".point_1").css("background-color", "transparent"); $(".point_2").css("background-color", "white"); $(".point_3").css("background-color", "transparent"); });
+    $("#next_2").click(function() { $("#slide_1").hide(); $("#slide_2").hide(); $("#slide_3").fadeIn(900); document.getElementById("slide_3").style.backgroundImage = `url("${file_data[41].background}")`; $(".point_1").css("background-color", "transparent"); $(".point_2").css("background-color", "transparent"); $(".point_3").css("background-color", "white"); });
+    $("#previous_2").click(function() { $("#slide_1").fadeIn(900); $("#slide_2").hide(); $("#slide_3").hide(); document.getElementById("slide_1").style.backgroundImage = `url("${file_data[65].background}")`; $(".point_1").css("background-color", "white"); $(".point_2").css("background-color", "transparent"); $(".point_3").css("background-color", "transparent"); });
+    $("#previous_3").click(function() { $("#slide_1").hide(); $("#slide_2").fadeIn(900); $("#slide_3").hide(); document.getElementById("slide_2").style.backgroundImage = `url("${file_data[8].background}")`; $(".point_1").css("background-color", "transparent"); $(".point_2").css("background-color", "white"); $(".point_3").css("background-color", "transparent"); });
 
-    function scrollRight() {
-      if (slider.scrollWidth - slider.clientWidth === slider.scrollLeft) {
-        slider.scrollTo({
-          left: 0,
-          behavior: "smooth"
-        });
-      } else {
-        slider.scrollBy({
-          left: window.innerWidth,
-          behavior: "smooth"
-        });
-      }
-    }
+    /* ✨ Add metrics data(s) to slides in slider_section #1 : ✨ */
+    document.getElementById("title_movies_1").innerHTML = file_data[65].title;
+    document.getElementById("rates_movies_1").innerHTML = `<p>${file_data[65].tags}&nbsp; · &nbsp;${file_data[65].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/>`;
+    /* document.getElementById("author_name_1").innerHTML = file_data[60].productors[0].name;
+    document.getElementById("author_img_1").src = file_data[60].productors[0].profile_pic; */
+    document.getElementById("watch_button_1").innerHTML = `<a href="../movies/details" onClick="localStorage.setItem('item_id', this.id);" id="${file_data[65].id}" class="movies_liked_item"><img src="https://zupimages.net/up/22/28/exo5.png"/> Regarder ce film avec Odama !</a>`;
+  
+    /* ✨ Add metrics data(s) to slides in slider_section #2 : ✨ */
+    document.getElementById("title_movies_2").innerHTML = file_data[8].title;
+    document.getElementById("rates_movies_2").innerHTML = `<p>${file_data[8].tags}&nbsp; · &nbsp;${file_data[8].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/>`;
+    document.getElementById("watch_button_2").innerHTML = `<a href="../movies/details" onClick="localStorage.setItem('item_id', this.id);" id="${file_data[8].id}" class="movies_liked_item"><img src="https://zupimages.net/up/22/28/exo5.png"/> Regarder ce film avec Odama !</a>`;
 
-    function scrollLeft() {
-      slider.scrollBy({
-        left: -window.innerWidth,
-        behavior: "smooth"
-      });
-    }
-
-    /* Update 8sec (8000 ms) scrollRight to Left : */
-    let timerId = setInterval(scrollRight, 1000000);
-    function resetTimer() {
-      clearInterval(timerId);
-      timerId = setInterval(scrollRight, 1000000);
-    }
-
-    slider.addEventListener("click", function(ev) {
-      if (ev.target === leftArrow) {
-        scrollLeft();
-        resetTimer();
-      }
-    });
-
-    slider.addEventListener("click", function(ev) {
-      if (ev.target === rightArrow) {
-        scrollRight();
-        resetTimer();
-      }
-    });
+    /* ✨ Add metrics data(s) to slides in slider_section #3 : ✨ */
+    document.getElementById("title_movies_3").innerHTML = file_data[41].title;
+    document.getElementById("rates_movies_3").innerHTML = `<p>${file_data[41].tags}&nbsp; · &nbsp;${file_data[41].rate}</p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/FA_star.svg/2048px-FA_star.svg.png" alt='star_icon'/>`;
+    document.getElementById("watch_button_3").innerHTML = `<a href="../movies/details" onClick="localStorage.setItem('item_id', this.id);" id="${file_data[41].id}" class="movies_liked_item"><img src="https://zupimages.net/up/22/28/exo5.png"/> Regarder ce film avec Odama !</a>`;
   }, []);
 
   return (
@@ -100,77 +245,77 @@ export default function MoviesPage(props) {
       <Loader/>
 
       <div id="loader_page_finish">
-        <Header/>
-        <section className='new_movies_section'>
+      <Header/>
+        <section className="content_page">
+          {/* 👀 Modern Slider woth box_office movies : 👀 */}
+          <section id="slider_best_movies">
+            <div id='slide_1' className='slider_screen_slide'>
+              <div className='content_box'>
+                <h1 className='movies_title' id="title_movies_1"></h1>
+                <div className='left_box'><div className='rates_box' id="rates_movies_1"></div><div className='img_ind'><img src="https://cdn-icons-png.flaticon.com/512/5977/5977585.png" alt="imdb_icon"/><img src="https://www.freepnglogos.com/uploads/dolby-digital-png-logo/the-works-active-media-dolby-digital-png-logo-10.png" alt='full_hd_quality_icon'/></div></div>
+                <div className='watch_button_box' id='watch_button_1'></div>
+                <div className='indicator_point'><li className="point_1"></li><li className="point_2"></li><li className="point_3"></li></div>
 
-          {/* 🎫 Box-office movies slider : 🎫 */}
-          <div className='slider_component'>
-            <div className="slider">
-              <div className="slider__slide">
-                <img className='bg_img' src={all_movies_data[68].background} alt='bg_movies'/>
-                <h1 className='movie_title'>{all_movies_data[68].title} <img src="https://cwsmgmt.corsair.com/_ui/responsive/common/images/logo_dlb_aud_vert_wht_1x.png"/></h1>
-                <p id="movies_infos_1" className='movie_infos'>{all_movies_data[68].tags}&ensp; · &ensp;{all_movies_data[68].duration}&ensp; · &ensp;{all_movies_data[68].year}</p>
-                <button onClick={RedirectToMoviesDetails} id="68" className='new_watch_button'><img src='https://zupimages.net/up/22/28/exo5.png' alt='app_logo'/> Voir ce film avec Odama !</button>
-                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>Vous pouvez retrouver ce film dans la sélection ciné + d'Odama !</span>
-              
-                <div className='viewer'>
-                  <img src='https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80' alt='user_anyone_pic'/>
-                  <img src='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVyc29ufGVufDB8fDB8fA%3D%3D&w=1000&q=80' alt='user_anyone_pic'/>
-                  <img src='https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGFjbmV8ZW58MHx8MHx8&w=1000&q=80' alt='user_anyone_pic'/>
-                  <p>+ de 693 personnes ont déjà vu ce film ! 🔥</p>
-                </div>
+                {/* <div className='authors_box'>
+                  <img id="author_img_1" src='' alt="author_img"/>
+                  <p id="author_name_1"></p>
+                </div> */}
+                <button className='next_button' id="next_1"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
               </div>
-              
-              <div className="slider__slide">
-                <img className='bg_img' src={all_movies_data[69].background} alt='bg_movies'/>
-                <h1 className='movie_title'>{all_movies_data[69].title} <img src="https://cwsmgmt.corsair.com/_ui/responsive/common/images/logo_dlb_aud_vert_wht_1x.png"/></h1>
-                <p id="movies_infos_2" className='movie_infos'>{all_movies_data[69].tags}&ensp; · &ensp;{all_movies_data[69].duration}&ensp; · &ensp;{all_movies_data[69].year}</p>
-                <button onClick={RedirectToMoviesDetails} id="69" className='new_watch_button'><img src='https://zupimages.net/up/22/28/exo5.png' alt='app_logo'/> Voir ce film avec Odama !</button>
-                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>Vous pouvez retrouver ce film dans la sélection ciné + d'Odama !</span>
-              
-                <div className='viewer'>
-                  <img src='https://i.pinimg.com/originals/ae/ec/c2/aeecc22a67dac7987a80ac0724658493.jpg' alt='user_anyone_pic'/>
-                  <img src='https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80' alt='user_anyone_pic'/>
-                  <img src='https://minimaltoolkit.com/images/randomdata/male/102.jpg' alt='user_anyone_pic'/>
-                  <p>+ de 211 personnes ont déjà vu ce film ! 🔥</p>
-                </div>
-              </div>
-              
-              <div className="slider__slide">
-                <img className='bg_img' src={all_movies_data[70].background} alt='bg_movies'/>
-                <h1 className='movie_title'>{all_movies_data[70].title} <img src="https://cwsmgmt.corsair.com/_ui/responsive/common/images/logo_dlb_aud_vert_wht_1x.png"/></h1>
-                <p id="movies_infos_3" className='movie_infos'>{all_movies_data[70].tags}&ensp; · &ensp;{all_movies_data[70].duration}&ensp; · &ensp;{all_movies_data[70].year}</p>
-                <button onClick={RedirectToMoviesDetails} id="70" className='new_watch_button'><img src='https://zupimages.net/up/22/28/exo5.png' alt='app_logo'/> Voir ce film avec Odama !</button>
-                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>Vous pouvez retrouver ce film dans la sélection ciné + d'Odama !</span>
-              
-                <div className='viewer'>
-                  <img src='https://minimaltoolkit.com/images/randomdata/female/75.jpg' alt='user_anyone_pic'/>
-                  <img src='https://minimaltoolkit.com/images/randomdata/female/17.jpg' alt='user_anyone_pic'/>
-                  <img src='https://minimaltoolkit.com/images/randomdata/female/78.jpg' alt='user_anyone_pic'/>
-                  <p>+ de 851 personnes ont déjà vu ce film ! 🔥</p>
-                </div>
-              </div>
+            </div>
 
-              <div className="slider__slide">
-                <img className='bg_img' src={all_movies_data[71].background} alt='bg_movies'/>
-                <h1 className='movie_title'>{all_movies_data[71].title} <img src="https://cwsmgmt.corsair.com/_ui/responsive/common/images/logo_dlb_aud_vert_wht_1x.png"/></h1>
-                <p id="movies_infos_4" className='movie_infos'>{all_movies_data[71].tags}&ensp; · &ensp;{all_movies_data[71].duration}&ensp; · &ensp;{all_movies_data[71].year}</p>
-                <button onClick={RedirectToMoviesDetails} id="71" className='new_watch_button'><img src='https://zupimages.net/up/22/28/exo5.png' alt='app_logo'/> Voir ce film avec Odama !</button>
-                <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>Vous pouvez retrouver ce film dans la sélection ciné + d'Odama !</span>
-              
-                <div className='viewer'>
-                  <img src='https://play-lh.googleusercontent.com/fk1PBadTRlGq67UFQ_3Wx0GGgz929AUNpmyKa8vGaoT1UovXKssiPpurOMQo9bhc_Eo' alt='user_anyone_pic'/>
-                  <img src='https://minimaltoolkit.com/images/randomdata/female/86.jpg' alt='user_anyone_pic'/>
-                  <img src='https://cdnb.artstation.com/p/assets/images/images/009/796/747/large/brodie-delude-rooster-pfp.jpg?1520954625' alt='user_anyone_pic'/>
-                  <p>+ de 173 personnes ont déjà vu ce film ! 🔥</p>
-                </div>
+            <div id='slide_2' className='slider_screen_slide'>
+              <div className='content_box'>
+                <h1 id="title_movies_2"></h1>
+                <div className='left_box'><div className='rates_box' id="rates_movies_2"></div><div className='img_ind'><img src="https://cdn-icons-png.flaticon.com/512/5977/5977585.png" alt="imdb_icon"/><img src="https://www.freepnglogos.com/uploads/dolby-digital-png-logo/the-works-active-media-dolby-digital-png-logo-10.png" alt='full_hd_quality_icon'/></div></div>
+                <div className='watch_button_box' id='watch_button_2'></div>
+                <div className='indicator_point'><li className="point_1"></li><li className="point_2"></li><li className="point_3"></li></div>
+                
+                <button className='previous_button' id="previous_2"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                <button className='next_button' id="next_2"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
               </div>
+            </div>
+            
+            <div id='slide_3' className='slider_screen_slide'>
+              <div className='content_box'>
+                <h1 id="title_movies_3"></h1>
+                <div className='left_box'><div className='rates_box' id="rates_movies_3"></div><div className='img_ind'><img src="https://cdn-icons-png.flaticon.com/512/5977/5977585.png" alt="imdb_icon"/><img src="https://www.freepnglogos.com/uploads/dolby-digital-png-logo/the-works-active-media-dolby-digital-png-logo-10.png" alt='full_hd_quality_icon'/></div></div>
+                <div className='watch_button_box' id='watch_button_3'></div>
+                <div className='indicator_point'><li className="point_1"></li><li className="point_2"></li><li className="point_3"></li></div>
+                
+                <button className='previous_button' id="previous_3"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+              </div>
+            </div>
+          </section><br/><br/>
 
-              <svg className="left-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-              <svg className="right-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          {/* <br/><Link className='link_to_genres' style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies/genres">Voir les films triés par genres... 📚</Link>
+          <br/><br/><br/><br/>
+
+          <h1 id="ind_text">Box office de la semaine 🎁 : </h1>  
+          <p id="ind_description">Retrouvez ici tout les meilleurs films et émissions de la semaine afin de ne laisser passer aucun programme qui vaut la peine d'être vu !</p>
+          <div className='movies_section'>
+            {show_box_office_movie}
+              </div><br/><br/><br/> */}
+          
+          <div className='second_bloc_soon'>
+            <br/><Link className='link_to_genres' style={{textDecoration:"none", backgroundColor:"transparent", color:"inherit"}} href="/movies/genres">Voir les films triés par genres... 📚</Link>
+            <br/><br/><br/><br/>
+
+            <h1 id="ind_text">La sélection Odama&copy; ✨ : </h1>  
+            <p id="ind_description">Vous ne savez pas quoi regarder ? Choissisez notre sélection : elle est faites pour tout les goûts, tout âges et plaira à tout le monde.</p>
+            <div className='movies_section'>
+              {show_odama_selection}
+            </div><br/><br/><br/>
+
+            <h1 id="ind_text">Tout les films disponibles 🎥 : </h1>  
+            <p id="ind_description">Retrouvez ici tout les films de la plateforme dans un long slider interminable...</p>
+            <div className='movies_section' id='slider'>
+              <div className='scrolling_button left'><img src='https://static-00.iconduck.com/assets.00/chevronleft-icon-303x512-jl07qugm.png'/></div>
+              {show_all_movies}
+              <div className='scrolling_button right'><img src='https://static-00.iconduck.com/assets.00/chevronleft-icon-303x512-jl07qugm.png'/></div>
             </div>
           </div>
-          {/* 🎫 End of Box-office movies slider 🎫 */}
+          <div id='movies_section_space'></div>
         </section>
       </div>
     </>
